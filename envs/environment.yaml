@@ -20,6 +20,7 @@ dependencies:
 - pandapower >=2.14
 - pip:
   - simbench >=1.5.3
+  - pyloadprofilegenerator >=0.2.0  # pyLPG; NOT the PyPI package named 'pylpg'
 - geopy >=2.4.1
 - glpk >=5.0
 - graphviz >=12.2.1
