@@ -188,3 +188,19 @@ def test_per_node_household_fraction_uses_bus_location() -> None:
     np.testing.assert_allclose(
         n.loads_t.p_set["electric demand urban"], base * SHARES["urban"]
     )
+
+
+def test_shipped_lpg_table_loads_and_conserves() -> None:
+    from pathlib import Path
+
+    table = Path(__file__).parents[1] / "data/lv_profile_shapes/lpg_electricity.csv"
+    n = apply_lv_profile_split(
+        _network(),
+        _config(shapes={"electricity": str(table), "ev": str(table)}),
+    )
+    base = _network().loads_t.p_set["electric demand"]
+    total = sum(n.loads_t.p_set[f"electric demand {p}"] for p in PROFILES)
+    np.testing.assert_allclose(total, base, rtol=1e-9)
+    urban = n.loads_t.p_set["electric demand urban"] / SHARES["urban"]
+    rural = n.loads_t.p_set["electric demand rural"] / SHARES["rural"]
+    assert not np.allclose(urban, rural)
