@@ -46,6 +46,7 @@ from scripts.lv_profile_split import (
     PROFILES,
     apply_lv_profile_split,
     drop_zero_share_profiles,
+    household_electricity_fraction,
 )
 from scripts.lv_profile_split_guards import write_report
 from scripts.prepare_network import maybe_adjust_costs_and_potentials
@@ -7234,7 +7235,12 @@ if __name__ == "__main__":
             shares = configured_heat_shares.get(system)
             heat_shares[system] = demand_shares if shares is None else shares
 
-        n = apply_lv_profile_split(n, profiles_cfg)
+        split_cfg = dict(profiles_cfg)
+        if split_cfg.get("household_fraction") == "energy_totals":
+            split_cfg["household_fraction"] = household_electricity_fraction(
+                pop_weighted_energy_totals
+            )
+        n = apply_lv_profile_split(n, split_cfg)
         removed = drop_zero_share_profiles(
             n,
             profiles=profiles,

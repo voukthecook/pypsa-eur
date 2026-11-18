@@ -110,6 +110,151 @@ def _profile_split_shares(
     return result
 
 
+PROFILE_SHAPE_KEYS = ("electricity", "ev")
+
+
+def _load_profile_shapes(value: Any) -> dict[str, pd.DataFrame]:
+    """Read optional per-profile daily shapes (e.g. from LPG/HiSim).
+
+    ``value`` maps a shape key ("electricity", "ev") to a CSV path or a DataFrame.
+    Each table needs the columns ``month`` (1-12), ``daytype`` (weekday/weekend),
+    ``hour`` (0-23) and one column per profile. Only relative values matter: the
+    split rebalances them so the node total is unchanged in every snapshot and each
+    profile keeps its configured share of the yearly energy (timing moves, not volume).
+    """
+    if not value:
+        return {}
+    if not isinstance(value, Mapping):
+        raise TypeError("shapes must map shape keys to CSV paths or DataFrames.")
+    unknown = set(value) - set(PROFILE_SHAPE_KEYS)
+    if unknown:
+        raise ValueError(
+            f"shapes has unsupported keys {sorted(unknown)}; use {PROFILE_SHAPE_KEYS}."
+        )
+    shapes = {}
+    for key, source in value.items():
+        table = source if isinstance(source, pd.DataFrame) else pd.read_csv(source)
+        needed = {"month", "daytype", "hour", *PROFILES}
+        if needed - set(table.columns):
+            raise ValueError(
+                f"shapes.{key} is missing columns {sorted(needed - set(table.columns))}."
+            )
+        table = table.set_index(["month", "daytype", "hour"])[list(PROFILES)]
+        if table.index.has_duplicates:
+            raise ValueError(f"shapes.{key} has duplicate (month, daytype, hour) rows.")
+        if (table < 0).any().any() or table.isna().any().any():
+            raise ValueError(f"shapes.{key} must be finite and non-negative.")
+        shapes[key] = table.astype(float)
+    return shapes
+
+
+def _profile_shape_factors(
+    snapshots: pd.Index,
+    shape: pd.DataFrame,
+    shares: Mapping[str, float],
+    base: pd.Series,
+    weights: pd.Series,
+    max_iter: int = 500,
+    tol: float = 1e-12,
+) -> dict[str, pd.Series]:
+    """Per-snapshot multiplier for each profile.
+
+    The raw shape only sets the *relative* timing between profiles. It is rebalanced
+    (iterative row/column scaling) so that, for this load,
+
+    * the profile parts add up to the node demand in every snapshot, and
+    * each profile still receives exactly its configured share of the yearly energy.
+    """
+    if not isinstance(snapshots, pd.DatetimeIndex):
+        raise NotImplementedError(
+            "Profile shapes need plain datetime snapshots (not multi-period)."
+        )
+    keys = pd.MultiIndex.from_arrays(
+        [
+            snapshots.month,
+            np.where(snapshots.dayofweek >= 5, "weekend", "weekday"),
+            snapshots.hour,
+        ],
+        names=["month", "daytype", "hour"],
+    )
+    raw = shape.reindex(keys)
+    if raw.isna().any().any():
+        raise ValueError("Profile shape table does not cover every snapshot hour.")
+    active = [p for p in PROFILES if shares[p] > 0]
+    raw = raw[active].to_numpy(dtype=float)
+    if (raw.sum(axis=1) <= 0).any():
+        raise ValueError("Profile shape is zero for every profile in some snapshots.")
+
+    energy = (base * weights).to_numpy(dtype=float)
+    live = energy > 0
+    share = np.array([shares[p] for p in active])
+    kernel = raw[live] * share * energy[live, None]
+    row_target = energy[live]
+    col_target = share * energy[live].sum()
+    r = np.ones(kernel.shape[0])
+    c = np.ones(kernel.shape[1])
+    for _ in range(max_iter):
+        r = row_target / (kernel * c).sum(axis=1)
+        c = col_target / (kernel * r[:, None]).sum(axis=0)
+        fitted = kernel * r[:, None] * c
+        err = max(
+            np.abs(fitted.sum(axis=1) - row_target).max() / row_target.max(),
+            np.abs(fitted.sum(axis=0) - col_target).max() / col_target.max(),
+        )
+        if err < tol:
+            break
+    else:
+        raise ValueError(
+            f"Profile shape rebalancing did not converge (residual {err:.2e}); "
+            "the shape is too far from the configured shares."
+        )
+    # fitted / (energy * share) = multiplier on the plain "base * share" series
+    factors = {p: pd.Series(1.0, index=snapshots) for p in PROFILES}
+    for i, p in enumerate(active):
+        values = np.ones(len(snapshots))
+        values[live] = fitted[:, i] / (energy[live] * shares[p])
+        factors[p] = pd.Series(values, index=snapshots)
+    return factors
+
+
+def household_electricity_fraction(totals: pd.DataFrame) -> pd.Series:
+    """Household share of the base electricity load per node.
+
+    Appliance-type use only: residential and services electricity minus the parts
+    PyPSA-Eur already models as heat (space heating, water heating), because
+    ``build_heat_demand`` removes those from the base load. Cooking stays in.
+    Industry and other residual use in the base load are not counted, so the
+    result is a share of households versus services, an approximation.
+    """
+    def appliance(sector: str) -> pd.Series:
+        return (
+            totals[f"electricity {sector}"]
+            - totals[f"electricity {sector} space"]
+            - totals[f"electricity {sector} water"]
+        ).clip(lower=0.0)
+
+    households, services = appliance("residential"), appliance("services")
+    return (households / (households + services)).fillna(1.0)
+
+
+def _household_fraction_for(
+    value: Any, n: pypsa.Network, bus: str
+) -> float:
+    """Fraction of a load that follows the profile shape (rest keeps plain shares)."""
+    if value is None:
+        return 1.0
+    if isinstance(value, (int, float)) and not isinstance(value, bool):
+        fraction = float(value)
+    else:
+        node = n.buses.at[bus, "location"] if "location" in n.buses else bus
+        if node not in value:
+            raise ValueError(f"household_fraction has no entry for node '{node}'.")
+        fraction = float(value[node])
+    if not 0.0 <= fraction <= 1.0:
+        raise ValueError(f"household_fraction must be in [0, 1], got {fraction}.")
+    return fraction
+
+
 def _profile_split_heat_system(carrier: Any) -> str | None:
     carrier = str(carrier).lower()
     if "urban central" in carrier:
@@ -147,6 +292,10 @@ def apply_lv_profile_split(
     ev_shares = _profile_split_shares(
         config.get("ev_shares"), "ev_shares", general_shares
     )
+
+    profile_shapes = _load_profile_shapes(config.get("shapes"))
+    shape_loads = set(config.get("shape_load_carriers", ["electricity"]))
+    household_fraction = config.get("household_fraction")
 
     heat_config = config.get("heat_shares", {}) or {}
     if not isinstance(heat_config, Mapping):
@@ -249,12 +398,22 @@ def apply_lv_profile_split(
                     ),
                 )
             )
-            plans.append((name, row, bus_columns, shares))
+            shape_key = None
+            if component == "Load" and not heat_domains:
+                if "ev" in domains and "ev" in profile_shapes:
+                    shape_key = "ev"
+                elif (
+                    domains == {"general"}
+                    and "electricity" in profile_shapes
+                    and row.get("carrier") in shape_loads
+                ):
+                    shape_key = "electricity"
+            plans.append((name, row, bus_columns, shares, shape_key))
 
         component_plans[component] = plans
         collisions = {
             f"{name} {profile}"
-            for name, _, _, _ in plans
+            for name, _, _, _, _ in plans
             for profile in PROFILES
         } & set(static.index)
         if collisions:
@@ -281,7 +440,30 @@ def apply_lv_profile_split(
         ]
         dynamic = getattr(n, f"{plural}_t")
         clone_names[component] = []
-        for name, row, bus_columns, shares in plans:
+        for name, row, bus_columns, shares, shape_key in plans:
+            factors = None
+            if shape_key:
+                load_series = (
+                    dynamic["p_set"][name]
+                    if name in dynamic["p_set"].columns
+                    else pd.Series(float(row["p_set"]), index=n.snapshots)
+                )
+                factors = _profile_shape_factors(
+                    n.snapshots,
+                    profile_shapes[shape_key],
+                    shares,
+                    load_series,
+                    n.snapshot_weightings.generators,
+                )
+                if shape_key == "electricity":
+                    # only the household part follows the shape; the rest keeps
+                    # the plain shares, which leaves both conservation rules intact
+                    fraction = _household_fraction_for(
+                        household_fraction, n, row["bus"]
+                    )
+                    factors = {
+                        p: 1.0 + fraction * (f - 1.0) for p, f in factors.items()
+                    }
             for profile in PROFILES:
                 share = shares[profile]
                 if share == 0.0:
@@ -311,9 +493,16 @@ def apply_lv_profile_split(
                         values = frame[name]
                         if attribute in dynamic_scaled_attrs:
                             values = values * share
+                            if factors is not None and attribute == "p_set":
+                                values = values * factors[profile]
                         frame[new_name] = values
+                if factors is not None and new_name not in dynamic["p_set"].columns:
+                    # constant load: becomes a time series once it has a shape
+                    dynamic["p_set"][new_name] = (
+                        float(attrs["p_set"]) * factors[profile]
+                    )
 
-        _remove(n, component, [name for name, _, _, _ in plans])
+        _remove(n, component, [name for name, _, _, _, _ in plans])
 
     _remove(n, "Bus", list(bus_domains))
     suppressed_warnings = release_attr_misleading(attr_filter)
