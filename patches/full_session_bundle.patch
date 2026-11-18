@@ -1,0 +1,1103 @@
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..7a60b85
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1,2 @@
++__pycache__/
++*.pyc
+diff --git a/config/config.default.yaml b/config/config.default.yaml
+index 5a44dc2..ac71ce9 100644
+--- a/config/config.default.yaml
++++ b/config/config.default.yaml
+@@ -911,6 +911,8 @@ sector:
+   electricity_transmission_grid: true
+   electricity_distribution_grid: true
+   electricity_distribution_grid_cost_factor: 1.0
++  electricity_distribution_grid_detailed: false
++  electricity_distribution_grid_max_feeder_replicas: 8
+   electricity_grid_connection: true
+   transmission_efficiency:
+     enable:
+diff --git a/config/plotting.default.yaml b/config/plotting.default.yaml
+index b0b5742..47ff719 100644
+--- a/config/plotting.default.yaml
++++ b/config/plotting.default.yaml
+@@ -108,8 +108,6 @@ plotting:
+     - gas
+     - H2
+     - methanol
+-    - oil
+-    - urban_central_heat
+     AC:
+       cmap: Greens
+       vmin:
+@@ -260,8 +258,6 @@ plotting:
+     - gas
+     - H2
+     - methanol
+-    - oil
+-    - urban_central_heat
+     AC:
+       cmap: Greens
+       region_unit: €/MWh
+diff --git a/config/schema.default.json b/config/schema.default.json
+index ee9ae94..e97d9e4 100644
+--- a/config/schema.default.json
++++ b/config/schema.default.json
+@@ -4886,6 +4886,16 @@
+           "description": "Multiplies the investment cost of the electricity distribution grid.",
+           "type": "number"
+         },
++        "electricity_distribution_grid_detailed": {
++          "default": false,
++          "description": "Replace the simplified single-link distribution grid representation with archetype-specific representative LV feeders (rural/semi-urban/urban) built from SimBench benchmark grids.",
++          "type": "boolean"
++        },
++        "electricity_distribution_grid_max_feeder_replicas": {
++          "default": 8,
++          "description": "Maximum number of parallel representative feeder copies inserted per node when electricity_distribution_grid_detailed is enabled.",
++          "type": "integer"
++        },
+         "electricity_grid_connection": {
+           "default": true,
+           "description": "Add the cost of electricity grid connection for onshore wind and solar.",
+@@ -11378,6 +11388,16 @@
+           "description": "Multiplies the investment cost of the electricity distribution grid.",
+           "type": "number"
+         },
++        "electricity_distribution_grid_detailed": {
++          "default": false,
++          "description": "Replace the simplified single-link distribution grid representation with archetype-specific representative LV feeders (rural/semi-urban/urban) built from SimBench benchmark grids.",
++          "type": "boolean"
++        },
++        "electricity_distribution_grid_max_feeder_replicas": {
++          "default": 8,
++          "description": "Maximum number of parallel representative feeder copies inserted per node when electricity_distribution_grid_detailed is enabled.",
++          "type": "integer"
++        },
+         "electricity_grid_connection": {
+           "default": true,
+           "description": "Add the cost of electricity grid connection for onshore wind and solar.",
+diff --git a/envs/environment.yaml b/envs/environment.yaml
+index 3f507dd..0bd7ab0 100644
+--- a/envs/environment.yaml
++++ b/envs/environment.yaml
+@@ -17,6 +17,9 @@ dependencies:
+ - folium >=0.20.0
+ - geojson >=3.2.0
+ - geopandas >=1
++- pandapower >=2.14
++- pip:
++  - simbench >=1.5.3
+ - geopy >=2.4.1
+ - glpk >=5.0
+ - graphviz >=12.2.1
+diff --git a/rules/build_sector.smk b/rules/build_sector.smk
+index 5e40972..22c7a9a 100644
+--- a/rules/build_sector.smk
++++ b/rules/build_sector.smk
+@@ -64,6 +64,53 @@ rule build_clustered_solar_rooftop_potentials:
+     script:
+         scripts("build_clustered_solar_rooftop_potentials.py")
+ 
++rule build_representative_feeder_library:
++    output:
++        feeder_buses=resources("representative_feeder_buses.csv"),
++        feeder_lines=resources("representative_feeder_lines.csv"),
++        feeder_trafos=resources("representative_feeder_trafos.csv"),
++        feeder_load_shares=resources("representative_feeder_load_shares.csv"),
++    log:
++        logs("build_representative_feeder_library.log"),
++    benchmark:
++        benchmarks("build_representative_feeder_library")
++    resources:
++        mem_mb=2000,
++    message:
++        "Building representative SimBench LV feeder library (rural/semi-urban/urban)"
++    script:
++        scripts("build_representative_feeder_library.py")
++
++
++rule build_distribution_grid_archetypes:
++    input:
++        clustered_pop_layout=resources("pop_layout_base_s_{clusters}.csv"),
++        regions_onshore=resources("regions_onshore_base_s_{clusters}.geojson"),
++        feeder_load_shares=resources("representative_feeder_load_shares.csv"),
++    params:
++        max_feeder_replicas=config_provider(
++            "sector", "electricity_distribution_grid_max_feeder_replicas"
++        ),
++        persons_per_household=config_provider(
++            "sector",
++            "electricity_distribution_grid_persons_per_household",
++            default=2.2,
++        ),
++    output:
++        node_archetypes=resources("distribution_grid_archetypes_s_{clusters}.csv"),
++    log:
++        logs("build_distribution_grid_archetypes_s_{clusters}.log"),
++    benchmark:
++        benchmarks("build_distribution_grid_archetypes/s_{clusters}")
++    resources:
++        mem_mb=4000,
++    message:
++        "Classifying nodes into distribution-grid archetypes for {wildcards.clusters} clusters"
++    script:
++        scripts("build_distribution_grid_archetypes.py")
++
++
++
+ 
+ rule build_simplified_population_layouts:
+     input:
+@@ -159,7 +206,7 @@ rule build_daily_heat_demand:
+         logs("build_daily_heat_demand_total_s_{clusters}.log"),
+     benchmark:
+         benchmarks("build_daily_heat_demand/total_s_{clusters}")
+-    threads: 8
++    threads: 2
+     resources:
+         mem_mb=20000,
+     params:
+@@ -211,7 +258,7 @@ rule build_temperature_profiles:
+         logs("build_temperature_profiles_total_s_{clusters}.log"),
+     benchmark:
+         benchmarks("build_temperature_profiles/total_{clusters}")
+-    threads: 8
++    threads: 2
+     resources:
+         mem_mb=20000,
+     params:
+@@ -767,7 +814,7 @@ rule build_solar_thermal_profiles:
+         logs("build_solar_thermal_profiles_total_s_{clusters}.log"),
+     benchmark:
+         benchmarks("build_solar_thermal_profiles/total_{clusters}")
+-    threads: 16
++    threads: 2
+     resources:
+         mem_mb=20000,
+     params:
+@@ -1699,6 +1746,41 @@ rule prepare_sector_network:
+             if "solar" in config_provider("electricity", "renewable_carriers")(w)
+             else []
+         ),
++        node_archetypes=lambda w: (
++            resources("distribution_grid_archetypes_s_{clusters}.csv")
++            if config_provider(
++                "sector", "electricity_distribution_grid_detailed"
++            )(w)
++            else []
++        ),
++        feeder_buses=lambda w: (
++            resources("representative_feeder_buses.csv")
++            if config_provider(
++                "sector", "electricity_distribution_grid_detailed"
++            )(w)
++            else []
++        ),
++        feeder_lines=lambda w: (
++            resources("representative_feeder_lines.csv")
++            if config_provider(
++                "sector", "electricity_distribution_grid_detailed"
++            )(w)
++            else []
++        ),
++        feeder_trafos=lambda w: (
++            resources("representative_feeder_trafos.csv")
++            if config_provider(
++                "sector", "electricity_distribution_grid_detailed"
++            )(w)
++            else []
++        ),
++        feeder_load_shares=lambda w: (
++            resources("representative_feeder_load_shares.csv")
++            if config_provider(
++                "sector", "electricity_distribution_grid_detailed"
++            )(w)
++            else []
++        ),
+         egs_potentials=lambda w: (
+             resources("egs_potentials_{clusters}.csv")
+             if config_provider("sector", "enhanced_geothermal", "enable")(w)
+diff --git a/scripts/build_distribution_grid_archetypes.py b/scripts/build_distribution_grid_archetypes.py
+new file mode 100644
+index 0000000..1d8391d
+--- /dev/null
++++ b/scripts/build_distribution_grid_archetypes.py
+@@ -0,0 +1,132 @@
++# SPDX-FileCopyrightText: Contributors to PyPSA-Eur <https://github.com/pypsa/pypsa-eur>
++#
++# SPDX-License-Identifier: MIT
++"""
++Classify clustered network nodes into distribution-grid archetypes
++(rural / semi-urban / urban) and determine how many parallel copies
++of that archetype's representative feeder each node needs.
++
++Depends on the clustering resolution (via clustered_pop_layout and
++regions_onshore, both per-{clusters}), unlike
++build_representative_feeder_library.py which is archetype-level only
++and runs once. `insert_electricity_distribution_grid_detailed` in
++prepare_sector_network.py reads this script's output together with
++the feeder library.
++"""
++
++import logging
++import math
++
++import geopandas as gpd
++import numpy as np
++import pandas as pd
++
++from scripts._helpers import configure_logging, set_scenario_config
++
++logger = logging.getLogger(__name__)
++
++
++def classify_archetypes(
++    pop_layout: pd.DataFrame,
++    onshore_regions: gpd.GeoDataFrame,
++    urban_share_thresholds: tuple[float, float] = (0.2, 0.6),
++) -> pd.Series:
++    """
++    Classify each node as rural / semi-urban / urban using the urban
++    population share already computed by
++    build_clustered_population_layouts.py (pop_layout["urban"] /
++    pop_layout["total"]) -- a more direct signal than raw population
++    density for this purpose, since it comes from the same World Bank
++    urbanisation statistics used elsewhere in the model.
++
++    `onshore_regions` is joined in for reference/diagnostics (e.g. if
++    you want to sanity-check archetypes against node area) but is not
++    currently part of the classification rule itself -- extend here
++    for a density-based refinement if urban share alone proves too
++    coarse.
++    """
++    urban_share = (pop_layout["urban"] / pop_layout["total"]).reindex(
++        onshore_regions.index
++    )
++
++    low, high = urban_share_thresholds
++    archetype = pd.cut(
++        urban_share,
++        bins=[-np.inf, low, high, np.inf],
++        labels=["rural", "semiurban", "urban"],
++    ).astype(str)
++    archetype.name = "archetype"
++    return archetype
++
++
++if __name__ == "__main__":
++    if "snakemake" not in globals():
++        from scripts._helpers import mock_snakemake
++
++        snakemake = mock_snakemake(
++            "build_distribution_grid_archetypes", clusters=48
++        )
++
++    configure_logging(snakemake)
++    set_scenario_config(snakemake)
++
++    max_replicas = snakemake.params.max_feeder_replicas
++    persons_per_household = snakemake.params.get("persons_per_household", 2.2)
++
++    pop_layout = pd.read_csv(snakemake.input.clustered_pop_layout, index_col=0)
++    onshore_regions = gpd.read_file(snakemake.input.regions_onshore).set_index("name")
++    feeder_load_shares = pd.read_csv(snakemake.input.feeder_load_shares)
++
++    archetypes = classify_archetypes(pop_layout, onshore_regions)
++
++    feeder_n_households = feeder_load_shares.groupby("archetype")[
++        "feeder_n_households"
++    ].first()
++
++    node_table = archetypes.to_frame()
++    node_table["feeder_n_households"] = node_table["archetype"].map(
++        feeder_n_households
++    )
++
++    # How many real SimBench-sized feeders would this node actually need?
++    # pop_layout["total"] is population in THOUSANDS (see
++    # build_clustered_population_layouts.py). This replaces an earlier,
++    # circular version of this heuristic that scaled replicas relative
++    # to the feeder's own peak load rather than to real household counts
++    # -- that version badly undercounted needed replicas (by 1-2 orders
++    # of magnitude for a typical PyPSA-Eur node), which is what produced
++    # the capacity/demand mismatch and solver infeasibility this
++    # revision fixes. persons_per_household is a rough EU-wide average;
++    # override via config if you have a better country-specific figure.
++    node_households = pop_layout["total"].reindex(archetypes.index) * 1000 / persons_per_household
++    needed_replicas = (node_households / node_table["feeder_n_households"]).apply(
++        lambda x: max(1, math.ceil(x))
++    )
++
++    # Building `needed_replicas` copies of a ~15-100 bus feeder per node
++    # is not computationally tractable (a single DK node can need
++    # thousands of real feeders). Instead, build only a small SAMPLE of
++    # up to `max_replicas` feeder copies, and scale each sampled
++    # replica's cable/transformer capacity up by `scale_factor` so the
++    # aggregate capacity still represents the true number of real
++    # feeders -- see insert_electricity_distribution_grid_detailed(),
++    # which reads `scale_factor` and multiplies p_nom/s_nom by it. This
++    # keeps model size bounded while keeping the represented physical
++    # capacity realistic; congestion resolution is coarser than 1
++    # real feeder, bounded by `max_replicas`.
++    node_table["n_replicas"] = needed_replicas.clip(upper=max_replicas)
++    node_table["scale_factor"] = needed_replicas / node_table["n_replicas"]
++
++    node_table[["archetype", "n_replicas", "scale_factor"]].to_csv(
++        snakemake.output.node_archetypes
++    )
++
++    logger.info(
++        "Classified %d nodes into archetypes: %s (needed_replicas range %d-%d, "
++        "max scale_factor %.1f)",
++        len(node_table),
++        node_table["archetype"].value_counts().to_dict(),
++        int(needed_replicas.min()),
++        int(needed_replicas.max()),
++        node_table["scale_factor"].max(),
++    )
+diff --git a/scripts/build_industrial_energy_demand_per_node_today.py b/scripts/build_industrial_energy_demand_per_node_today.py
+index b65439f..6529b8a 100644
+--- a/scripts/build_industrial_energy_demand_per_node_today.py
++++ b/scripts/build_industrial_energy_demand_per_node_today.py
+@@ -53,6 +53,26 @@ def build_nodal_industrial_energy_demand():
+     keys = pd.read_csv(fn, index_col=0)
+     keys["country"] = keys.index.str[:2]
+ 
++    # Some sector-mapping targets (e.g. "Non-ferrous metals") may have no
++    # entry at all in the distribution key if none of the selected
++    # countries have a registered facility for that subsector in the
++    # Hotmaps database -- this is common for small/single-country runs.
++    # Fill any missing target column with 0 so lookups below don't raise
++    # a KeyError; this just means that subsector's demand isn't
++    # geographically distributed for the missing countries, which is a
++    # reasonable default rather than a crash.
++    expected_columns = set(sector_mapping.values()) | {"population"}
++    missing_columns = expected_columns - set(keys.columns)
++    if missing_columns:
++        logger.warning(
++            "Industrial distribution key is missing columns %s "
++            "(no facilities of that type in the selected countries) -- "
++            "filling with 0.",
++            sorted(missing_columns),
++        )
++        for col in missing_columns:
++            keys[col] = 0.0
++
+     nodal_demand = pd.DataFrame(
+         0.0, dtype=float, index=keys.index, columns=industrial_demand.index
+     )
+diff --git a/scripts/build_industrial_production_per_node.py b/scripts/build_industrial_production_per_node.py
+index ae87136..72bfce5 100644
+--- a/scripts/build_industrial_production_per_node.py
++++ b/scripts/build_industrial_production_per_node.py
+@@ -56,6 +56,22 @@ def build_nodal_industrial_production():
+     keys = pd.read_csv(fn, index_col=0)
+     keys["country"] = keys.index.str[:2]
+ 
++    # See build_industrial_energy_demand_per_node_today.py for why this is
++    # needed: small/single-country runs can be missing a sector column
++    # entirely if no facility of that type is registered in Hotmaps for
++    # the selected countries.
++    expected_columns = set(sector_mapping.values()) | {"population"}
++    missing_columns = expected_columns - set(keys.columns)
++    if missing_columns:
++        logger.warning(
++            "Industrial distribution key is missing columns %s "
++            "(no facilities of that type in the selected countries) -- "
++            "filling with 0.",
++            sorted(missing_columns),
++        )
++        for col in missing_columns:
++            keys[col] = 0.0
++
+     nodal_production = pd.DataFrame(
+         index=keys.index, columns=industrial_production.columns, dtype=float
+     )
+diff --git a/scripts/build_renewable_profiles.py b/scripts/build_renewable_profiles.py
+index e37a914..59830e3 100644
+--- a/scripts/build_renewable_profiles.py
++++ b/scripts/build_renewable_profiles.py
+@@ -134,6 +134,48 @@ if __name__ == "__main__":
+     if snakemake.wildcards.technology.startswith("offwind"):
+         # for offshore regions, the shortest distance to the shoreline is used
+         offshore_regions = availability.coords["bus"].values
++        missing = [b for b in offshore_regions if b not in regions.index]
++        if missing:
++            # Fallback for offshore buses with no matching onshore region
++            # name. Normally each offshore-designated bus shares its name
++            # with an onshore region, whose polygon is used below as a
++            # proxy "shore connection point" for the average-distance
++            # calculation further down. Observed for Denmark at several
++            # cluster counts (e.g. 15, 20): its onshore and offshore
++            # region sets are clustered somewhat independently, and for a
++            # coastally-fragmented country they don't always agree on how
++            # many distinct nodes a group should have, leaving a handful
++            # of offshore bus names with no onshore counterpart at all --
++            # not a config or environment issue, and not reliably avoided
++            # by picking a different cluster count.
++            #
++            # For just these buses, fall back to the bus's own OFFSHORE
++            # region polygon (from resource_regions -- the same file this
++            # script already reads later for the per-technology region
++            # set) as the reference geometry instead. This slightly
++            # understates the true shore-to-substation distance for these
++            # specific buses (using the offshore area's own location
++            # rather than a specific onshore connection point) -- a
++            # reasonable approximation for a small number of edge-case
++            # buses. If this list grows to a large fraction of a
++            # country's buses, that would indicate a deeper clustering
++            # disagreement worth investigating rather than papering over.
++            logger.warning(
++                "%d offshore bus(es) have no matching onshore region for "
++                "the shore-distance calculation, falling back to their "
++                "own offshore region geometry: %s",
++                len(missing),
++                missing,
++            )
++            orig_crs = regions.crs
++            fallback_regions = (
++                gpd.read_file(snakemake.input.resource_regions)
++                .set_index("name")
++                .rename_axis("bus")
++                .loc[missing]
++            )
++            regions = pd.concat([regions, fallback_regions])
++            regions = gpd.GeoDataFrame(regions, crs=orig_crs)
+         regions = regions.loc[offshore_regions]
+         regions = regions.map(lambda g: _simplify_polys(g, minarea=1)).set_crs(
+             regions.crs
+diff --git a/scripts/build_representative_feeder_library.py b/scripts/build_representative_feeder_library.py
+new file mode 100644
+index 0000000..88ab500
+--- /dev/null
++++ b/scripts/build_representative_feeder_library.py
+@@ -0,0 +1,128 @@
++# SPDX-FileCopyrightText: Contributors to PyPSA-Eur <https://github.com/pypsa/pypsa-eur>
++#
++# SPDX-License-Identifier: MIT
++"""
++Build the representative low-voltage feeder library used by the
++detailed distribution-grid extension.
++
++This does not depend on the clustering resolution -- there are only
++three archetypes (rural / semi-urban / urban), each mapped to one
++SimBench benchmark LV grid, so this runs once regardless of
++{clusters}. `build_distribution_grid_archetypes.py` (per-cluster)
++and `prepare_sector_network.py`'s
++`insert_electricity_distribution_grid_detailed` both read the tables
++written here instead of importing `simbench` themselves.
++
++Note: simbench.get_simbench_net() reads from data bundled with the
++`simbench` package -- no network access is required at run time.
++"""
++
++import logging
++
++import numpy as np
++import pandas as pd
++
++from scripts._helpers import configure_logging, set_scenario_config
++
++logger = logging.getLogger(__name__)
++
++# SimBench codes for the representative archetypes. "--0-sw" = base
++# year, winter case. See simbench.get_all_simbench_codes_by_condition()
++# for alternative years / seasons / DER penetration levels.
++SIMBENCH_CODES = {
++    "rural": "1-LV-rural1--0-sw",
++    "semiurban": "1-LV-semiurb4--0-sw",
++    "urban": "1-LV-urban6--0-sw",
++}
++
++
++def get_feeder_reference_data(archetype: str) -> dict:
++    """Load one archetype's SimBench feeder and summarise it into the
++    tables written to disk."""
++    import simbench as sb
++
++    code = SIMBENCH_CODES[archetype]
++    net = sb.get_simbench_net(code)
++
++    v_kv = net.bus.loc[net.line.from_bus, "vn_kv"].values
++    s_nom_mva = np.sqrt(3) * v_kv * net.line["max_i_ka"].values
++
++    lines = pd.DataFrame(
++        {
++            "archetype": archetype,
++            "from_bus": net.line["from_bus"].values,
++            "to_bus": net.line["to_bus"].values,
++            "s_nom_mva": s_nom_mva,
++        }
++    )
++
++    buses = pd.DataFrame(
++        {
++            "archetype": archetype,
++            "bus": net.bus.index,
++            "vn_kv": net.bus["vn_kv"].values,
++        }
++    )
++
++    if len(net.trafo) != 1:
++        raise NotImplementedError(
++            f"Expected exactly one MV/LV transformer in {code}, "
++            f"found {len(net.trafo)}. Extend get_feeder_reference_data() "
++            "for multi-transformer feeders before using this archetype."
++        )
++    trafo_row = net.trafo.iloc[0]
++    trafo = pd.DataFrame(
++        {
++            "archetype": [archetype],
++            "hv_bus": [trafo_row["hv_bus"]],
++            "lv_bus": [trafo_row["lv_bus"]],
++            "s_nom_mva": [trafo_row["sn_mva"]],
++        }
++    )
++
++    peak_load_mw = net.load["p_mw"].sum()
++    load_shares = (
++        net.load.groupby("bus")["p_mw"].sum().div(peak_load_mw).rename("share")
++    )
++    load_shares = load_shares.reset_index()
++    load_shares.insert(0, "archetype", archetype)
++    # carry peak_load_mw along so downstream scripts don't need to
++    # re-derive it from the raw SimBench net
++    load_shares["feeder_peak_load_mw"] = peak_load_mw
++    # number of household/consumer connection points in this SimBench
++    # feeder -- used downstream to size how many real feeders a
++    # PyPSA-Eur node's population actually needs, instead of the
++    # circular population-ratio heuristic this replaced.
++    load_shares["feeder_n_households"] = len(net.load)
++
++    return dict(buses=buses, lines=lines, trafo=trafo, load_shares=load_shares)
++
++
++if __name__ == "__main__":
++    if "snakemake" not in globals():
++        from scripts._helpers import mock_snakemake
++
++        snakemake = mock_snakemake("build_representative_feeder_library")
++
++    configure_logging(snakemake)
++    set_scenario_config(snakemake)
++
++    feeder_reference = {a: get_feeder_reference_data(a) for a in SIMBENCH_CODES}
++
++    pd.concat([d["buses"] for d in feeder_reference.values()], ignore_index=True).to_csv(
++        snakemake.output.feeder_buses, index=False
++    )
++    pd.concat([d["lines"] for d in feeder_reference.values()], ignore_index=True).to_csv(
++        snakemake.output.feeder_lines, index=False
++    )
++    pd.concat([d["trafo"] for d in feeder_reference.values()], ignore_index=True).to_csv(
++        snakemake.output.feeder_trafos, index=False
++    )
++    pd.concat(
++        [d["load_shares"] for d in feeder_reference.values()], ignore_index=True
++    ).to_csv(snakemake.output.feeder_load_shares, index=False)
++
++    logger.info(
++        "Built representative feeder library for archetypes: %s",
++        list(SIMBENCH_CODES),
++    )
+diff --git a/scripts/prepare_sector_network.py b/scripts/prepare_sector_network.py
+index 2d65442..dc81300 100644
+--- a/scripts/prepare_sector_network.py
++++ b/scripts/prepare_sector_network.py
+@@ -1750,6 +1750,432 @@ def insert_electricity_distribution_grid(
+     )
+ 
+ 
++
++def _split_across_feeder_buses(
++    n: pypsa.Network,
++    ids,
++    component: str,
++    bus_attr: str,
++    node_feeder_shares: dict,
++    size_attrs: tuple = ("p_set", "p_nom", "p_nom_max"),
++) -> None:
++    """
++    Split each element of `ids` in n.<component>s into several smaller
++    elements, one per feeder bus of its node, sized by that bus's
++    share of the node's total distribution-connected demand/capacity.
++
++    Replaces the original function's "+= ' low voltage'" pattern
++    (which just repointed one component to one shared bus) now that
++    each node has several feeder buses instead of one.
++
++    Handles both static size attributes (whichever of `size_attrs` is
++    present -- e.g. p_set for loads, p_nom/p_nom_max for links) and
++    the matching time-varying (`_t`) versions. Only `size_attrs` are
++    scaled by the feeder-bus share; per-unit time series such as
++    p_max_pu availability profiles are copied unchanged to every
++    child, since they describe a rate, not a quantity.
++    """
++    static_df = getattr(n, component.lower() + "s")
++    dynamic = getattr(n, component.lower() + "s_t")
++
++    plan = []
++    for idx in ids:
++        if idx not in static_df.index:
++            continue
++        node = static_df.at[idx, bus_attr]
++        if node not in node_feeder_shares:
++            logger.warning(
++                "%s '%s' references node '%s' with no feeder buses -- skipping.",
++                component,
++                idx,
++                node,
++            )
++            continue
++        plan.append((idx, node, node_feeder_shares[node]))
++
++    if not plan:
++        return
++
++    new_static_rows = {}
++    for idx, node, shares in plan:
++        row = static_df.loc[idx]
++        for global_bus, share in shares.items():
++            new_id = f"{idx} @ {global_bus}"
++            new_row = row.copy()
++            new_row[bus_attr] = global_bus
++            for attr in size_attrs:
++                if attr in new_row.index and pd.notna(new_row[attr]):
++                    new_row[attr] = new_row[attr] * share
++            new_static_rows[new_id] = new_row
++
++    new_static_df = pd.DataFrame.from_dict(new_static_rows, orient="index")
++    n.add(
++        component,
++        new_static_df.index,
++        **{c: new_static_df[c] for c in new_static_df.columns},
++    )
++
++    for attr in list(dynamic.keys()):
++        df_t = dynamic[attr]
++        cols_present = [idx for idx, _, _ in plan if idx in df_t.columns]
++        if not cols_present:
++            continue
++        new_series = {}
++        for idx, node, shares in plan:
++            if idx not in df_t.columns:
++                continue
++            for global_bus, share in shares.items():
++                new_id = f"{idx} @ {global_bus}"
++                scale = share if attr == "p_set" else 1.0
++                new_series[new_id] = df_t[idx] * scale
++        dynamic[attr] = pd.concat(
++            [df_t.drop(columns=cols_present), pd.DataFrame(new_series)], axis=1
++        )
++
++    n.remove(component, [idx for idx, _, _ in plan])
++
++
++def insert_electricity_distribution_grid_detailed(
++    n: pypsa.Network,
++    costs: pd.DataFrame,
++    options: dict,
++    pop_layout: pd.DataFrame,
++    solar_rooftop_potentials_fn: str,
++    node_archetypes_fn: str,
++    feeder_buses_fn: str,
++    feeder_lines_fn: str,
++    feeder_trafos_fn: str,
++    feeder_load_shares_fn: str,
++) -> None:
++    """
++    Archetype-resolved alternative to insert_electricity_distribution_grid().
++
++    Instead of one aggregate low-voltage bus and one capacity-free
++    link per node, each node gets a representative LV feeder --
++    buses, cables and a transformer -- taken from a SimBench benchmark
++    grid matching its rural/semi-urban/urban archetype (see
++    build_representative_feeder_library.py and
++    build_distribution_grid_archetypes.py), replicated to roughly
++    match the node's demand.
++
++    Modelling choices, consistent with the surrounding transport-model
++    style of this script:
++      - Feeder cables and the MV/LV transformer are inserted as
++        capacity-limited Links (p_min_pu=-1), not impedance-carrying
++        Lines -- no voltage-drop or reactive-power physics is added.
++      - Their capacities START at the SimBench rating; BOTH the
++        transformer and the feeder cables are currently extendable at
++        a STOPGAP placeholder cost (see inline comments at their
++        creation) so the model can solve instead of crashing when
++        fixed today-sized infrastructure can't cover a 2030
++        electrified demand block, or when uniform scale_factor leaves
++        a trunk cable under-sized relative to real (non-uniform)
++        feeder design -- replace with properly sourced reinforcement
++        costs, and reconsider the scale_factor approach itself, before
++        drawing thesis conclusions from any capacity-expansion
++        results.
++      - Loads and DERs that the original function pointed at one
++        shared low-voltage bus are instead split, proportionally to
++        each feeder bus's share of the archetype's peak demand, across
++        the node's feeder buses (see _split_across_feeder_buses).
++
++    Parameters
++    ----------
++    node_archetypes_fn : str
++        CSV from build_distribution_grid_archetypes.py: node index,
++        columns "archetype", "n_replicas", and "scale_factor" (see
++        that script for why replicas are sampled and then
++        capacity-scaled rather than built 1:1).
++    feeder_buses_fn, feeder_lines_fn, feeder_trafos_fn, feeder_load_shares_fn : str
++        CSVs from build_representative_feeder_library.py, each keyed
++        by "archetype".
++    Other parameters as in insert_electricity_distribution_grid().
++    """
++    nodes = n.buses.query("carrier == 'AC'").index
++
++    node_archetypes = pd.read_csv(node_archetypes_fn, index_col=0)
++    feeder_buses = pd.read_csv(feeder_buses_fn)
++    feeder_lines = pd.read_csv(feeder_lines_fn)
++    feeder_trafos = pd.read_csv(feeder_trafos_fn).set_index("archetype")
++    feeder_load_shares = pd.read_csv(feeder_load_shares_fn)
++
++    n.add("Carrier", "home battery")
++    n.add("Carrier", "low voltage")
++    # Distinct carriers from the original single aggregate link's
++    # "electricity distribution grid" carrier -- that name is listed in
++    # options["transmission_efficiency"]["enable"], which triggers
++    # PyPSA-Eur's lossy_bidirectional_links() to grab EVERY link with
++    # that carrier, force p_min_pu=0, override efficiency, and split
++    # each into a forward/reversed pair. That transformation is correct
++    # for the single aggregate link it was designed for, but wrong for
++    # these per-feeder physical cables/transformers (already
++    # capacity-fixed, already meant to allow bidirectional flow via
++    # p_min_pu=-1, efficiency=1 exactly as set below) -- giving them
++    # their own carriers keeps them out of that sweep.
++    n.add("Carrier", "distribution feeder trafo")
++    n.add("Carrier", "distribution feeder cable")
++
++    node_feeder_shares = {}
++
++    for node in nodes:
++        archetype = node_archetypes.at[node, "archetype"]
++        n_replicas = int(node_archetypes.at[node, "n_replicas"])
++        scale_factor = float(node_archetypes.at[node, "scale_factor"])
++
++        arche_buses = feeder_buses.loc[feeder_buses["archetype"] == archetype, "bus"]
++        arche_lines = feeder_lines.loc[feeder_lines["archetype"] == archetype]
++        arche_trafo = feeder_trafos.loc[archetype]
++        arche_shares = (
++            feeder_load_shares.loc[feeder_load_shares["archetype"] == archetype]
++            .set_index("bus")["share"]
++        )
++
++        shares = {}
++        for r in range(n_replicas):
++            prefix = f"{node} lv {archetype} f{r}"
++            local_to_global = {b: f"{prefix} bus{b}" for b in arche_buses}
++
++            n.add(
++                "Bus",
++                list(local_to_global.values()),
++                location=node,
++                carrier="low voltage",
++                unit="MWh_el",
++            )
++
++            hv_name = local_to_global[int(arche_trafo["hv_bus"])]
++
++            # p_nom scaled by scale_factor: this one sampled replica
++            # stands in for scale_factor-many real feeders bundled
++            # together (see build_distribution_grid_archetypes.py) --
++            # without this, a single ~15-household SimBench feeder's
++            # real-world capacity is nowhere near enough to carry the
++            # demand share of an entire PyPSA-Eur cluster node, which
++            # is what caused the original infeasibility.
++            # STOPGAP, not final methodology: the transformer is made
++            # extendable here (reusing the existing "electricity
++            # distribution grid" cost entry as a placeholder
++            # reinforcement cost) purely so the model can solve at all
++            # instead of crashing on infeasibility whenever the fixed
++            # today-sized transformer can't cover a 2030 electrified
++            # demand block. This lets reinforcement happen at a cost
++            # instead of being impossible -- but the placeholder cost
++            # has not been validated against real LV transformer
++            # upgrade costs. Before drawing any thesis conclusions from
++            # capacity-expansion results, replace capital_cost below
++            # with a properly sourced distribution-grid reinforcement
++            # cost (see conversation), and decide deliberately whether
++            # feeder cables (still fixed/non-extendable below) should
++            # get the same treatment.
++            n.add(
++                "Link",
++                f"{prefix} trafo",
++                bus0=node,
++                bus1=hv_name,
++                p_nom=float(arche_trafo["s_nom_mva"]) * scale_factor,
++                p_nom_extendable=True,
++                # Bounded rather than left at the PyPSA default of
++                # infinity: an unbounded extendable variable gets
++                # substituted with an arbitrary ~1e9 numerical bound by
++                # the solver, which badly scales the problem against
++                # this model's much smaller natural magnitudes (demand
++                # in single-digit MW) and can cause the barrier method
++                # to report spurious numerical infeasibility. 10x the
++                # already-scaled rating is generous headroom without
++                # reintroducing that problem.
++                p_nom_max=float(arche_trafo["s_nom_mva"]) * scale_factor * 10,
++                p_min_pu=-1,
++                efficiency=1,
++                carrier="distribution feeder trafo",
++                capital_cost=costs.at["electricity distribution grid", "capital_cost"],
++            )
++
++            # STOPGAP, matching the transformer above: cables are made
++            # extendable too, since the uniform scale_factor applied to
++            # every cable doesn't reflect real feeders' non-uniform
++            # sizing (trunk cables near the transformer naturally carry
++            # more current in reality and are sized thicker than leaf
++            # cables). With a single uniform SimBench feeder scaled by
++            # one factor, a trunk cable can end up under-sized even
++            # after scaling, purely as an artifact of this
++            # simplification -- not necessarily a genuine finding about
++            # real distribution-grid capacity. Revisit before drawing
++            # thesis conclusions: e.g. size scale_factor per-cable based
++            # on downstream demand share, or treat trunk-cable
++            # reinforcement as a deliberate, costed methodology choice
++            # rather than free capacity.
++            n.add(
++                "Link",
++                [f"{prefix} line {i}" for i in arche_lines.index],
++                bus0=arche_lines["from_bus"].map(local_to_global).values,
++                bus1=arche_lines["to_bus"].map(local_to_global).values,
++                p_nom=arche_lines["s_nom_mva"].values * scale_factor,
++                p_nom_extendable=True,
++                # Same numerical-bounding rationale as the transformer
++                # above.
++                p_nom_max=arche_lines["s_nom_mva"].values * scale_factor * 10,
++                p_min_pu=-1,
++                efficiency=1,
++                carrier="distribution feeder cable",
++                capital_cost=costs.at["electricity distribution grid", "capital_cost"],
++            )
++
++            for local_bus, share in arche_shares.items():
++                shares[local_to_global[local_bus]] = share / n_replicas
++
++        node_feeder_shares[node] = pd.Series(shares)
++
++    logger.info(
++        "Inserted archetype-resolved distribution feeders for %d nodes (archetypes: %s)",
++        len(nodes),
++        node_archetypes["archetype"].value_counts().to_dict(),
++    )
++
++    # deduct distribution losses from electricity demand, as in the
++    # original function, before splitting demand across feeder buses
++    if (
++        efficiency := options["transmission_efficiency"]
++        .get("electricity distribution grid", {})
++        .get("efficiency_static")
++    ) and "electricity distribution grid" in options["transmission_efficiency"][
++        "enable"
++    ]:
++        logger.info(
++            f"Deducting distribution losses from electricity demand: {np.around(100 * (1 - efficiency), decimals=2)}%"
++        )
++        n.loads_t.p_set.loc[:, n.loads.carrier == "electricity"] *= efficiency
++
++    # this catches regular electricity load and "industry electricity" and
++    # "agriculture machinery electric" and "agriculture electricity"
++    loads = n.loads.index[n.loads.carrier.str.contains("electric")]
++    _split_across_feeder_buses(n, loads, "Load", "bus", node_feeder_shares)
++
++    bevs = n.links.index[n.links.carrier == "BEV charger"]
++    _split_across_feeder_buses(n, bevs, "Link", "bus0", node_feeder_shares)
++
++    v2gs = n.links.index[n.links.carrier == "V2G"]
++    _split_across_feeder_buses(n, v2gs, "Link", "bus1", node_feeder_shares)
++
++    hps = n.links.index[n.links.carrier.str.contains("heat pump")]
++    _split_across_feeder_buses(n, hps, "Link", "bus1", node_feeder_shares)
++
++    rh = n.links.index[n.links.carrier.str.contains("resistive heater")]
++    _split_across_feeder_buses(n, rh, "Link", "bus0", node_feeder_shares)
++
++    mchp = n.links.index[n.links.carrier.str.contains("micro gas")]
++    _split_across_feeder_buses(n, mchp, "Link", "bus1", node_feeder_shares)
++
++    # set existing solar to cost of utility cost rather the 50-50 rooftop-utility
++    solar = n.generators.index[n.generators.carrier == "solar"]
++    n.generators.loc[solar, "capital_cost"] = costs.at["solar-utility", "capital_cost"]
++
++    fn = solar_rooftop_potentials_fn
++    if len(fn) > 0:
++        potential = pd.read_csv(fn, index_col=["bus", "bin"]).squeeze(axis=1)
++        potential.index = potential.index.map(flatten) + " solar"
++
++        # rooftop potential is attached per feeder bus, split by the
++        # same load-share weighting as demand -- a simplification
++        # (rooftop area doesn't necessarily track load share) worth
++        # revisiting if solar siting effects turn out to matter for
++        # your results.
++        #
++        # Batched per gen (one n.add() call for all of that gen's
++        # feeder buses at once) rather than one n.add() call per
++        # feeder bus -- same one-at-a-time performance problem as the
++        # home battery block above, just without the Store warning.
++        for gen in solar:
++            node = n.generators.at[gen, "bus"]
++            if node not in node_feeder_shares:
++                continue
++            shares = node_feeder_shares[node]
++            gen_buses = list(shares.index)
++            new_names = [f"{gen} rooftop @ {b}" for b in gen_buses]
++            p_nom_max = [potential.get(gen, 0.0) * share for share in shares.values]
++            p_max_pu_profile = n.generators_t.p_max_pu[gen]
++            p_max_pu_df = pd.DataFrame(
++                {name: p_max_pu_profile for name in new_names},
++                index=p_max_pu_profile.index,
++            )
++            n.add(
++                "Generator",
++                new_names,
++                bus=gen_buses,
++                carrier="solar rooftop",
++                p_nom_extendable=True,
++                p_nom_max=p_nom_max,
++                marginal_cost=n.generators.at[gen, "marginal_cost"],
++                capital_cost=costs.at["solar-rooftop", "capital_cost"],
++                efficiency=n.generators.at[gen, "efficiency"],
++                p_max_pu=p_max_pu_df,
++                lifetime=costs.at["solar-rooftop", "lifetime"],
++            )
++
++    # home battery: one storage system per feeder bus rather than per
++    # node -- sizing remains a free (extendable) decision for the
++    # optimizer, so no share-based scaling is needed here, unlike the
++    # load/DER splitting above.
++    #
++    # Built as one vectorised n.add() call per component type across
++    # ALL feeder buses, rather than a Python loop calling n.add() once
++    # per bus: with hundreds of feeder buses (many nodes x several
++    # replicas x ~15 buses each), one-at-a-time addition is both slow
++    # (each call has fixed overhead) and floods the log with the
++    # harmless-but-noisy "location is not a standard attribute for
++    # stores" warning once per Store -- dropping `location` from the
++    # Store call (it's informational only, not used by the optimizer)
++    # removes that warning entirely, matching PyPSA's own guidance.
++    all_buses = [
++        global_bus for shares in node_feeder_shares.values() for global_bus in shares.index
++    ]
++    all_nodes = [
++        node
++        for node, shares in node_feeder_shares.items()
++        for _ in shares.index
++    ]
++    battery_buses = [f"{b} home battery" for b in all_buses]
++
++    n.add(
++        "Bus",
++        battery_buses,
++        location=all_nodes,
++        carrier="home battery",
++        unit="MWh_el",
++    )
++    n.add(
++        "Store",
++        battery_buses,
++        bus=battery_buses,
++        e_cyclic=True,
++        e_nom_extendable=True,
++        carrier="home battery",
++        capital_cost=costs.at["home battery storage", "capital_cost"],
++        lifetime=costs.at["battery storage", "lifetime"],
++    )
++    n.add(
++        "Link",
++        [f"{b} home battery charger" for b in all_buses],
++        bus0=all_buses,
++        bus1=battery_buses,
++        carrier="home battery charger",
++        efficiency=costs.at["battery inverter", "efficiency"] ** 0.5,
++        capital_cost=costs.at["home battery inverter", "capital_cost"],
++        p_nom_extendable=True,
++        lifetime=costs.at["battery inverter", "lifetime"],
++    )
++    n.add(
++        "Link",
++        [f"{b} home battery discharger" for b in all_buses],
++        bus0=battery_buses,
++        bus1=all_buses,
++        carrier="home battery discharger",
++        efficiency=costs.at["battery inverter", "efficiency"] ** 0.5,
++        marginal_cost=costs.at["home battery storage", "marginal_cost"],
++        p_nom_extendable=True,
++        lifetime=costs.at["battery inverter", "lifetime"],
++    )
++
++
+ def insert_gas_distribution_costs(
+     n: pypsa.Network,
+     costs: pd.DataFrame,
+@@ -6691,9 +7117,23 @@ if __name__ == "__main__":
+         limit_individual_line_extension(n, maxext)
+ 
+     if options["electricity_distribution_grid"]:
+-        insert_electricity_distribution_grid(
+-            n, costs, options, pop_layout, snakemake.input.solar_rooftop_potentials
+-        )
++        if options.get("electricity_distribution_grid_detailed", False):
++            insert_electricity_distribution_grid_detailed(
++                n,
++                costs,
++                options,
++                pop_layout,
++                snakemake.input.solar_rooftop_potentials,
++                snakemake.input.node_archetypes,
++                snakemake.input.feeder_buses,
++                snakemake.input.feeder_lines,
++                snakemake.input.feeder_trafos,
++                snakemake.input.feeder_load_shares,
++            )
++        else:
++            insert_electricity_distribution_grid(
++                n, costs, options, pop_layout, snakemake.input.solar_rooftop_potentials
++            )
+ 
+     if options["enhanced_geothermal"].get("enable", False):
+         logger.info("Adding Enhanced Geothermal Systems (EGS).")
+diff --git a/scripts/solve_network.py b/scripts/solve_network.py
+index 48471bd..9f35f62 100644
+--- a/scripts/solve_network.py
++++ b/scripts/solve_network.py
+@@ -30,6 +30,7 @@ import os
+ import re
+ import sys
+ from functools import partial
++from pathlib import Path
+ from typing import Any
+ 
+ import linopy
+@@ -1604,7 +1605,20 @@ if __name__ == "__main__":
+     ]:
+         labels = n.model.compute_infeasibilities()
+         logger.info(f"Labels:\n{labels}")
+-        n.model.print_infeasibilities()
++        # print_infeasibilities()/format_infeasibilities() include unicode
++        # comparison symbols (<=, >=) that crash on Windows' default
++        # console codepage (cp1252) via UnicodeEncodeError, silently
++        # hiding the actual constraint list before it's ever shown.
++        # Writing it to a UTF-8 file instead sidesteps the console
++        # encoding entirely and keeps a permanent copy alongside the
++        # solver log.
++        report = n.model.format_infeasibilities()
++        infeasibility_fn = Path(snakemake.log.solver).with_name(
++            Path(snakemake.log.solver).stem.replace("_solver", "")
++            + "_infeasibilities.txt"
++        )
++        infeasibility_fn.write_text(report, encoding="utf-8")
++        logger.info(f"Wrote infeasibility report to {infeasibility_fn}")
+         raise RuntimeError("Solving status 'infeasible'. Infeasibilities computed.")
+ 
+     if status == SolverStatus.warning:

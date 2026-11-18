@@ -17,6 +17,9 @@ dependencies:
 - folium >=0.20.0
 - geojson >=3.2.0
 - geopandas >=1
+- pandapower >=2.14
+- pip:
+  - simbench >=1.5.3
 - geopy >=2.4.1
 - glpk >=5.0
 - graphviz >=12.2.1

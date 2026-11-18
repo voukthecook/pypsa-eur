@@ -4886,6 +4886,21 @@
           "description": "Multiplies the investment cost of the electricity distribution grid.",
           "type": "number"
         },
+        "electricity_distribution_grid_split_lv_heat": {
+          "additionalProperties": true,
+          "description": "Split decentralized heat systems across the two low-voltage bus halves when electricity_distribution_grid_split_lv is enabled. Demand shares are specified per heat system; technology capacity shares default to the matching demand share.",
+          "type": "object"
+        },
+        "electricity_distribution_grid_split_lv_ev": {
+          "additionalProperties": true,
+          "description": "Split the EV bus, demand, stores, chargers, and V2G links across the two low-voltage bus halves. EV capacity scaling defaults to ev_scaling; null EV charger, V2G, or store scaling follows ev_scaling.",
+          "type": "object"
+        },
+        "lv_split_profiles": {
+          "additionalProperties": true,
+          "description": "Mutually exclusive urban/suburban/rural low-voltage profile split. `shares` allocates demand and non-PV LV assets, `pv_shares` allocates rooftop PV capacity, and `heat_shares` / `ev_shares` can override the general shares for heat systems and EV components. Each share mapping sums to 1.",
+          "type": "object"
+        },
         "electricity_grid_connection": {
           "default": true,
           "description": "Add the cost of electricity grid connection for onshore wind and solar.",
@@ -11377,6 +11392,21 @@
           "default": 1.0,
           "description": "Multiplies the investment cost of the electricity distribution grid.",
           "type": "number"
+        },
+        "electricity_distribution_grid_split_lv_heat": {
+          "additionalProperties": true,
+          "description": "Split decentralized heat systems across the two low-voltage bus halves when electricity_distribution_grid_split_lv is enabled. Demand shares are specified per heat system; technology capacity shares default to the matching demand share.",
+          "type": "object"
+        },
+        "electricity_distribution_grid_split_lv_ev": {
+          "additionalProperties": true,
+          "description": "Split the EV bus, demand, stores, chargers, and V2G links across the two low-voltage bus halves. EV capacity scaling defaults to ev_scaling; null EV charger, V2G, or store scaling follows ev_scaling.",
+          "type": "object"
+        },
+        "lv_split_profiles": {
+          "additionalProperties": true,
+          "description": "Mutually exclusive urban/suburban/rural low-voltage profile split. `shares` allocates demand and non-PV LV assets, `pv_shares` allocates rooftop PV capacity, and `heat_shares` / `ev_shares` can override the general shares for heat systems and EV components. Each share mapping sums to 1.",
+          "type": "object"
         },
         "electricity_grid_connection": {
           "default": true,

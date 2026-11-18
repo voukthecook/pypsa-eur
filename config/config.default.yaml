@@ -911,6 +911,29 @@ sector:
   electricity_transmission_grid: true
   electricity_distribution_grid: true
   electricity_distribution_grid_cost_factor: 1.0
+  electricity_distribution_grid_split_lv_heat:
+    enable: true
+    demand_share_a:
+      residential rural: 0.5
+      services rural: 0.5
+      residential urban decentral: 0.5
+      services urban decentral: 0.5
+    demand_scale:
+      a: 1.0
+      b: 1.0
+    capacity_share_a: {}
+    allow_tech: {}
+    cop_scale:
+      a: 1.0
+      b: 1.0
+  electricity_distribution_grid_split_lv_ev:
+    enable: true
+    ev_scaling:
+    - 1.0
+    - 1.0
+    ev_charger_scaling:
+    ev_v2g_scaling:
+    ev_store_scaling:
   electricity_grid_connection: true
   transmission_efficiency:
     enable:

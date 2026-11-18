@@ -1,0 +1,34 @@
+diff --git a/scripts/solve_network.py b/scripts/solve_network.py
+index 48471bd..9f35f62 100644
+--- a/scripts/solve_network.py
++++ b/scripts/solve_network.py
+@@ -30,6 +30,7 @@ import os
+ import re
+ import sys
+ from functools import partial
++from pathlib import Path
+ from typing import Any
+ 
+ import linopy
+@@ -1604,7 +1605,20 @@ if __name__ == "__main__":
+     ]:
+         labels = n.model.compute_infeasibilities()
+         logger.info(f"Labels:\n{labels}")
+-        n.model.print_infeasibilities()
++        # print_infeasibilities()/format_infeasibilities() include unicode
++        # comparison symbols (<=, >=) that crash on Windows' default
++        # console codepage (cp1252) via UnicodeEncodeError, silently
++        # hiding the actual constraint list before it's ever shown.
++        # Writing it to a UTF-8 file instead sidesteps the console
++        # encoding entirely and keeps a permanent copy alongside the
++        # solver log.
++        report = n.model.format_infeasibilities()
++        infeasibility_fn = Path(snakemake.log.solver).with_name(
++            Path(snakemake.log.solver).stem.replace("_solver", "")
++            + "_infeasibilities.txt"
++        )
++        infeasibility_fn.write_text(report, encoding="utf-8")
++        logger.info(f"Wrote infeasibility report to {infeasibility_fn}")
+         raise RuntimeError("Solving status 'infeasible'. Infeasibilities computed.")
+ 
+     if status == SolverStatus.warning:

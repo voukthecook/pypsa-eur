@@ -53,6 +53,26 @@ def build_nodal_industrial_energy_demand():
     keys = pd.read_csv(fn, index_col=0)
     keys["country"] = keys.index.str[:2]
 
+    # Some sector-mapping targets (e.g. "Non-ferrous metals") may have no
+    # entry at all in the distribution key if none of the selected
+    # countries have a registered facility for that subsector in the
+    # Hotmaps database -- this is common for small/single-country runs.
+    # Fill any missing target column with 0 so lookups below don't raise
+    # a KeyError; this just means that subsector's demand isn't
+    # geographically distributed for the missing countries, which is a
+    # reasonable default rather than a crash.
+    expected_columns = set(sector_mapping.values()) | {"population"}
+    missing_columns = expected_columns - set(keys.columns)
+    if missing_columns:
+        logger.warning(
+            "Industrial distribution key is missing columns %s "
+            "(no facilities of that type in the selected countries) -- "
+            "filling with 0.",
+            sorted(missing_columns),
+        )
+        for col in missing_columns:
+            keys[col] = 0.0
+
     nodal_demand = pd.DataFrame(
         0.0, dtype=float, index=keys.index, columns=industrial_demand.index
     )

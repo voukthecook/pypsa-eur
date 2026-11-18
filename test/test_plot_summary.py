@@ -7,6 +7,7 @@ Tests for scripts/plot_summary.py color matching and tech renaming.
 
 import pytest
 
+from scripts.plot_balance_map import create_missing_carrier_placeholder
 from scripts.plot_summary import check_tech_colors
 
 
@@ -24,3 +25,15 @@ def test_check_tech_colors_missing_raises():
     with pytest.raises(KeyError) as excinfo:
         check_tech_colors(tech_colors, keys)
     assert "unknown_carrier" in str(excinfo.value)
+
+
+def test_create_missing_carrier_placeholder(tmp_path):
+    """Verify a missing map carrier creates a valid placeholder output instead of failing."""
+    pdf_path = tmp_path / "balance_map_missing.pdf"
+    html_path = tmp_path / "balance_map_missing.html"
+
+    create_missing_carrier_placeholder(pdf_path)
+    create_missing_carrier_placeholder(html_path)
+
+    assert pdf_path.exists() and pdf_path.stat().st_size > 0
+    assert html_path.exists() and html_path.stat().st_size > 0

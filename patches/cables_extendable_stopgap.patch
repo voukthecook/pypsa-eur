@@ -1,0 +1,64 @@
+diff --git a/scripts/prepare_sector_network.py b/scripts/prepare_sector_network.py
+index ed66c71..b2b83bb 100644
+--- a/scripts/prepare_sector_network.py
++++ b/scripts/prepare_sector_network.py
+@@ -1863,14 +1863,17 @@ def insert_electricity_distribution_grid_detailed(
+       - Feeder cables and the MV/LV transformer are inserted as
+         capacity-limited Links (p_min_pu=-1), not impedance-carrying
+         Lines -- no voltage-drop or reactive-power physics is added.
+-      - Their capacities START at the SimBench rating; the feeder
+-        cables are FIXED (p_nom_extendable=False), but the transformer
+-        is currently extendable at a STOPGAP placeholder cost (see
+-        inline comment at its creation) so the model can solve instead
+-        of crashing when a today-sized transformer can't cover a 2030
+-        electrified demand block -- replace with a properly sourced
+-        reinforcement cost before drawing thesis conclusions from any
+-        capacity-expansion results.
++      - Their capacities START at the SimBench rating; BOTH the
++        transformer and the feeder cables are currently extendable at
++        a STOPGAP placeholder cost (see inline comments at their
++        creation) so the model can solve instead of crashing when
++        fixed today-sized infrastructure can't cover a 2030
++        electrified demand block, or when uniform scale_factor leaves
++        a trunk cable under-sized relative to real (non-uniform)
++        feeder design -- replace with properly sourced reinforcement
++        costs, and reconsider the scale_factor approach itself, before
++        drawing thesis conclusions from any capacity-expansion
++        results.
+       - Loads and DERs that the original function pointed at one
+         shared low-voltage bus are instead split, proportionally to
+         each feeder bus's share of the archetype's peak demand, across
+@@ -1977,17 +1980,31 @@ def insert_electricity_distribution_grid_detailed(
+                 capital_cost=costs.at["electricity distribution grid", "capital_cost"],
+             )
+ 
++            # STOPGAP, matching the transformer above: cables are made
++            # extendable too, since the uniform scale_factor applied to
++            # every cable doesn't reflect real feeders' non-uniform
++            # sizing (trunk cables near the transformer naturally carry
++            # more current in reality and are sized thicker than leaf
++            # cables). With a single uniform SimBench feeder scaled by
++            # one factor, a trunk cable can end up under-sized even
++            # after scaling, purely as an artifact of this
++            # simplification -- not necessarily a genuine finding about
++            # real distribution-grid capacity. Revisit before drawing
++            # thesis conclusions: e.g. size scale_factor per-cable based
++            # on downstream demand share, or treat trunk-cable
++            # reinforcement as a deliberate, costed methodology choice
++            # rather than free capacity.
+             n.add(
+                 "Link",
+                 [f"{prefix} line {i}" for i in arche_lines.index],
+                 bus0=arche_lines["from_bus"].map(local_to_global).values,
+                 bus1=arche_lines["to_bus"].map(local_to_global).values,
+                 p_nom=arche_lines["s_nom_mva"].values * scale_factor,
+-                p_nom_extendable=False,
++                p_nom_extendable=True,
+                 p_min_pu=-1,
+                 efficiency=1,
+                 carrier="distribution feeder cable",
+-                capital_cost=0,
++                capital_cost=costs.at["electricity distribution grid", "capital_cost"],
+             )
+ 
+             for local_bus, share in arche_shares.items():

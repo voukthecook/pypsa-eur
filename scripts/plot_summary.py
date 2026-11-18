@@ -6,6 +6,7 @@ Creates plots from summary CSV files.
 """
 
 import logging
+from pathlib import Path
 
 import matplotlib.gridspec as gridspec
 import matplotlib.pyplot as plt
@@ -98,6 +99,15 @@ def plot_costs():
     new_index = preferred_order.intersection(df.index).append(
         df.index.difference(preferred_order)
     )
+
+    if new_index.empty:
+        fig, ax = plt.subplots(figsize=(12, 8))
+        ax.set_ylim([0, snakemake.params.plotting["costs_max"]])
+        ax.set_ylabel("System Cost [EUR billion per year]")
+        ax.set_xlabel("")
+        fig.savefig(snakemake.output.costs, bbox_inches="tight")
+        plt.close(fig)
+        return
 
     # new_columns = df.sum().sort_values().index
 
@@ -289,6 +299,11 @@ def plot_balances():
         fig.savefig(
             snakemake.output.balances[:-10] + bus_carrier + ".pdf", bbox_inches="tight"
         )
+        plt.close(fig)
+
+    if not Path(snakemake.output.balances).exists():
+        fig, ax = plt.subplots(figsize=(12, 8))
+        fig.savefig(snakemake.output.balances, bbox_inches="tight")
         plt.close(fig)
 
 

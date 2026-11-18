@@ -5,6 +5,9 @@
 Create static energy balance maps for the defined carriers using`n.plot()`.
 """
 
+import logging
+from pathlib import Path
+
 import geopandas as gpd
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -23,6 +26,27 @@ from scripts.add_electricity import sanitize_carriers
 from scripts.plot_power_network import load_projection
 
 SEMICIRCLE_CORRECTION_FACTOR = 2 if parse(pypsa.__version__) <= Version("0.33.2") else 1
+logger = logging.getLogger(__name__)
+
+
+def create_missing_carrier_placeholder(path):
+    """Create a placeholder output for carriers not present in the network."""
+    output_path = Path(path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    if output_path.suffix.lower() == ".html":
+        output_path.write_text(
+            "<!doctype html><html><body><p>Carrier not present in the modeled network; plot skipped.</p></body></html>",
+            encoding="utf-8",
+        )
+        return
+
+    fig, ax = plt.subplots(figsize=(5, 6.5))
+    ax.text(0.5, 0.5, "Carrier not present in the network\nPlot skipped", ha="center", va="center")
+    ax.set_axis_off()
+    fig.savefig(output_path, bbox_inches="tight")
+    plt.close(fig)
+
 
 if __name__ == "__main__":
     if "snakemake" not in globals():
@@ -69,9 +93,12 @@ if __name__ == "__main__":
     branch_color = settings.get("branch_color") or "darkseagreen"
 
     if carrier not in n.buses.carrier.unique():
-        raise ValueError(
-            f"Carrier {carrier} is not in the network. Remove from configuration `plotting: balance_map: bus_carriers`."
+        logger.warning(
+            "Carrier %s is not in the network. Creating a placeholder output and skipping the plot.",
+            carrier,
         )
+        create_missing_carrier_placeholder(snakemake.output[0])
+        raise SystemExit(0)
 
     # for plotting change bus to location
     n.buses["location"] = n.buses["location"].replace("", "EU").fillna("EU")
@@ -112,7 +139,11 @@ if __name__ == "__main__":
     # only carriers that are also in the energy balance
     carriers_in_eb = carriers[carriers.isin(eb.index.get_level_values("carrier"))]
 
-    eb.loc[components] = eb.loc[components].drop(index=carriers_in_eb, level="carrier")
+    components = components[components.isin(eb.index.get_level_values("component"))]
+    if len(components) > 0:
+        eb.loc[components] = eb.loc[components].drop(
+        index=carriers_in_eb, level="carrier"
+        )
     eb = eb.dropna()
     bus_size = eb.groupby(level=["bus", "carrier"]).sum().div(unit_conversion)
     bus_size = bus_size.sort_values(ascending=False)

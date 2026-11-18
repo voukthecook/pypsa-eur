@@ -1,0 +1,31 @@
+diff --git a/scripts/prepare_sector_network.py b/scripts/prepare_sector_network.py
+index b2b83bb..08b8960 100644
+--- a/scripts/prepare_sector_network.py
++++ b/scripts/prepare_sector_network.py
+@@ -1974,6 +1974,16 @@ def insert_electricity_distribution_grid_detailed(
+                 bus1=hv_name,
+                 p_nom=float(arche_trafo["s_nom_mva"]) * scale_factor,
+                 p_nom_extendable=True,
++                # Bounded rather than left at the PyPSA default of
++                # infinity: an unbounded extendable variable gets
++                # substituted with an arbitrary ~1e9 numerical bound by
++                # the solver, which badly scales the problem against
++                # this model's much smaller natural magnitudes (demand
++                # in single-digit MW) and can cause the barrier method
++                # to report spurious numerical infeasibility. 10x the
++                # already-scaled rating is generous headroom without
++                # reintroducing that problem.
++                p_nom_max=float(arche_trafo["s_nom_mva"]) * scale_factor * 10,
+                 p_min_pu=-1,
+                 efficiency=1,
+                 carrier="distribution feeder trafo",
+@@ -2001,6 +2011,9 @@ def insert_electricity_distribution_grid_detailed(
+                 bus1=arche_lines["to_bus"].map(local_to_global).values,
+                 p_nom=arche_lines["s_nom_mva"].values * scale_factor,
+                 p_nom_extendable=True,
++                # Same numerical-bounding rationale as the transformer
++                # above.
++                p_nom_max=arche_lines["s_nom_mva"].values * scale_factor * 10,
+                 p_min_pu=-1,
+                 efficiency=1,
+                 carrier="distribution feeder cable",

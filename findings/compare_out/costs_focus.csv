@@ -1,0 +1,8 @@
+group,base_s_3_lv1.2_Co2L0-3H_2030 total,delta total
+EV (charger/V2G/battery),48936.42637561244,0.0
+distribution grid,510163424.4038205,0.0
+heat storage,10471984.155757278,0.0
+heating,2119393274.9526367,0.0
+home battery,221154263.62419412,0.0
+other,6187764226.940688,0.0
+rooftop PV,693588336.3961244,0.0

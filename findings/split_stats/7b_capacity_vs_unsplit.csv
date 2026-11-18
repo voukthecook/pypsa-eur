@@ -1,0 +1,78 @@
+,,unsplit,split,diff_%,diff_abs
+stores,oil,105.27,44.339,-57.88,-60.93
+stores,gas,3573521.358,3573510.887,-0.0,-10.471
+stores,ammonia store,18.912,9.615,-49.159,-9.297
+stores,urban central water pits,109313.583,109321.065,0.007,7.482
+generators,rural heat vent,6.63,13.306,100.699,6.676
+stores,H2 Store,6.468,2.369,-63.372,-4.099
+stores,co2 stored,5.712,2.33,-59.2,-3.381
+generators,urban decentral heat vent,6.845,9.931,45.078,3.086
+stores,battery,35864.292,35866.484,0.006,2.192
+generators,urban central heat vent,58.249,56.696,-2.667,-1.553
+generators,solar-hsat,1060.326,1061.776,0.137,1.45
+stores,urban central water tanks,17.823,19.228,7.883,1.405
+links,urban central gas CHP,1318.173,1318.653,0.036,0.479
+links,urban central gas CHP CC,3659.756,3659.307,-0.012,-0.448
+links,urban central resistive heater,3730.227,3730.627,0.011,0.4
+links,rural water tanks discharger,1.718,2.068,20.332,0.349
+links,rural water tanks charger,1.718,2.068,20.332,0.349
+links,urban central water pits charger,4858.381,4858.714,0.007,0.333
+links,urban central water pits discharger,4858.381,4858.714,0.007,0.333
+links,urban central air heat pump,481.833,482.161,0.068,0.328
+links,gas pipeline new,0.453,0.171,-62.316,-0.282
+links,urban decentral water tanks charger,1.432,1.672,16.744,0.24
+links,urban decentral water tanks discharger,1.432,1.672,16.744,0.24
+links,rural air heat pump,0.282,0.499,77.235,0.218
+links,electricity distribution grid,16156.439,16156.64,0.001,0.201
+links,rural gas boiler,961.661,961.477,-0.019,-0.183
+links,H2 pipeline,0.326,0.147,-54.897,-0.179
+links,battery discharger,4151.205,4151.311,0.003,0.106
+links,urban decentral air heat pump,4307.01,4306.904,-0.002,-0.106
+links,battery charger,4067.333,4067.438,0.003,0.104
+links,urban decentral resistive heater,5833.922,5834.01,0.002,0.088
+stores,rural water tanks,0.258,0.31,20.332,0.052
+links,OCGT,0.085,0.038,-55.26,-0.047
+links,H2 turbine,0.08,0.034,-57.92,-0.047
+links,rural resistive heater,1369.555,1369.51,-0.003,-0.045
+links,urban central gas boiler,364.66,364.62,-0.011,-0.039
+stores,urban decentral water tanks,0.215,0.251,16.744,0.036
+generators,oil primary,11912.725,11912.697,-0.0,-0.028
+generators,onwind,6670.389,6670.361,-0.0,-0.027
+links,urban central water tanks charger,0.295,0.319,7.883,0.023
+links,urban central water tanks discharger,0.295,0.319,7.883,0.023
+generators,urban central solar thermal,0.057,0.078,36.069,0.021
+links,home battery discharger,2576.379,2576.359,-0.001,-0.02
+stores,home battery,15179.747,15179.767,0.0,0.02
+links,home battery charger,2524.326,2524.306,-0.001,-0.02
+links,OCGT methanol,0.036,0.016,-55.897,-0.02
+stores,methanol,0.027,0.011,-59.918,-0.016
+links,urban decentral gas boiler,5993.023,5993.039,0.0,0.016
+generators,solar,11358.708,11358.722,0.0,0.014
+links,rural ground heat pump,1028.395,1028.382,-0.001,-0.014
+links,CCGT,0.027,0.014,-49.274,-0.013
+generators,rural solar thermal,0.024,0.033,36.448,0.009
+generators,solar rooftop,15861.559,15861.551,-0.0,-0.009
+links,ammonia cracker,0.019,0.011,-43.669,-0.008
+links,SMR,0.015,0.007,-51.348,-0.008
+generators,urban decentral solar thermal,0.024,0.031,31.384,0.007
+links,SMR CC,0.028,0.022,-23.229,-0.007
+generators,offwind-dc,0.014,0.008,-40.989,-0.006
+links,H2 Electrolysis,0.011,0.016,48.331,0.005
+generators,offwind-ac,0.009,0.004,-55.467,-0.005
+generators,offwind-float,0.008,0.004,-55.055,-0.005
+links,H2 Fuel Cell,0.018,0.022,21.36,0.004
+links,CO2 pipeline,145.775,145.777,0.002,0.003
+links,Sabatier,0.012,0.014,14.468,0.002
+links,DAC,909.133,909.131,-0.0,-0.002
+links,Haber-Bosch,0.003,0.003,18.169,0.001
+generators,gas,16944.492,16944.492,0.0,0.0
+generators,ror,29.3,29.3,0.0,0.0
+links,land transport oil,11321.59,11321.59,0.0,0.0
+links,gas pipeline,9000.0,9000.0,0.0,0.0
+links,V2G,6465.535,6465.535,0.0,0.0
+links,BEV charger,12931.07,12931.07,0.0,0.0
+links,oil refining,1000000.0,1000000.0,0.0,0.0
+stores,co2 sequestered,40062963.598,40062963.598,0.0,0.0
+stores,EV battery,29388.795,29388.795,0.0,0.0
+links,co2 sequestered,inf,inf,,
+stores,co2,inf,inf,,

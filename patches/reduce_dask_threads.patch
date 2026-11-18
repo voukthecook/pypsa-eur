@@ -1,0 +1,31 @@
+diff --git a/rules/build_sector.smk b/rules/build_sector.smk
+index 4a64d82..22c7a9a 100644
+--- a/rules/build_sector.smk
++++ b/rules/build_sector.smk
+@@ -206,7 +206,7 @@ rule build_daily_heat_demand:
+         logs("build_daily_heat_demand_total_s_{clusters}.log"),
+     benchmark:
+         benchmarks("build_daily_heat_demand/total_s_{clusters}")
+-    threads: 8
++    threads: 2
+     resources:
+         mem_mb=20000,
+     params:
+@@ -258,7 +258,7 @@ rule build_temperature_profiles:
+         logs("build_temperature_profiles_total_s_{clusters}.log"),
+     benchmark:
+         benchmarks("build_temperature_profiles/total_{clusters}")
+-    threads: 8
++    threads: 2
+     resources:
+         mem_mb=20000,
+     params:
+@@ -814,7 +814,7 @@ rule build_solar_thermal_profiles:
+         logs("build_solar_thermal_profiles_total_s_{clusters}.log"),
+     benchmark:
+         benchmarks("build_solar_thermal_profiles/total_{clusters}")
+-    threads: 16
++    threads: 2
+     resources:
+         mem_mb=20000,
+     params:

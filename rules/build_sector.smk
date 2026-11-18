@@ -64,6 +64,53 @@ rule build_clustered_solar_rooftop_potentials:
     script:
         scripts("build_clustered_solar_rooftop_potentials.py")
 
+rule build_representative_feeder_library:
+    output:
+        feeder_buses=resources("representative_feeder_buses.csv"),
+        feeder_lines=resources("representative_feeder_lines.csv"),
+        feeder_trafos=resources("representative_feeder_trafos.csv"),
+        feeder_load_shares=resources("representative_feeder_load_shares.csv"),
+    log:
+        logs("build_representative_feeder_library.log"),
+    benchmark:
+        benchmarks("build_representative_feeder_library")
+    resources:
+        mem_mb=2000,
+    message:
+        "Building representative SimBench LV feeder library (rural/semi-urban/urban)"
+    script:
+        scripts("build_representative_feeder_library.py")
+
+
+rule build_distribution_grid_archetypes:
+    input:
+        clustered_pop_layout=resources("pop_layout_base_s_{clusters}.csv"),
+        regions_onshore=resources("regions_onshore_base_s_{clusters}.geojson"),
+        feeder_load_shares=resources("representative_feeder_load_shares.csv"),
+    params:
+        max_feeder_replicas=config_provider(
+            "sector", "electricity_distribution_grid_max_feeder_replicas"
+        ),
+        persons_per_household=config_provider(
+            "sector",
+            "electricity_distribution_grid_persons_per_household",
+            default=2.2,
+        ),
+    output:
+        node_archetypes=resources("distribution_grid_archetypes_s_{clusters}.csv"),
+    log:
+        logs("build_distribution_grid_archetypes_s_{clusters}.log"),
+    benchmark:
+        benchmarks("build_distribution_grid_archetypes/s_{clusters}")
+    resources:
+        mem_mb=4000,
+    message:
+        "Classifying nodes into distribution-grid archetypes for {wildcards.clusters} clusters"
+    script:
+        scripts("build_distribution_grid_archetypes.py")
+
+
+
 
 rule build_simplified_population_layouts:
     input:
@@ -211,7 +258,7 @@ rule build_temperature_profiles:
         logs("build_temperature_profiles_total_s_{clusters}.log"),
     benchmark:
         benchmarks("build_temperature_profiles/total_{clusters}")
-    threads: 8
+    threads: 2
     resources:
         mem_mb=20000,
     params:
@@ -767,7 +814,7 @@ rule build_solar_thermal_profiles:
         logs("build_solar_thermal_profiles_total_s_{clusters}.log"),
     benchmark:
         benchmarks("build_solar_thermal_profiles/total_{clusters}")
-    threads: 16
+    threads: 2
     resources:
         mem_mb=20000,
     params:
@@ -1699,6 +1746,41 @@ rule prepare_sector_network:
             if "solar" in config_provider("electricity", "renewable_carriers")(w)
             else []
         ),
+        node_archetypes=lambda w: (
+            resources("distribution_grid_archetypes_s_{clusters}.csv")
+            if config_provider(
+                "sector", "electricity_distribution_grid_detailed"
+            )(w)
+            else []
+        ),
+        feeder_buses=lambda w: (
+            resources("representative_feeder_buses.csv")
+            if config_provider(
+                "sector", "electricity_distribution_grid_detailed"
+            )(w)
+            else []
+        ),
+        feeder_lines=lambda w: (
+            resources("representative_feeder_lines.csv")
+            if config_provider(
+                "sector", "electricity_distribution_grid_detailed"
+            )(w)
+            else []
+        ),
+        feeder_trafos=lambda w: (
+            resources("representative_feeder_trafos.csv")
+            if config_provider(
+                "sector", "electricity_distribution_grid_detailed"
+            )(w)
+            else []
+        ),
+        feeder_load_shares=lambda w: (
+            resources("representative_feeder_load_shares.csv")
+            if config_provider(
+                "sector", "electricity_distribution_grid_detailed"
+            )(w)
+            else []
+        ),
         egs_potentials=lambda w: (
             resources("egs_potentials_{clusters}.csv")
             if config_provider("sector", "enhanced_geothermal", "enable")(w)
@@ -1745,6 +1827,9 @@ rule prepare_sector_network:
         ),
         foresight=config_provider("foresight"),
         sector=config_provider("sector"),
+        lv_split_profiles=config_provider(
+            "sector", "lv_split_profiles", default={"enable": False}
+        ),
         industry=config_provider("industry"),
         renewable=config_provider("renewable"),
         lines=config_provider("lines"),

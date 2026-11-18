@@ -1,0 +1,24 @@
+Config file config/config.default.yaml is extended by additional config specified via the command line.
+Config file config/plotting.default.yaml is extended by additional config specified via the command line.
+Config file config/config.yaml is extended by additional config specified via the command line.
+Assuming unrestricted shared filesystem usage.
+
+SNAKEMAKE
+=========
+  Date: 2026-10-06 17:12:13
+  Workflow ID: a6b0fbb5-30a6-4847-ac3c-cd9e431c795c
+  Platform: Windows-11-10.0.26100-SP0
+  Host: BabaYaga
+  User: nasos
+  Snakemake version: 9.27.0
+  Python version: 3.13.15 | packaged by conda-forge | (main, Aug 10 2026, 07:50:13) [MSC v.1944 64 bit (AMD64)]
+  Command: C:\Users\nasos\anaconda3\envs\pypsa-eur\Scripts\snakemake -call --configfile config/config.yaml -n --omit-from plot_balance_map_interactive
+  Snakefile: C:\Users\nasos\DTU\pypsa-eur\Snakefile
+  Base directory: C:\Users\nasos\DTU\pypsa-eur
+  Run directory: C:\Users\nasos\DTU\pypsa-eur
+  Working directory: C:\Users\nasos\DTU\pypsa-eur
+  Config file(s): [WindowsPath('C:/Users/nasos/DTU/pypsa-eur/config/config.yaml'), 'config/config.default.yaml', 'config/plotting.default.yaml', 'config/config.yaml']
+  Config MD5: bd443721850df53cc3a74528a54b2717
+
+Building DAG of jobs...
+Nothing to be done (all requested files are present and up to date).

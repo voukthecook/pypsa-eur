@@ -1,0 +1,176 @@
+diff --git a/config/config.default.yaml b/config/config.default.yaml
+index ac71ce9..7f676df 100644
+--- a/config/config.default.yaml
++++ b/config/config.default.yaml
+@@ -912,7 +912,9 @@ sector:
+   electricity_distribution_grid: true
+   electricity_distribution_grid_cost_factor: 1.0
+   electricity_distribution_grid_detailed: false
+-  electricity_distribution_grid_max_feeder_replicas: 8
++  electricity_distribution_grid_max_feeder_replicas: 8
++  electricity_distribution_grid_split_lv: false
++  electricity_distribution_grid_split_lv_solar_scaling: [1.0, 1.0]
+   electricity_grid_connection: true
+   transmission_efficiency:
+     enable:
+diff --git a/config/schema.default.json b/config/schema.default.json
+index e97d9e4..15c1559 100644
+--- a/config/schema.default.json
++++ b/config/schema.default.json
+@@ -4896,6 +4896,19 @@
+           "description": "Maximum number of parallel representative feeder copies inserted per node when electricity_distribution_grid_detailed is enabled.",
+           "type": "integer"
+         },
++        "electricity_distribution_grid_split_lv": {
++          "default": false,
++          "description": "Simple alternative to electricity_distribution_grid_detailed: splits each node's single low-voltage bus into two, evenly duplicating everything attached to it.",
++          "type": "boolean"
++        },
++        "electricity_distribution_grid_split_lv_solar_scaling": {
++          "default": [1.0, 1.0],
++          "description": "Per-bus multipliers applied to rooftop solar p_nom_max on each of the two split low-voltage buses when electricity_distribution_grid_split_lv is enabled.",
++          "type": "array",
++          "items": {"type": "number"},
++          "minItems": 2,
++          "maxItems": 2
++        },
+         "electricity_grid_connection": {
+           "default": true,
+           "description": "Add the cost of electricity grid connection for onshore wind and solar.",
+@@ -11398,6 +11411,19 @@
+           "description": "Maximum number of parallel representative feeder copies inserted per node when electricity_distribution_grid_detailed is enabled.",
+           "type": "integer"
+         },
++        "electricity_distribution_grid_split_lv": {
++          "default": false,
++          "description": "Simple alternative to electricity_distribution_grid_detailed: splits each node's single low-voltage bus into two, evenly duplicating everything attached to it.",
++          "type": "boolean"
++        },
++        "electricity_distribution_grid_split_lv_solar_scaling": {
++          "default": [1.0, 1.0],
++          "description": "Per-bus multipliers applied to rooftop solar p_nom_max on each of the two split low-voltage buses when electricity_distribution_grid_split_lv is enabled.",
++          "type": "array",
++          "items": {"type": "number"},
++          "minItems": 2,
++          "maxItems": 2
++        },
+         "electricity_grid_connection": {
+           "default": true,
+           "description": "Add the cost of electricity grid connection for onshore wind and solar.",
+diff --git a/scripts/prepare_sector_network.py b/scripts/prepare_sector_network.py
+index dc81300..57740c4 100644
+--- a/scripts/prepare_sector_network.py
++++ b/scripts/prepare_sector_network.py
+@@ -1751,6 +1751,95 @@ def insert_electricity_distribution_grid(
+ 
+ 
+ 
++def split_low_voltage_buses(
++    n: pypsa.Network,
++    solar_scaling: tuple[float, float] = (1.0, 1.0),
++) -> None:
++    """
++    Simple approximation of within-node distribution-grid heterogeneity.
++
++    Splits each node's single low-voltage bus (as created by
++    insert_electricity_distribution_grid) into two low-voltage buses,
++    "<node> low voltage a" and "<node> low voltage b". Everything already
++    attached to the original bus is duplicated across the two new buses:
++    the AC<->LV distribution link, electricity-carrier loads, BEV
++    chargers, V2G, heat pumps, resistive heaters, micro-CHP, solar
++    rooftop generators, and the home battery charger/discharger links.
++    (The home battery's own bus and store are left untouched and shared
++    -- nothing requires them to sit on one half of the split network.)
++
++    Sized attributes (p_set, p_nom, p_nom_max, p_nom_min) are split
++    evenly (50/50) so each node's total is unchanged, with one
++    exception: solar rooftop generator capacity (p_nom_max) is
++    additionally scaled per bus by `solar_scaling`, e.g. (1.2, 0.8) to
++    test asymmetric local rooftop-solar potential between the two
++    halves of a node's low-voltage network. Demand scaling is not yet
++    implemented (planned for later) -- demand is always split evenly
++    for now.
++
++    Must be called AFTER insert_electricity_distribution_grid, since it
++    operates on buses with carrier "low voltage" that function creates.
++
++    Parameters
++    ----------
++    n : pypsa.Network
++    solar_scaling : tuple[float, float]
++        Per-bus multipliers applied to rooftop solar p_nom_max, applied
++        on top of the even 50/50 split. (1.0, 1.0) reproduces the plain
++        even split with no asymmetry.
++    """
++    lv_buses = list(n.buses.index[n.buses.carrier == "low voltage"])
++    if not lv_buses:
++        logger.warning(
++            "split_low_voltage_buses: no 'low voltage' buses found -- nothing to split."
++        )
++        return
++
++    size_attrs = ["p_set", "p_nom", "p_nom_max", "p_nom_min"]
++    ts_size_attrs = {"p_set", "q_set"}
++
++    for lv_bus in lv_buses:
++        bus_a, bus_b = f"{lv_bus} a", f"{lv_bus} b"
++        n.add("Bus", [bus_a, bus_b], **n.buses.loc[lv_bus].to_dict())
++
++        for component, bus_cols in [
++            ("Link", ["bus0", "bus1"]),
++            ("Load", ["bus"]),
++            ("Generator", ["bus"]),
++        ]:
++            static = getattr(n, component.lower() + "s")
++            dynamic = getattr(n, component.lower() + "s_t")
++            for bus_col in bus_cols:
++                matches = list(static.index[static[bus_col] == lv_bus])
++                for name in matches:
++                    row = static.loc[name].to_dict()
++                    is_solar = row.get("carrier") == "solar rooftop"
++                    for suffix, new_bus, scale in [
++                        ("a", bus_a, solar_scaling[0] if is_solar else 1.0),
++                        ("b", bus_b, solar_scaling[1] if is_solar else 1.0),
++                    ]:
++                        new_name = f"{name} {suffix}"
++                        attrs = dict(row)
++                        attrs[bus_col] = new_bus
++                        for attr in size_attrs:
++                            if attr in attrs and pd.notna(attrs[attr]):
++                                attrs[attr] = attrs[attr] / 2 * scale
++                        n.add(component, new_name, **attrs)
++                        for ts_name, ts_df in dynamic.items():
++                            if name in ts_df.columns:
++                                new_ts = ts_df[name]
++                                if ts_name in ts_size_attrs and not is_solar:
++                                    new_ts = new_ts / 2
++                                dynamic[ts_name][new_name] = new_ts
++                    n.remove(component, name)
++        n.remove("Bus", lv_bus)
++
++    logger.info(
++        f"Split {len(lv_buses)} low-voltage bus(es) into two each "
++        f"(solar_scaling={solar_scaling})."
++    )
++
++
+ def _split_across_feeder_buses(
+     n: pypsa.Network,
+     ids,
+@@ -7134,6 +7223,16 @@ if __name__ == "__main__":
+             insert_electricity_distribution_grid(
+                 n, costs, options, pop_layout, snakemake.input.solar_rooftop_potentials
+             )
++            if options.get("electricity_distribution_grid_split_lv", False):
++                split_low_voltage_buses(
++                    n,
++                    solar_scaling=tuple(
++                        options.get(
++                            "electricity_distribution_grid_split_lv_solar_scaling",
++                            [1.0, 1.0],
++                        )
++                    ),
++                )
+ 
+     if options["enhanced_geothermal"].get("enable", False):
+         logger.info("Adding Enhanced Geothermal Systems (EGS).")

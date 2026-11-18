@@ -1,0 +1,217 @@
+component,profile,carrier,name
+Bus,shared,AC,GR0 0AC
+Bus,shared,co2 stored,GR0 0AC co2 stored
+Bus,shared,co2 sequestered,GR0 0AC co2 sequestered
+Bus,shared,gas,GR0 0AC gas
+Bus,shared,H2,GR0 0AC H2
+Bus,shared,battery,GR0 0AC battery
+Bus,shared,land transport oil,GR0 0AC land transport oil
+Bus,urban,EV battery,GR0 0AC EV battery urban
+Bus,suburban,EV battery,GR0 0AC EV battery suburban
+Bus,rural,EV battery,GR0 0AC EV battery rural
+Bus,urban,urban central heat,GR0 0AC urban central heat urban
+Bus,suburban,urban central heat,GR0 0AC urban central heat suburban
+Bus,rural,urban central heat,GR0 0AC urban central heat rural
+Bus,urban,urban central water tanks,GR0 0AC urban central water tanks urban
+Bus,suburban,urban central water tanks,GR0 0AC urban central water tanks suburban
+Bus,rural,urban central water tanks,GR0 0AC urban central water tanks rural
+Bus,urban,urban central water pits,GR0 0AC urban central water pits urban
+Bus,suburban,urban central water pits,GR0 0AC urban central water pits suburban
+Bus,rural,urban central water pits,GR0 0AC urban central water pits rural
+Bus,urban,low voltage,GR0 0AC low voltage urban
+Bus,suburban,low voltage,GR0 0AC low voltage suburban
+Bus,rural,low voltage,GR0 0AC low voltage rural
+Bus,urban,home battery,GR0 0AC home battery urban
+Bus,suburban,home battery,GR0 0AC home battery suburban
+Bus,rural,home battery,GR0 0AC home battery rural
+Bus,rural,rural heat,GR0 0AC rural heat rural
+Bus,suburban,rural heat,GR0 0AC rural heat suburban
+Bus,urban,rural heat,GR0 0AC rural heat urban
+Bus,rural,rural water tanks,GR0 0AC rural water tanks rural
+Bus,suburban,rural water tanks,GR0 0AC rural water tanks suburban
+Bus,urban,rural water tanks,GR0 0AC rural water tanks urban
+Bus,rural,urban decentral heat,GR0 0AC urban decentral heat rural
+Bus,suburban,urban decentral heat,GR0 0AC urban decentral heat suburban
+Bus,urban,urban decentral heat,GR0 0AC urban decentral heat urban
+Bus,rural,urban decentral water tanks,GR0 0AC urban decentral water tanks rural
+Bus,suburban,urban decentral water tanks,GR0 0AC urban decentral water tanks suburban
+Bus,urban,urban decentral water tanks,GR0 0AC urban decentral water tanks urban
+Link,shared,co2 sequestered,GR0 0AC co2 sequestered
+Link,shared,OCGT,GR0 0AC OCGT
+Link,shared,CCGT,GR0 0AC CCGT
+Link,shared,H2 turbine,GR0 0AC H2 turbine
+Link,shared,gas pipeline,gas pipeline GR0 0AC -> GR0 1AC
+Link,shared,H2 pipeline,H2 pipeline GR0 0AC -> GR0 1AC
+Link,shared,SMR CC,GR0 0AC SMR CC
+Link,shared,SMR,GR0 0AC SMR
+Link,shared,battery charger,GR0 0AC battery charger
+Link,shared,battery discharger,GR0 0AC battery discharger
+Link,shared,land transport oil,GR0 0AC land transport oil
+Link,shared,ammonia cracker,GR0 0AC ammonia cracker
+Link,shared,OCGT methanol,GR0 0AC OCGT methanol
+Link,shared,CO2 pipeline,CO2 pipeline GR0 0AC -> GR0 1AC
+Link,shared,H2 pipeline,H2 pipeline GR0 0AC -> GR0 1AC-reversed
+Link,shared,gas pipeline,gas pipeline GR0 0AC -> GR0 1AC-reversed
+Link,urban,H2 Electrolysis,GR0 0AC H2 Electrolysis urban
+Link,suburban,H2 Electrolysis,GR0 0AC H2 Electrolysis suburban
+Link,rural,H2 Electrolysis,GR0 0AC H2 Electrolysis rural
+Link,urban,H2 Fuel Cell,GR0 0AC H2 Fuel Cell urban
+Link,suburban,H2 Fuel Cell,GR0 0AC H2 Fuel Cell suburban
+Link,rural,H2 Fuel Cell,GR0 0AC H2 Fuel Cell rural
+Link,urban,Sabatier,GR0 0AC Sabatier urban
+Link,suburban,Sabatier,GR0 0AC Sabatier suburban
+Link,rural,Sabatier,GR0 0AC Sabatier rural
+Link,urban,BEV charger,GR0 0AC BEV charger urban
+Link,suburban,BEV charger,GR0 0AC BEV charger suburban
+Link,rural,BEV charger,GR0 0AC BEV charger rural
+Link,urban,V2G,GR0 0AC V2G urban
+Link,suburban,V2G,GR0 0AC V2G suburban
+Link,rural,V2G,GR0 0AC V2G rural
+Link,urban,urban central water tanks charger,GR0 0AC urban central water tanks charger urban
+Link,suburban,urban central water tanks charger,GR0 0AC urban central water tanks charger suburban
+Link,rural,urban central water tanks charger,GR0 0AC urban central water tanks charger rural
+Link,urban,urban central water tanks discharger,GR0 0AC urban central water tanks discharger urban
+Link,suburban,urban central water tanks discharger,GR0 0AC urban central water tanks discharger suburban
+Link,rural,urban central water tanks discharger,GR0 0AC urban central water tanks discharger rural
+Link,urban,urban central water pits charger,GR0 0AC urban central water pits charger urban
+Link,suburban,urban central water pits charger,GR0 0AC urban central water pits charger suburban
+Link,rural,urban central water pits charger,GR0 0AC urban central water pits charger rural
+Link,urban,urban central water pits discharger,GR0 0AC urban central water pits discharger urban
+Link,suburban,urban central water pits discharger,GR0 0AC urban central water pits discharger suburban
+Link,rural,urban central water pits discharger,GR0 0AC urban central water pits discharger rural
+Link,urban,urban central air heat pump,GR0 0AC urban central air heat pump urban
+Link,suburban,urban central air heat pump,GR0 0AC urban central air heat pump suburban
+Link,rural,urban central air heat pump,GR0 0AC urban central air heat pump rural
+Link,urban,urban central resistive heater,GR0 0AC urban central resistive heater urban
+Link,suburban,urban central resistive heater,GR0 0AC urban central resistive heater suburban
+Link,rural,urban central resistive heater,GR0 0AC urban central resistive heater rural
+Link,urban,urban central gas boiler,GR0 0AC urban central gas boiler urban
+Link,suburban,urban central gas boiler,GR0 0AC urban central gas boiler suburban
+Link,rural,urban central gas boiler,GR0 0AC urban central gas boiler rural
+Link,urban,urban central gas CHP,GR0 0AC urban central gas CHP urban
+Link,suburban,urban central gas CHP,GR0 0AC urban central gas CHP suburban
+Link,rural,urban central gas CHP,GR0 0AC urban central gas CHP rural
+Link,urban,urban central gas CHP CC,GR0 0AC urban central gas CHP CC urban
+Link,suburban,urban central gas CHP CC,GR0 0AC urban central gas CHP CC suburban
+Link,rural,urban central gas CHP CC,GR0 0AC urban central gas CHP CC rural
+Link,urban,Haber-Bosch,GR0 0AC Haber-Bosch urban
+Link,suburban,Haber-Bosch,GR0 0AC Haber-Bosch suburban
+Link,rural,Haber-Bosch,GR0 0AC Haber-Bosch rural
+Link,urban,DAC,GR0 0AC urban central DAC urban
+Link,suburban,DAC,GR0 0AC urban central DAC suburban
+Link,rural,DAC,GR0 0AC urban central DAC rural
+Link,urban,electricity distribution grid,GR0 0AC electricity distribution grid urban
+Link,suburban,electricity distribution grid,GR0 0AC electricity distribution grid suburban
+Link,rural,electricity distribution grid,GR0 0AC electricity distribution grid rural
+Link,urban,home battery charger,GR0 0AC home battery charger urban
+Link,suburban,home battery charger,GR0 0AC home battery charger suburban
+Link,rural,home battery charger,GR0 0AC home battery charger rural
+Link,urban,home battery discharger,GR0 0AC home battery discharger urban
+Link,suburban,home battery discharger,GR0 0AC home battery discharger suburban
+Link,rural,home battery discharger,GR0 0AC home battery discharger rural
+Link,urban,electricity distribution grid,GR0 0AC electricity distribution grid-reversed urban
+Link,suburban,electricity distribution grid,GR0 0AC electricity distribution grid-reversed suburban
+Link,rural,electricity distribution grid,GR0 0AC electricity distribution grid-reversed rural
+Link,rural,rural air heat pump,GR0 0AC rural air heat pump rural
+Link,suburban,rural air heat pump,GR0 0AC rural air heat pump suburban
+Link,urban,rural air heat pump,GR0 0AC rural air heat pump urban
+Link,rural,rural gas boiler,GR0 0AC rural gas boiler rural
+Link,suburban,rural gas boiler,GR0 0AC rural gas boiler suburban
+Link,urban,rural gas boiler,GR0 0AC rural gas boiler urban
+Link,rural,rural ground heat pump,GR0 0AC rural ground heat pump rural
+Link,suburban,rural ground heat pump,GR0 0AC rural ground heat pump suburban
+Link,urban,rural ground heat pump,GR0 0AC rural ground heat pump urban
+Link,rural,rural resistive heater,GR0 0AC rural resistive heater rural
+Link,suburban,rural resistive heater,GR0 0AC rural resistive heater suburban
+Link,urban,rural resistive heater,GR0 0AC rural resistive heater urban
+Link,rural,rural water tanks charger,GR0 0AC rural water tanks charger rural
+Link,suburban,rural water tanks charger,GR0 0AC rural water tanks charger suburban
+Link,urban,rural water tanks charger,GR0 0AC rural water tanks charger urban
+Link,rural,rural water tanks discharger,GR0 0AC rural water tanks discharger rural
+Link,suburban,rural water tanks discharger,GR0 0AC rural water tanks discharger suburban
+Link,urban,rural water tanks discharger,GR0 0AC rural water tanks discharger urban
+Link,rural,DAC,GR0 0AC urban decentral DAC rural
+Link,suburban,DAC,GR0 0AC urban decentral DAC suburban
+Link,urban,DAC,GR0 0AC urban decentral DAC urban
+Link,rural,urban decentral air heat pump,GR0 0AC urban decentral air heat pump rural
+Link,suburban,urban decentral air heat pump,GR0 0AC urban decentral air heat pump suburban
+Link,urban,urban decentral air heat pump,GR0 0AC urban decentral air heat pump urban
+Link,rural,urban decentral gas boiler,GR0 0AC urban decentral gas boiler rural
+Link,suburban,urban decentral gas boiler,GR0 0AC urban decentral gas boiler suburban
+Link,urban,urban decentral gas boiler,GR0 0AC urban decentral gas boiler urban
+Link,rural,urban decentral resistive heater,GR0 0AC urban decentral resistive heater rural
+Link,suburban,urban decentral resistive heater,GR0 0AC urban decentral resistive heater suburban
+Link,urban,urban decentral resistive heater,GR0 0AC urban decentral resistive heater urban
+Link,rural,urban decentral water tanks charger,GR0 0AC urban decentral water tanks charger rural
+Link,suburban,urban decentral water tanks charger,GR0 0AC urban decentral water tanks charger suburban
+Link,urban,urban decentral water tanks charger,GR0 0AC urban decentral water tanks charger urban
+Link,rural,urban decentral water tanks discharger,GR0 0AC urban decentral water tanks discharger rural
+Link,suburban,urban decentral water tanks discharger,GR0 0AC urban decentral water tanks discharger suburban
+Link,urban,urban decentral water tanks discharger,GR0 0AC urban decentral water tanks discharger urban
+Load,shared,land transport oil,GR0 0AC land transport oil
+Load,urban,electricity,GR0 0AC urban
+Load,suburban,electricity,GR0 0AC suburban
+Load,rural,electricity,GR0 0AC rural
+Load,urban,land transport EV,GR0 0AC land transport EV urban
+Load,suburban,land transport EV,GR0 0AC land transport EV suburban
+Load,rural,land transport EV,GR0 0AC land transport EV rural
+Load,urban,urban central heat,GR0 0AC urban central heat urban
+Load,suburban,urban central heat,GR0 0AC urban central heat suburban
+Load,rural,urban central heat,GR0 0AC urban central heat rural
+Load,rural,rural heat,GR0 0AC rural heat rural
+Load,suburban,rural heat,GR0 0AC rural heat suburban
+Load,urban,rural heat,GR0 0AC rural heat urban
+Load,rural,urban decentral heat,GR0 0AC urban decentral heat rural
+Load,suburban,urban decentral heat,GR0 0AC urban decentral heat suburban
+Load,urban,urban decentral heat,GR0 0AC urban decentral heat urban
+Generator,shared,solar,GR0 0AC 0 solar
+Generator,shared,offwind-dc,GR0 0AC 0 offwind-dc
+Generator,shared,onwind,GR0 0AC 0 onwind
+Generator,shared,offwind-ac,GR0 0AC 0 offwind-ac
+Generator,shared,offwind-float,GR0 0AC 0 offwind-float
+Generator,shared,solar-hsat,GR0 0AC 0 solar-hsat
+Generator,shared,gas,GR0 0AC gas
+Generator,urban,urban central heat vent,GR0 0AC urban central heat vent urban
+Generator,suburban,urban central heat vent,GR0 0AC urban central heat vent suburban
+Generator,rural,urban central heat vent,GR0 0AC urban central heat vent rural
+Generator,urban,urban central solar thermal,GR0 0AC urban central solar thermal collector urban
+Generator,suburban,urban central solar thermal,GR0 0AC urban central solar thermal collector suburban
+Generator,rural,urban central solar thermal,GR0 0AC urban central solar thermal collector rural
+Generator,urban,solar rooftop,GR0 0AC 0 solar rooftop urban
+Generator,suburban,solar rooftop,GR0 0AC 0 solar rooftop suburban
+Generator,rural,solar rooftop,GR0 0AC 0 solar rooftop rural
+Generator,rural,rural heat vent,GR0 0AC rural heat vent rural
+Generator,suburban,rural heat vent,GR0 0AC rural heat vent suburban
+Generator,urban,rural heat vent,GR0 0AC rural heat vent urban
+Generator,rural,rural solar thermal,GR0 0AC rural solar thermal collector rural
+Generator,suburban,rural solar thermal,GR0 0AC rural solar thermal collector suburban
+Generator,urban,rural solar thermal,GR0 0AC rural solar thermal collector urban
+Generator,rural,urban decentral heat vent,GR0 0AC urban decentral heat vent rural
+Generator,suburban,urban decentral heat vent,GR0 0AC urban decentral heat vent suburban
+Generator,urban,urban decentral heat vent,GR0 0AC urban decentral heat vent urban
+Generator,rural,urban decentral solar thermal,GR0 0AC urban decentral solar thermal collector rural
+Generator,suburban,urban decentral solar thermal,GR0 0AC urban decentral solar thermal collector suburban
+Generator,urban,urban decentral solar thermal,GR0 0AC urban decentral solar thermal collector urban
+Store,shared,co2 stored,GR0 0AC co2 stored
+Store,shared,co2 sequestered,GR0 0AC co2 sequestered
+Store,shared,gas,GR0 0AC gas Store
+Store,shared,H2 Store,GR0 0AC H2 Store
+Store,shared,battery,GR0 0AC battery
+Store,urban,EV battery,GR0 0AC EV battery urban
+Store,suburban,EV battery,GR0 0AC EV battery suburban
+Store,rural,EV battery,GR0 0AC EV battery rural
+Store,urban,urban central water tanks,GR0 0AC urban central water tanks urban
+Store,suburban,urban central water tanks,GR0 0AC urban central water tanks suburban
+Store,rural,urban central water tanks,GR0 0AC urban central water tanks rural
+Store,urban,urban central water pits,GR0 0AC urban central water pits urban
+Store,suburban,urban central water pits,GR0 0AC urban central water pits suburban
+Store,rural,urban central water pits,GR0 0AC urban central water pits rural
+Store,urban,home battery,GR0 0AC home battery urban
+Store,suburban,home battery,GR0 0AC home battery suburban
+Store,rural,home battery,GR0 0AC home battery rural
+Store,rural,rural water tanks,GR0 0AC rural water tanks rural
+Store,suburban,rural water tanks,GR0 0AC rural water tanks suburban
+Store,urban,rural water tanks,GR0 0AC rural water tanks urban
+Store,rural,urban decentral water tanks,GR0 0AC urban decentral water tanks rural
+Store,suburban,urban decentral water tanks,GR0 0AC urban decentral water tanks suburban
+Store,urban,urban decentral water tanks,GR0 0AC urban decentral water tanks urban

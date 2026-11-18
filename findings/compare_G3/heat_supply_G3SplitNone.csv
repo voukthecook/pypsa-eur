@@ -1,0 +1,35 @@
+system,rural,urban central,urban decentral
+profile,all,all,all
+HEAT DEMAND,-93.684896471362,-57.40989217251531,-270.9053087883801
+urban central heat vent,0.0,-1.2895648484896147e-10,0.0
+urban central solar thermal,0.0,1.3196910383769495e-10,0.0
+rural heat vent,-1.226343113557644e-08,0.0,0.0
+rural solar thermal,2.8761719538976305e-11,0.0,0.0
+urban decentral heat vent,0.0,0.0,-1.146954106669959e-08
+urban decentral solar thermal,0.0,0.0,2.8717339531088525e-11
+urban central water tanks charger,0.0,-3.096321665265142e-09,0.0
+urban central water pits charger,0.0,-83.23675080937406,0.0
+urban central air heat pump,0.0,265.34409891009994,0.0
+rural air heat pump,78.6968887447478,0.0,0.0
+rural ground heat pump,1.3417063491271114e-09,0.0,0.0
+rural water tanks charger,-1.5806597191980475e-08,0.0,0.0
+urban decentral air heat pump,0.0,0.0,237.24145399228263
+urban decentral water tanks charger,0.0,0.0,-1.59109587684118e-08
+urban central water tanks discharger,0.0,3.0828572426624267e-09,0.0
+urban central water pits discharger,0.0,82.89664513477328,0.0
+urban central resistive heater,0.0,112.89063175243966,0.0
+urban central gas boiler,0.0,9.388958132426099e-11,0.0
+DAC,0.0,-320.4847328157173,-2.1757331159233356e-09
+rural gas boiler,9.486069776294722e-11,0.0,0.0
+rural resistive heater,14.988007737461684,0.0,0.0
+rural water tanks discharger,1.5757307131535844e-08,0.0,0.0
+urban decentral gas boiler,0.0,0.0,9.295321179950889e-11
+urban decentral resistive heater,0.0,0.0,33.66385480958161
+urban decentral water tanks discharger,0.0,0.0,1.586118804394651e-08
+H2 Electrolysis,0.0,6.821670673764459e-12,0.0
+H2 Fuel Cell,0.0,4.5468577043367365e-11,0.0
+urban central gas CHP,0.0,3.723065332294736e-11,0.0
+urban central gas CHP CC,0.0,8.41482352399327e-11,0.0
+Sabatier,0.0,6.627097345182952e-12,0.0
+Haber-Bosch,0.0,3.0135493091668674e-11,0.0
+balance (supply - demand),9.826049913456785e-14,1.1107693187386504e-13,-8.925292408015859e-11

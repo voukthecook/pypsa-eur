@@ -1,0 +1,8 @@
+,unsplit,split,diff_%
+distribution cap (MW),16156.439,16156.64,0.001
+coincident peak import (MW),7835.873,7835.97,0.001
+import (GWh),32924.88,32906.384,-0.056
+EV charge (GWh),4261.032,4261.307,0.006
+EV V2G (GWh),545.01,545.258,0.045
+EV coincident peak (MW),5961.649,5961.269,-0.006
+objective (EUR),8294785785.701,8294769075.84,-0.0

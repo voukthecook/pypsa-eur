@@ -1,0 +1,161 @@
+diff --git a/scripts/prepare_sector_network.py b/scripts/prepare_sector_network.py
+index 2a7c676..e13c3ed 100644
+--- a/scripts/prepare_sector_network.py
++++ b/scripts/prepare_sector_network.py
+@@ -2031,23 +2031,35 @@ def insert_electricity_distribution_grid_detailed(
+         # (rooftop area doesn't necessarily track load share) worth
+         # revisiting if solar siting effects turn out to matter for
+         # your results.
++        #
++        # Batched per gen (one n.add() call for all of that gen's
++        # feeder buses at once) rather than one n.add() call per
++        # feeder bus -- same one-at-a-time performance problem as the
++        # home battery block above, just without the Store warning.
+         for gen in solar:
+             node = n.generators.at[gen, "bus"]
+             if node not in node_feeder_shares:
+                 continue
+             shares = node_feeder_shares[node]
+-            for global_bus, share in shares.items():
+-                n.add(
+-                    "Generator",
+-                    f"{gen} rooftop @ {global_bus}",
+-                    bus=global_bus,
+-                    carrier="solar rooftop",
+-                    p_nom_extendable=True,
+-                    p_nom_max=potential.get(gen, 0.0) * share,
+-                    marginal_cost=n.generators.at[gen, "marginal_cost"],
+-                    capital_cost=costs.at["solar-rooftop", "capital_cost"],
+-                    efficiency=n.generators.at[gen, "efficiency"],
+-                    p_max_pu=n.generators_t.p_max_pu[gen],
++            gen_buses = list(shares.index)
++            new_names = [f"{gen} rooftop @ {b}" for b in gen_buses]
++            p_nom_max = [potential.get(gen, 0.0) * share for share in shares.values]
++            p_max_pu_profile = n.generators_t.p_max_pu[gen]
++            p_max_pu_df = pd.DataFrame(
++                {name: p_max_pu_profile for name in new_names},
++                index=p_max_pu_profile.index,
++            )
++            n.add(
++                "Generator",
++                new_names,
++                bus=gen_buses,
++                carrier="solar rooftop",
++                p_nom_extendable=True,
++                p_nom_max=p_nom_max,
++                marginal_cost=n.generators.at[gen, "marginal_cost"],
++                capital_cost=costs.at["solar-rooftop", "capital_cost"],
++                efficiency=n.generators.at[gen, "efficiency"],
++                p_max_pu=p_max_pu_df,
+                     lifetime=costs.at["solar-rooftop", "lifetime"],
+                 )
+ 
+@@ -2055,49 +2067,65 @@ def insert_electricity_distribution_grid_detailed(
+     # node -- sizing remains a free (extendable) decision for the
+     # optimizer, so no share-based scaling is needed here, unlike the
+     # load/DER splitting above.
+-    for node, shares in node_feeder_shares.items():
+-        for global_bus in shares.index:
+-            battery_bus = f"{global_bus} home battery"
+-            n.add(
+-                "Bus",
+-                battery_bus,
+-                location=node,
+-                carrier="home battery",
+-                unit="MWh_el",
+-            )
+-            n.add(
+-                "Store",
+-                battery_bus,
+-                bus=battery_bus,
+-                location=node,
+-                e_cyclic=True,
+-                e_nom_extendable=True,
+-                carrier="home battery",
+-                capital_cost=costs.at["home battery storage", "capital_cost"],
+-                lifetime=costs.at["battery storage", "lifetime"],
+-            )
+-            n.add(
+-                "Link",
+-                f"{global_bus} home battery charger",
+-                bus0=global_bus,
+-                bus1=battery_bus,
+-                carrier="home battery charger",
+-                efficiency=costs.at["battery inverter", "efficiency"] ** 0.5,
+-                capital_cost=costs.at["home battery inverter", "capital_cost"],
+-                p_nom_extendable=True,
+-                lifetime=costs.at["battery inverter", "lifetime"],
+-            )
+-            n.add(
+-                "Link",
+-                f"{global_bus} home battery discharger",
+-                bus0=battery_bus,
+-                bus1=global_bus,
+-                carrier="home battery discharger",
+-                efficiency=costs.at["battery inverter", "efficiency"] ** 0.5,
+-                marginal_cost=costs.at["home battery storage", "marginal_cost"],
+-                p_nom_extendable=True,
+-                lifetime=costs.at["battery inverter", "lifetime"],
+-            )
++    #
++    # Built as one vectorised n.add() call per component type across
++    # ALL feeder buses, rather than a Python loop calling n.add() once
++    # per bus: with hundreds of feeder buses (many nodes x several
++    # replicas x ~15 buses each), one-at-a-time addition is both slow
++    # (each call has fixed overhead) and floods the log with the
++    # harmless-but-noisy "location is not a standard attribute for
++    # stores" warning once per Store -- dropping `location` from the
++    # Store call (it's informational only, not used by the optimizer)
++    # removes that warning entirely, matching PyPSA's own guidance.
++    all_buses = [
++        global_bus for shares in node_feeder_shares.values() for global_bus in shares.index
++    ]
++    all_nodes = [
++        node
++        for node, shares in node_feeder_shares.items()
++        for _ in shares.index
++    ]
++    battery_buses = [f"{b} home battery" for b in all_buses]
++
++    n.add(
++        "Bus",
++        battery_buses,
++        location=all_nodes,
++        carrier="home battery",
++        unit="MWh_el",
++    )
++    n.add(
++        "Store",
++        battery_buses,
++        bus=battery_buses,
++        e_cyclic=True,
++        e_nom_extendable=True,
++        carrier="home battery",
++        capital_cost=costs.at["home battery storage", "capital_cost"],
++        lifetime=costs.at["battery storage", "lifetime"],
++    )
++    n.add(
++        "Link",
++        [f"{b} home battery charger" for b in all_buses],
++        bus0=all_buses,
++        bus1=battery_buses,
++        carrier="home battery charger",
++        efficiency=costs.at["battery inverter", "efficiency"] ** 0.5,
++        capital_cost=costs.at["home battery inverter", "capital_cost"],
++        p_nom_extendable=True,
++        lifetime=costs.at["battery inverter", "lifetime"],
++    )
++    n.add(
++        "Link",
++        [f"{b} home battery discharger" for b in all_buses],
++        bus0=battery_buses,
++        bus1=all_buses,
++        carrier="home battery discharger",
++        efficiency=costs.at["battery inverter", "efficiency"] ** 0.5,
++        marginal_cost=costs.at["home battery storage", "marginal_cost"],
++        p_nom_extendable=True,
++        lifetime=costs.at["battery inverter", "lifetime"],
++    )
+ 
+ 
+ def insert_gas_distribution_costs(

@@ -5,6 +5,8 @@
 Create interactive energy balance maps for the defined carriers using `n.explore()`.
 """
 
+import logging
+
 import geopandas as gpd
 import matplotlib.colors as mcolors
 import matplotlib.pyplot as plt
@@ -19,6 +21,9 @@ from scripts._helpers import (
     update_config_from_wildcards,
 )
 from scripts.add_electricity import sanitize_carriers
+from scripts.plot_balance_map import create_missing_carrier_placeholder
+
+logger = logging.getLogger(__name__)
 
 VALID_MAP_STYLES = PydeckPlotter.VALID_MAP_STYLES
 
@@ -110,6 +115,14 @@ if __name__ == "__main__":
     carrier = snakemake.wildcards.carrier
     carrier = carrier.replace("_", " ")
 
+    if carrier not in n.buses.carrier.unique():
+        logger.warning(
+            "Carrier %s is not in the network. Creating a placeholder output and skipping the interactive plot.",
+            carrier,
+        )
+        create_missing_carrier_placeholder(snakemake.output[0])
+        raise SystemExit(0)
+
     # Fill missing carrier colors
     missing_color = "#808080"
     b_missing = n.carriers.query("color == '' or color.isnull()").index
@@ -146,9 +159,21 @@ if __name__ == "__main__":
     # Only carriers that are also in the energy balance
     carriers_in_eb = carriers[carriers.isin(eb.index.get_level_values("carrier"))]
 
-    eb.loc[components] = eb.loc[components].drop(index=carriers_in_eb, level="carrier")
+    components = components[components.isin(eb.index.get_level_values("component"))]
+    if len(components) > 0:
+        eb.loc[components] = eb.loc[components].drop(
+            index=carriers_in_eb, level="carrier"
+        )
     eb = eb.dropna()
     bus_size = eb.groupby(level=["bus", "carrier"]).sum()
+
+    if bus_size.empty:
+        logger.warning(
+            "Carrier %s has no balance data in the network. Creating a placeholder output and skipping the interactive plot.",
+            carrier,
+        )
+        create_missing_carrier_placeholder(snakemake.output[0])
+        raise SystemExit(0)
 
     # line and links widths according to optimal capacity
     flow = n.statistics.transmission(groupby=False, bus_carrier=carrier)

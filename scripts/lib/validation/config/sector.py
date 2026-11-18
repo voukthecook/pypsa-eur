@@ -841,6 +841,37 @@ class SectorConfig(BaseModel):
         1.0,
         description="Multiplies the investment cost of the electricity distribution grid.",
     )
+    electricity_distribution_grid_split_lv_heat: dict[str, Any] = Field(
+        default_factory=lambda: {
+            "enable": True,
+            "demand_share_a": {
+                "residential rural": 0.5,
+                "services rural": 0.5,
+                "residential urban decentral": 0.5,
+                "services urban decentral": 0.5,
+            },
+            "demand_scale": {"a": 1.0, "b": 1.0},
+            "capacity_share_a": {},
+            "allow_tech": {},
+            "cop_scale": {"a": 1.0, "b": 1.0},
+        },
+        description="Split decentralized heat systems across the two low-voltage bus halves when electricity_distribution_grid_split_lv is enabled. Demand shares are specified per heat system; technology capacity shares default to the matching demand share.",
+    )
+    electricity_distribution_grid_split_lv_ev: dict[str, Any] = Field(
+        default_factory=lambda: {
+            "enable": True,
+            "ev_scaling": [1.0, 1.0],
+            "ev_charger_scaling": None,
+            "ev_v2g_scaling": None,
+            "ev_store_scaling": None,
+        },
+        description="Split the EV bus, demand, stores, chargers, and V2G links across the two low-voltage bus halves. EV capacity scaling defaults to ev_scaling; null EV charger, V2G, or store scaling follows ev_scaling.",
+    )
+    lv_split_profiles: dict[str, Any] = Field(
+        default_factory=lambda: {"enable": False},
+        exclude=True,
+        description="Mutually exclusive urban/suburban/rural low-voltage profile split. `shares` allocates demand and non-PV LV assets, `pv_shares` allocates rooftop PV capacity, and `heat_shares` / `ev_shares` can override the general shares for heat systems and EV components. Each share mapping sums to 1.",
+    )
     electricity_grid_connection: bool = Field(
         True,
         description="Add the cost of electricity grid connection for onshore wind and solar.",

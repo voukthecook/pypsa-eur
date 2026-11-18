@@ -55,6 +55,25 @@ def build_nodal_industrial_production():
     fn = snakemake.input.industrial_distribution_key
     keys = pd.read_csv(fn, index_col=0)
     keys["country"] = keys.index.str[:2]
+    
+    
+    # See build_industrial_energy_demand_per_node_today.py for why this is
+    # needed: small/single-country runs can be missing a sector column
+    # entirely if no facility of that type is registered in Hotmaps for
+    # the selected countries.
+    expected_columns = set(sector_mapping.values()) | {"population"}
+    missing_columns = expected_columns - set(keys.columns)
+    if missing_columns:
+        logger.warning(
+            "Industrial distribution key is missing columns %s "
+            "(no facilities of that type in the selected countries) -- "
+            "filling with 0.",
+            sorted(missing_columns),
+        )
+        for col in missing_columns:
+            keys[col] = 0.0
+            
+            
 
     nodal_production = pd.DataFrame(
         index=keys.index, columns=industrial_production.columns, dtype=float

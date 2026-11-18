@@ -1,0 +1,53 @@
+diff --git a/scripts/build_renewable_profiles.py b/scripts/build_renewable_profiles.py
+index e37a914..59830e3 100644
+--- a/scripts/build_renewable_profiles.py
++++ b/scripts/build_renewable_profiles.py
+@@ -134,6 +134,48 @@ if __name__ == "__main__":
+     if snakemake.wildcards.technology.startswith("offwind"):
+         # for offshore regions, the shortest distance to the shoreline is used
+         offshore_regions = availability.coords["bus"].values
++        missing = [b for b in offshore_regions if b not in regions.index]
++        if missing:
++            # Fallback for offshore buses with no matching onshore region
++            # name. Normally each offshore-designated bus shares its name
++            # with an onshore region, whose polygon is used below as a
++            # proxy "shore connection point" for the average-distance
++            # calculation further down. Observed for Denmark at several
++            # cluster counts (e.g. 15, 20): its onshore and offshore
++            # region sets are clustered somewhat independently, and for a
++            # coastally-fragmented country they don't always agree on how
++            # many distinct nodes a group should have, leaving a handful
++            # of offshore bus names with no onshore counterpart at all --
++            # not a config or environment issue, and not reliably avoided
++            # by picking a different cluster count.
++            #
++            # For just these buses, fall back to the bus's own OFFSHORE
++            # region polygon (from resource_regions -- the same file this
++            # script already reads later for the per-technology region
++            # set) as the reference geometry instead. This slightly
++            # understates the true shore-to-substation distance for these
++            # specific buses (using the offshore area's own location
++            # rather than a specific onshore connection point) -- a
++            # reasonable approximation for a small number of edge-case
++            # buses. If this list grows to a large fraction of a
++            # country's buses, that would indicate a deeper clustering
++            # disagreement worth investigating rather than papering over.
++            logger.warning(
++                "%d offshore bus(es) have no matching onshore region for "
++                "the shore-distance calculation, falling back to their "
++                "own offshore region geometry: %s",
++                len(missing),
++                missing,
++            )
++            orig_crs = regions.crs
++            fallback_regions = (
++                gpd.read_file(snakemake.input.resource_regions)
++                .set_index("name")
++                .rename_axis("bus")
++                .loc[missing]
++            )
++            regions = pd.concat([regions, fallback_regions])
++            regions = gpd.GeoDataFrame(regions, crs=orig_crs)
+         regions = regions.loc[offshore_regions]
+         regions = regions.map(lambda g: _simplify_polys(g, minarea=1)).set_crs(
+             regions.crs

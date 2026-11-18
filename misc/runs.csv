@@ -1,0 +1,9 @@
+file,label,set
+results/G7Split_GR_year_1_1d/networks/base_s_3_lv1.2_Co2L0-3H_2050.nc,r1 electricity demand,1d
+results/G7Split_GR_year_2_1d/networks/base_s_3_lv1.2_Co2L0-3H_2050.nc,r2 rooftop PV,1d
+results/G7Split_GR_year_3_1d/networks/base_s_3_lv1.2_Co2L0-3H_2050.nc,r3 EV,1d
+results/G7Split_GR_year_4_1d/networks/base_s_3_lv1.2_Co2L0-3H_2050.nc,r4 heat urban decentral,1d
+results/G7Split_GR_year_5_2d/networks/base_s_3_lv1.2_Co2L0-3H_2050.nc,r5 electricity + EV,2d
+results/G7Split_GR_year_6_2d/networks/base_s_3_lv1.2_Co2L0-3H_2050.nc,r6 electricity + PV,2d
+results/G7Split_GR_year_7_2d/networks/base_s_3_lv1.2_Co2L0-3H_2050.nc,r7 heat urban central + heat rural (2/3/5),2d
+results/G7Split_GR_year_8_2d/networks/base_s_3_lv1.2_Co2L0-3H_2050.nc,r8 heat urban decentral + EV,2d
