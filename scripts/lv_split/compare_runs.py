@@ -85,16 +85,21 @@ def _links(n: pypsa.Network) -> pd.DataFrame:
     if len(sel) == 0:
         return pd.DataFrame()
     w = _weights(n)
-    cap_col = "p_nom_opt" if "p_nom_opt" in n.links else "p_nom"
-    cap = n.links.loc[sel, cap_col].astype(float)
+    opt = n.links.loc[sel, "p_nom_opt" if "p_nom_opt" in n.links else "p_nom"].astype(float)
+    existing = n.links.loc[sel, "p_nom"].astype(float)
+    extendable = n.links.loc[sel, "p_nom_extendable"].astype(bool)
+    added = (opt - existing).clip(lower=0).where(extendable, 0.0)
     flow = n.links_t.p0[n.links_t.p0.columns.intersection(sel)]
     peak = flow.abs().max().reindex(sel)
-    full = ((flow.abs() >= 0.999 * cap[flow.columns]) & (cap[flow.columns] > 0)).mul(w, axis=0)
+    full = ((flow.abs() >= 0.999 * opt[flow.columns]) & (opt[flow.columns] > 0)).mul(w, axis=0)
     return pd.DataFrame(
         {
             "carrier": n.links.loc[sel, "carrier"],
+            "direction": ["reverse" if "reversed" in i else "forward" for i in sel],
             "profile": [_profile_of(i) or "node" for i in sel],
-            "capacity_MW": cap,
+            "existing_MW": existing,
+            "capacity_MW": opt,
+            "added_MW": added,
             "peak_flow_MW": peak,
             "link_hours_at_limit": full.sum().reindex(sel),
         }
@@ -246,13 +251,20 @@ def compare(
     ]
 
     lc, ls = _links(control), _links(shaped)
-    link_cols = ["capacity_MW", "peak_flow_MW", "link_hours_at_limit"]
+    link_cols = ["existing_MW", "capacity_MW", "added_MW", "peak_flow_MW", "link_hours_at_limit"]
     links = {}
     if not lc.empty and not ls.empty:
-        links["control"] = lc.groupby(["carrier", "profile"])[link_cols].sum()
-        links["shaped"] = ls.groupby(["carrier", "profile"])[link_cols].sum()
+        links["control"] = lc.groupby(["carrier", "direction", "profile"])[link_cols].sum()
+        links["shaped"] = ls.groupby(["carrier", "direction", "profile"])[link_cols].sum()
+
+    def _objective(n: pypsa.Network) -> float:
+        try:
+            return float(n.objective)
+        except Exception:  # unsolved or missing
+            return float("nan")
 
     return {
+        "objective": (_objective(control), _objective(shaped)),
         "checks": checks,
         "shares": shares,
         "load_factors": summary,
@@ -279,13 +291,19 @@ def _print(result: dict, out: Path) -> bool:
             frame.to_csv(out / f"links_{label}.csv")
             print(f"\nGRID LINKS, {label} run (summed over nodes)")
             print(frame.round(1).to_string())
-        print("\nSUM OF LINK PEAKS AND CAPACITY PER CARRIER (control vs shaped)")
+        print("\nSUM OF LINK PEAKS AND CAPACITY PER CARRIER AND DIRECTION (control vs shaped)")
+        print("  existing = fixed capacity, added = reinforcement chosen by the optimiser")
         total = pd.concat(
-            {k: v.groupby("carrier")[["capacity_MW", "peak_flow_MW"]].sum()
+            {k: v.groupby(["carrier", "direction"])[
+                ["existing_MW", "capacity_MW", "added_MW", "peak_flow_MW"]].sum()
              for k, v in links.items()}, axis=1,
         )
         print(total.round(1).to_string())
         total.to_csv(out / "links_total.csv")
+    c_obj, s_obj = result.get("objective", (float("nan"),) * 2)
+    if c_obj == c_obj and s_obj == s_obj:
+        print(f"\nOBJECTIVE (total system cost): control {c_obj:,.0f}, shaped {s_obj:,.0f}, "
+              f"difference {100 * (s_obj - c_obj) / abs(c_obj):+.3f}%")
     print(f"\nCSV files written to {out}/")
     return all(ok for _, ok, _ in result["checks"])
 
