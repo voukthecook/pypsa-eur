@@ -128,8 +128,16 @@ def _load_profile_shapes(value: Any) -> dict[str, pd.DataFrame]:
         raise TypeError("shapes must map shape keys to CSV paths or DataFrames.")
     unknown = set(value) - set(PROFILE_SHAPE_KEYS)
     if unknown:
+        misplaced = unknown & {"household_fraction", "shape_load_carriers"}
+        hint = (
+            f" {sorted(misplaced)} belong next to 'shapes' (same indentation), "
+            "not inside it."
+            if misplaced
+            else ""
+        )
         raise ValueError(
             f"shapes has unsupported keys {sorted(unknown)}; use {PROFILE_SHAPE_KEYS}."
+            + hint
         )
     shapes = {}
     for key, source in value.items():

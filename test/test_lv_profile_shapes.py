@@ -204,3 +204,14 @@ def test_shipped_lpg_table_loads_and_conserves() -> None:
     urban = n.loads_t.p_set["electric demand urban"] / SHARES["urban"]
     rural = n.loads_t.p_set["electric demand rural"] / SHARES["rural"]
     assert not np.allclose(urban, rural)
+
+
+def test_misplaced_household_fraction_inside_shapes_gives_hint() -> None:
+    cfg = _config(
+        shapes={
+            "electricity": _shape_table(0.5),
+            "household_fraction": "energy_totals",
+        }
+    )
+    with pytest.raises(ValueError, match="belong next to 'shapes'"):
+        apply_lv_profile_split(_network(), cfg)
