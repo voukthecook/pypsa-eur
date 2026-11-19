@@ -53,6 +53,32 @@ def household_columns(n: pypsa.Network, carriers: list[str]) -> list[str]:
     return [c for c in keep if _profile_of(c)]
 
 
+def _diagnose(n: pypsa.Network, carriers: list[str]) -> str:
+    """Explain why no household loads were found, using what is in the network."""
+    loads = n.loads
+    split = loads[[bool(_profile_of(i)) for i in loads.index]]
+    split_buses = [b for b in n.buses.index if _profile_of(b)]
+    lines = [
+        f"No loads with carrier {carriers} and a profile suffix "
+        f"({', '.join(PROFILES)}) found.",
+        f"  loads in network: {len(loads)}; with profile suffix: {len(split)}; "
+        f"buses with profile suffix: {len(split_buses)}",
+        f"  load carriers: {loads.carrier.value_counts().to_dict()}",
+    ]
+    if len(split):
+        lines.append(f"  carriers of profile-suffixed loads: "
+                     f"{split.carrier.value_counts().to_dict()}")
+        lines.append("  -> rerun with --carriers <one of these>")
+    elif split_buses:
+        lines.append("  buses are split but loads are not; sample load names: "
+                     f"{list(loads.index[:5])}")
+    else:
+        lines.append("  nothing is split: lv_split_profiles was probably not enabled "
+                     "for this run")
+        lines.append(f"  sample load names: {list(loads.index[:5])}")
+    return "\n".join(lines)
+
+
 def compare(
     control: pypsa.Network,
     shaped: pypsa.Network,
@@ -71,9 +97,7 @@ def compare(
 
     hh = household_columns(control, carriers)
     if not hh:
-        raise ValueError(
-            "No profile-split household loads found. Was lv_split_profiles enabled?"
-        )
+        raise ValueError(_diagnose(control, carriers))
     checks: list[tuple[str, bool, str]] = []
 
     # 1. node total of household demand must not change

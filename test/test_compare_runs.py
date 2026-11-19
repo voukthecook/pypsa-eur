@@ -57,3 +57,17 @@ def test_command_checks_ratios_against_table(tmp_path, capsys) -> None:
     text = capsys.readouterr().out
     assert code == 0, text
     assert "[PASS] Profile-to-profile ratios follow the shape table" in text
+
+
+def test_diagnostics_when_nothing_is_split(tmp_path) -> None:
+    n = _network()
+    f = tmp_path / "plain.nc"
+    n.export_to_netcdf(f)
+    with pytest.raises(ValueError, match="nothing is split"):
+        main([str(f), str(f), "--out", str(tmp_path / "o")])
+
+
+def test_diagnostics_suggest_carrier(tmp_path) -> None:
+    c, s, _ = _pair(tmp_path)
+    with pytest.raises(ValueError, match="rerun with --carriers"):
+        main([str(c), str(s), "--carriers", "nonexistent", "--out", str(tmp_path / "o")])
