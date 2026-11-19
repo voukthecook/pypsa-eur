@@ -8,6 +8,16 @@ from test.test_lv_profile_shapes import _config, _network, _shape_table
 TABLE = "data/lv_profile_shapes/lpg_electricity.csv"
 
 
+def _local_shapes():
+    """The shipped table resolved the way the pipeline does it (node country NO)."""
+    from scripts.lv_split.local_time_shapes import resolve_shape
+
+    n = _network()
+    table = pd.read_csv(TABLE).set_index(["month", "daytype", "hour"])
+    weights = n.snapshot_weightings.generators
+    return {"electricity": resolve_shape(n.snapshots, weights, table, ["NO"])}
+
+
 def _pair(tmp_path):
     control = apply_lv_profile_split(_network(), _config())
     shaped = apply_lv_profile_split(
@@ -48,7 +58,7 @@ def test_command_fails_when_shapes_missing(tmp_path, capsys) -> None:
 def test_command_checks_ratios_against_table(tmp_path, capsys) -> None:
     control = apply_lv_profile_split(_network(), _config())
     shaped = apply_lv_profile_split(
-        _network(), _config(shapes={"electricity": TABLE})
+        _network(), _config(resolved_shapes=_local_shapes())
     )
     c, s = tmp_path / "c.nc", tmp_path / "s.nc"
     control.export_to_netcdf(c)
@@ -76,7 +86,7 @@ def test_diagnostics_suggest_carrier(tmp_path) -> None:
 def test_unsplit_control_is_compared_after_adding_profiles_up(tmp_path, capsys) -> None:
     control = _network()  # baseline run without any split
     shaped = apply_lv_profile_split(
-        _network(), _config(shapes={"electricity": TABLE})
+        _network(), _config(resolved_shapes=_local_shapes())
     )
     c, s = tmp_path / "c.nc", tmp_path / "s.nc"
     control.export_to_netcdf(c)
@@ -92,7 +102,7 @@ def test_unsplit_control_is_compared_after_adding_profiles_up(tmp_path, capsys) 
 
 def test_unsplit_control_detects_changed_node_total(tmp_path, capsys) -> None:
     control = _network()
-    shaped = apply_lv_profile_split(_network(), _config(shapes={"electricity": TABLE}))
+    shaped = apply_lv_profile_split(_network(), _config(resolved_shapes=_local_shapes()))
     shaped.loads_t.p_set["electric demand rural"] *= 1.1
     c, s = tmp_path / "c.nc", tmp_path / "s.nc"
     control.export_to_netcdf(c)

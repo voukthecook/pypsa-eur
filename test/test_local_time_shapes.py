@@ -79,3 +79,7 @@ def test_resolved_shapes_keep_conservation_in_the_split() -> None:
     assert not np.allclose(
         out.loads_t.p_set["electric demand urban"], base * SHARES["urban"]
     )
+
+
+def test_greece_uses_pypsa_eur_code_el() -> None:
+    assert country_timezone("EL") == country_timezone("GR") == "Europe/Athens"

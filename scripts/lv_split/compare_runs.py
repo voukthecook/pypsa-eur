@@ -194,15 +194,19 @@ def compare(
     )
 
     if table is not None:
-        keys = pd.MultiIndex.from_arrays(
-            [
-                control.snapshots.month,
-                np.where(control.snapshots.dayofweek >= 5, "weekend", "weekday"),
-                control.snapshots.hour,
-            ]
-        )
-        raw = table.set_index(["month", "daytype", "hour"]).reindex(keys)
-        raw.index = control.snapshots
+        # same lookup as the pipeline: country local time, DST, window-averaged
+        from scripts.lv_split.local_time_shapes import resolve_shape
+
+        countries = {shaped.loads.at[c, "bus"][:2].upper() for c in hh}
+        if len(countries) != 1:
+            raise ValueError("Table check supports a single country per network.")
+        country = countries.pop()
+        raw = resolve_shape(
+            control.snapshots,
+            _weights(control),
+            table.set_index(["month", "daytype", "hour"]),
+            [country],
+        )[country]
         # The split rebalances the curves, so a profile's factor is not proportional to
         # its raw table value. The ratio between two profiles is (constants cancel),
         # so compare log ratios between profiles with the table's log ratios.

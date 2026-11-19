@@ -31,6 +31,7 @@ COUNTRY_TIMEZONES = {
     "CZ": "Europe/Prague",
     "DE": "Europe/Berlin",
     "DK": "Europe/Copenhagen",
+    "EL": "Europe/Athens",  # PyPSA-Eur code for Greece
     "EE": "Europe/Tallinn",
     "ES": "Europe/Madrid",
     "FI": "Europe/Helsinki",
@@ -57,6 +58,7 @@ COUNTRY_TIMEZONES = {
     "SI": "Europe/Ljubljana",
     "SK": "Europe/Bratislava",
     "TR": "Europe/Istanbul",
+    "UK": "Europe/London",  # alias of GB
     "UA": "Europe/Kyiv",
     "XK": "Europe/Belgrade",
 }
