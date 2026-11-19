@@ -158,7 +158,7 @@ def validate(
 
     # ---- B/C per country ----------------------------------------------------------
     ref = pd.DataFrame({c: share[c] * tot_c[base_of[c]] for c in hh})
-    rows, curves = [], {}
+    rows, curves, implied = [], {}, {}
     for country in sorted(country_of.unique()):
         tz = country_timezone(country, timezones)
         cols = list(country_of.index[country_of == country])
@@ -181,10 +181,17 @@ def validate(
 
         corr_local, corr_utc = _agreement(actual, local), _agreement(actual, utc)
         ratios = _ratio_agreement(actual, local)
+        # slope of (model - 1) on (table - 1): the share of the load that follows the shape
+        slopes = {
+            p: float(np.polyfit(local[p] - 1.0, actual[p] - 1.0, 1)[0])
+            for p in actual.columns
+        }
+        implied[country] = float(np.mean(list(slopes.values())))
         for p in actual.columns:
             rows.append(
                 dict(country=country, timezone=tz, profile=p, kind="factor",
-                     corr_local=corr_local[p], corr_utc=corr_utc[p])
+                     corr_local=corr_local[p], corr_utc=corr_utc[p],
+                     slope_vs_table=slopes[p])
             )
         for pair, (pear, spear, resid) in ratios.items():
             rows.append(
@@ -285,6 +292,7 @@ def validate(
         effect=effect,
         curves=curves,
         profile_factor_stats=by_profile.describe().T,
+        implied_fraction=implied,
     )
 
 
@@ -305,6 +313,10 @@ def _print(result: dict, out: Path) -> bool:
         print(f"    [{'PASS' if ok else 'FAIL'}] {name}: {detail}")
     print("\nFIDELITY DETAIL (corr_local = agreement with the table in local time)")
     print(result["fidelity"].round(3).to_string(index=False))
+    print("\nSHARE OF THE ELECTRICITY LOAD THAT FOLLOWS THE SHAPE (implied by the model)")
+    print("  slope of (model factor - 1) on (table factor - 1); 1.0 = whole load shaped")
+    for country, value in result["implied_fraction"].items():
+        print(f"  {country}: {value:.2f}")
     print("\nEFFECT OF THE SHAPES ON PEAKS (per node, summed)")
     print(result["effect"].round(1).to_string(index=False))
     result["fidelity"].to_csv(out / "shape_fidelity.csv", index=False)

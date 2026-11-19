@@ -47,3 +47,13 @@ def test_unsplit_control_works(tmp_path) -> None:
     shaped = apply_lv_profile_split(_network(), _config(resolved_shapes=_local_shapes()))
     result = validate(_network(), shaped, pd.read_csv(TABLE))
     assert all(ok for _, _, ok, _ in result["checks"]), result["checks"]
+
+
+def test_implied_household_fraction_is_recovered() -> None:
+    for fraction in (1.0, 0.5):
+        shaped = apply_lv_profile_split(
+            _network(),
+            _config(resolved_shapes=_local_shapes(), household_fraction=fraction),
+        )
+        result = validate(_network(), shaped, pd.read_csv(TABLE))
+        assert abs(result["implied_fraction"]["NO"] - fraction) < 0.15, result["implied_fraction"]
