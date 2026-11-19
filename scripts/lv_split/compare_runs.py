@@ -79,65 +79,106 @@ def _diagnose(n: pypsa.Network, carriers: list[str]) -> str:
     return "\n".join(lines)
 
 
+def _links(n: pypsa.Network) -> pd.DataFrame:
+    """Distribution-grid and charger links with capacity, peak flow, link-hours at limit."""
+    sel = n.links.index[n.links.carrier.isin([DISTRIBUTION_CARRIER, CHARGER_CARRIER])]
+    if len(sel) == 0:
+        return pd.DataFrame()
+    w = _weights(n)
+    cap_col = "p_nom_opt" if "p_nom_opt" in n.links else "p_nom"
+    cap = n.links.loc[sel, cap_col].astype(float)
+    flow = n.links_t.p0[n.links_t.p0.columns.intersection(sel)]
+    peak = flow.abs().max().reindex(sel)
+    full = ((flow.abs() >= 0.999 * cap[flow.columns]) & (cap[flow.columns] > 0)).mul(w, axis=0)
+    return pd.DataFrame(
+        {
+            "carrier": n.links.loc[sel, "carrier"],
+            "profile": [_profile_of(i) or "node" for i in sel],
+            "capacity_MW": cap,
+            "peak_flow_MW": peak,
+            "link_hours_at_limit": full.sum().reindex(sel),
+        }
+    )
+
+
 def compare(
     control: pypsa.Network,
     shaped: pypsa.Network,
     carriers: list[str] | None = None,
     table: pd.DataFrame | None = None,
 ) -> dict[str, pd.DataFrame | list[tuple[str, bool, str]]]:
+    """Compare a control run (split or not) with a shaped run (split)."""
     carriers = carriers or ["electricity"]
     pc, ps = load_series(control), load_series(shaped)
-    if not pc.columns.equals(ps.columns) and set(pc.columns) != set(ps.columns):
-        missing = set(pc.columns) ^ set(ps.columns)
-        raise ValueError(f"The two networks have different loads, e.g. {sorted(missing)[:5]}")
-    ps = ps[pc.columns]
     if not pc.index.equals(ps.index):
         raise ValueError("The two networks have different snapshots.")
     w = _weights(control)
+    control_split = any(_profile_of(c) for c in pc.columns)
 
-    hh = household_columns(control, carriers)
+    hh = household_columns(shaped, carriers)
     if not hh:
-        raise ValueError(_diagnose(control, carriers))
+        raise ValueError(_diagnose(shaped, carriers))
+
+    def by_base(frame: pd.DataFrame) -> pd.DataFrame:
+        return frame.T.groupby(pd.Series({c: _base_of(c) for c in frame.columns})).sum().T
+
+    tot_c, tot_s = by_base(pc), by_base(ps)
+    if set(tot_c.columns) != set(tot_s.columns):
+        diff = sorted(set(tot_c.columns) ^ set(tot_s.columns))
+        raise ValueError(f"Loads differ between the networks, e.g. {diff[:5]}")
+    tot_s = tot_s[tot_c.columns]
+    hh_bases = sorted({_base_of(c) for c in hh})
     checks: list[tuple[str, bool, str]] = []
 
-    # 1. node total of household demand must not change
-    groups = pd.Series({c: _base_of(c) for c in hh})
-    tot_c = pc[hh].T.groupby(groups).sum().T
-    tot_s = ps[hh].T.groupby(groups).sum().T
-    rel = ((tot_s - tot_c).abs().max() / tot_c.abs().max().replace(0, np.nan)).fillna(0)
+    # 1. household demand per node (three profiles added up) equals the control
+    scale = tot_c[hh_bases].abs().max().replace(0, np.nan)
+    rel = ((tot_s[hh_bases] - tot_c[hh_bases]).abs().max() / scale).fillna(0)
     checks.append(
         (
             "Household node total unchanged in every snapshot",
             bool(rel.max() < 1e-6),
-            f"largest relative difference {rel.max():.2e} over {len(tot_c.columns)} node loads",
+            f"largest relative difference {rel.max():.2e} over {len(hh_bases)} node loads",
         )
     )
 
-    # 2. yearly energy per profile unchanged
-    e_c, e_s = pc[hh].mul(w, axis=0).sum(), ps[hh].mul(w, axis=0).sum()
-    ratio = (e_s / e_c.replace(0, np.nan)).dropna()
-    checks.append(
-        (
-            "Yearly energy per profile unchanged (shares kept)",
-            bool((ratio - 1).abs().max() < 1e-6),
-            f"energy ratio range {ratio.min():.6f} to {ratio.max():.6f}",
+    # 2. all other loads (EV, heat, industry, ...) add up to the control as well
+    other = [b for b in tot_c.columns if b not in hh_bases]
+    if other:
+        scale = tot_c[other].abs().max().replace(0, np.nan)
+        rel_o = ((tot_s[other] - tot_c[other]).abs().max() / scale).fillna(0)
+        checks.append(
+            (
+                "Other loads (EV, heat, ...) unchanged after adding profiles up",
+                bool(rel_o.max() < 1e-6),
+                f"largest relative difference {rel_o.max():.2e} over {len(other)} node loads",
+            )
         )
-    )
 
-    # 3. everything that is not a household load must be untouched
-    other = [c for c in pc.columns if c not in hh]
-    other_diff = float((ps[other] - pc[other]).abs().to_numpy().max()) if other else 0.0
-    checks.append(
-        (
-            "Non-household loads untouched",
-            other_diff < 1e-6,
-            f"largest absolute difference {other_diff:.2e} over {len(other)} loads",
+    # implied yearly share of each profile load = its energy / node energy
+    base_of = pd.Series({c: _base_of(c) for c in hh})
+    e_s = ps[hh].mul(w, axis=0).sum()
+    e_base = e_s.groupby(base_of).transform("sum")
+    share = (e_s / e_base.replace(0, np.nan)).fillna(0)
+    prof = pd.Series({c: _profile_of(c) for c in hh})
+    shares = share.groupby(prof).agg(["mean", "min", "max"])
+    shares.index.name = "profile"
+
+    if control_split:
+        hh_c = [c for c in hh if c in pc.columns]
+        e_c = pc[hh_c].mul(w, axis=0).sum()
+        ratio = (e_s[hh_c] / e_c.replace(0, np.nan)).dropna()
+        checks.append(
+            (
+                "Yearly energy per profile unchanged versus control",
+                bool((ratio - 1).abs().max() < 1e-6),
+                f"energy ratio range {ratio.min():.6f} to {ratio.max():.6f}",
+            )
         )
-    )
 
-    # 4. shapes actually differ between profiles
-    factor = (ps[hh] / pc[hh].where(pc[hh] > 0)).astype(float)
-    by_profile = factor.T.groupby(pd.Series({c: _profile_of(c) for c in hh})).mean().T
+    # 3. profiles follow different shapes: factor = profile demand / (share * node demand)
+    ref = pd.DataFrame({c: share[c] * tot_c[base_of[c]] for c in hh})
+    factor = (ps[hh] / ref.where(ref > 0)).astype(float)
+    by_profile = factor.T.groupby(prof).mean().T
     spread = float((by_profile.max(axis=1) - by_profile.min(axis=1)).max())
     checks.append(
         (
@@ -147,25 +188,6 @@ def compare(
         )
     )
 
-    summary = pd.DataFrame(
-        {
-            "factor_min": factor.min(),
-            "factor_mean": factor.mean(),
-            "factor_max": factor.max(),
-            "peak_control_MW": pc[hh].max(),
-            "peak_shaped_MW": ps[hh].max(),
-            "peak_hour_control": pc[hh].idxmax().map(lambda t: t.hour),
-            "peak_hour_shaped": ps[hh].idxmax().map(lambda t: t.hour),
-        }
-    )
-    summary.index.name = "load"
-    per_profile = summary.assign(profile=[_profile_of(c) for c in summary.index])
-    per_profile = per_profile.groupby("profile")[
-        ["factor_min", "factor_mean", "factor_max", "peak_control_MW", "peak_shaped_MW"]
-    ].agg({"factor_min": "min", "factor_mean": "mean", "factor_max": "max",
-           "peak_control_MW": "sum", "peak_shaped_MW": "sum"})
-
-    # 5. optional: do the factors follow the LPG table (rank correlation)?
     if table is not None:
         keys = pd.MultiIndex.from_arrays(
             [
@@ -193,45 +215,49 @@ def compare(
             )
         )
 
-    # 6. grid links: capacity, peak flow, hours at the limit
-    links = {}
-    for label, n in (("control", control), ("shaped", shaped)):
-        sel = n.links.index[
-            n.links.carrier.isin([DISTRIBUTION_CARRIER, CHARGER_CARRIER])
-            & n.links.index.map(lambda x: _profile_of(x) is not None)
-        ]
-        if len(sel) == 0:
-            continue
-        cap_col = "p_nom_opt" if "p_nom_opt" in n.links else "p_nom"
-        cap = n.links.loc[sel, cap_col]
-        flow = n.links_t.p0[n.links_t.p0.columns.intersection(sel)]
-        peak = flow.abs().max() if not flow.empty else pd.Series(np.nan, index=sel)
-        at_limit = (
-            ((flow.abs() >= 0.999 * cap[flow.columns]) & (cap[flow.columns] > 0))
-            .mul(w, axis=0)
-            .sum()
-            if not flow.empty
-            else pd.Series(np.nan, index=sel)
-        )
-        links[label] = pd.DataFrame(
-            {"carrier": n.links.loc[sel, "carrier"], "capacity_MW": cap,
-             "peak_flow_MW": peak, "hours_at_limit": at_limit}
-        )
-    link_table = (
-        pd.concat(links, axis=1) if len(links) == 2 else pd.DataFrame()
+    # per-load summary and per-profile peaks (shaped vs the same share without shape)
+    node_peak = pd.Series({c: tot_c[base_of[c]].max() for c in hh}) * share
+    summary = pd.DataFrame(
+        {
+            "share": share,
+            "factor_min": factor.min(),
+            "factor_mean": factor.mean(),
+            "factor_max": factor.max(),
+            "peak_unshaped_MW": node_peak,
+            "peak_shaped_MW": ps[hh].max(),
+            "peak_hour_unshaped": ref.idxmax().map(lambda t: t.hour),
+            "peak_hour_shaped": ps[hh].idxmax().map(lambda t: t.hour),
+        }
     )
-    if not link_table.empty:
-        link_table.columns = [f"{a}_{b}" for a, b in link_table.columns]
-        link_table = link_table.drop(columns=["shaped_carrier"]).rename(
-            columns={"control_carrier": "carrier"}
-        )
-        link_table["profile"] = [_profile_of(i) for i in link_table.index]
+    summary.index.name = "load"
+    per_profile = summary.assign(profile=prof).groupby("profile").agg(
+        factor_min=("factor_min", "min"),
+        factor_mean=("factor_mean", "mean"),
+        factor_max=("factor_max", "max"),
+        peak_unshaped_MW=("peak_unshaped_MW", "sum"),
+        peak_shaped_MW=("peak_shaped_MW", "sum"),
+    )
+    per_profile.loc["sum of profiles"] = per_profile[
+        ["peak_unshaped_MW", "peak_shaped_MW"]
+    ].sum().reindex(per_profile.columns)
+    per_profile.loc["node total (one block)"] = [
+        np.nan, np.nan, np.nan, float(node_peak.groupby(base_of).sum().sum()),
+        float(tot_c[hh_bases].max().sum()),
+    ]
+
+    lc, ls = _links(control), _links(shaped)
+    link_cols = ["capacity_MW", "peak_flow_MW", "link_hours_at_limit"]
+    links = {}
+    if not lc.empty and not ls.empty:
+        links["control"] = lc.groupby(["carrier", "profile"])[link_cols].sum()
+        links["shaped"] = ls.groupby(["carrier", "profile"])[link_cols].sum()
 
     return {
         "checks": checks,
+        "shares": shares,
         "load_factors": summary,
         "profile_summary": per_profile,
-        "links": link_table,
+        "links": links,
     }
 
 
@@ -240,23 +266,26 @@ def _print(result: dict, out: Path) -> bool:
     print("\nCHECKS")
     for name, ok, detail in result["checks"]:
         print(f"  [{'PASS' if ok else 'FAIL'}] {name}: {detail}")
-    for key in ("profile_summary", "load_factors", "links"):
-        frame = result[key]
-        if isinstance(frame, pd.DataFrame) and not frame.empty:
-            frame.to_csv(out / f"{key}.csv")
-    print("\nPER PROFILE (factor = shaped / control demand; peaks summed over nodes)")
+    for key in ("shares", "profile_summary", "load_factors"):
+        result[key].to_csv(out / f"{key}.csv")
+    print("\nYEARLY SHARE OF NODE HOUSEHOLD ENERGY PER PROFILE (mean, min, max over nodes)")
+    print(result["shares"].round(4).to_string())
+    print("\nPER PROFILE: factor = demand / (share x node demand); peaks summed over nodes")
+    print("  'sum of profiles' > 'node total' means the profile peaks do not coincide")
     print(result["profile_summary"].round(3).to_string())
     links = result["links"]
-    if isinstance(links, pd.DataFrame) and not links.empty:
-        agg = links.groupby(["carrier", "profile"])[
-            [c for c in links.columns if c.endswith(("_MW", "_limit"))]
-        ].sum()
-        print("\nGRID LINKS summed over nodes (capacity, peak flow, hours at limit)")
-        print(agg.round(1).to_string())
-        agg.to_csv(out / "links_by_profile.csv")
-        total = links.groupby("carrier")[["control_capacity_MW", "shaped_capacity_MW"]].sum()
-        print("\nTOTAL CAPACITY over the three profiles")
+    if links:
+        for label, frame in links.items():
+            frame.to_csv(out / f"links_{label}.csv")
+            print(f"\nGRID LINKS, {label} run (summed over nodes)")
+            print(frame.round(1).to_string())
+        print("\nSUM OF LINK PEAKS AND CAPACITY PER CARRIER (control vs shaped)")
+        total = pd.concat(
+            {k: v.groupby("carrier")[["capacity_MW", "peak_flow_MW"]].sum()
+             for k, v in links.items()}, axis=1,
+        )
         print(total.round(1).to_string())
+        total.to_csv(out / "links_total.csv")
     print(f"\nCSV files written to {out}/")
     return all(ok for _, ok, _ in result["checks"])
 
