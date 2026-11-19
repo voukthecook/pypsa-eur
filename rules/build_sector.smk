@@ -1642,10 +1642,55 @@ def input_heat_source_power(w):
     }
 
 
+def input_lv_shape_tables(w):
+    shapes = config_provider("sector", "lv_split_profiles", default={})(w).get(
+        "shapes"
+    )
+    if not shapes:
+        return {}
+    return {f"shape_{key}": path for key, path in shapes.items()}
+
+
+def input_lv_profile_shapes(w):
+    cfg = config_provider("sector", "lv_split_profiles", default={})(w)
+    if cfg.get("enable", False) and cfg.get("shapes"):
+        return resources(
+            "lv_profile_shapes_base_s_{clusters}_elec_{opts}_{sector_opts}.csv"
+        )
+    return []
+
+
+rule build_lv_profile_shapes:
+    input:
+        unpack(input_lv_shape_tables),
+        snapshot_weightings=resources(
+            "snapshot_weightings_base_s_{clusters}_elec_{opts}_{sector_opts}.csv"
+        ),
+    output:
+        resources("lv_profile_shapes_base_s_{clusters}_elec_{opts}_{sector_opts}.csv"),
+    log:
+        logs("build_lv_profile_shapes_base_s_{clusters}_elec_{opts}_{sector_opts}.log"),
+    benchmark:
+        benchmarks("build_lv_profile_shapes_base_s_{clusters}_elec_{opts}_{sector_opts}")
+    threads: 1
+    resources:
+        mem_mb=1000,
+    params:
+        countries=config_provider("countries"),
+        timezones=config_provider(
+            "sector", "lv_split_profiles", "timezones", default={}
+        ),
+    message:
+        "Resolving LV profile shapes to local time for {wildcards.clusters} clusters"
+    script:
+        scripts("build_lv_profile_shapes.py")
+
+
 rule prepare_sector_network:
     input:
         unpack(input_profile_offwind),
         unpack(input_heat_source_power),
+        lv_profile_shapes=input_lv_profile_shapes,
         **rules.cluster_gas_network.output,
         **rules.build_gas_input_locations.output,
         snapshot_weightings=resources(

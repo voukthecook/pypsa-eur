@@ -7240,6 +7240,13 @@ if __name__ == "__main__":
             split_cfg["household_fraction"] = household_electricity_fraction(
                 pop_weighted_energy_totals
             )
+        shapes_file = snakemake.input.get("lv_profile_shapes")
+        if shapes_file:
+            table = pd.read_csv(shapes_file, header=[0, 1, 2], index_col=0, parse_dates=True)
+            split_cfg["resolved_shapes"] = {
+                key: table[key] for key in table.columns.get_level_values(0).unique()
+            }
+            split_cfg["shapes"] = None
         n = apply_lv_profile_split(n, split_cfg)
         removed = drop_zero_share_profiles(
             n,

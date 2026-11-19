@@ -164,6 +164,7 @@ def _profile_shape_factors(
     weights: pd.Series,
     max_iter: int = 500,
     tol: float = 1e-12,
+    resolved: pd.DataFrame | None = None,
 ) -> dict[str, pd.Series]:
     """Per-snapshot multiplier for each profile.
 
@@ -172,22 +173,31 @@ def _profile_shape_factors(
 
     * the profile parts add up to the node demand in every snapshot, and
     * each profile still receives exactly its configured share of the yearly energy.
+
+    ``resolved`` (snapshots x profiles, already in the node's local time, see
+    ``scripts/lv_split/local_time_shapes.py``) replaces the UTC month/daytype/hour
+    lookup in ``shape``.
     """
     if not isinstance(snapshots, pd.DatetimeIndex):
         raise NotImplementedError(
             "Profile shapes need plain datetime snapshots (not multi-period)."
         )
-    keys = pd.MultiIndex.from_arrays(
-        [
-            snapshots.month,
-            np.where(snapshots.dayofweek >= 5, "weekend", "weekday"),
-            snapshots.hour,
-        ],
-        names=["month", "daytype", "hour"],
-    )
-    raw = shape.reindex(keys)
-    if raw.isna().any().any():
-        raise ValueError("Profile shape table does not cover every snapshot hour.")
+    if resolved is not None:
+        raw = resolved.reindex(snapshots)[list(PROFILES)]
+        if raw.isna().any().any() or (raw < 0).any().any():
+            raise ValueError("Resolved profile shape must be finite and non-negative.")
+    else:
+        keys = pd.MultiIndex.from_arrays(
+            [
+                snapshots.month,
+                np.where(snapshots.dayofweek >= 5, "weekend", "weekday"),
+                snapshots.hour,
+            ],
+            names=["month", "daytype", "hour"],
+        )
+        raw = shape.reindex(keys)
+        if raw.isna().any().any():
+            raise ValueError("Profile shape table does not cover every snapshot hour.")
     active = [p for p in PROFILES if shares[p] > 0]
     raw = raw[active].to_numpy(dtype=float)
     if (raw.sum(axis=1) <= 0).any():
@@ -223,6 +233,16 @@ def _profile_shape_factors(
         values[live] = fitted[:, i] / (energy[live] * shares[p])
         factors[p] = pd.Series(values, index=snapshots)
     return factors
+
+
+def _resolved_for(table: pd.DataFrame | None, bus: str) -> pd.DataFrame | None:
+    """Local-time shape of the bus's country (columns are (country, profile))."""
+    if table is None:
+        return None
+    country = str(bus)[:2].upper()
+    if country not in table.columns.get_level_values(0):
+        raise KeyError(f"Resolved shape has no country '{country}' (bus '{bus}').")
+    return table[country]
 
 
 def household_electricity_fraction(totals: pd.DataFrame) -> pd.Series:
@@ -302,6 +322,9 @@ def apply_lv_profile_split(
     )
 
     profile_shapes = _load_profile_shapes(config.get("shapes"))
+    resolved_shapes = config.get("resolved_shapes") or {}
+    for key in resolved_shapes:
+        profile_shapes.setdefault(key, None)
     shape_loads = set(config.get("shape_load_carriers", ["electricity"]))
     household_fraction = config.get("household_fraction")
 
@@ -462,6 +485,9 @@ def apply_lv_profile_split(
                     shares,
                     load_series,
                     n.snapshot_weightings.generators,
+                    resolved=_resolved_for(
+                        resolved_shapes.get(shape_key), row["bus"]
+                    ),
                 )
                 if shape_key == "electricity":
                     # only the household part follows the shape; the rest keeps
