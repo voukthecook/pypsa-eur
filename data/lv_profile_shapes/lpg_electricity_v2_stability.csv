@@ -1,0 +1,4 @@
+pair,mean_agreement,cells_ordered_95pct,cells_ordered_80pct
+urban vs suburban,0.8786,0.4688,0.7396
+urban vs rural,0.9209,0.6719,0.8333
+suburban vs rural,0.9184,0.6302,0.8438

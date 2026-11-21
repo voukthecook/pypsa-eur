@@ -17,6 +17,7 @@ Output: ``<out_dir>/<profile>__<template>-s<seed>__<season>.csv`` (minute-by-min
 
 import json
 import os
+import shutil
 import sys
 import time
 from multiprocessing import Pool
@@ -61,16 +62,20 @@ SEASONS = {
 }
 
 
+BASE = os.getcwd()  # work folders are created here, never inside another job's folder
+
+
 def job(args):
     profile, template, seed, season, out_dir = args
     out = f"{out_dir}/{profile}__{template}-s{seed}__{season}.csv"
     if os.path.exists(out):
         return args, "cached"
-    workdir = os.path.abspath(f"lpg_wd/{profile}_{season}_{template[:5]}_{seed}")
+    workdir = os.path.join(BASE, "lpg_wd", f"{profile}_{season}_{template[:5]}_{seed}")
     os.makedirs(workdir, exist_ok=True)
     os.chdir(workdir)
     try:
         start, end = SEASONS[season]
+        shutil.rmtree(os.path.join(workdir, "C1"), ignore_errors=True)  # no stale results
         data = lpg_execution.execute_lpg_single_household(
             2022,
             getattr(lpgdata.Households, template),
@@ -79,7 +84,10 @@ def job(args):
             enddate=end,
             random_seed=seed,
         )
-        data["Electricity_HH1"].to_csv(out)
+        data["Electricity_HH1"].to_csv(out + ".part")
+        os.replace(out + ".part", out)  # a half-written file is never taken as finished
+        os.chdir(BASE)
+        shutil.rmtree(workdir, ignore_errors=True)  # LPG leaves large result folders behind
         return args, "ok"
     except Exception as exc:  # keep going, report at the end
         return args, "FAIL " + repr(exc)[:200]

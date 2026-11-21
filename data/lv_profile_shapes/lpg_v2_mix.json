@@ -1,0 +1,26 @@
+{
+  "urban": {
+    "CHR07_Single_with_work": 0.2,
+    "CHR33_Couple_under_30_years_with_work": 0.2,
+    "CHR39_Couple_30_64_years_with_work": 0.2,
+    "CHR35_Single_woman_30_64_years_with_work": 0.15,
+    "CHR13_Student_with_Work": 0.1,
+    "CHR24_Single_woman_over_65_years": 0.15
+  },
+  "suburban": {
+    "CHR01_Couple_both_at_Work": 0.2,
+    "CHR03_Family_1_child_both_at_work": 0.2,
+    "CHR27_Family_both_at_work_2_children": 0.2,
+    "CHR45_Family_with_1_child_1_at_work_1_at_home": 0.15,
+    "CHR44_Family_with_2_children_1_at_work_1_at_home": 0.15,
+    "CHR41_Family_with_3_children_both_at_work": 0.1
+  },
+  "rural": {
+    "CHR16_Couple_over_65_years": 0.2,
+    "CHR54_Retired_Couple_no_work": 0.15,
+    "CHR15_Multigenerational_Home_working_couple_2_children_2_seniors": 0.15,
+    "CHR20_one_at_work_one_work_home_3_children": 0.15,
+    "CHR02_Couple_30_64_age_with_work": 0.2,
+    "CHR05_Family_3_children_both_with_work": 0.15
+  }
+}

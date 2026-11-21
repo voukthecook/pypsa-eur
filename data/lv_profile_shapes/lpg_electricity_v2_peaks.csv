@@ -1,0 +1,4 @@
+profile,peak_hour_estimate,share_within_1h,peak_hour_5pct,peak_hour_95pct
+urban,19,1.0000,19,19
+suburban,19,1.0000,19,19
+rural,19,1.0000,19,19
