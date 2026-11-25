@@ -1,0 +1,17 @@
+cluster,,40
+opt,,lv1.2Co2L0-168H
+planning_horizon,,2030
+component,carrier,
+Generator,nuclear,0.6916622641006267
+Generator,offwind-ac,0.5497179118905449
+Generator,offwind-dc,0.5629045041179304
+Generator,offwind-float,
+Generator,onwind,0.3076215601635126
+Generator,ror,0.3629427185766485
+Generator,solar,0.1063060251341553
+Generator,solar rooftop,0.1106571976709524
+Generator,solar-hsat,
+Line,AC,0.3385527650078764
+Load,electricity,
+StorageUnit,PHS,0.2147431646709671
+StorageUnit,hydro,0.3271929327472588

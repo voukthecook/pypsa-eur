@@ -1,0 +1,24 @@
+component,carrier,0
+Generator,gas,0.15783638942459835
+Generator,offwind-ac,0.15350877192982457
+Generator,offwind-dc,0.3663157894736842
+Generator,offwind-float,0.2188679245283019
+Generator,onwind,0.17935150442537726
+Generator,ror,0.2744965870307167
+Generator,rural heat vent,0.08355408823482192
+Generator,rural solar thermal,0.041666666666666664
+Generator,solar,0.16464736752677023
+Generator,solar rooftop,0.16053008500946753
+Generator,solar-hsat,0.21252206878081686
+Generator,urban central heat vent,0.06459757415807435
+Generator,urban central solar thermal,0.04241719930273097
+Generator,urban decentral heat vent,0.06724486178553468
+Generator,urban decentral solar thermal,0.038954108858057626
+Line,AC,0.06400730215713049
+Load,electricity,
+Load,land transport EV,
+Load,rural heat,
+Load,urban central heat,
+Load,urban decentral heat,
+StorageUnit,PHS,0.2853828898426323
+StorageUnit,hydro,0.24869974438419828

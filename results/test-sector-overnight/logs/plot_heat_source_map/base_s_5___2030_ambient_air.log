@@ -1,0 +1,4 @@
+INFO:__main__:Creating temperature map for ambient_air heat source
+INFO:__main__:Temperature map saved to results/test-sector-overnight/maps/static/base_s_5___2030-heat_source_temperature_map_ambient_air.html
+WARNING:__main__:No energy data available for ambient_air
+WARNING:__main__:Created empty energy map at results/test-sector-overnight/maps/static/base_s_5___2030-heat_source_energy_map_ambient_air.html

@@ -1,0 +1,27 @@
+cluster,,3
+opt,,lv1.2Co2L0-3H
+planning_horizon,,2050
+component,carrier,
+Generator,gas,0.1525123986998789
+Generator,offwind-ac,0.1699029126213592
+Generator,offwind-dc,0.360128617363344
+Generator,offwind-float,0.2162162162162162
+Generator,onwind,0.1732074713370779
+Generator,ror,0.2737914675767918
+Generator,rural heat vent,0.0528808021385813
+Generator,rural solar thermal,0.0410334346504559
+Generator,solar,0.1642543440714679
+Generator,solar rooftop,0.1691419737428837
+Generator,solar-hsat,0.2017717699957872
+Generator,urban central heat vent,0.0500308424339555
+Generator,urban central solar thermal,0.0433244916003536
+Generator,urban decentral heat vent,0.0594413507592401
+Generator,urban decentral solar thermal,0.0398050365556458
+Line,AC,0.0757967164300288
+Load,electricity,
+Load,land transport EV,
+Load,rural heat,
+Load,urban central heat,
+Load,urban decentral heat,
+StorageUnit,PHS,0.2781832904148784
+StorageUnit,hydro,0.2486997792408985

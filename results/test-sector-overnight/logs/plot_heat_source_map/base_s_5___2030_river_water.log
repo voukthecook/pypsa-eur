@@ -1,0 +1,4 @@
+INFO:__main__:Creating temperature map for river_water heat source
+INFO:__main__:Temperature map saved to results/test-sector-overnight/maps/static/base_s_5___2030-heat_source_temperature_map_river_water.html
+INFO:__main__:Creating energy map for river_water heat source
+INFO:__main__:Energy map saved to results/test-sector-overnight/maps/static/base_s_5___2030-heat_source_energy_map_river_water.html

@@ -1,0 +1,18 @@
+INFO:__main__:Loaded COP profiles with dimensions: FrozenMappingWarningOnValuesAccess({'heat_system': 3, 'heat_source': 2, 'time': 8712, 'name': 3})
+INFO:__main__:Processing heat system: urban central
+INFO:__main__:Converting Dataset to DataArray using variable: temperature
+INFO:__main__:Selected 'urban central' heat system
+INFO:__main__:Found 3 regions: ['GR0 0AC', 'GR0 1AC', 'GR0 2AC']...
+WARNING:__main__:Heat source 'ground' not found in timeseries data for GR0 0AC
+WARNING:__main__:Heat source 'ground' not found in monthly data for GR0 0AC
+INFO:__main__:Processing heat system: urban decentral
+INFO:__main__:Converting Dataset to DataArray using variable: temperature
+INFO:__main__:Selected 'urban decentral' heat system
+INFO:__main__:Found 3 regions: ['GR0 0AC', 'GR0 1AC', 'GR0 2AC']...
+WARNING:__main__:Heat source 'ground' not found in timeseries data for GR0 0AC
+WARNING:__main__:Heat source 'ground' not found in monthly data for GR0 0AC
+INFO:__main__:Processing heat system: rural
+INFO:__main__:Converting Dataset to DataArray using variable: temperature
+INFO:__main__:Selected 'rural' heat system
+INFO:__main__:Found 3 regions: ['GR0 0AC', 'GR0 1AC', 'GR0 2AC']...
+INFO:__main__:Interactive COP profile plots saved to results/G11Split_GR_Missaligned1/graphs/cop_profiles_s_3_2050.html

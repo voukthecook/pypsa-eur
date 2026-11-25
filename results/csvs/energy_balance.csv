@@ -1,0 +1,74 @@
+cluster,,,40
+opt,,,lv1.2Co2L0-168H
+planning_horizon,,,2030
+component,carrier,bus_carrier,
+Generator,nuclear,AC,168066460.21897
+Generator,offwind-ac,AC,60544816.80678
+Generator,offwind-dc,AC,54326644.58552
+Generator,offwind-float,AC,2e-05
+Generator,onwind,AC,298985634.8086
+Generator,ror,AC,37095764.184
+Generator,solar,AC,109271661.61444
+Generator,solar rooftop,low voltage,93915543.99932
+Generator,solar-hsat,AC,4e-05
+Line,AC,AC,-2955940.50738
+Link,CCGT,AC,0.0
+Link,CCGT,co2,0.0
+Link,CCGT,gas,0.0
+Link,CO2 pipeline,co2 stored,0.0
+Link,DC,AC,-3141541.12333
+Link,H2 Electrolysis,AC,-1550129.58651
+Link,H2 Electrolysis,H2,1084160.63281
+Link,H2 Fuel Cell,AC,1e-05
+Link,H2 Fuel Cell,H2,-3e-05
+Link,H2 pipeline,AC,-2e-05
+Link,H2 pipeline,H2,0.0
+Link,H2 turbine,AC,466189.07209
+Link,H2 turbine,H2,-1084160.63277
+Link,Haber-Bosch,AC,-1e-05
+Link,Haber-Bosch,H2,-3e-05
+Link,Haber-Bosch,NH3,3e-05
+Link,OCGT,AC,0.0
+Link,OCGT,co2,0.0
+Link,OCGT,gas,0.0
+Link,OCGT methanol,AC,0.0
+Link,OCGT methanol,co2,0.0
+Link,OCGT methanol,methanol,0.0
+Link,SMR,H2,0.0
+Link,SMR,co2,0.0
+Link,SMR,gas,0.0
+Link,SMR CC,H2,0.0
+Link,SMR CC,co2,0.0
+Link,SMR CC,gas,0.0
+Link,Sabatier,H2,-0.0
+Link,Sabatier,co2 stored,-0.0
+Link,Sabatier,gas,0.0
+Link,ammonia cracker,H2,2e-05
+Link,ammonia cracker,NH3,-3e-05
+Link,battery charger,AC,-0.00049
+Link,battery charger,battery,0.00048
+Link,battery discharger,AC,0.00047
+Link,battery discharger,battery,-0.00048
+Link,co2 sequestered,co2 sequestered,0.0
+Link,co2 sequestered,co2 stored,-0.0
+Link,electricity distribution grid,AC,-790523960.83063
+Link,electricity distribution grid,low voltage,766808106.5621
+Link,gas pipeline,AC,-0.0001
+Link,gas pipeline,gas,0.0
+Link,gas pipeline new,gas,0.0
+Link,home battery charger,home battery,0.00075
+Link,home battery charger,low voltage,-0.00077
+Link,home battery discharger,home battery,-0.00075
+Link,home battery discharger,low voltage,0.00074
+Load,electricity,low voltage,-860723650.56139
+StorageUnit,PHS,AC,-3853064.96529
+StorageUnit,hydro,AC,73267465.72283
+Store,H2 Store,H2,0.0
+Store,ammonia store,NH3,-0.0
+Store,battery,battery,0.0
+Store,co2,co2,0.0
+Store,co2 sequestered,co2 sequestered,-0.0
+Store,co2 stored,co2 stored,-0.0
+Store,gas,gas,0.0
+Store,home battery,home battery,-0.0
+Store,methanol,methanol,0.0

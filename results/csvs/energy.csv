@@ -1,0 +1,48 @@
+cluster,,40
+opt,,lv1.2Co2L0-168H
+planning_horizon,,2030
+component,carrier,
+Generator,nuclear,168066460.21897
+Generator,offwind-ac,60544816.80678
+Generator,offwind-dc,54326644.58552
+Generator,offwind-float,2e-05
+Generator,onwind,298985634.8086
+Generator,ror,37095764.184
+Generator,solar,109271661.61444
+Generator,solar rooftop,93915543.99932
+Generator,solar-hsat,4e-05
+Line,AC,-2955940.50738
+Link,CCGT,0.0
+Link,CO2 pipeline,0.0
+Link,DC,-3141541.12333
+Link,H2 Electrolysis,-465968.95371
+Link,H2 Fuel Cell,-1e-05
+Link,H2 pipeline,-2e-05
+Link,H2 turbine,-617971.56068
+Link,Haber-Bosch,-1e-05
+Link,OCGT,0.0
+Link,OCGT methanol,0.0
+Link,SMR,0.0
+Link,SMR CC,0.0
+Link,Sabatier,-0.0
+Link,ammonia cracker,-1e-05
+Link,battery charger,-1e-05
+Link,battery discharger,-1e-05
+Link,co2 sequestered,0.0
+Link,electricity distribution grid,-23715854.26853
+Link,gas pipeline,-0.0001
+Link,gas pipeline new,0.0
+Link,home battery charger,-2e-05
+Link,home battery discharger,-2e-05
+Load,electricity,-860723650.56139
+StorageUnit,PHS,-3853064.96529
+StorageUnit,hydro,73267465.72283
+Store,H2 Store,0.0
+Store,ammonia store,-0.0
+Store,battery,0.0
+Store,co2,0.0
+Store,co2 sequestered,-0.0
+Store,co2 stored,-0.0
+Store,gas,0.0
+Store,home battery,-0.0
+Store,methanol,0.0

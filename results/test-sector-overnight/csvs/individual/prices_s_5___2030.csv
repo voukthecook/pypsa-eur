@@ -1,0 +1,40 @@
+carrier,0
+AC,78.76100377691236
+EV battery,98.53850626551335
+H2,62.22753680679195
+agriculture machinery oil,89.27786531416909
+biogas,27.000808240911518
+co2,-170.6402484139324
+co2 sequestered,-0.08990280877392345
+co2 stored,-30.099621173141276
+coal,6.730566701323236
+coal for industry,64.09261381992168
+gas,22.806929898545352
+gas for industry,48.2962048314386
+home battery,88.72132243408115
+industry methanol,140.52254148501027
+kerosene for aviation,89.27942728616243
+land transport oil,89.27818069836327
+low voltage,88.67427588371731
+methanol,98.1943318545252
+naphtha for industry,46.84135503903467
+non-sequestered HVC,-43.881128992407135
+none,0.0
+oil,45.396959891634594
+oil primary,40.87362204702135
+process emissions,-67.05790222272364
+rural heat,47.70632617855089
+rural water tanks,47.72246897503388
+shipping methanol,140.5238592190091
+shipping oil,89.27827967419255
+solid biomass,41.349647971106435
+solid biomass for industry,7.949730119536341
+unsustainable bioliquids,87.83923559759039
+urban central aquifer thermal energy storage,18.0646244828469
+urban central geothermal heat,20.766977224131487
+urban central heat,10.500528219729842
+urban central river_water heat,1.0249759118913266
+urban central water pits,7.838050684429236
+urban central water tanks,8.787530287927538
+urban decentral heat,52.62813413275933
+urban decentral water tanks,52.64345644797372

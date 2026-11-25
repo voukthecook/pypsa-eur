@@ -1,0 +1,821 @@
+component,carrier,location,bus_carrier,0
+Generator,nuclear,SE0 0AC,AC,746390.4
+Generator,nuclear,SE0 3AC,AC,1303940.352
+Generator,nuclear,SE0 4AC,AC,1855829.78374
+Generator,offwind-ac,DK0 0AC,AC,469751.98156
+Generator,offwind-ac,DK1 0AC,AC,418036.78257
+Generator,offwind-ac,DK1 1AC,AC,253591.25699
+Generator,offwind-ac,SE0 0AC,AC,18632.54922
+Generator,offwind-ac,SE0 10AC,AC,0.0
+Generator,offwind-ac,SE0 11AC,AC,0.0
+Generator,offwind-ac,SE0 2AC,AC,0.0
+Generator,offwind-ac,SE0 3AC,AC,0.0
+Generator,offwind-ac,SE0 4AC,AC,0.0
+Generator,offwind-ac,SE0 5AC,AC,45677.80674
+Generator,offwind-ac,SE0 6AC,AC,0.0
+Generator,offwind-ac,SE0 7AC,AC,0.0
+Generator,offwind-dc,DK0 0AC,AC,0.0
+Generator,offwind-dc,DK1 0AC,AC,0.0
+Generator,offwind-dc,DK1 1AC,AC,0.0
+Generator,offwind-dc,SE0 0AC,AC,0.0
+Generator,offwind-dc,SE0 10AC,AC,0.0
+Generator,offwind-dc,SE0 11AC,AC,0.0
+Generator,offwind-dc,SE0 2AC,AC,0.0
+Generator,offwind-dc,SE0 3AC,AC,0.0
+Generator,offwind-dc,SE0 4AC,AC,0.0
+Generator,offwind-dc,SE0 5AC,AC,0.0
+Generator,offwind-dc,SE0 6AC,AC,0.0
+Generator,offwind-dc,SE0 7AC,AC,0.0
+Generator,offwind-float,DK0 0AC,AC,0.0
+Generator,offwind-float,DK1 0AC,AC,0.0
+Generator,offwind-float,DK1 1AC,AC,0.0
+Generator,offwind-float,SE0 0AC,AC,0.0
+Generator,offwind-float,SE0 10AC,AC,0.0
+Generator,offwind-float,SE0 11AC,AC,0.0
+Generator,offwind-float,SE0 2AC,AC,0.0
+Generator,offwind-float,SE0 3AC,AC,0.0
+Generator,offwind-float,SE0 4AC,AC,0.0
+Generator,offwind-float,SE0 5AC,AC,0.0
+Generator,offwind-float,SE0 6AC,AC,0.0
+Generator,offwind-float,SE0 7AC,AC,0.0
+Generator,onwind,DK0 0AC,AC,5284794.91519
+Generator,onwind,DK1 0AC,AC,114998.78734
+Generator,onwind,DK1 1AC,AC,469280.66861
+Generator,onwind,SE0 0AC,AC,126299.40647
+Generator,onwind,SE0 10AC,AC,323090.08302
+Generator,onwind,SE0 11AC,AC,273755.47626
+Generator,onwind,SE0 1AC,AC,392365.50232
+Generator,onwind,SE0 2AC,AC,547118.11596
+Generator,onwind,SE0 3AC,AC,135999.48804
+Generator,onwind,SE0 4AC,AC,21417.97945
+Generator,onwind,SE0 5AC,AC,112307.1499
+Generator,onwind,SE0 6AC,AC,217823.95707
+Generator,onwind,SE0 7AC,AC,363234.1554
+Generator,onwind,SE0 8AC,AC,73929.5312
+Generator,onwind,SE0 9AC,AC,160707.20651
+Generator,ror,SE0 11AC,AC,139665.40225
+Generator,ror,SE0 1AC,AC,178232.52405
+Generator,ror,SE0 2AC,AC,52421.3306
+Generator,ror,SE0 3AC,AC,52046.89253
+Generator,ror,SE0 7AC,AC,339615.33469
+Generator,ror,SE0 8AC,AC,47928.07369
+Generator,ror,SE0 9AC,AC,22466.28454
+Generator,solar,DK0 0AC,AC,17158.18221
+Generator,solar,DK1 0AC,AC,22387.71848
+Generator,solar,DK1 1AC,AC,17039.52342
+Generator,solar,SE0 0AC,AC,788.24246
+Generator,solar,SE0 10AC,AC,3063.97114
+Generator,solar,SE0 11AC,AC,0.0
+Generator,solar,SE0 1AC,AC,0.0
+Generator,solar,SE0 2AC,AC,3.90946
+Generator,solar,SE0 3AC,AC,920.30227
+Generator,solar,SE0 4AC,AC,1568.41142
+Generator,solar,SE0 5AC,AC,1509.92184
+Generator,solar,SE0 6AC,AC,213.44534
+Generator,solar,SE0 7AC,AC,0.0
+Generator,solar,SE0 8AC,AC,537.94262
+Generator,solar,SE0 9AC,AC,1041.49321
+Generator,solar rooftop,DK0 0AC,low voltage,0.0
+Generator,solar rooftop,DK1 0AC,low voltage,0.0
+Generator,solar rooftop,DK1 1AC,low voltage,0.0
+Generator,solar rooftop,SE0 0AC,low voltage,0.0
+Generator,solar rooftop,SE0 10AC,low voltage,0.0
+Generator,solar rooftop,SE0 11AC,low voltage,0.0
+Generator,solar rooftop,SE0 1AC,low voltage,0.0
+Generator,solar rooftop,SE0 2AC,low voltage,0.0
+Generator,solar rooftop,SE0 3AC,low voltage,0.0
+Generator,solar rooftop,SE0 4AC,low voltage,0.0
+Generator,solar rooftop,SE0 5AC,low voltage,0.0
+Generator,solar rooftop,SE0 6AC,low voltage,0.0
+Generator,solar rooftop,SE0 7AC,low voltage,0.0
+Generator,solar rooftop,SE0 8AC,low voltage,0.0
+Generator,solar rooftop,SE0 9AC,low voltage,0.0
+Generator,solar-hsat,DK0 0AC,AC,0.0
+Generator,solar-hsat,DK1 0AC,AC,0.0
+Generator,solar-hsat,DK1 1AC,AC,0.0
+Generator,solar-hsat,SE0 0AC,AC,0.0
+Generator,solar-hsat,SE0 10AC,AC,0.0
+Generator,solar-hsat,SE0 11AC,AC,0.0
+Generator,solar-hsat,SE0 1AC,AC,0.0
+Generator,solar-hsat,SE0 2AC,AC,0.0
+Generator,solar-hsat,SE0 3AC,AC,0.0
+Generator,solar-hsat,SE0 4AC,AC,0.0
+Generator,solar-hsat,SE0 5AC,AC,0.0
+Generator,solar-hsat,SE0 6AC,AC,0.0
+Generator,solar-hsat,SE0 7AC,AC,0.0
+Generator,solar-hsat,SE0 8AC,AC,0.0
+Generator,solar-hsat,SE0 9AC,AC,0.0
+Line,AC,DK0 0AC,AC,-3831831.45995
+Line,AC,DK1 0AC,AC,-157206.32534
+Line,AC,DK1 1AC,AC,157206.32534
+Line,AC,SE0 0AC,AC,132233.90414
+Line,AC,SE0 10AC,AC,947361.22514
+Line,AC,SE0 11AC,AC,-447003.05477
+Line,AC,SE0 1AC,AC,-1053632.26098
+Line,AC,SE0 2AC,AC,-948841.02998
+Line,AC,SE0 3AC,AC,728586.60428
+Line,AC,SE0 4AC,AC,1466399.38572
+Line,AC,SE0 5AC,AC,1650856.1009
+Line,AC,SE0 6AC,AC,414374.21356
+Line,AC,SE0 7AC,AC,-864738.93226
+Line,AC,SE0 8AC,AC,752223.31632
+Line,AC,SE0 9AC,AC,925001.48106
+Link,CCGT,DK0 0AC,AC,0.0
+Link,CCGT,DK0 0AC,gas,0.0
+Link,CCGT,DK1 0AC,AC,0.0
+Link,CCGT,DK1 0AC,gas,0.0
+Link,CCGT,DK1 1AC,AC,0.0
+Link,CCGT,DK1 1AC,gas,0.0
+Link,CCGT,EU,co2,0.0
+Link,CCGT,SE0 0AC,AC,0.0
+Link,CCGT,SE0 0AC,gas,0.0
+Link,CCGT,SE0 10AC,AC,0.0
+Link,CCGT,SE0 10AC,gas,0.0
+Link,CCGT,SE0 11AC,AC,0.0
+Link,CCGT,SE0 11AC,gas,0.0
+Link,CCGT,SE0 1AC,AC,0.0
+Link,CCGT,SE0 1AC,gas,0.0
+Link,CCGT,SE0 2AC,AC,0.0
+Link,CCGT,SE0 2AC,gas,0.0
+Link,CCGT,SE0 3AC,AC,0.0
+Link,CCGT,SE0 3AC,gas,0.0
+Link,CCGT,SE0 4AC,AC,0.0
+Link,CCGT,SE0 4AC,gas,0.0
+Link,CCGT,SE0 5AC,AC,0.0
+Link,CCGT,SE0 5AC,gas,0.0
+Link,CCGT,SE0 6AC,AC,0.0
+Link,CCGT,SE0 6AC,gas,0.0
+Link,CCGT,SE0 7AC,AC,0.0
+Link,CCGT,SE0 7AC,gas,0.0
+Link,CCGT,SE0 8AC,AC,0.0
+Link,CCGT,SE0 8AC,gas,0.0
+Link,CCGT,SE0 9AC,AC,0.0
+Link,CCGT,SE0 9AC,gas,0.0
+Link,CO2 pipeline,DK0 0AC,co2 stored,0.0
+Link,CO2 pipeline,DK1 0AC,co2 stored,0.0
+Link,CO2 pipeline,DK1 1AC,co2 stored,0.0
+Link,CO2 pipeline,SE0 0AC,co2 stored,0.0
+Link,CO2 pipeline,SE0 10AC,co2 stored,-0.0
+Link,CO2 pipeline,SE0 11AC,co2 stored,-0.0
+Link,CO2 pipeline,SE0 1AC,co2 stored,0.0
+Link,CO2 pipeline,SE0 2AC,co2 stored,0.0
+Link,CO2 pipeline,SE0 3AC,co2 stored,-0.0
+Link,CO2 pipeline,SE0 4AC,co2 stored,0.0
+Link,CO2 pipeline,SE0 5AC,co2 stored,0.0
+Link,CO2 pipeline,SE0 6AC,co2 stored,-0.0
+Link,CO2 pipeline,SE0 7AC,co2 stored,-0.0
+Link,CO2 pipeline,SE0 8AC,co2 stored,0.0
+Link,CO2 pipeline,SE0 9AC,co2 stored,-0.0
+Link,DC,DK0 0AC,AC,-313106.08645
+Link,DC,DK1 0AC,AC,305574.20906
+Link,DC,DK1 1AC,AC,90064.52127
+Link,DC,SE0 10AC,AC,84414.06999
+Link,DC,SE0 3AC,AC,-99139.02462
+Link,DC,SE0 5AC,AC,-86400.0
+Link,H2 Electrolysis,DK0 0AC,AC,-0.0
+Link,H2 Electrolysis,DK0 0AC,H2,0.0
+Link,H2 Electrolysis,DK1 0AC,AC,-0.0
+Link,H2 Electrolysis,DK1 0AC,H2,0.0
+Link,H2 Electrolysis,DK1 1AC,AC,-0.0
+Link,H2 Electrolysis,DK1 1AC,H2,0.0
+Link,H2 Electrolysis,SE0 0AC,AC,-0.0
+Link,H2 Electrolysis,SE0 0AC,H2,0.0
+Link,H2 Electrolysis,SE0 10AC,AC,-0.0
+Link,H2 Electrolysis,SE0 10AC,H2,0.0
+Link,H2 Electrolysis,SE0 11AC,AC,-0.0
+Link,H2 Electrolysis,SE0 11AC,H2,0.0
+Link,H2 Electrolysis,SE0 1AC,AC,-0.0
+Link,H2 Electrolysis,SE0 1AC,H2,0.0
+Link,H2 Electrolysis,SE0 2AC,AC,-0.0
+Link,H2 Electrolysis,SE0 2AC,H2,0.0
+Link,H2 Electrolysis,SE0 3AC,AC,-0.0
+Link,H2 Electrolysis,SE0 3AC,H2,0.0
+Link,H2 Electrolysis,SE0 4AC,AC,-0.0
+Link,H2 Electrolysis,SE0 4AC,H2,0.0
+Link,H2 Electrolysis,SE0 5AC,AC,-0.0
+Link,H2 Electrolysis,SE0 5AC,H2,0.0
+Link,H2 Electrolysis,SE0 6AC,AC,-0.0
+Link,H2 Electrolysis,SE0 6AC,H2,0.0
+Link,H2 Electrolysis,SE0 7AC,AC,-0.0
+Link,H2 Electrolysis,SE0 7AC,H2,0.0
+Link,H2 Electrolysis,SE0 8AC,AC,-0.0
+Link,H2 Electrolysis,SE0 8AC,H2,0.0
+Link,H2 Electrolysis,SE0 9AC,AC,-0.0
+Link,H2 Electrolysis,SE0 9AC,H2,0.0
+Link,H2 Fuel Cell,DK0 0AC,AC,0.0
+Link,H2 Fuel Cell,DK0 0AC,H2,-0.0
+Link,H2 Fuel Cell,DK1 0AC,AC,0.0
+Link,H2 Fuel Cell,DK1 0AC,H2,-0.0
+Link,H2 Fuel Cell,DK1 1AC,AC,0.0
+Link,H2 Fuel Cell,DK1 1AC,H2,-0.0
+Link,H2 Fuel Cell,SE0 0AC,AC,0.0
+Link,H2 Fuel Cell,SE0 0AC,H2,-0.0
+Link,H2 Fuel Cell,SE0 10AC,AC,0.0
+Link,H2 Fuel Cell,SE0 10AC,H2,-0.0
+Link,H2 Fuel Cell,SE0 11AC,AC,0.0
+Link,H2 Fuel Cell,SE0 11AC,H2,-0.0
+Link,H2 Fuel Cell,SE0 1AC,AC,0.0
+Link,H2 Fuel Cell,SE0 1AC,H2,-0.0
+Link,H2 Fuel Cell,SE0 2AC,AC,0.0
+Link,H2 Fuel Cell,SE0 2AC,H2,-0.0
+Link,H2 Fuel Cell,SE0 3AC,AC,0.0
+Link,H2 Fuel Cell,SE0 3AC,H2,-0.0
+Link,H2 Fuel Cell,SE0 4AC,AC,0.0
+Link,H2 Fuel Cell,SE0 4AC,H2,-0.0
+Link,H2 Fuel Cell,SE0 5AC,AC,0.0
+Link,H2 Fuel Cell,SE0 5AC,H2,-0.0
+Link,H2 Fuel Cell,SE0 6AC,AC,0.0
+Link,H2 Fuel Cell,SE0 6AC,H2,-0.0
+Link,H2 Fuel Cell,SE0 7AC,AC,0.0
+Link,H2 Fuel Cell,SE0 7AC,H2,-0.0
+Link,H2 Fuel Cell,SE0 8AC,AC,0.0
+Link,H2 Fuel Cell,SE0 8AC,H2,-0.0
+Link,H2 Fuel Cell,SE0 9AC,AC,0.0
+Link,H2 Fuel Cell,SE0 9AC,H2,-0.0
+Link,H2 pipeline,DK0 0AC,AC,-0.0
+Link,H2 pipeline,DK0 0AC,H2,-0.0
+Link,H2 pipeline,DK1 0AC,AC,-0.0
+Link,H2 pipeline,DK1 0AC,H2,-0.0
+Link,H2 pipeline,DK1 1AC,AC,-0.0
+Link,H2 pipeline,DK1 1AC,H2,-0.0
+Link,H2 pipeline,SE0 0AC,AC,-0.0
+Link,H2 pipeline,SE0 0AC,H2,0.0
+Link,H2 pipeline,SE0 10AC,AC,-0.0
+Link,H2 pipeline,SE0 10AC,H2,0.0
+Link,H2 pipeline,SE0 11AC,AC,-0.0
+Link,H2 pipeline,SE0 11AC,H2,0.0
+Link,H2 pipeline,SE0 1AC,AC,-0.0
+Link,H2 pipeline,SE0 1AC,H2,0.0
+Link,H2 pipeline,SE0 2AC,AC,-0.0
+Link,H2 pipeline,SE0 2AC,H2,0.0
+Link,H2 pipeline,SE0 3AC,AC,-0.0
+Link,H2 pipeline,SE0 3AC,H2,0.0
+Link,H2 pipeline,SE0 4AC,AC,-0.0
+Link,H2 pipeline,SE0 4AC,H2,0.0
+Link,H2 pipeline,SE0 5AC,AC,-0.0
+Link,H2 pipeline,SE0 5AC,H2,-0.0
+Link,H2 pipeline,SE0 6AC,AC,-0.0
+Link,H2 pipeline,SE0 6AC,H2,0.0
+Link,H2 pipeline,SE0 7AC,AC,-0.0
+Link,H2 pipeline,SE0 7AC,H2,0.0
+Link,H2 pipeline,SE0 8AC,AC,-0.0
+Link,H2 pipeline,SE0 8AC,H2,0.0
+Link,H2 pipeline,SE0 9AC,AC,-0.0
+Link,H2 pipeline,SE0 9AC,H2,0.0
+Link,H2 turbine,DK0 0AC,AC,0.0
+Link,H2 turbine,DK0 0AC,H2,-0.0
+Link,H2 turbine,DK1 0AC,AC,0.0
+Link,H2 turbine,DK1 0AC,H2,-0.0
+Link,H2 turbine,DK1 1AC,AC,0.0
+Link,H2 turbine,DK1 1AC,H2,-0.0
+Link,H2 turbine,SE0 0AC,AC,0.0
+Link,H2 turbine,SE0 0AC,H2,-0.0
+Link,H2 turbine,SE0 10AC,AC,0.0
+Link,H2 turbine,SE0 10AC,H2,-0.0
+Link,H2 turbine,SE0 11AC,AC,0.0
+Link,H2 turbine,SE0 11AC,H2,-0.0
+Link,H2 turbine,SE0 1AC,AC,0.0
+Link,H2 turbine,SE0 1AC,H2,-0.0
+Link,H2 turbine,SE0 2AC,AC,0.0
+Link,H2 turbine,SE0 2AC,H2,-0.0
+Link,H2 turbine,SE0 3AC,AC,0.0
+Link,H2 turbine,SE0 3AC,H2,-0.0
+Link,H2 turbine,SE0 4AC,AC,0.0
+Link,H2 turbine,SE0 4AC,H2,-0.0
+Link,H2 turbine,SE0 5AC,AC,0.0
+Link,H2 turbine,SE0 5AC,H2,-0.0
+Link,H2 turbine,SE0 6AC,AC,0.0
+Link,H2 turbine,SE0 6AC,H2,-0.0
+Link,H2 turbine,SE0 7AC,AC,0.0
+Link,H2 turbine,SE0 7AC,H2,-0.0
+Link,H2 turbine,SE0 8AC,AC,0.0
+Link,H2 turbine,SE0 8AC,H2,-0.0
+Link,H2 turbine,SE0 9AC,AC,0.0
+Link,H2 turbine,SE0 9AC,H2,-0.0
+Link,Haber-Bosch,DK0 0AC,AC,-0.0
+Link,Haber-Bosch,DK0 0AC,H2,-0.0
+Link,Haber-Bosch,DK1 0AC,AC,-0.0
+Link,Haber-Bosch,DK1 0AC,H2,-0.0
+Link,Haber-Bosch,DK1 1AC,AC,-0.0
+Link,Haber-Bosch,DK1 1AC,H2,-0.0
+Link,Haber-Bosch,EU,NH3,0.0
+Link,Haber-Bosch,SE0 0AC,AC,-0.0
+Link,Haber-Bosch,SE0 0AC,H2,-0.0
+Link,Haber-Bosch,SE0 10AC,AC,-0.0
+Link,Haber-Bosch,SE0 10AC,H2,-0.0
+Link,Haber-Bosch,SE0 11AC,AC,-0.0
+Link,Haber-Bosch,SE0 11AC,H2,-0.0
+Link,Haber-Bosch,SE0 1AC,AC,-0.0
+Link,Haber-Bosch,SE0 1AC,H2,-0.0
+Link,Haber-Bosch,SE0 2AC,AC,-0.0
+Link,Haber-Bosch,SE0 2AC,H2,-0.0
+Link,Haber-Bosch,SE0 3AC,AC,-0.0
+Link,Haber-Bosch,SE0 3AC,H2,-0.0
+Link,Haber-Bosch,SE0 4AC,AC,-0.0
+Link,Haber-Bosch,SE0 4AC,H2,-0.0
+Link,Haber-Bosch,SE0 5AC,AC,-0.0
+Link,Haber-Bosch,SE0 5AC,H2,-0.0
+Link,Haber-Bosch,SE0 6AC,AC,-0.0
+Link,Haber-Bosch,SE0 6AC,H2,-0.0
+Link,Haber-Bosch,SE0 7AC,AC,-0.0
+Link,Haber-Bosch,SE0 7AC,H2,-0.0
+Link,Haber-Bosch,SE0 8AC,AC,-0.0
+Link,Haber-Bosch,SE0 8AC,H2,-0.0
+Link,Haber-Bosch,SE0 9AC,AC,-0.0
+Link,Haber-Bosch,SE0 9AC,H2,-0.0
+Link,OCGT,DK0 0AC,AC,0.0
+Link,OCGT,DK0 0AC,gas,0.0
+Link,OCGT,DK1 0AC,AC,0.0
+Link,OCGT,DK1 0AC,gas,0.0
+Link,OCGT,DK1 1AC,AC,0.0
+Link,OCGT,DK1 1AC,gas,0.0
+Link,OCGT,EU,co2,0.0
+Link,OCGT,SE0 0AC,AC,0.0
+Link,OCGT,SE0 0AC,gas,0.0
+Link,OCGT,SE0 10AC,AC,0.0
+Link,OCGT,SE0 10AC,gas,0.0
+Link,OCGT,SE0 11AC,AC,0.0
+Link,OCGT,SE0 11AC,gas,0.0
+Link,OCGT,SE0 1AC,AC,0.0
+Link,OCGT,SE0 1AC,gas,0.0
+Link,OCGT,SE0 2AC,AC,0.0
+Link,OCGT,SE0 2AC,gas,0.0
+Link,OCGT,SE0 3AC,AC,0.0
+Link,OCGT,SE0 3AC,gas,0.0
+Link,OCGT,SE0 4AC,AC,0.0
+Link,OCGT,SE0 4AC,gas,0.0
+Link,OCGT,SE0 5AC,AC,0.0
+Link,OCGT,SE0 5AC,gas,0.0
+Link,OCGT,SE0 6AC,AC,0.0
+Link,OCGT,SE0 6AC,gas,0.0
+Link,OCGT,SE0 7AC,AC,0.0
+Link,OCGT,SE0 7AC,gas,0.0
+Link,OCGT,SE0 8AC,AC,0.0
+Link,OCGT,SE0 8AC,gas,0.0
+Link,OCGT,SE0 9AC,AC,0.0
+Link,OCGT,SE0 9AC,gas,0.0
+Link,OCGT methanol,DK0 0AC,AC,0.0
+Link,OCGT methanol,DK1 0AC,AC,0.0
+Link,OCGT methanol,DK1 1AC,AC,0.0
+Link,OCGT methanol,EU,co2,0.0
+Link,OCGT methanol,EU,methanol,0.0
+Link,OCGT methanol,SE0 0AC,AC,0.0
+Link,OCGT methanol,SE0 10AC,AC,0.0
+Link,OCGT methanol,SE0 11AC,AC,0.0
+Link,OCGT methanol,SE0 1AC,AC,0.0
+Link,OCGT methanol,SE0 2AC,AC,0.0
+Link,OCGT methanol,SE0 3AC,AC,0.0
+Link,OCGT methanol,SE0 4AC,AC,0.0
+Link,OCGT methanol,SE0 5AC,AC,0.0
+Link,OCGT methanol,SE0 6AC,AC,0.0
+Link,OCGT methanol,SE0 7AC,AC,0.0
+Link,OCGT methanol,SE0 8AC,AC,0.0
+Link,OCGT methanol,SE0 9AC,AC,0.0
+Link,SMR,DK0 0AC,H2,0.0
+Link,SMR,DK0 0AC,gas,0.0
+Link,SMR,DK1 0AC,H2,0.0
+Link,SMR,DK1 0AC,gas,0.0
+Link,SMR,DK1 1AC,H2,0.0
+Link,SMR,DK1 1AC,gas,0.0
+Link,SMR,EU,co2,0.0
+Link,SMR,SE0 0AC,H2,0.0
+Link,SMR,SE0 0AC,gas,0.0
+Link,SMR,SE0 10AC,H2,0.0
+Link,SMR,SE0 10AC,gas,0.0
+Link,SMR,SE0 11AC,H2,0.0
+Link,SMR,SE0 11AC,gas,0.0
+Link,SMR,SE0 1AC,H2,0.0
+Link,SMR,SE0 1AC,gas,0.0
+Link,SMR,SE0 2AC,H2,0.0
+Link,SMR,SE0 2AC,gas,0.0
+Link,SMR,SE0 3AC,H2,0.0
+Link,SMR,SE0 3AC,gas,0.0
+Link,SMR,SE0 4AC,H2,0.0
+Link,SMR,SE0 4AC,gas,0.0
+Link,SMR,SE0 5AC,H2,0.0
+Link,SMR,SE0 5AC,gas,0.0
+Link,SMR,SE0 6AC,H2,0.0
+Link,SMR,SE0 6AC,gas,0.0
+Link,SMR,SE0 7AC,H2,0.0
+Link,SMR,SE0 7AC,gas,0.0
+Link,SMR,SE0 8AC,H2,0.0
+Link,SMR,SE0 8AC,gas,0.0
+Link,SMR,SE0 9AC,H2,0.0
+Link,SMR,SE0 9AC,gas,0.0
+Link,SMR CC,DK0 0AC,H2,0.0
+Link,SMR CC,DK0 0AC,gas,0.0
+Link,SMR CC,DK1 0AC,H2,0.0
+Link,SMR CC,DK1 0AC,gas,0.0
+Link,SMR CC,DK1 1AC,H2,0.0
+Link,SMR CC,DK1 1AC,gas,0.0
+Link,SMR CC,EU,co2,0.0
+Link,SMR CC,SE0 0AC,H2,0.0
+Link,SMR CC,SE0 0AC,gas,0.0
+Link,SMR CC,SE0 10AC,H2,0.0
+Link,SMR CC,SE0 10AC,gas,0.0
+Link,SMR CC,SE0 11AC,H2,0.0
+Link,SMR CC,SE0 11AC,gas,0.0
+Link,SMR CC,SE0 1AC,H2,0.0
+Link,SMR CC,SE0 1AC,gas,0.0
+Link,SMR CC,SE0 2AC,H2,0.0
+Link,SMR CC,SE0 2AC,gas,0.0
+Link,SMR CC,SE0 3AC,H2,0.0
+Link,SMR CC,SE0 3AC,gas,0.0
+Link,SMR CC,SE0 4AC,H2,0.0
+Link,SMR CC,SE0 4AC,gas,0.0
+Link,SMR CC,SE0 5AC,H2,0.0
+Link,SMR CC,SE0 5AC,gas,0.0
+Link,SMR CC,SE0 6AC,H2,0.0
+Link,SMR CC,SE0 6AC,gas,0.0
+Link,SMR CC,SE0 7AC,H2,0.0
+Link,SMR CC,SE0 7AC,gas,0.0
+Link,SMR CC,SE0 8AC,H2,0.0
+Link,SMR CC,SE0 8AC,gas,0.0
+Link,SMR CC,SE0 9AC,H2,0.0
+Link,SMR CC,SE0 9AC,gas,0.0
+Link,Sabatier,DK0 0AC,H2,-0.0
+Link,Sabatier,DK0 0AC,co2 stored,-0.0
+Link,Sabatier,DK0 0AC,gas,0.0
+Link,Sabatier,DK1 0AC,H2,-0.0
+Link,Sabatier,DK1 0AC,co2 stored,-0.0
+Link,Sabatier,DK1 0AC,gas,0.0
+Link,Sabatier,DK1 1AC,H2,-0.0
+Link,Sabatier,DK1 1AC,co2 stored,-0.0
+Link,Sabatier,DK1 1AC,gas,0.0
+Link,Sabatier,SE0 0AC,H2,-0.0
+Link,Sabatier,SE0 0AC,co2 stored,-0.0
+Link,Sabatier,SE0 0AC,gas,0.0
+Link,Sabatier,SE0 10AC,H2,-0.0
+Link,Sabatier,SE0 10AC,co2 stored,-0.0
+Link,Sabatier,SE0 10AC,gas,0.0
+Link,Sabatier,SE0 11AC,H2,-0.0
+Link,Sabatier,SE0 11AC,co2 stored,-0.0
+Link,Sabatier,SE0 11AC,gas,0.0
+Link,Sabatier,SE0 1AC,H2,-0.0
+Link,Sabatier,SE0 1AC,co2 stored,-0.0
+Link,Sabatier,SE0 1AC,gas,0.0
+Link,Sabatier,SE0 2AC,H2,-0.0
+Link,Sabatier,SE0 2AC,co2 stored,-0.0
+Link,Sabatier,SE0 2AC,gas,0.0
+Link,Sabatier,SE0 3AC,H2,-0.0
+Link,Sabatier,SE0 3AC,co2 stored,-0.0
+Link,Sabatier,SE0 3AC,gas,0.0
+Link,Sabatier,SE0 4AC,H2,-0.0
+Link,Sabatier,SE0 4AC,co2 stored,-0.0
+Link,Sabatier,SE0 4AC,gas,0.0
+Link,Sabatier,SE0 5AC,H2,-0.0
+Link,Sabatier,SE0 5AC,co2 stored,-0.0
+Link,Sabatier,SE0 5AC,gas,0.0
+Link,Sabatier,SE0 6AC,H2,-0.0
+Link,Sabatier,SE0 6AC,co2 stored,-0.0
+Link,Sabatier,SE0 6AC,gas,0.0
+Link,Sabatier,SE0 7AC,H2,-0.0
+Link,Sabatier,SE0 7AC,co2 stored,-0.0
+Link,Sabatier,SE0 7AC,gas,0.0
+Link,Sabatier,SE0 8AC,H2,-0.0
+Link,Sabatier,SE0 8AC,co2 stored,-0.0
+Link,Sabatier,SE0 8AC,gas,0.0
+Link,Sabatier,SE0 9AC,H2,-0.0
+Link,Sabatier,SE0 9AC,co2 stored,-0.0
+Link,Sabatier,SE0 9AC,gas,0.0
+Link,ammonia cracker,DK0 0AC,H2,0.0
+Link,ammonia cracker,DK1 0AC,H2,0.0
+Link,ammonia cracker,DK1 1AC,H2,0.0
+Link,ammonia cracker,EU,NH3,-0.0
+Link,ammonia cracker,SE0 0AC,H2,0.0
+Link,ammonia cracker,SE0 10AC,H2,0.0
+Link,ammonia cracker,SE0 11AC,H2,0.0
+Link,ammonia cracker,SE0 1AC,H2,0.0
+Link,ammonia cracker,SE0 2AC,H2,0.0
+Link,ammonia cracker,SE0 3AC,H2,0.0
+Link,ammonia cracker,SE0 4AC,H2,0.0
+Link,ammonia cracker,SE0 5AC,H2,0.0
+Link,ammonia cracker,SE0 6AC,H2,0.0
+Link,ammonia cracker,SE0 7AC,H2,0.0
+Link,ammonia cracker,SE0 8AC,H2,0.0
+Link,ammonia cracker,SE0 9AC,H2,0.0
+Link,battery charger,DK0 0AC,AC,-0.0
+Link,battery charger,DK0 0AC,battery,0.0
+Link,battery charger,DK1 0AC,AC,-0.0
+Link,battery charger,DK1 0AC,battery,0.0
+Link,battery charger,DK1 1AC,AC,-0.0
+Link,battery charger,DK1 1AC,battery,0.0
+Link,battery charger,SE0 0AC,AC,-0.0
+Link,battery charger,SE0 0AC,battery,0.0
+Link,battery charger,SE0 10AC,AC,-0.0
+Link,battery charger,SE0 10AC,battery,0.0
+Link,battery charger,SE0 11AC,AC,-0.0
+Link,battery charger,SE0 11AC,battery,0.0
+Link,battery charger,SE0 1AC,AC,-0.0
+Link,battery charger,SE0 1AC,battery,0.0
+Link,battery charger,SE0 2AC,AC,-0.0
+Link,battery charger,SE0 2AC,battery,0.0
+Link,battery charger,SE0 3AC,AC,-0.0
+Link,battery charger,SE0 3AC,battery,0.0
+Link,battery charger,SE0 4AC,AC,-0.0
+Link,battery charger,SE0 4AC,battery,0.0
+Link,battery charger,SE0 5AC,AC,-0.0
+Link,battery charger,SE0 5AC,battery,0.0
+Link,battery charger,SE0 6AC,AC,-0.0
+Link,battery charger,SE0 6AC,battery,0.0
+Link,battery charger,SE0 7AC,AC,-0.0
+Link,battery charger,SE0 7AC,battery,0.0
+Link,battery charger,SE0 8AC,AC,-0.0
+Link,battery charger,SE0 8AC,battery,0.0
+Link,battery charger,SE0 9AC,AC,-0.0
+Link,battery charger,SE0 9AC,battery,0.0
+Link,battery discharger,DK0 0AC,AC,0.0
+Link,battery discharger,DK0 0AC,battery,-0.0
+Link,battery discharger,DK1 0AC,AC,0.0
+Link,battery discharger,DK1 0AC,battery,-0.0
+Link,battery discharger,DK1 1AC,AC,0.0
+Link,battery discharger,DK1 1AC,battery,-0.0
+Link,battery discharger,SE0 0AC,AC,0.0
+Link,battery discharger,SE0 0AC,battery,-0.0
+Link,battery discharger,SE0 10AC,AC,0.0
+Link,battery discharger,SE0 10AC,battery,-0.0
+Link,battery discharger,SE0 11AC,AC,0.0
+Link,battery discharger,SE0 11AC,battery,-0.0
+Link,battery discharger,SE0 1AC,AC,0.0
+Link,battery discharger,SE0 1AC,battery,-0.0
+Link,battery discharger,SE0 2AC,AC,0.0
+Link,battery discharger,SE0 2AC,battery,-0.0
+Link,battery discharger,SE0 3AC,AC,0.0
+Link,battery discharger,SE0 3AC,battery,-0.0
+Link,battery discharger,SE0 4AC,AC,0.0
+Link,battery discharger,SE0 4AC,battery,-0.0
+Link,battery discharger,SE0 5AC,AC,0.0
+Link,battery discharger,SE0 5AC,battery,-0.0
+Link,battery discharger,SE0 6AC,AC,0.0
+Link,battery discharger,SE0 6AC,battery,-0.0
+Link,battery discharger,SE0 7AC,AC,0.0
+Link,battery discharger,SE0 7AC,battery,-0.0
+Link,battery discharger,SE0 8AC,AC,0.0
+Link,battery discharger,SE0 8AC,battery,-0.0
+Link,battery discharger,SE0 9AC,AC,0.0
+Link,battery discharger,SE0 9AC,battery,-0.0
+Link,co2 sequestered,DK0 0AC,co2 sequestered,0.0
+Link,co2 sequestered,DK0 0AC,co2 stored,-0.0
+Link,co2 sequestered,DK1 0AC,co2 sequestered,0.0
+Link,co2 sequestered,DK1 0AC,co2 stored,0.0
+Link,co2 sequestered,DK1 1AC,co2 sequestered,0.0
+Link,co2 sequestered,DK1 1AC,co2 stored,-0.0
+Link,co2 sequestered,SE0 0AC,co2 sequestered,0.0
+Link,co2 sequestered,SE0 0AC,co2 stored,0.0
+Link,co2 sequestered,SE0 10AC,co2 sequestered,0.0
+Link,co2 sequestered,SE0 10AC,co2 stored,0.0
+Link,co2 sequestered,SE0 11AC,co2 sequestered,0.0
+Link,co2 sequestered,SE0 11AC,co2 stored,0.0
+Link,co2 sequestered,SE0 1AC,co2 sequestered,0.0
+Link,co2 sequestered,SE0 1AC,co2 stored,0.0
+Link,co2 sequestered,SE0 2AC,co2 sequestered,0.0
+Link,co2 sequestered,SE0 2AC,co2 stored,0.0
+Link,co2 sequestered,SE0 3AC,co2 sequestered,0.0
+Link,co2 sequestered,SE0 3AC,co2 stored,0.0
+Link,co2 sequestered,SE0 4AC,co2 sequestered,0.0
+Link,co2 sequestered,SE0 4AC,co2 stored,0.0
+Link,co2 sequestered,SE0 5AC,co2 sequestered,0.0
+Link,co2 sequestered,SE0 5AC,co2 stored,0.0
+Link,co2 sequestered,SE0 6AC,co2 sequestered,0.0
+Link,co2 sequestered,SE0 6AC,co2 stored,0.0
+Link,co2 sequestered,SE0 7AC,co2 sequestered,0.0
+Link,co2 sequestered,SE0 7AC,co2 stored,0.0
+Link,co2 sequestered,SE0 8AC,co2 sequestered,0.0
+Link,co2 sequestered,SE0 8AC,co2 stored,0.0
+Link,co2 sequestered,SE0 9AC,co2 sequestered,0.0
+Link,co2 sequestered,SE0 9AC,co2 stored,0.0
+Link,electricity distribution grid,DK0 0AC,AC,-1626767.53255
+Link,electricity distribution grid,DK0 0AC,low voltage,1577964.50658
+Link,electricity distribution grid,DK1 0AC,AC,-703791.17211
+Link,electricity distribution grid,DK1 0AC,low voltage,682677.43695
+Link,electricity distribution grid,DK1 1AC,AC,-987182.29563
+Link,electricity distribution grid,DK1 1AC,low voltage,957566.82676
+Link,electricity distribution grid,SE0 0AC,AC,-1030620.96603
+Link,electricity distribution grid,SE0 0AC,low voltage,999702.33705
+Link,electricity distribution grid,SE0 10AC,AC,-1357929.34929
+Link,electricity distribution grid,SE0 10AC,low voltage,1317191.46881
+Link,electricity distribution grid,SE0 11AC,AC,-589857.21983
+Link,electricity distribution grid,SE0 11AC,low voltage,572161.50323
+Link,electricity distribution grid,SE0 1AC,AC,-176174.20533
+Link,electricity distribution grid,SE0 1AC,low voltage,170888.97917
+Link,electricity distribution grid,SE0 2AC,AC,-1119336.69023
+Link,electricity distribution grid,SE0 2AC,low voltage,1085756.58952
+Link,electricity distribution grid,SE0 3AC,AC,-2209528.15355
+Link,electricity distribution grid,SE0 3AC,low voltage,2143242.30894
+Link,electricity distribution grid,SE0 4AC,AC,-3351281.45715
+Link,electricity distribution grid,SE0 4AC,low voltage,3250743.01344
+Link,electricity distribution grid,SE0 5AC,AC,-1759166.8804
+Link,electricity distribution grid,SE0 5AC,low voltage,1706391.87399
+Link,electricity distribution grid,SE0 6AC,AC,-765062.76675
+Link,electricity distribution grid,SE0 6AC,low voltage,742110.88375
+Link,electricity distribution grid,SE0 7AC,AC,-722167.84113
+Link,electricity distribution grid,SE0 7AC,low voltage,700502.8059
+Link,electricity distribution grid,SE0 8AC,AC,-1018562.38767
+Link,electricity distribution grid,SE0 8AC,low voltage,988005.51604
+Link,electricity distribution grid,SE0 9AC,AC,-1207412.08271
+Link,electricity distribution grid,SE0 9AC,low voltage,1171189.72023
+Link,gas pipeline,DK0 0AC,AC,-0.0
+Link,gas pipeline,DK0 0AC,gas,0.0
+Link,gas pipeline,DK1 0AC,AC,-0.0
+Link,gas pipeline,DK1 0AC,gas,-0.0
+Link,gas pipeline,DK1 1AC,AC,-0.0
+Link,gas pipeline,DK1 1AC,gas,0.0
+Link,gas pipeline,SE0 3AC,AC,-0.0
+Link,gas pipeline,SE0 3AC,gas,-0.0
+Link,gas pipeline,SE0 5AC,AC,-0.0
+Link,gas pipeline,SE0 5AC,gas,0.0
+Link,gas pipeline new,DK0 0AC,gas,-0.0
+Link,gas pipeline new,DK1 0AC,gas,0.0
+Link,gas pipeline new,DK1 1AC,gas,-0.0
+Link,gas pipeline new,SE0 0AC,gas,-0.0
+Link,gas pipeline new,SE0 10AC,gas,-0.0
+Link,gas pipeline new,SE0 11AC,gas,-0.0
+Link,gas pipeline new,SE0 1AC,gas,-0.0
+Link,gas pipeline new,SE0 2AC,gas,-0.0
+Link,gas pipeline new,SE0 3AC,gas,0.0
+Link,gas pipeline new,SE0 4AC,gas,-0.0
+Link,gas pipeline new,SE0 5AC,gas,-0.0
+Link,gas pipeline new,SE0 6AC,gas,-0.0
+Link,gas pipeline new,SE0 7AC,gas,-0.0
+Link,gas pipeline new,SE0 8AC,gas,-0.0
+Link,gas pipeline new,SE0 9AC,gas,-0.0
+Link,home battery charger,DK0 0AC,home battery,0.0
+Link,home battery charger,DK0 0AC,low voltage,-0.0
+Link,home battery charger,DK1 0AC,home battery,0.0
+Link,home battery charger,DK1 0AC,low voltage,-0.0
+Link,home battery charger,DK1 1AC,home battery,0.0
+Link,home battery charger,DK1 1AC,low voltage,-0.0
+Link,home battery charger,SE0 0AC,home battery,0.0
+Link,home battery charger,SE0 0AC,low voltage,-0.0
+Link,home battery charger,SE0 10AC,home battery,0.0
+Link,home battery charger,SE0 10AC,low voltage,-0.0
+Link,home battery charger,SE0 11AC,home battery,0.0
+Link,home battery charger,SE0 11AC,low voltage,-0.0
+Link,home battery charger,SE0 1AC,home battery,0.0
+Link,home battery charger,SE0 1AC,low voltage,-0.0
+Link,home battery charger,SE0 2AC,home battery,0.0
+Link,home battery charger,SE0 2AC,low voltage,-0.0
+Link,home battery charger,SE0 3AC,home battery,0.0
+Link,home battery charger,SE0 3AC,low voltage,-0.0
+Link,home battery charger,SE0 4AC,home battery,0.0
+Link,home battery charger,SE0 4AC,low voltage,-0.0
+Link,home battery charger,SE0 5AC,home battery,0.0
+Link,home battery charger,SE0 5AC,low voltage,-0.0
+Link,home battery charger,SE0 6AC,home battery,0.0
+Link,home battery charger,SE0 6AC,low voltage,-0.0
+Link,home battery charger,SE0 7AC,home battery,0.0
+Link,home battery charger,SE0 7AC,low voltage,-0.0
+Link,home battery charger,SE0 8AC,home battery,0.0
+Link,home battery charger,SE0 8AC,low voltage,-0.0
+Link,home battery charger,SE0 9AC,home battery,0.0
+Link,home battery charger,SE0 9AC,low voltage,-0.0
+Link,home battery discharger,DK0 0AC,home battery,-0.0
+Link,home battery discharger,DK0 0AC,low voltage,0.0
+Link,home battery discharger,DK1 0AC,home battery,-0.0
+Link,home battery discharger,DK1 0AC,low voltage,0.0
+Link,home battery discharger,DK1 1AC,home battery,-0.0
+Link,home battery discharger,DK1 1AC,low voltage,0.0
+Link,home battery discharger,SE0 0AC,home battery,-0.0
+Link,home battery discharger,SE0 0AC,low voltage,0.0
+Link,home battery discharger,SE0 10AC,home battery,-0.0
+Link,home battery discharger,SE0 10AC,low voltage,0.0
+Link,home battery discharger,SE0 11AC,home battery,-0.0
+Link,home battery discharger,SE0 11AC,low voltage,0.0
+Link,home battery discharger,SE0 1AC,home battery,-0.0
+Link,home battery discharger,SE0 1AC,low voltage,0.0
+Link,home battery discharger,SE0 2AC,home battery,-0.0
+Link,home battery discharger,SE0 2AC,low voltage,0.0
+Link,home battery discharger,SE0 3AC,home battery,-0.0
+Link,home battery discharger,SE0 3AC,low voltage,0.0
+Link,home battery discharger,SE0 4AC,home battery,-0.0
+Link,home battery discharger,SE0 4AC,low voltage,0.0
+Link,home battery discharger,SE0 5AC,home battery,-0.0
+Link,home battery discharger,SE0 5AC,low voltage,0.0
+Link,home battery discharger,SE0 6AC,home battery,-0.0
+Link,home battery discharger,SE0 6AC,low voltage,0.0
+Link,home battery discharger,SE0 7AC,home battery,-0.0
+Link,home battery discharger,SE0 7AC,low voltage,0.0
+Link,home battery discharger,SE0 8AC,home battery,-0.0
+Link,home battery discharger,SE0 8AC,low voltage,0.0
+Link,home battery discharger,SE0 9AC,home battery,-0.0
+Link,home battery discharger,SE0 9AC,low voltage,0.0
+Load,electricity,DK0 0AC,low voltage,-1577964.50658
+Load,electricity,DK1 0AC,low voltage,-682677.43695
+Load,electricity,DK1 1AC,low voltage,-957566.82676
+Load,electricity,SE0 0AC,low voltage,-999702.33705
+Load,electricity,SE0 10AC,low voltage,-1317191.46881
+Load,electricity,SE0 11AC,low voltage,-572161.50323
+Load,electricity,SE0 1AC,low voltage,-170888.97917
+Load,electricity,SE0 2AC,low voltage,-1085756.58952
+Load,electricity,SE0 3AC,low voltage,-2143242.30894
+Load,electricity,SE0 4AC,low voltage,-3250743.01344
+Load,electricity,SE0 5AC,low voltage,-1706391.87399
+Load,electricity,SE0 6AC,low voltage,-742110.88375
+Load,electricity,SE0 7AC,low voltage,-700502.8059
+Load,electricity,SE0 8AC,low voltage,-988005.51604
+Load,electricity,SE0 9AC,low voltage,-1171189.72023
+StorageUnit,PHS,SE0 8AC,AC,-1638.0
+StorageUnit,hydro,SE0 0AC,AC,6276.46374
+StorageUnit,hydro,SE0 11AC,AC,623439.39609
+StorageUnit,hydro,SE0 1AC,AC,659208.43993
+StorageUnit,hydro,SE0 2AC,AC,1468634.36419
+StorageUnit,hydro,SE0 3AC,AC,87173.53905
+StorageUnit,hydro,SE0 4AC,AC,6065.89683
+StorageUnit,hydro,SE0 5AC,AC,35215.90102
+StorageUnit,hydro,SE0 6AC,AC,132651.15078
+StorageUnit,hydro,SE0 7AC,AC,884057.28331
+StorageUnit,hydro,SE0 8AC,AC,145581.52384
+StorageUnit,hydro,SE0 9AC,AC,98195.61739
+Store,H2 Store,DK0 0AC,H2,0.0
+Store,H2 Store,DK1 0AC,H2,0.0
+Store,H2 Store,DK1 1AC,H2,-0.0
+Store,H2 Store,SE0 0AC,H2,-0.0
+Store,H2 Store,SE0 10AC,H2,0.0
+Store,H2 Store,SE0 11AC,H2,0.0
+Store,H2 Store,SE0 1AC,H2,-0.0
+Store,H2 Store,SE0 2AC,H2,0.0
+Store,H2 Store,SE0 3AC,H2,0.0
+Store,H2 Store,SE0 4AC,H2,0.0
+Store,H2 Store,SE0 5AC,H2,-0.0
+Store,H2 Store,SE0 6AC,H2,0.0
+Store,H2 Store,SE0 7AC,H2,-0.0
+Store,H2 Store,SE0 8AC,H2,-0.0
+Store,H2 Store,SE0 9AC,H2,-0.0
+Store,ammonia store,EU,NH3,0.0
+Store,battery,DK0 0AC,battery,-0.0
+Store,battery,DK1 0AC,battery,0.0
+Store,battery,DK1 1AC,battery,0.0
+Store,battery,SE0 0AC,battery,0.0
+Store,battery,SE0 10AC,battery,0.0
+Store,battery,SE0 11AC,battery,0.0
+Store,battery,SE0 1AC,battery,-0.0
+Store,battery,SE0 2AC,battery,0.0
+Store,battery,SE0 3AC,battery,-0.0
+Store,battery,SE0 4AC,battery,-0.0
+Store,battery,SE0 5AC,battery,0.0
+Store,battery,SE0 6AC,battery,-0.0
+Store,battery,SE0 7AC,battery,0.0
+Store,battery,SE0 8AC,battery,-0.0
+Store,battery,SE0 9AC,battery,-0.0
+Store,co2,EU,co2,0.0
+Store,co2 sequestered,DK0 0AC,co2 sequestered,-0.0
+Store,co2 sequestered,DK1 0AC,co2 sequestered,0.0
+Store,co2 sequestered,DK1 1AC,co2 sequestered,-0.0
+Store,co2 sequestered,SE0 0AC,co2 sequestered,0.0
+Store,co2 sequestered,SE0 10AC,co2 sequestered,0.0
+Store,co2 sequestered,SE0 11AC,co2 sequestered,0.0
+Store,co2 sequestered,SE0 1AC,co2 sequestered,0.0
+Store,co2 sequestered,SE0 2AC,co2 sequestered,0.0
+Store,co2 sequestered,SE0 3AC,co2 sequestered,0.0
+Store,co2 sequestered,SE0 4AC,co2 sequestered,0.0
+Store,co2 sequestered,SE0 5AC,co2 sequestered,0.0
+Store,co2 sequestered,SE0 6AC,co2 sequestered,0.0
+Store,co2 sequestered,SE0 7AC,co2 sequestered,0.0
+Store,co2 sequestered,SE0 8AC,co2 sequestered,0.0
+Store,co2 sequestered,SE0 9AC,co2 sequestered,0.0
+Store,co2 stored,DK0 0AC,co2 stored,-0.0
+Store,co2 stored,DK1 0AC,co2 stored,-0.0
+Store,co2 stored,DK1 1AC,co2 stored,-0.0
+Store,co2 stored,SE0 0AC,co2 stored,-0.0
+Store,co2 stored,SE0 10AC,co2 stored,0.0
+Store,co2 stored,SE0 11AC,co2 stored,0.0
+Store,co2 stored,SE0 1AC,co2 stored,0.0
+Store,co2 stored,SE0 2AC,co2 stored,0.0
+Store,co2 stored,SE0 3AC,co2 stored,-0.0
+Store,co2 stored,SE0 4AC,co2 stored,-0.0
+Store,co2 stored,SE0 5AC,co2 stored,-0.0
+Store,co2 stored,SE0 6AC,co2 stored,-0.0
+Store,co2 stored,SE0 7AC,co2 stored,-0.0
+Store,co2 stored,SE0 8AC,co2 stored,-0.0
+Store,co2 stored,SE0 9AC,co2 stored,-0.0
+Store,gas,DK0 0AC,gas,-0.0
+Store,gas,DK1 0AC,gas,0.0
+Store,gas,DK1 1AC,gas,0.0
+Store,gas,SE0 0AC,gas,-0.0
+Store,gas,SE0 10AC,gas,-0.0
+Store,gas,SE0 11AC,gas,0.0
+Store,gas,SE0 1AC,gas,0.0
+Store,gas,SE0 2AC,gas,-0.0
+Store,gas,SE0 3AC,gas,0.0
+Store,gas,SE0 4AC,gas,-0.0
+Store,gas,SE0 5AC,gas,0.0
+Store,gas,SE0 6AC,gas,-0.0
+Store,gas,SE0 7AC,gas,-0.0
+Store,gas,SE0 8AC,gas,-0.0
+Store,gas,SE0 9AC,gas,0.0
+Store,home battery,DK0 0AC,home battery,-0.0
+Store,home battery,DK1 0AC,home battery,0.0
+Store,home battery,DK1 1AC,home battery,0.0
+Store,home battery,SE0 0AC,home battery,0.0
+Store,home battery,SE0 10AC,home battery,-0.0
+Store,home battery,SE0 11AC,home battery,-0.0
+Store,home battery,SE0 1AC,home battery,-0.0
+Store,home battery,SE0 2AC,home battery,-0.0
+Store,home battery,SE0 3AC,home battery,-0.0
+Store,home battery,SE0 4AC,home battery,0.0
+Store,home battery,SE0 5AC,home battery,-0.0
+Store,home battery,SE0 6AC,home battery,0.0
+Store,home battery,SE0 7AC,home battery,-0.0
+Store,home battery,SE0 8AC,home battery,-0.0
+Store,home battery,SE0 9AC,home battery,0.0
+Store,methanol,EU,methanol,0.0

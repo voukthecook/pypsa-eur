@@ -1,0 +1,35 @@
+INFO:pypsa.network.io:New version 1.3.0 available! (Current: 1.2.4)
+INFO:pypsa.network.io:Imported network 'Unnamed Network' has buses, carriers, generators, global_constraints, lines, links, loads, storage_units, stores, sub_networks
+WARNING:scripts.add_electricity:tech_colors for carriers ['', 'none'] not defined in config.
+ERROR:root:Uncaught exception
+Traceback (most recent call last):
+  File "C:\Users\nasos\DTU\pypsa-eur\.snakemake\scripts\tmps2fa4bqq.plot_balance_map_interactive.py", line 278, in <module>
+    map = n.explore(
+        branch_components=branch_components,
+    ...<13 lines>...
+        map_style=map_style,
+    )
+  File "C:\Users\nasos\anaconda3\envs\pypsa-eur\Lib\site-packages\pypsa\networks.py", line 866, in explore
+    return self.plot.explore(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\nasos\anaconda3\envs\pypsa-eur\Lib\site-packages\pypsa\plot\accessor.py", line 47, in explore
+    return explore(self._n, *args, **kwargs)
+  File "C:\Users\nasos\anaconda3\envs\pypsa-eur\Lib\site-packages\pypsa\plot\maps\interactive.py", line 2099, in explore
+    plotter.build_layers(**kwargs)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\nasos\anaconda3\envs\pypsa-eur\Lib\site-packages\pypsa\plot\maps\interactive.py", line 2036, in build_layers
+    self.add_pie_chart_layer(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        bus_size=bus_size,
+        ^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        tooltip=tooltip,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\nasos\anaconda3\envs\pypsa-eur\Lib\site-packages\pypsa\plot\maps\interactive.py", line 1031, in add_pie_chart_layer
+    p_data.set_index("bus", inplace=True)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nasos\anaconda3\envs\pypsa-eur\Lib\site-packages\pandas\core\frame.py", line 6144, in set_index
+    raise KeyError(f"None of {missing} are in the columns")
+KeyError: "None of ['bus'] are in the columns"

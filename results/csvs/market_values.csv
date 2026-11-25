@@ -1,0 +1,20 @@
+cluster,40
+opt,lv1.2Co2L0-168H
+planning_horizon,2030
+carrier,
+AC,11.869078382305233
+DC,26.90501403763781
+H2 Electrolysis,-12.478394051361256
+H2 turbine,114.60935890139392
+PHS,22.13753756820828
+battery charger,-inf
+battery discharger,inf
+electricity distribution grid,-65.19438290834613
+gas pipeline,0.0
+hydro,84.56748704268114
+nuclear,62.75351145488048
+offwind-ac,52.67894407270121
+offwind-dc,63.878551533416704
+onwind,47.19605227102556
+ror,59.42751879095783
+solar,52.41415963943796

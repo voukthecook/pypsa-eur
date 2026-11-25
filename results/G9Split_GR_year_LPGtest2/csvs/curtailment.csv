@@ -1,0 +1,40 @@
+cluster,3
+opt,lv1.2Co2L0-3H
+planning_horizon,2050
+carrier,
+BEV charger,
+CCGT,
+DAC,
+H2 Electrolysis,
+H2 Fuel Cell,
+H2 pipeline,
+H2 turbine,
+Haber-Bosch,
+OCGT,
+OCGT methanol,
+PHS,
+V2G,
+battery charger,
+battery discharger,
+electricity distribution grid,
+gas pipeline,
+home battery charger,
+home battery discharger,
+hydro,
+offwind-ac,8.373631673173858
+offwind-dc,11.70243321550918
+offwind-float,9.263634000432129
+onwind,0.8425787589461571
+ror,0.0576987921410819
+rural air heat pump,
+rural ground heat pump,
+rural resistive heater,
+solar,0.0202210456214798
+solar rooftop,0.0021694918948692
+solar-hsat,1.2603186343960613
+urban central air heat pump,
+urban central gas CHP,
+urban central gas CHP CC,
+urban central resistive heater,
+urban decentral air heat pump,
+urban decentral resistive heater,

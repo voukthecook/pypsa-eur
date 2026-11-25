@@ -1,0 +1,166 @@
+component,location,carrier,0
+Generator,BE0 0AC,biogas,3.5585292321930876e-07
+Generator,BE0 0AC,gas,
+Generator,BE0 0AC,onwind,0.11702802748133977
+Generator,BE0 0AC,rural heat vent,0.1679995872246014
+Generator,BE0 0AC,rural solar thermal,0.01769032001590141
+Generator,BE0 0AC,solar,0.10965556341350054
+Generator,BE0 0AC,solar rooftop,0.1099125939445185
+Generator,BE0 0AC,solar-hsat,
+Generator,BE0 0AC,unsustainable biogas,0.0059523808049192
+Generator,BE0 0AC,urban central geothermal heat,0.4413919413919414
+Generator,BE0 0AC,urban central heat vent,0.7793263646922184
+Generator,BE0 0AC,urban central river_water heat,
+Generator,BE0 0AC,urban central solar thermal,0.01897137844061849
+Generator,BE0 0AC,urban decentral heat vent,0.15882223687101735
+Generator,BE0 0AC,urban decentral solar thermal,0.018093385214007784
+Generator,BE0 1AC,biogas,9.233210707722051e-07
+Generator,BE0 1AC,onwind,0.23295908078945535
+Generator,BE0 1AC,rural heat vent,0.16944310140213617
+Generator,BE0 1AC,rural solar thermal,0.019634496299652617
+Generator,BE0 1AC,solar,0.11956061724400317
+Generator,BE0 1AC,solar rooftop,0.11955479508540053
+Generator,BE0 1AC,solar-hsat,
+Generator,BE0 1AC,unsustainable biogas,0.005952380638605015
+Generator,BE0 1AC,urban central geothermal heat,
+Generator,BE0 1AC,urban central heat vent,0.7707279096924874
+Generator,BE0 1AC,urban central river_water heat,0.00011061872088306065
+Generator,BE0 1AC,urban central solar thermal,0.02141777255165463
+Generator,BE0 1AC,urban decentral heat vent,0.15821920824342772
+Generator,BE0 1AC,urban decentral solar thermal,0.02095509622238061
+Generator,BE0 2AC,biogas,7.817220545122356e-07
+Generator,BE0 2AC,onwind,0.24325954496047367
+Generator,BE0 2AC,rural heat vent,0.16778770846770477
+Generator,BE0 2AC,rural solar thermal,0.019134396355353075
+Generator,BE0 2AC,solar,0.11807568719693247
+Generator,BE0 2AC,solar rooftop,0.1180754142603586
+Generator,BE0 2AC,solar-hsat,
+Generator,BE0 2AC,unsustainable biogas,0.005952379861879852
+Generator,BE0 2AC,urban central geothermal heat,
+Generator,BE0 2AC,urban central heat vent,0.8012295081967213
+Generator,BE0 2AC,urban central river_water heat,0.0011689820328560907
+Generator,BE0 2AC,urban central solar thermal,0.020971395017196547
+Generator,BE0 2AC,urban decentral heat vent,0.15829913559765998
+Generator,BE0 2AC,urban decentral solar thermal,0.02013617267854556
+Generator,BE0 3AC,biogas,2.1370268357466345e-07
+Generator,BE0 3AC,gas,0.7372779685833384
+Generator,BE0 3AC,nuclear,0.5578589853564423
+Generator,BE0 3AC,onwind,0.22212182538720576
+Generator,BE0 3AC,rural heat vent,0.16727172283166286
+Generator,BE0 3AC,rural solar thermal,0.024786137310813774
+Generator,BE0 3AC,solar,0.1325725195224482
+Generator,BE0 3AC,solar rooftop,0.13256917054809536
+Generator,BE0 3AC,solar-hsat,
+Generator,BE0 3AC,unsustainable biogas,0.005952381279964896
+Generator,BE0 3AC,urban central geothermal heat,0.43478260869565216
+Generator,BE0 3AC,urban central heat vent,0.7908264136022143
+Generator,BE0 3AC,urban central river_water heat,1.1838199592545688e-05
+Generator,BE0 3AC,urban central solar thermal,0.026021058279122797
+Generator,BE0 3AC,urban decentral heat vent,0.15811691291181057
+Generator,BE0 3AC,urban decentral solar thermal,0.02673469387755102
+Generator,BE0 4AC,biogas,1.1176925790011049e-07
+Generator,BE0 4AC,gas,0.11324351604844751
+Generator,BE0 4AC,nuclear,0.5578596302690447
+Generator,BE0 4AC,offwind-ac,0.30621942446043166
+Generator,BE0 4AC,offwind-dc,
+Generator,BE0 4AC,offwind-float,
+Generator,BE0 4AC,onwind,0.1671581371382427
+Generator,BE0 4AC,rural heat vent,0.16666666666666666
+Generator,BE0 4AC,rural solar thermal,0.016552280985062576
+Generator,BE0 4AC,solar,0.10971826216381714
+Generator,BE0 4AC,solar rooftop,0.10974544899990454
+Generator,BE0 4AC,solar-hsat,
+Generator,BE0 4AC,unsustainable biogas,0.005952380599077255
+Generator,BE0 4AC,urban central geothermal heat,0.4413919413919414
+Generator,BE0 4AC,urban central heat vent,0.7754789272030651
+Generator,BE0 4AC,urban central river_water heat,3.202684558423657e-05
+Generator,BE0 4AC,urban central solar thermal,0.017937713216683172
+Generator,BE0 4AC,urban decentral heat vent,0.15883022502407845
+Generator,BE0 4AC,urban decentral solar thermal,0.017018779342723004
+Generator,EU,coal,0.9999676097448148
+Generator,EU,oil primary,0.9554467753246224
+Generator,EU,solid biomass,0.005952366701059202
+Generator,EU,unsustainable bioliquids,0.005952380982106927
+Generator,EU,unsustainable solid biomass,0.005952380940430977
+Line,BE0 0AC,AC,0.4002559072385795
+Line,BE0 1AC,AC,0.4058777018618539
+Line,BE0 2AC,AC,0.3382812504048558
+Load,BE0 0AC,H2 for industry,
+Load,BE0 0AC,agriculture electricity,
+Load,BE0 0AC,agriculture heat,
+Load,BE0 0AC,agriculture machinery electric,
+Load,BE0 0AC,electricity,
+Load,BE0 0AC,gas for industry,
+Load,BE0 0AC,industry electricity,
+Load,BE0 0AC,land transport EV,
+Load,BE0 0AC,low-temperature heat for industry,
+Load,BE0 0AC,rural heat,
+Load,BE0 0AC,solid biomass for industry,
+Load,BE0 0AC,urban central heat,
+Load,BE0 0AC,urban decentral heat,
+Load,BE0 1AC,H2 for industry,
+Load,BE0 1AC,agriculture electricity,
+Load,BE0 1AC,agriculture heat,
+Load,BE0 1AC,agriculture machinery electric,
+Load,BE0 1AC,electricity,
+Load,BE0 1AC,gas for industry,
+Load,BE0 1AC,industry electricity,
+Load,BE0 1AC,land transport EV,
+Load,BE0 1AC,low-temperature heat for industry,
+Load,BE0 1AC,rural heat,
+Load,BE0 1AC,solid biomass for industry,
+Load,BE0 1AC,urban central heat,
+Load,BE0 1AC,urban decentral heat,
+Load,BE0 2AC,H2 for industry,
+Load,BE0 2AC,agriculture electricity,
+Load,BE0 2AC,agriculture heat,
+Load,BE0 2AC,agriculture machinery electric,
+Load,BE0 2AC,electricity,
+Load,BE0 2AC,gas for industry,
+Load,BE0 2AC,industry electricity,
+Load,BE0 2AC,land transport EV,
+Load,BE0 2AC,low-temperature heat for industry,
+Load,BE0 2AC,rural heat,
+Load,BE0 2AC,solid biomass for industry,
+Load,BE0 2AC,urban central heat,
+Load,BE0 2AC,urban decentral heat,
+Load,BE0 3AC,H2 for industry,
+Load,BE0 3AC,agriculture electricity,
+Load,BE0 3AC,agriculture heat,
+Load,BE0 3AC,agriculture machinery electric,
+Load,BE0 3AC,electricity,
+Load,BE0 3AC,gas for industry,
+Load,BE0 3AC,industry electricity,
+Load,BE0 3AC,land transport EV,
+Load,BE0 3AC,low-temperature heat for industry,
+Load,BE0 3AC,rural heat,
+Load,BE0 3AC,solid biomass for industry,
+Load,BE0 3AC,urban central heat,
+Load,BE0 3AC,urban decentral heat,
+Load,BE0 4AC,H2 for industry,
+Load,BE0 4AC,agriculture electricity,
+Load,BE0 4AC,agriculture heat,
+Load,BE0 4AC,agriculture machinery electric,
+Load,BE0 4AC,electricity,
+Load,BE0 4AC,gas for industry,
+Load,BE0 4AC,industry electricity,
+Load,BE0 4AC,land transport EV,
+Load,BE0 4AC,low-temperature heat for industry,
+Load,BE0 4AC,rural heat,
+Load,BE0 4AC,solid biomass for industry,
+Load,BE0 4AC,urban central heat,
+Load,BE0 4AC,urban decentral heat,
+Load,EU,agriculture machinery oil,
+Load,EU,coal for industry,
+Load,EU,industry methanol,
+Load,EU,kerosene for aviation,
+Load,EU,land transport oil,
+Load,EU,naphtha for industry,
+Load,EU,process emissions,
+Load,EU,shipping methanol,
+Load,EU,shipping oil,
+StorageUnit,BE0 0AC,battery,0.07545449898621594
+StorageUnit,BE0 1AC,battery,0.07550951086956521
+StorageUnit,BE0 2AC,battery,0.0754169935532285
+StorageUnit,BE0 3AC,battery,0.07547971514523175
+StorageUnit,BE0 4AC,battery,0.07544650450756932

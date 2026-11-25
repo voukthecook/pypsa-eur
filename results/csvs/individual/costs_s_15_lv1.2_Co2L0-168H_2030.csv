@@ -1,0 +1,86 @@
+cost,component,carrier,0
+capital,Generator,nuclear,578273191.28133
+capital,Generator,offwind-ac,66748189.91312
+capital,Generator,offwind-dc,1e-05
+capital,Generator,offwind-float,1e-05
+capital,Generator,onwind,371582036.85881
+capital,Generator,ror,73880383.50259
+capital,Generator,solar,18925116.25985
+capital,Generator,solar rooftop,1e-05
+capital,Generator,solar-hsat,0.0
+capital,Line,AC,87795954.23329
+capital,Link,CCGT,0.0
+capital,Link,CO2 pipeline,1e-05
+capital,Link,DC,14080745.82144
+capital,Link,H2 Electrolysis,1e-05
+capital,Link,H2 Fuel Cell,0.0
+capital,Link,H2 pipeline,2e-05
+capital,Link,H2 turbine,0.0
+capital,Link,Haber-Bosch,1e-05
+capital,Link,OCGT,0.0
+capital,Link,OCGT methanol,0.0
+capital,Link,SMR,0.0
+capital,Link,SMR CC,0.0
+capital,Link,Sabatier,0.0
+capital,Link,ammonia cracker,0.0
+capital,Link,battery charger,1e-05
+capital,Link,battery discharger,0.0
+capital,Link,co2 sequestered,0.0
+capital,Link,electricity distribution grid,145951894.83149
+capital,Link,gas pipeline,1719604.86538
+capital,Link,gas pipeline new,1e-05
+capital,Link,home battery charger,2e-05
+capital,Link,home battery discharger,0.0
+capital,StorageUnit,PHS,1792981.1716
+capital,StorageUnit,hydro,242433955.75472
+capital,Store,H2 Store,1e-05
+capital,Store,ammonia store,0.0
+capital,Store,battery,1e-05
+capital,Store,co2,0.0
+capital,Store,co2 sequestered,0.0
+capital,Store,co2 stored,1e-05
+capital,Store,gas,21151190.73984
+capital,Store,home battery,1e-05
+capital,Store,methanol,0.0
+marginal,Generator,nuclear,106765040.79783
+marginal,Generator,offwind-ac,29959.66087
+marginal,Generator,offwind-dc,0.0
+marginal,Generator,offwind-float,0.0
+marginal,Generator,onwind,213597.2763
+marginal,Generator,ror,8368.68661
+marginal,Generator,solar,1333.35593
+marginal,Generator,solar rooftop,0.0
+marginal,Generator,solar-hsat,0.0
+marginal,Link,CCGT,0.0
+marginal,Link,CO2 pipeline,-0.0
+marginal,Link,DC,7538.75492
+marginal,Link,H2 Electrolysis,0.0
+marginal,Link,H2 Fuel Cell,0.0
+marginal,Link,H2 pipeline,0.0
+marginal,Link,H2 turbine,0.0
+marginal,Link,Haber-Bosch,0.0
+marginal,Link,OCGT,0.0
+marginal,Link,OCGT methanol,0.0
+marginal,Link,SMR,0.0
+marginal,Link,SMR CC,0.0
+marginal,Link,Sabatier,0.0
+marginal,Link,ammonia cracker,0.0
+marginal,Link,battery charger,0.0
+marginal,Link,battery discharger,0.0
+marginal,Link,co2 sequestered,0.0
+marginal,Link,electricity distribution grid,181273.67832
+marginal,Link,gas pipeline,0.0
+marginal,Link,gas pipeline new,-0.0
+marginal,Link,home battery charger,0.0
+marginal,Link,home battery discharger,0.0
+marginal,StorageUnit,PHS,50.33242
+marginal,StorageUnit,hydro,42002.55407
+marginal,Store,H2 Store,0.0
+marginal,Store,ammonia store,0.0
+marginal,Store,battery,0.0
+marginal,Store,co2,0.0
+marginal,Store,co2 sequestered,0.0
+marginal,Store,co2 stored,-0.0
+marginal,Store,gas,0.0
+marginal,Store,home battery,-0.0
+marginal,Store,methanol,0.0

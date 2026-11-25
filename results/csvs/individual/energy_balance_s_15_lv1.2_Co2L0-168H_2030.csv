@@ -1,0 +1,71 @@
+component,carrier,bus_carrier,0
+Link,electricity distribution grid,low voltage,18066095.77037
+Generator,onwind,AC,8617122.42272
+StorageUnit,hydro,AC,4146499.57619
+Generator,nuclear,AC,3906160.53575
+Generator,offwind-ac,AC,1205690.37707
+Generator,ror,AC,832375.84235
+Generator,solar,AC,66233.06388
+Generator,offwind-float,AC,0.0
+Generator,offwind-dc,AC,0.0
+Generator,solar rooftop,low voltage,0.0
+Link,CCGT,gas,0.0
+Link,CCGT,co2,0.0
+Generator,solar-hsat,AC,0.0
+Link,CCGT,AC,0.0
+Link,H2 pipeline,H2,0.0
+Link,H2 Electrolysis,H2,0.0
+Link,H2 Fuel Cell,AC,0.0
+Link,H2 Fuel Cell,H2,-0.0
+Link,H2 turbine,AC,0.0
+Link,H2 pipeline,AC,-0.0
+Link,CO2 pipeline,co2 stored,0.0
+Link,H2 Electrolysis,AC,-0.0
+Link,OCGT methanol,co2,0.0
+Link,OCGT methanol,methanol,0.0
+Link,Haber-Bosch,H2,-0.0
+Link,Haber-Bosch,NH3,0.0
+Link,OCGT,AC,0.0
+Link,OCGT,co2,0.0
+Link,OCGT,gas,0.0
+Link,OCGT methanol,AC,0.0
+Link,SMR,gas,0.0
+Link,SMR CC,H2,0.0
+Link,SMR,H2,0.0
+Link,SMR,co2,0.0
+Link,SMR CC,co2,0.0
+Link,SMR CC,gas,0.0
+Link,Haber-Bosch,AC,-0.0
+Link,H2 turbine,H2,-0.0
+Store,co2 stored,co2 stored,-0.0
+Link,home battery charger,home battery,0.0
+Link,Sabatier,gas,0.0
+Link,Sabatier,H2,-0.0
+Link,ammonia cracker,NH3,-0.0
+Link,battery charger,AC,-0.0
+Link,battery charger,battery,0.0
+Link,Sabatier,co2 stored,-0.0
+Link,battery discharger,AC,0.0
+Link,battery discharger,battery,-0.0
+Link,co2 sequestered,co2 stored,-0.0
+Link,co2 sequestered,co2 sequestered,0.0
+Link,gas pipeline,gas,0.0
+Link,gas pipeline,AC,-0.0
+Link,gas pipeline new,gas,0.0
+Link,ammonia cracker,H2,0.0
+Store,home battery,home battery,-0.0
+Store,gas,gas,0.0
+Link,home battery discharger,home battery,-0.0
+Link,home battery charger,low voltage,-0.0
+Link,home battery discharger,low voltage,0.0
+Store,H2 Store,H2,0.0
+Store,battery,battery,0.0
+Store,ammonia store,NH3,0.0
+Store,methanol,methanol,0.0
+Store,co2 sequestered,co2 sequestered,-0.0
+Store,co2,co2,0.0
+StorageUnit,PHS,AC,-1638.0
+Link,DC,AC,-18592.31075
+Line,AC,AC,-129010.50683
+Load,electricity,low voltage,-18066095.77037
+Link,electricity distribution grid,AC,-18624841.00038

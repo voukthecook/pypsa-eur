@@ -1,0 +1,30 @@
+INFO:__main__:Loaded COP profiles with dimensions: FrozenMappingWarningOnValuesAccess({'heat_system': 3, 'heat_source': 5, 'time': 168, 'name': 5})
+INFO:__main__:Processing heat system: urban central
+INFO:__main__:Converting Dataset to DataArray using variable: temperature
+INFO:__main__:Selected 'urban central' heat system
+INFO:__main__:Found 5 regions: ['BE0 0AC', 'BE0 1AC', 'BE0 2AC', 'BE0 3AC', 'BE0 4AC']...
+WARNING:__main__:Heat source 'ground' not found in timeseries data for BE0 0AC
+WARNING:__main__:Heat source 'ground' not found in monthly data for BE0 0AC
+INFO:__main__:Processing heat system: urban decentral
+INFO:__main__:Converting Dataset to DataArray using variable: temperature
+INFO:__main__:Selected 'urban decentral' heat system
+INFO:__main__:Found 5 regions: ['BE0 0AC', 'BE0 1AC', 'BE0 2AC', 'BE0 3AC', 'BE0 4AC']...
+WARNING:__main__:Heat source 'geothermal' not found in timeseries data for BE0 0AC
+WARNING:__main__:Heat source 'ground' not found in timeseries data for BE0 0AC
+WARNING:__main__:Heat source 'river_water' not found in timeseries data for BE0 0AC
+WARNING:__main__:Heat source 'sea_water' not found in timeseries data for BE0 0AC
+WARNING:__main__:Heat source 'geothermal' not found in monthly data for BE0 0AC
+WARNING:__main__:Heat source 'ground' not found in monthly data for BE0 0AC
+WARNING:__main__:Heat source 'river_water' not found in monthly data for BE0 0AC
+WARNING:__main__:Heat source 'sea_water' not found in monthly data for BE0 0AC
+INFO:__main__:Processing heat system: rural
+INFO:__main__:Converting Dataset to DataArray using variable: temperature
+INFO:__main__:Selected 'rural' heat system
+INFO:__main__:Found 5 regions: ['BE0 0AC', 'BE0 1AC', 'BE0 2AC', 'BE0 3AC', 'BE0 4AC']...
+WARNING:__main__:Heat source 'geothermal' not found in timeseries data for BE0 0AC
+WARNING:__main__:Heat source 'river_water' not found in timeseries data for BE0 0AC
+WARNING:__main__:Heat source 'sea_water' not found in timeseries data for BE0 0AC
+WARNING:__main__:Heat source 'geothermal' not found in monthly data for BE0 0AC
+WARNING:__main__:Heat source 'river_water' not found in monthly data for BE0 0AC
+WARNING:__main__:Heat source 'sea_water' not found in monthly data for BE0 0AC
+INFO:__main__:Interactive COP profile plots saved to results/test-sector-overnight/graphs/cop_profiles_s_5_2030.html

@@ -1,0 +1,52 @@
+cluster,,5
+opt,,
+planning_horizon,,2030
+component,carrier,
+Generator,biogas,2.6582587950232545e-07
+Generator,coal,0.9999676097448148
+Generator,gas,0.1684154838706635
+Generator,nuclear,0.5578592999402768
+Generator,offwind-ac,0.3062194244604316
+Generator,offwind-dc,
+Generator,offwind-float,
+Generator,oil primary,0.9554467753246224
+Generator,onwind,0.1927148493392133
+Generator,rural heat vent,0.1678284663347239
+Generator,rural solar thermal,0.0202117122694069
+Generator,solar,0.127571431504453
+Generator,solar rooftop,0.1167172729641693
+Generator,solar-hsat,
+Generator,solid biomass,0.0059523667010592
+Generator,unsustainable biogas,0.0059523810895756
+Generator,unsustainable bioliquids,0.0059523809821069
+Generator,unsustainable solid biomass,0.0059523809404309
+Generator,urban central geothermal heat,0.4392036753445635
+Generator,urban central heat vent,0.7832848951378525
+Generator,urban central river_water heat,3.206110264450606e-05
+Generator,urban central solar thermal,0.0215826074740095
+Generator,urban decentral heat vent,0.1584694617984885
+Generator,urban decentral solar thermal,0.0214306741242272
+Line,AC,0.3918064012128508
+Load,H2 for industry,
+Load,agriculture electricity,
+Load,agriculture heat,
+Load,agriculture machinery electric,
+Load,agriculture machinery oil,
+Load,coal for industry,
+Load,electricity,
+Load,gas for industry,
+Load,industry electricity,
+Load,industry methanol,
+Load,kerosene for aviation,
+Load,land transport EV,
+Load,land transport oil,
+Load,low-temperature heat for industry,
+Load,naphtha for industry,
+Load,process emissions,
+Load,rural heat,
+Load,shipping methanol,
+Load,shipping oil,
+Load,solid biomass for industry,
+Load,urban central heat,
+Load,urban decentral heat,
+StorageUnit,battery,0.0754614881973372

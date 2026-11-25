@@ -1,0 +1,14 @@
+component,carrier,0
+Generator,nuclear,0.7308206806792873
+Generator,offwind-ac,0.5765856329609337
+Generator,offwind-dc,
+Generator,offwind-float,
+Generator,onwind,0.36198841636134027
+Generator,ror,0.5032769815564553
+Generator,solar,0.02189986223862239
+Generator,solar rooftop,
+Generator,solar-hsat,
+Line,AC,0.22200138580359008
+Load,electricity,
+StorageUnit,PHS,0.16935483516483515
+StorageUnit,hydro,0.45294928538807855

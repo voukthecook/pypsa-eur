@@ -1,0 +1,145 @@
+component,location,carrier,0
+StorageUnit,SE0 0AC,hydro,0.45294939446459676
+StorageUnit,SE0 11AC,hydro,0.45294928648648647
+StorageUnit,SE0 1AC,hydro,0.4529492857724907
+StorageUnit,SE0 2AC,hydro,0.45294928481145513
+StorageUnit,SE0 3AC,hydro,0.4529493030354656
+StorageUnit,SE0 4AC,hydro,0.45294944444444446
+StorageUnit,SE0 5AC,hydro,0.4529492822966507
+StorageUnit,SE0 6AC,hydro,0.452949289039723
+StorageUnit,SE0 7AC,hydro,0.45294928641131976
+StorageUnit,SE0 8AC,PHS,0.16935483516483515
+StorageUnit,SE0 8AC,hydro,0.45294928240740745
+StorageUnit,SE0 9AC,hydro,0.452949296469045
+Generator,DK0 0AC,offwind-ac,0.601321019047619
+Generator,DK0 0AC,offwind-dc,
+Generator,DK0 0AC,offwind-float,
+Generator,DK0 0AC,onwind,0.5492141195054521
+Generator,DK0 0AC,solar,0.02699212312734082
+Generator,DK0 0AC,solar rooftop,
+Generator,DK0 0AC,solar-hsat,
+Generator,DK1 0AC,offwind-ac,0.5810521199586349
+Generator,DK1 0AC,offwind-dc,
+Generator,DK1 0AC,offwind-float,
+Generator,DK1 0AC,onwind,0.44187610062893085
+Generator,DK1 0AC,solar,0.021638875305623473
+Generator,DK1 0AC,solar rooftop,
+Generator,DK1 0AC,solar-hsat,
+Generator,DK1 1AC,offwind-ac,0.5362625235997482
+Generator,DK1 1AC,offwind-dc,
+Generator,DK1 1AC,offwind-float,
+Generator,DK1 1AC,onwind,0.44173512851039987
+Generator,DK1 1AC,solar,0.020109395030292385
+Generator,DK1 1AC,solar rooftop,
+Generator,DK1 1AC,solar-hsat,
+Generator,SE0 0AC,nuclear,0.6918709655172414
+Generator,SE0 0AC,offwind-ac,0.5217447916666667
+Generator,SE0 0AC,offwind-dc,
+Generator,SE0 0AC,offwind-float,
+Generator,SE0 0AC,onwind,0.3023281745325022
+Generator,SE0 0AC,solar,0.017687312186978298
+Generator,SE0 0AC,solar rooftop,
+Generator,SE0 0AC,solar-hsat,
+Generator,SE0 10AC,offwind-ac,
+Generator,SE0 10AC,offwind-dc,
+Generator,SE0 10AC,offwind-float,
+Generator,SE0 10AC,onwind,0.27628251685965133
+Generator,SE0 10AC,solar,0.020357093425605537
+Generator,SE0 10AC,solar rooftop,
+Generator,SE0 10AC,solar-hsat,
+Generator,SE0 11AC,offwind-ac,
+Generator,SE0 11AC,offwind-dc,
+Generator,SE0 11AC,offwind-float,
+Generator,SE0 11AC,onwind,0.21290991204721676
+Generator,SE0 11AC,ror,0.5032769705093834
+Generator,SE0 11AC,solar,
+Generator,SE0 11AC,solar rooftop,
+Generator,SE0 11AC,solar-hsat,
+Generator,SE0 1AC,onwind,0.1568348866948195
+Generator,SE0 1AC,ror,0.503276974789916
+Generator,SE0 1AC,solar,
+Generator,SE0 1AC,solar rooftop,
+Generator,SE0 1AC,solar-hsat,
+Generator,SE0 2AC,offwind-ac,
+Generator,SE0 2AC,offwind-dc,
+Generator,SE0 2AC,offwind-float,
+Generator,SE0 2AC,onwind,0.20105364446631674
+Generator,SE0 2AC,ror,0.5032770000000001
+Generator,SE0 2AC,solar,0.004375
+Generator,SE0 2AC,solar rooftop,
+Generator,SE0 2AC,solar-hsat,
+Generator,SE0 3AC,nuclear,0.766
+Generator,SE0 3AC,offwind-ac,
+Generator,SE0 3AC,offwind-dc,
+Generator,SE0 3AC,offwind-float,
+Generator,SE0 3AC,onwind,0.2560512816921137
+Generator,SE0 3AC,ror,0.5032769784172662
+Generator,SE0 3AC,solar,0.02103690476190476
+Generator,SE0 3AC,solar rooftop,
+Generator,SE0 3AC,solar-hsat,
+Generator,SE0 4AC,nuclear,0.7238522547881602
+Generator,SE0 4AC,offwind-ac,
+Generator,SE0 4AC,offwind-dc,
+Generator,SE0 4AC,offwind-float,
+Generator,SE0 4AC,onwind,0.29078393939393943
+Generator,SE0 4AC,solar,0.016770723945902944
+Generator,SE0 4AC,solar rooftop,
+Generator,SE0 4AC,solar-hsat,
+Generator,SE0 5AC,offwind-ac,0.5581354545454545
+Generator,SE0 5AC,offwind-dc,
+Generator,SE0 5AC,offwind-float,
+Generator,SE0 5AC,onwind,0.35992005245588937
+Generator,SE0 5AC,solar,0.024275837320574162
+Generator,SE0 5AC,solar rooftop,
+Generator,SE0 5AC,solar-hsat,
+Generator,SE0 6AC,offwind-ac,
+Generator,SE0 6AC,offwind-dc,
+Generator,SE0 6AC,offwind-float,
+Generator,SE0 6AC,onwind,0.26712968978102186
+Generator,SE0 6AC,solar,0.018629220779220777
+Generator,SE0 6AC,solar rooftop,
+Generator,SE0 6AC,solar-hsat,
+Generator,SE0 7AC,offwind-ac,
+Generator,SE0 7AC,offwind-dc,
+Generator,SE0 7AC,offwind-float,
+Generator,SE0 7AC,onwind,0.1881451886392539
+Generator,SE0 7AC,ror,0.5032769790518192
+Generator,SE0 7AC,solar,
+Generator,SE0 7AC,solar rooftop,
+Generator,SE0 7AC,solar-hsat,
+Generator,SE0 8AC,onwind,0.19591413643533123
+Generator,SE0 8AC,ror,0.503276953125
+Generator,SE0 8AC,solar,0.01681488372093023
+Generator,SE0 8AC,solar rooftop,
+Generator,SE0 8AC,solar-hsat,
+Generator,SE0 9AC,onwind,0.22206673177752648
+Generator,SE0 9AC,ror,0.503277
+Generator,SE0 9AC,solar,0.015349342105263158
+Generator,SE0 9AC,solar rooftop,
+Generator,SE0 9AC,solar-hsat,
+Load,DK0 0AC,electricity,
+Load,DK1 0AC,electricity,
+Load,DK1 1AC,electricity,
+Load,SE0 0AC,electricity,
+Load,SE0 10AC,electricity,
+Load,SE0 11AC,electricity,
+Load,SE0 1AC,electricity,
+Load,SE0 2AC,electricity,
+Load,SE0 3AC,electricity,
+Load,SE0 4AC,electricity,
+Load,SE0 5AC,electricity,
+Load,SE0 6AC,electricity,
+Load,SE0 7AC,electricity,
+Load,SE0 8AC,electricity,
+Load,SE0 9AC,electricity,
+Line,DK0 0AC,AC,0.3403962484685333
+Line,DK1 0AC,AC,0.054162834370608856
+Line,SE0 0AC,AC,0.12583244656144507
+Line,SE0 10AC,AC,0.2202611072899701
+Line,SE0 11AC,AC,0.20496624695918436
+Line,SE0 1AC,AC,0.22081439311842857
+Line,SE0 3AC,AC,0.224450357883875
+Line,SE0 4AC,AC,0.24429227083582147
+Line,SE0 6AC,AC,0.3264772064348414
+Line,SE0 7AC,AC,0.2637629409188909
+Line,SE0 8AC,AC,0.19094869913627702

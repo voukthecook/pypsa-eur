@@ -1,0 +1,44 @@
+component,carrier,0
+Generator,nuclear,7184.0
+Generator,offwind-ac,2810.6
+Generator,offwind-dc,0.0
+Generator,offwind-float,0.0
+Generator,onwind,31995.92381
+Generator,ror,2223.0
+Generator,solar,4065.0
+Generator,solar rooftop,0.0
+Generator,solar-hsat,0.0
+Line,AC,101419.40821
+Link,CCGT,0.0
+Link,CO2 pipeline,0.0
+Link,DC,4960.0
+Link,H2 Electrolysis,0.0
+Link,H2 Fuel Cell,0.0
+Link,H2 pipeline,0.0
+Link,H2 turbine,0.0
+Link,Haber-Bosch,0.0
+Link,OCGT,0.0
+Link,OCGT methanol,0.0
+Link,SMR,0.0
+Link,SMR CC,0.0
+Link,Sabatier,0.0
+Link,ammonia cracker,0.0
+Link,battery charger,0.0
+Link,battery discharger,0.0
+Link,co2 sequestered,inf
+Link,electricity distribution grid,54161.79365
+Link,gas pipeline,12000.0
+Link,gas pipeline new,0.0
+Link,home battery charger,0.0
+Link,home battery discharger,0.0
+StorageUnit,PHS,91.0
+StorageUnit,hydro,12304.36232
+Store,H2 Store,0.0
+Store,ammonia store,0.0
+Store,battery,0.0
+Store,co2,inf
+Store,co2 sequestered,269156788.59346
+Store,co2 stored,0.0
+Store,gas,11098720.0
+Store,home battery,0.0
+Store,methanol,0.0

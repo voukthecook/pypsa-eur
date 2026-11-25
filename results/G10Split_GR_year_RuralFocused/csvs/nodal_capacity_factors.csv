@@ -1,0 +1,67 @@
+cluster,,,3
+opt,,,lv1.2Co2L0-3H
+planning_horizon,,,2050
+component,location,carrier,
+Generator,GR0 0AC,gas,0.0902891691522087
+Generator,GR0 0AC,offwind-ac,0.1891891891891891
+Generator,GR0 0AC,offwind-dc,0.431924882629108
+Generator,GR0 0AC,offwind-float,0.2924528301886792
+Generator,GR0 0AC,onwind,0.2366326767761911
+Generator,GR0 0AC,rural heat vent,0.0802956518195525
+Generator,GR0 0AC,rural solar thermal,0.0428571428571428
+Generator,GR0 0AC,solar,0.1732522776608747
+Generator,GR0 0AC,solar rooftop,0.1759730651724227
+Generator,GR0 0AC,solar-hsat,0.1989143941163193
+Generator,GR0 0AC,urban central heat vent,0.4519607843137255
+Generator,GR0 0AC,urban central solar thermal,0.044883303411131
+Generator,GR0 0AC,urban decentral heat vent,0.079923645704716
+Generator,GR0 0AC,urban decentral solar thermal,0.0409556313993174
+Generator,GR0 1AC,offwind-ac,0.1505376344086021
+Generator,GR0 1AC,offwind-dc,0.3310344827586207
+Generator,GR0 1AC,offwind-float,0.1666666666666666
+Generator,GR0 1AC,onwind,0.1075636511117748
+Generator,GR0 1AC,ror,0.2740932038834951
+Generator,GR0 1AC,rural heat vent,0.0752092402108203
+Generator,GR0 1AC,rural solar thermal,0.04
+Generator,GR0 1AC,solar,0.1673752115615148
+Generator,GR0 1AC,solar rooftop,0.1673674851019861
+Generator,GR0 1AC,solar-hsat,0.1389830508474576
+Generator,GR0 1AC,urban central heat vent,0.0446767816249689
+Generator,GR0 1AC,urban central solar thermal,0.0394366197183098
+Generator,GR0 1AC,urban decentral heat vent,0.0802393865719094
+Generator,GR0 1AC,urban decentral solar thermal,0.0367412140575079
+Generator,GR0 2AC,gas,0.217681028802849
+Generator,GR0 2AC,offwind-ac,0.1573033707865168
+Generator,GR0 2AC,offwind-dc,0.3356164383561644
+Generator,GR0 2AC,offwind-float,0.1829268292682926
+Generator,GR0 2AC,onwind,0.141508244061141
+Generator,GR0 2AC,ror,0.2746115789473684
+Generator,GR0 2AC,rural heat vent,0.0655944270369199
+Generator,GR0 2AC,rural solar thermal,0.0370967741935483
+Generator,GR0 2AC,solar,0.1611701543751204
+Generator,GR0 2AC,solar rooftop,0.161452128219039
+Generator,GR0 2AC,solar-hsat,0.1321656050955414
+Generator,GR0 2AC,urban central heat vent,0.0522716038679803
+Generator,GR0 2AC,urban central solar thermal,0.0389733840304182
+Generator,GR0 2AC,urban decentral heat vent,0.0730788678707101
+Generator,GR0 2AC,urban decentral solar thermal,0.0352733686067019
+Line,GR0 0AC,AC,0.0803328646961525
+Line,GR0 1AC,AC,0.0681671169072569
+Load,GR0 0AC,electricity,
+Load,GR0 0AC,land transport EV,
+Load,GR0 0AC,rural heat,
+Load,GR0 0AC,urban central heat,
+Load,GR0 0AC,urban decentral heat,
+Load,GR0 1AC,electricity,
+Load,GR0 1AC,land transport EV,
+Load,GR0 1AC,rural heat,
+Load,GR0 1AC,urban central heat,
+Load,GR0 1AC,urban decentral heat,
+Load,GR0 2AC,electricity,
+Load,GR0 2AC,land transport EV,
+Load,GR0 2AC,rural heat,
+Load,GR0 2AC,urban central heat,
+Load,GR0 2AC,urban decentral heat,
+StorageUnit,GR0 1AC,hydro,0.2486997807757167
+StorageUnit,GR0 2AC,PHS,0.2891890987124463
+StorageUnit,GR0 2AC,hydro,0.2486996637608966

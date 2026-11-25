@@ -1,0 +1,417 @@
+cost,component,location,carrier,0
+capital,Generator,GR0 0AC,gas,0.0
+capital,Generator,GR0 0AC,offwind-ac,191.20287
+capital,Generator,GR0 0AC,offwind-dc,479.53179
+capital,Generator,GR0 0AC,offwind-float,322.71773
+capital,Generator,GR0 0AC,onwind,364955097.98317
+capital,Generator,GR0 0AC,rural heat vent,0.0
+capital,Generator,GR0 0AC,rural solar thermal,173.70535
+capital,Generator,GR0 0AC,solar,31891810.7935
+capital,Generator,GR0 0AC,solar rooftop,286356043.07783
+capital,Generator,GR0 0AC,solar-hsat,147945039.36572
+capital,Generator,GR0 0AC,urban central heat vent,0.0
+capital,Generator,GR0 0AC,urban central solar thermal,168.11178
+capital,Generator,GR0 0AC,urban decentral heat vent,0.0
+capital,Generator,GR0 0AC,urban decentral solar thermal,157.13836
+capital,Generator,GR0 1AC,offwind-ac,196.47811
+capital,Generator,GR0 1AC,offwind-dc,267.40675
+capital,Generator,GR0 1AC,offwind-float,218.24612
+capital,Generator,GR0 1AC,onwind,294226670.43477
+capital,Generator,GR0 1AC,ror,4008407.20732
+capital,Generator,GR0 1AC,rural heat vent,0.0
+capital,Generator,GR0 1AC,rural solar thermal,185.9539
+capital,Generator,GR0 1AC,solar,255941130.33653
+capital,Generator,GR0 1AC,solar rooftop,197861086.3474
+capital,Generator,GR0 1AC,solar-hsat,707.71605
+capital,Generator,GR0 1AC,urban central heat vent,0.0
+capital,Generator,GR0 1AC,urban central solar thermal,165.91619
+capital,Generator,GR0 1AC,urban decentral heat vent,0.0
+capital,Generator,GR0 1AC,urban decentral solar thermal,169.44942
+capital,Generator,GR0 2AC,gas,0.0
+capital,Generator,GR0 2AC,offwind-ac,194.96894
+capital,Generator,GR0 2AC,offwind-dc,418.14244
+capital,Generator,GR0 2AC,offwind-float,215.87716
+capital,Generator,GR0 2AC,onwind,169456399.31246
+capital,Generator,GR0 2AC,ror,7394149.21738
+capital,Generator,GR0 2AC,rural heat vent,0.0
+capital,Generator,GR0 2AC,rural solar thermal,169.08115
+capital,Generator,GR0 2AC,solar,331397283.26734
+capital,Generator,GR0 2AC,solar rooftop,208909008.15537
+capital,Generator,GR0 2AC,solar-hsat,393.53269
+capital,Generator,GR0 2AC,urban central heat vent,0.0
+capital,Generator,GR0 2AC,urban central solar thermal,163.95892
+capital,Generator,GR0 2AC,urban decentral heat vent,0.0
+capital,Generator,GR0 2AC,urban decentral solar thermal,152.26834
+capital,Line,GR0 0AC,AC,119678736.42179
+capital,Line,GR0 1AC,AC,121863270.65226
+capital,Link,EU,OCGT methanol,160.0304
+capital,Link,EU,ammonia cracker,317.77627
+capital,Link,GR0 0AC,BEV charger,0.0
+capital,Link,GR0 0AC,CCGT,143.98573
+capital,Link,GR0 0AC,CO2 pipeline,1072496.37197
+capital,Link,GR0 0AC,DAC,4437.34243
+capital,Link,GR0 0AC,H2 Electrolysis,512.93452
+capital,Link,GR0 0AC,H2 Fuel Cell,332.07965
+capital,Link,GR0 0AC,H2 pipeline,213.8523
+capital,Link,GR0 0AC,H2 turbine,77.63116
+capital,Link,GR0 0AC,Haber-Bosch,270.62962
+capital,Link,GR0 0AC,OCGT,90.06825
+capital,Link,GR0 0AC,SMR,98.43642
+capital,Link,GR0 0AC,SMR CC,314.36426
+capital,Link,GR0 0AC,Sabatier,167.2268
+capital,Link,GR0 0AC,V2G,0.0
+capital,Link,GR0 0AC,battery charger,352509.01215
+capital,Link,GR0 0AC,battery discharger,0.0
+capital,Link,GR0 0AC,co2 sequestered,0.0
+capital,Link,GR0 0AC,electricity distribution grid,242498562.34872
+capital,Link,GR0 0AC,gas pipeline,16700370.16669
+capital,Link,GR0 0AC,home battery charger,978.81866
+capital,Link,GR0 0AC,home battery discharger,0.0
+capital,Link,GR0 0AC,rural air heat pump,2634065.88767
+capital,Link,GR0 0AC,rural gas boiler,13235560.74572
+capital,Link,GR0 0AC,rural ground heat pump,14906907.09958
+capital,Link,GR0 0AC,rural resistive heater,3495103.14722
+capital,Link,GR0 0AC,rural water tanks charger,0.0
+capital,Link,GR0 0AC,rural water tanks discharger,0.0
+capital,Link,GR0 0AC,urban central air heat pump,35099875.46574
+capital,Link,GR0 0AC,urban central gas CHP,51366114.31054
+capital,Link,GR0 0AC,urban central gas CHP CC,16285860.62283
+capital,Link,GR0 0AC,urban central gas boiler,9295152.99387
+capital,Link,GR0 0AC,urban central resistive heater,7139661.51594
+capital,Link,GR0 0AC,urban central water pits charger,0.0
+capital,Link,GR0 0AC,urban central water pits discharger,0.0
+capital,Link,GR0 0AC,urban central water tanks charger,0.0
+capital,Link,GR0 0AC,urban central water tanks discharger,0.0
+capital,Link,GR0 0AC,urban decentral air heat pump,100288597.49913
+capital,Link,GR0 0AC,urban decentral gas boiler,98961909.72794
+capital,Link,GR0 0AC,urban decentral resistive heater,25474877.87852
+capital,Link,GR0 0AC,urban decentral water tanks charger,0.0
+capital,Link,GR0 0AC,urban decentral water tanks discharger,0.0
+capital,Link,GR0 1AC,BEV charger,0.0
+capital,Link,GR0 1AC,CCGT,139.27315
+capital,Link,GR0 1AC,CO2 pipeline,8936510.68398
+capital,Link,GR0 1AC,DAC,5933.3491
+capital,Link,GR0 1AC,H2 Electrolysis,482.83616
+capital,Link,GR0 1AC,H2 Fuel Cell,335.86292
+capital,Link,GR0 1AC,H2 pipeline,212.72682
+capital,Link,GR0 1AC,H2 turbine,78.04941
+capital,Link,GR0 1AC,Haber-Bosch,271.91213
+capital,Link,GR0 1AC,OCGT,88.26409
+capital,Link,GR0 1AC,SMR,97.01744
+capital,Link,GR0 1AC,SMR CC,328.0627
+capital,Link,GR0 1AC,Sabatier,166.8967
+capital,Link,GR0 1AC,V2G,0.0
+capital,Link,GR0 1AC,battery charger,40605879.01538
+capital,Link,GR0 1AC,battery discharger,0.0
+capital,Link,GR0 1AC,co2 sequestered,0.0
+capital,Link,GR0 1AC,electricity distribution grid,117557672.86143
+capital,Link,GR0 1AC,gas pipeline,8087289.65692
+capital,Link,GR0 1AC,gas pipeline new,312.54464
+capital,Link,GR0 1AC,home battery charger,890.6
+capital,Link,GR0 1AC,home battery discharger,0.0
+capital,Link,GR0 1AC,rural air heat pump,2765714.21207
+capital,Link,GR0 1AC,rural gas boiler,33306406.42751
+capital,Link,GR0 1AC,rural ground heat pump,77554594.12635
+capital,Link,GR0 1AC,rural resistive heater,8191870.39742
+capital,Link,GR0 1AC,rural water tanks charger,0.0
+capital,Link,GR0 1AC,rural water tanks discharger,0.0
+capital,Link,GR0 1AC,urban central air heat pump,18422594.66639
+capital,Link,GR0 1AC,urban central gas CHP,4288771.31864
+capital,Link,GR0 1AC,urban central gas CHP CC,83687974.57776
+capital,Link,GR0 1AC,urban central gas boiler,2018940.80829
+capital,Link,GR0 1AC,urban central resistive heater,1887040.93604
+capital,Link,GR0 1AC,urban central water pits charger,0.0
+capital,Link,GR0 1AC,urban central water pits discharger,0.0
+capital,Link,GR0 1AC,urban central water tanks charger,0.0
+capital,Link,GR0 1AC,urban central water tanks discharger,0.0
+capital,Link,GR0 1AC,urban decentral air heat pump,40036173.4818
+capital,Link,GR0 1AC,urban decentral gas boiler,32180163.80646
+capital,Link,GR0 1AC,urban decentral resistive heater,5885209.66111
+capital,Link,GR0 1AC,urban decentral water tanks charger,0.0
+capital,Link,GR0 1AC,urban decentral water tanks discharger,0.0
+capital,Link,GR0 2AC,BEV charger,0.0
+capital,Link,GR0 2AC,CCGT,143.34325
+capital,Link,GR0 2AC,DAC,146970156.05068
+capital,Link,GR0 2AC,H2 Electrolysis,435.52632
+capital,Link,GR0 2AC,H2 Fuel Cell,324.69819
+capital,Link,GR0 2AC,H2 pipeline,0.0
+capital,Link,GR0 2AC,H2 turbine,77.77052
+capital,Link,GR0 2AC,Haber-Bosch,274.05645
+capital,Link,GR0 2AC,OCGT,90.22175
+capital,Link,GR0 2AC,SMR,97.73645
+capital,Link,GR0 2AC,SMR CC,437.29826
+capital,Link,GR0 2AC,Sabatier,164.12316
+capital,Link,GR0 2AC,V2G,0.0
+capital,Link,GR0 2AC,battery charger,358235.14647
+capital,Link,GR0 2AC,battery discharger,0.0
+capital,Link,GR0 2AC,co2 sequestered,0.0
+capital,Link,GR0 2AC,electricity distribution grid,129536170.88141
+capital,Link,GR0 2AC,gas pipeline,0.0
+capital,Link,GR0 2AC,home battery charger,770.88853
+capital,Link,GR0 2AC,home battery discharger,0.0
+capital,Link,GR0 2AC,rural air heat pump,362559.6432
+capital,Link,GR0 2AC,rural gas boiler,18367122.10088
+capital,Link,GR0 2AC,rural ground heat pump,40840577.89233
+capital,Link,GR0 2AC,rural resistive heater,3918791.62568
+capital,Link,GR0 2AC,rural water tanks charger,0.0
+capital,Link,GR0 2AC,rural water tanks discharger,0.0
+capital,Link,GR0 2AC,urban central air heat pump,4627283.99981
+capital,Link,GR0 2AC,urban central gas CHP,1052.10473
+capital,Link,GR0 2AC,urban central gas CHP CC,242957961.96937
+capital,Link,GR0 2AC,urban central gas boiler,358.65052
+capital,Link,GR0 2AC,urban central resistive heater,10845901.33401
+capital,Link,GR0 2AC,urban central water pits charger,0.0
+capital,Link,GR0 2AC,urban central water pits discharger,0.0
+capital,Link,GR0 2AC,urban central water tanks charger,0.0
+capital,Link,GR0 2AC,urban central water tanks discharger,0.0
+capital,Link,GR0 2AC,urban decentral air heat pump,46787282.69269
+capital,Link,GR0 2AC,urban decentral gas boiler,44966219.93244
+capital,Link,GR0 2AC,urban decentral resistive heater,6837383.005
+capital,Link,GR0 2AC,urban decentral water tanks charger,0.0
+capital,Link,GR0 2AC,urban decentral water tanks discharger,0.0
+capital,StorageUnit,GR0 1AC,hydro,410445232.91355
+capital,StorageUnit,GR0 2AC,PHS,161271061.16165
+capital,StorageUnit,GR0 2AC,hydro,185265611.03405
+capital,Store,EU,ammonia store,136.89053
+capital,Store,EU,co2,0.0
+capital,Store,EU,methanol,0.03533
+capital,Store,GR0 0AC,EV battery,0.0
+capital,Store,GR0 0AC,H2 Store,108.84278
+capital,Store,GR0 0AC,battery,2068328.3684
+capital,Store,GR0 0AC,co2 sequestered,0.0
+capital,Store,GR0 0AC,co2 stored,149.06993
+capital,Store,GR0 0AC,gas,150.15093
+capital,Store,GR0 0AC,home battery,3749.06849
+capital,Store,GR0 0AC,rural water tanks,1258.50564
+capital,Store,GR0 0AC,urban central water pits,20152808.6204
+capital,Store,GR0 0AC,urban central water tanks,1214.21211
+capital,Store,GR0 0AC,urban decentral water tanks,1170.40859
+capital,Store,GR0 1AC,EV battery,0.0
+capital,Store,GR0 1AC,H2 Store,140.52813
+capital,Store,GR0 1AC,battery,238274150.8938
+capital,Store,GR0 1AC,co2 sequestered,0.0
+capital,Store,GR0 1AC,co2 stored,124.4193
+capital,Store,GR0 1AC,gas,64867.01335
+capital,Store,GR0 1AC,home battery,3343.36935
+capital,Store,GR0 1AC,rural water tanks,1466.63944
+capital,Store,GR0 1AC,urban central water pits,4360007.01786
+capital,Store,GR0 1AC,urban central water tanks,1224.81035
+capital,Store,GR0 1AC,urban decentral water tanks,1354.51348
+capital,Store,GR0 2AC,EV battery,0.0
+capital,Store,GR0 2AC,H2 Store,108.62236
+capital,Store,GR0 2AC,battery,2101918.37619
+capital,Store,GR0 2AC,co2 sequestered,0.0
+capital,Store,GR0 2AC,co2 stored,107.06567
+capital,Store,GR0 2AC,gas,79644383.68472
+capital,Store,GR0 2AC,home battery,2721.47796
+capital,Store,GR0 2AC,rural water tanks,1567.34284
+capital,Store,GR0 2AC,urban central water pits,5054861.13571
+capital,Store,GR0 2AC,urban central water tanks,1229.82686
+capital,Store,GR0 2AC,urban decentral water tanks,1413.50983
+marginal,Generator,GR0 0AC,gas,150239356.60873
+marginal,Generator,GR0 0AC,offwind-ac,0.02212
+marginal,Generator,GR0 0AC,offwind-dc,0.13056
+marginal,Generator,GR0 0AC,offwind-float,0.05998
+marginal,Generator,GR0 0AC,onwind,140456.54624
+marginal,Generator,GR0 0AC,rural heat vent,14.21225
+marginal,Generator,GR0 0AC,rural solar thermal,0.01907
+marginal,Generator,GR0 0AC,solar,17577.24653
+marginal,Generator,GR0 0AC,solar rooftop,197063.2406
+marginal,Generator,GR0 0AC,solar-hsat,84331.69427
+marginal,Generator,GR0 0AC,urban central heat vent,0.33651
+marginal,Generator,GR0 0AC,urban central solar thermal,0.03045
+marginal,Generator,GR0 0AC,urban decentral heat vent,7.95471
+marginal,Generator,GR0 0AC,urban decentral solar thermal,0.01661
+marginal,Generator,GR0 1AC,offwind-ac,0.02273
+marginal,Generator,GR0 1AC,offwind-dc,0.06143
+marginal,Generator,GR0 1AC,offwind-float,0.02316
+marginal,Generator,GR0 1AC,onwind,50039.81066
+marginal,Generator,GR0 1AC,ror,247.88948
+marginal,Generator,GR0 1AC,rural heat vent,11.11979
+marginal,Generator,GR0 1AC,rural solar thermal,0.01893
+marginal,Generator,GR0 1AC,solar,130896.62609
+marginal,Generator,GR0 1AC,solar rooftop,130593.26942
+marginal,Generator,GR0 1AC,solar-hsat,0.29449
+marginal,Generator,GR0 1AC,urban central heat vent,45.4123
+marginal,Generator,GR0 1AC,urban central solar thermal,0.02642
+marginal,Generator,GR0 1AC,urban decentral heat vent,8.66717
+marginal,Generator,GR0 1AC,urban decentral solar thermal,0.01585
+marginal,Generator,GR0 2AC,gas,370466957.69022
+marginal,Generator,GR0 2AC,offwind-ac,0.02417
+marginal,Generator,GR0 2AC,offwind-dc,0.10261
+marginal,Generator,GR0 2AC,offwind-float,0.02621
+marginal,Generator,GR0 2AC,onwind,38195.98815
+marginal,Generator,GR0 2AC,ror,457.95329
+marginal,Generator,GR0 2AC,rural heat vent,11.47225
+marginal,Generator,GR0 2AC,rural solar thermal,0.01527
+marginal,Generator,GR0 2AC,solar,169009.84332
+marginal,Generator,GR0 2AC,solar rooftop,135956.63725
+marginal,Generator,GR0 2AC,solar-hsat,0.14721
+marginal,Generator,GR0 2AC,urban central heat vent,2855.48934
+marginal,Generator,GR0 2AC,urban central solar thermal,0.0281
+marginal,Generator,GR0 2AC,urban decentral heat vent,8.50607
+marginal,Generator,GR0 2AC,urban decentral solar thermal,0.01351
+marginal,Link,EU,OCGT methanol,0.01475
+marginal,Link,EU,ammonia cracker,0.18273
+marginal,Link,GR0 0AC,BEV charger,78997.80818
+marginal,Link,GR0 0AC,CCGT,15.50108
+marginal,Link,GR0 0AC,CO2 pipeline,1689.43105
+marginal,Link,GR0 0AC,DAC,0.23199
+marginal,Link,GR0 0AC,H2 Electrolysis,0.11355
+marginal,Link,GR0 0AC,H2 Fuel Cell,0.09881
+marginal,Link,GR0 0AC,H2 pipeline,0.67856
+marginal,Link,GR0 0AC,H2 turbine,6.64211
+marginal,Link,GR0 0AC,Haber-Bosch,0.18572
+marginal,Link,GR0 0AC,OCGT,11.24206
+marginal,Link,GR0 0AC,SMR,0.03831
+marginal,Link,GR0 0AC,SMR CC,0.19643
+marginal,Link,GR0 0AC,Sabatier,0.12084
+marginal,Link,GR0 0AC,V2G,7572.53496
+marginal,Link,GR0 0AC,battery charger,674.28609
+marginal,Link,GR0 0AC,battery discharger,598.94673
+marginal,Link,GR0 0AC,co2 sequestered,0.0
+marginal,Link,GR0 0AC,electricity distribution grid,184292.23891
+marginal,Link,GR0 0AC,gas pipeline,4574.38503
+marginal,Link,GR0 0AC,home battery charger,1.72738
+marginal,Link,GR0 0AC,home battery discharger,1.82921
+marginal,Link,GR0 0AC,rural air heat pump,-455.51498
+marginal,Link,GR0 0AC,rural gas boiler,1040.61322
+marginal,Link,GR0 0AC,rural ground heat pump,-3667.0559
+marginal,Link,GR0 0AC,rural resistive heater,318.69542
+marginal,Link,GR0 0AC,rural water tanks charger,39.73432
+marginal,Link,GR0 0AC,rural water tanks discharger,10.05075
+marginal,Link,GR0 0AC,urban central air heat pump,-17848.90169
+marginal,Link,GR0 0AC,urban central gas CHP,5090294.4867
+marginal,Link,GR0 0AC,urban central gas CHP CC,1916223.43019
+marginal,Link,GR0 0AC,urban central gas boiler,21316.51965
+marginal,Link,GR0 0AC,urban central resistive heater,16089.94805
+marginal,Link,GR0 0AC,urban central water pits charger,64085.13728
+marginal,Link,GR0 0AC,urban central water pits discharger,17331.58911
+marginal,Link,GR0 0AC,urban central water tanks charger,10.83503
+marginal,Link,GR0 0AC,urban central water tanks discharger,2.57454
+marginal,Link,GR0 0AC,urban decentral air heat pump,-31272.81666
+marginal,Link,GR0 0AC,urban decentral gas boiler,8211.52225
+marginal,Link,GR0 0AC,urban decentral resistive heater,2185.76174
+marginal,Link,GR0 0AC,urban decentral water tanks charger,37.74002
+marginal,Link,GR0 0AC,urban decentral water tanks discharger,9.77434
+marginal,Link,GR0 1AC,BEV charger,60252.26416
+marginal,Link,GR0 1AC,CCGT,14.9827
+marginal,Link,GR0 1AC,CO2 pipeline,7373.98113
+marginal,Link,GR0 1AC,DAC,0.31851
+marginal,Link,GR0 1AC,H2 Electrolysis,0.10604
+marginal,Link,GR0 1AC,H2 Fuel Cell,0.10248
+marginal,Link,GR0 1AC,H2 pipeline,1.32765
+marginal,Link,GR0 1AC,H2 turbine,6.69558
+marginal,Link,GR0 1AC,Haber-Bosch,0.18884
+marginal,Link,GR0 1AC,OCGT,10.7172
+marginal,Link,GR0 1AC,SMR,0.03861
+marginal,Link,GR0 1AC,SMR CC,0.20595
+marginal,Link,GR0 1AC,Sabatier,0.11782
+marginal,Link,GR0 1AC,V2G,4982.8078
+marginal,Link,GR0 1AC,battery charger,78334.76703
+marginal,Link,GR0 1AC,battery discharger,73393.4832
+marginal,Link,GR0 1AC,co2 sequestered,0.0
+marginal,Link,GR0 1AC,electricity distribution grid,89481.75145
+marginal,Link,GR0 1AC,gas pipeline,5.10922
+marginal,Link,GR0 1AC,gas pipeline new,-5.61019
+marginal,Link,GR0 1AC,home battery charger,1.59109
+marginal,Link,GR0 1AC,home battery discharger,1.67989
+marginal,Link,GR0 1AC,rural air heat pump,-425.9564
+marginal,Link,GR0 1AC,rural gas boiler,3110.00379
+marginal,Link,GR0 1AC,rural ground heat pump,-22160.93657
+marginal,Link,GR0 1AC,rural resistive heater,1072.15173
+marginal,Link,GR0 1AC,rural water tanks charger,45.21033
+marginal,Link,GR0 1AC,rural water tanks discharger,11.13834
+marginal,Link,GR0 1AC,urban central air heat pump,-9599.37702
+marginal,Link,GR0 1AC,urban central gas CHP,354971.74093
+marginal,Link,GR0 1AC,urban central gas CHP CC,7691678.7524
+marginal,Link,GR0 1AC,urban central gas boiler,3575.27732
+marginal,Link,GR0 1AC,urban central resistive heater,4283.07291
+marginal,Link,GR0 1AC,urban central water pits charger,22708.80081
+marginal,Link,GR0 1AC,urban central water pits discharger,6543.39505
+marginal,Link,GR0 1AC,urban central water tanks charger,10.81065
+marginal,Link,GR0 1AC,urban central water tanks discharger,2.81331
+marginal,Link,GR0 1AC,urban decentral air heat pump,-14308.99326
+marginal,Link,GR0 1AC,urban decentral gas boiler,3907.3547
+marginal,Link,GR0 1AC,urban decentral resistive heater,810.20365
+marginal,Link,GR0 1AC,urban decentral water tanks charger,43.2749
+marginal,Link,GR0 1AC,urban decentral water tanks discharger,10.74314
+marginal,Link,GR0 2AC,BEV charger,62735.40831
+marginal,Link,GR0 2AC,CCGT,15.42355
+marginal,Link,GR0 2AC,DAC,8764.84094
+marginal,Link,GR0 2AC,H2 Electrolysis,0.10555
+marginal,Link,GR0 2AC,H2 Fuel Cell,0.10467
+marginal,Link,GR0 2AC,H2 pipeline,0.68101
+marginal,Link,GR0 2AC,H2 turbine,6.71205
+marginal,Link,GR0 2AC,Haber-Bosch,0.19055
+marginal,Link,GR0 2AC,OCGT,11.2673
+marginal,Link,GR0 2AC,SMR,0.03692
+marginal,Link,GR0 2AC,SMR CC,0.30055
+marginal,Link,GR0 2AC,Sabatier,0.11291
+marginal,Link,GR0 2AC,V2G,4842.16173
+marginal,Link,GR0 2AC,battery charger,614.14699
+marginal,Link,GR0 2AC,battery discharger,665.74102
+marginal,Link,GR0 2AC,co2 sequestered,135887512.1863
+marginal,Link,GR0 2AC,electricity distribution grid,118730.18326
+marginal,Link,GR0 2AC,gas pipeline,45123.16451
+marginal,Link,GR0 2AC,home battery charger,1.55838
+marginal,Link,GR0 2AC,home battery discharger,1.46155
+marginal,Link,GR0 2AC,rural air heat pump,-77.3348
+marginal,Link,GR0 2AC,rural gas boiler,2053.72472
+marginal,Link,GR0 2AC,rural ground heat pump,-11369.34016
+marginal,Link,GR0 2AC,rural resistive heater,530.73873
+marginal,Link,GR0 2AC,rural water tanks charger,48.62479
+marginal,Link,GR0 2AC,rural water tanks discharger,11.82496
+marginal,Link,GR0 2AC,urban central air heat pump,-2838.28931
+marginal,Link,GR0 2AC,urban central gas CHP,106.0099
+marginal,Link,GR0 2AC,urban central gas CHP CC,26167785.15524
+marginal,Link,GR0 2AC,urban central gas boiler,0.28678
+marginal,Link,GR0 2AC,urban central resistive heater,15598.70643
+marginal,Link,GR0 2AC,urban central water pits charger,52974.02813
+marginal,Link,GR0 2AC,urban central water pits discharger,14815.51601
+marginal,Link,GR0 2AC,urban central water tanks charger,10.83128
+marginal,Link,GR0 2AC,urban central water tanks discharger,2.7176
+marginal,Link,GR0 2AC,urban decentral air heat pump,-18265.55977
+marginal,Link,GR0 2AC,urban decentral gas boiler,6494.86366
+marginal,Link,GR0 2AC,urban decentral resistive heater,1012.392
+marginal,Link,GR0 2AC,urban decentral water tanks charger,44.0533
+marginal,Link,GR0 2AC,urban decentral water tanks discharger,11.46457
+marginal,StorageUnit,GR0 1AC,hydro,36903.88063
+marginal,StorageUnit,GR0 2AC,PHS,7456.24683
+marginal,StorageUnit,GR0 2AC,hydro,18478.86035
+marginal,Store,EU,ammonia store,-0.0
+marginal,Store,EU,co2,0.07706
+marginal,Store,EU,methanol,-0.0
+marginal,Store,GR0 0AC,EV battery,1e-05
+marginal,Store,GR0 0AC,H2 Store,0.0
+marginal,Store,GR0 0AC,battery,0.0
+marginal,Store,GR0 0AC,co2 sequestered,0.0
+marginal,Store,GR0 0AC,co2 stored,0.0
+marginal,Store,GR0 0AC,gas,0.0
+marginal,Store,GR0 0AC,home battery,0.0
+marginal,Store,GR0 0AC,rural water tanks,-0.02566
+marginal,Store,GR0 0AC,urban central water pits,-577.54685
+marginal,Store,GR0 0AC,urban central water tanks,-0.0126
+marginal,Store,GR0 0AC,urban decentral water tanks,-0.02456
+marginal,Store,GR0 1AC,EV battery,1e-05
+marginal,Store,GR0 1AC,H2 Store,0.0
+marginal,Store,GR0 1AC,battery,0.0
+marginal,Store,GR0 1AC,co2 sequestered,0.0
+marginal,Store,GR0 1AC,co2 stored,0.0
+marginal,Store,GR0 1AC,gas,0.0
+marginal,Store,GR0 1AC,home battery,0.0
+marginal,Store,GR0 1AC,rural water tanks,-0.03071
+marginal,Store,GR0 1AC,urban central water pits,-104.45193
+marginal,Store,GR0 1AC,urban central water tanks,-0.01285
+marginal,Store,GR0 1AC,urban decentral water tanks,-0.02749
+marginal,Store,GR0 2AC,EV battery,1e-05
+marginal,Store,GR0 2AC,H2 Store,-0.0
+marginal,Store,GR0 2AC,battery,0.0
+marginal,Store,GR0 2AC,co2 sequestered,407453.94445
+marginal,Store,GR0 2AC,co2 stored,0.0
+marginal,Store,GR0 2AC,gas,0.0
+marginal,Store,GR0 2AC,home battery,0.0
+marginal,Store,GR0 2AC,rural water tanks,-0.03212
+marginal,Store,GR0 2AC,urban central water pits,-113.19591
+marginal,Store,GR0 2AC,urban central water tanks,-0.01254
+marginal,Store,GR0 2AC,urban decentral water tanks,-0.02845

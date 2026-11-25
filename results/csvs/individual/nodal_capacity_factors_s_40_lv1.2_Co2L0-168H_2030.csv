@@ -1,0 +1,410 @@
+component,location,carrier,0
+Generator,AL2 0AC,offwind-ac,
+Generator,AL2 0AC,offwind-float,
+Generator,AL2 0AC,onwind,0.09857813333333333
+Generator,AL2 0AC,ror,0.6008454228417426
+Generator,AL2 0AC,solar,0.0896092885375494
+Generator,AL2 0AC,solar rooftop,0.10030069112933422
+Generator,AL2 0AC,solar-hsat,
+Generator,AT2 0AC,onwind,0.16395638313132038
+Generator,AT2 0AC,ror,0.30462744231658845
+Generator,AT2 0AC,solar,0.09696760999701062
+Generator,AT2 0AC,solar rooftop,0.09696760988033018
+Generator,AT2 0AC,solar-hsat,
+Generator,BA2 0AC,offwind-ac,
+Generator,BA2 0AC,offwind-float,
+Generator,BA2 0AC,onwind,0.08009237704918032
+Generator,BA2 0AC,ror,0.7436214285714285
+Generator,BA2 0AC,solar,0.0903754650132861
+Generator,BA2 0AC,solar rooftop,0.09037546959061087
+Generator,BA2 0AC,solar-hsat,
+Generator,BE2 0AC,nuclear,0.6607489526367187
+Generator,BE2 0AC,offwind-ac,0.5374717171717172
+Generator,BE2 0AC,offwind-dc,0.5799933684541185
+Generator,BE2 0AC,offwind-float,
+Generator,BE2 0AC,onwind,0.3108086884616842
+Generator,BE2 0AC,ror,0.9954727258797342
+Generator,BE2 0AC,solar,0.0640140678327645
+Generator,BE2 0AC,solar rooftop,
+Generator,BE2 0AC,solar-hsat,
+Generator,BG2 0AC,nuclear,0.5500726634615384
+Generator,BG2 0AC,offwind-ac,
+Generator,BG2 0AC,offwind-dc,0.5184007529010571
+Generator,BG2 0AC,offwind-float,
+Generator,BG2 0AC,onwind,0.18366223684210525
+Generator,BG2 0AC,ror,0.27616110190555093
+Generator,BG2 0AC,solar,0.08975594894561598
+Generator,BG2 0AC,solar rooftop,0.0897559500339231
+Generator,BG2 0AC,solar-hsat,
+Generator,CH2 0AC,nuclear,0.6324547302100162
+Generator,CH2 0AC,onwind,0.04383763636363636
+Generator,CH2 0AC,ror,0.12411701941254183
+Generator,CH2 0AC,solar,0.11941847287649844
+Generator,CH2 0AC,solar rooftop,0.11941847264530045
+Generator,CH2 0AC,solar-hsat,
+Generator,CZ2 0AC,nuclear,0.7296
+Generator,CZ2 0AC,onwind,0.20609126626304267
+Generator,CZ2 0AC,ror,0.45451815450458133
+Generator,CZ2 0AC,solar,0.06276415832912018
+Generator,CZ2 0AC,solar rooftop,
+Generator,CZ2 0AC,solar-hsat,
+Generator,DE2 0AC,offwind-ac,0.5474353700188189
+Generator,DE2 0AC,offwind-dc,0.6148215785521794
+Generator,DE2 0AC,offwind-float,
+Generator,DE2 0AC,onwind,0.25600138342754636
+Generator,DE2 0AC,ror,0.6585469043091653
+Generator,DE2 0AC,solar,0.06615979771775744
+Generator,DE2 0AC,solar rooftop,
+Generator,DE2 0AC,solar-hsat,
+Generator,DK0 0AC,offwind-ac,0.5552706571428571
+Generator,DK0 0AC,offwind-dc,
+Generator,DK0 0AC,offwind-float,
+Generator,DK0 0AC,onwind,0.5035526941824667
+Generator,DK0 0AC,solar,0.06667762172284644
+Generator,DK0 0AC,solar rooftop,
+Generator,DK0 0AC,solar-hsat,
+Generator,DK2 0AC,offwind-ac,0.37869587545238986
+Generator,DK2 0AC,offwind-dc,
+Generator,DK2 0AC,offwind-float,
+Generator,DK2 0AC,onwind,0.39007169028279853
+Generator,DK2 0AC,solar,0.06415918165645385
+Generator,DK2 0AC,solar rooftop,
+Generator,DK2 0AC,solar-hsat,
+Generator,EE2 0AC,offwind-ac,
+Generator,EE2 0AC,offwind-dc,
+Generator,EE2 0AC,offwind-float,
+Generator,EE2 0AC,onwind,0.27297254768638973
+Generator,EE2 0AC,solar,0.08400005178216967
+Generator,EE2 0AC,solar rooftop,
+Generator,EE2 0AC,solar-hsat,
+Generator,ES2 0AC,nuclear,0.8450000000000001
+Generator,ES2 0AC,offwind-ac,0.42001799999999995
+Generator,ES2 0AC,offwind-float,
+Generator,ES2 0AC,onwind,0.2934095226262633
+Generator,ES2 0AC,ror,0.5587600982133908
+Generator,ES2 0AC,solar,0.1392325822163618
+Generator,ES2 0AC,solar rooftop,0.13923258231371177
+Generator,ES2 0AC,solar-hsat,
+Generator,ES7 0AC,offwind-ac,
+Generator,ES7 0AC,offwind-float,
+Generator,ES7 0AC,onwind,0.42880074033053095
+Generator,ES7 0AC,solar,0.1476849591419816
+Generator,ES7 0AC,solar rooftop,0.1476849539424
+Generator,ES7 0AC,solar-hsat,
+Generator,FI0 0AC,nuclear,0.9349999999999999
+Generator,FI0 0AC,offwind-ac,
+Generator,FI0 0AC,offwind-dc,
+Generator,FI0 0AC,offwind-float,
+Generator,FI0 0AC,onwind,0.2070997747825786
+Generator,FI0 0AC,ror,0.5616167776298269
+Generator,FI0 0AC,solar,0.07183413575374901
+Generator,FI0 0AC,solar rooftop,
+Generator,FI0 0AC,solar-hsat,
+Generator,FR2 0AC,nuclear,0.6910434481656265
+Generator,FR2 0AC,offwind-ac,0.512674162962963
+Generator,FR2 0AC,offwind-dc,
+Generator,FR2 0AC,offwind-float,
+Generator,FR2 0AC,onwind,0.25185673997359304
+Generator,FR2 0AC,ror,0.46967967894851864
+Generator,FR2 0AC,solar,0.09214329484822929
+Generator,FR2 0AC,solar rooftop,0.09214329467732474
+Generator,FR2 0AC,solar-hsat,
+Generator,FR6 0AC,offwind-ac,
+Generator,FR6 0AC,offwind-float,
+Generator,FR6 0AC,onwind,0.20600823529411763
+Generator,FR6 0AC,solar,
+Generator,FR6 0AC,solar rooftop,0.11393990619787221
+Generator,FR6 0AC,solar-hsat,
+Generator,GB1 0AC,nuclear,0.4506059198041016
+Generator,GB1 0AC,offwind-ac,0.5723847271955652
+Generator,GB1 0AC,offwind-dc,
+Generator,GB1 0AC,offwind-float,
+Generator,GB1 0AC,onwind,0.3693222600749975
+Generator,GB1 0AC,ror,0.25916179157957603
+Generator,GB1 0AC,solar,0.061374315502362393
+Generator,GB1 0AC,solar rooftop,
+Generator,GB1 0AC,solar-hsat,
+Generator,GB3 0AC,offwind-ac,
+Generator,GB3 0AC,offwind-dc,
+Generator,GB3 0AC,offwind-float,
+Generator,GB3 0AC,onwind,0.37361934534345115
+Generator,GB3 0AC,solar,0.0537044911610129
+Generator,GB3 0AC,solar rooftop,
+Generator,GB3 0AC,solar-hsat,
+Generator,GB5 0AC,offwind-ac,0.49580017349280886
+Generator,GB5 0AC,offwind-dc,
+Generator,GB5 0AC,offwind-float,
+Generator,GB5 0AC,onwind,0.4447473500611647
+Generator,GB5 0AC,solar,
+Generator,GB5 0AC,solar rooftop,
+Generator,GB5 0AC,solar-hsat,
+Generator,GR2 0AC,offwind-ac,
+Generator,GR2 0AC,offwind-dc,
+Generator,GR2 0AC,offwind-float,
+Generator,GR2 0AC,onwind,0.192497088653297
+Generator,GR2 0AC,ror,0.614040614334471
+Generator,GR2 0AC,solar,0.1188469916429898
+Generator,GR2 0AC,solar rooftop,0.12091738199529008
+Generator,GR2 0AC,solar-hsat,
+Generator,HR2 0AC,offwind-ac,
+Generator,HR2 0AC,offwind-dc,
+Generator,HR2 0AC,offwind-float,
+Generator,HR2 0AC,onwind,0.14018642105263157
+Generator,HR2 0AC,ror,0.8162841444633898
+Generator,HR2 0AC,solar,0.08238849509269355
+Generator,HR2 0AC,solar rooftop,0.08238849425413777
+Generator,HR2 0AC,solar-hsat,
+Generator,HU2 0AC,nuclear,0.6926933300444006
+Generator,HU2 0AC,onwind,0.20864326018808776
+Generator,HU2 0AC,ror,0.4989648044692737
+Generator,HU2 0AC,solar,0.06973106349479691
+Generator,HU2 0AC,solar rooftop,
+Generator,HU2 0AC,solar-hsat,
+Generator,IE3 0AC,offwind-ac,0.6087248000000001
+Generator,IE3 0AC,offwind-dc,
+Generator,IE3 0AC,offwind-float,
+Generator,IE3 0AC,onwind,0.40834011221425914
+Generator,IE3 0AC,ror,0.5101547441860464
+Generator,IE3 0AC,solar,0.061047909944790986
+Generator,IE3 0AC,solar rooftop,
+Generator,IE3 0AC,solar-hsat,
+Generator,IT2 0AC,offwind-ac,0.317412
+Generator,IT2 0AC,offwind-dc,
+Generator,IT2 0AC,offwind-float,
+Generator,IT2 0AC,onwind,0.19946308817908817
+Generator,IT2 0AC,ror,0.2928701789807879
+Generator,IT2 0AC,solar,0.11416285433492987
+Generator,IT2 0AC,solar rooftop,0.11416285435289567
+Generator,IT2 0AC,solar-hsat,
+Generator,IT4 0AC,offwind-ac,
+Generator,IT4 0AC,offwind-float,
+Generator,IT4 0AC,onwind,0.3124075616618674
+Generator,IT4 0AC,ror,0.29287
+Generator,IT4 0AC,solar,0.11739800884955752
+Generator,IT4 0AC,solar rooftop,0.11739800056876201
+Generator,IT4 0AC,solar-hsat,
+Generator,LT2 0AC,offwind-ac,
+Generator,LT2 0AC,offwind-dc,0.5370930526226985
+Generator,LT2 0AC,offwind-float,
+Generator,LT2 0AC,onwind,0.23408738780977897
+Generator,LT2 0AC,solar,0.08478288899103655
+Generator,LT2 0AC,solar rooftop,
+Generator,LT2 0AC,solar-hsat,
+Generator,LU2 0AC,onwind,0.2500396706586826
+Generator,LU2 0AC,solar,0.06557264029983233
+Generator,LU2 0AC,solar rooftop,
+Generator,LU2 0AC,solar-hsat,
+Generator,LV2 0AC,offwind-ac,
+Generator,LV2 0AC,offwind-dc,
+Generator,LV2 0AC,offwind-float,
+Generator,LV2 0AC,onwind,0.2165687
+Generator,LV2 0AC,ror,0.342958046875
+Generator,LV2 0AC,solar,0.08902381833888683
+Generator,LV2 0AC,solar rooftop,0.08902381810425267
+Generator,LV2 0AC,solar-hsat,
+Generator,ME2 0AC,offwind-ac,
+Generator,ME2 0AC,offwind-float,
+Generator,ME2 0AC,onwind,0.07734237288135594
+Generator,ME2 0AC,ror,0.8528936567164178
+Generator,ME2 0AC,solar,0.10313371647509578
+Generator,ME2 0AC,solar rooftop,0.10313390099112663
+Generator,ME2 0AC,solar-hsat,
+Generator,MK2 0AC,onwind,0.05429619047619048
+Generator,MK2 0AC,ror,0.43022398843930637
+Generator,MK2 0AC,solar,0.10084558955090357
+Generator,MK2 0AC,solar rooftop,0.10084559381854646
+Generator,MK2 0AC,solar-hsat,
+Generator,NL2 0AC,nuclear,0.389277786407767
+Generator,NL2 0AC,offwind-ac,0.5549287782614801
+Generator,NL2 0AC,offwind-dc,
+Generator,NL2 0AC,offwind-float,
+Generator,NL2 0AC,onwind,0.3402896149278687
+Generator,NL2 0AC,solar,0.06656436293926109
+Generator,NL2 0AC,solar rooftop,
+Generator,NL2 0AC,solar-hsat,
+Generator,NO0 0AC,offwind-ac,0.39685702898550723
+Generator,NO0 0AC,offwind-dc,0.5615459202518672
+Generator,NO0 0AC,offwind-float,
+Generator,NO0 0AC,onwind,0.2121154931823619
+Generator,NO0 0AC,ror,0.22076390782525204
+Generator,NO0 0AC,solar,0.0728693641618497
+Generator,NO0 0AC,solar rooftop,0.0728694421661475
+Generator,NO0 0AC,solar-hsat,
+Generator,PL2 0AC,offwind-ac,
+Generator,PL2 0AC,offwind-dc,0.5658427707740266
+Generator,PL2 0AC,offwind-float,
+Generator,PL2 0AC,onwind,0.2933075380880975
+Generator,PL2 0AC,ror,0.7556104189920229
+Generator,PL2 0AC,solar,0.06298145125787852
+Generator,PL2 0AC,solar rooftop,
+Generator,PL2 0AC,solar-hsat,
+Generator,PT2 0AC,offwind-ac,0.4686484
+Generator,PT2 0AC,offwind-float,
+Generator,PT2 0AC,onwind,0.24716696565225127
+Generator,PT2 0AC,ror,0.49689018831360326
+Generator,PT2 0AC,solar,0.12569279028843947
+Generator,PT2 0AC,solar rooftop,0.12569279056953828
+Generator,PT2 0AC,solar-hsat,
+Generator,RO2 0AC,nuclear,0.6465639121190645
+Generator,RO2 0AC,offwind-ac,0.5074988259277102
+Generator,RO2 0AC,offwind-dc,0.536025714217435
+Generator,RO2 0AC,offwind-float,
+Generator,RO2 0AC,onwind,0.17776045918367347
+Generator,RO2 0AC,ror,0.13568803017203576
+Generator,RO2 0AC,solar,0.08216243894381652
+Generator,RO2 0AC,solar rooftop,0.08216243802165434
+Generator,RO2 0AC,solar-hsat,
+Generator,RS2 0AC,onwind,0.17668755409640352
+Generator,RS2 0AC,ror,0.6599509090909091
+Generator,RS2 0AC,solar,0.08124386740331492
+Generator,RS2 0AC,solar rooftop,0.08124387229506597
+Generator,RS2 0AC,solar-hsat,
+Generator,SE0 0AC,nuclear,0.687740335467706
+Generator,SE0 0AC,offwind-ac,0.4614909493670886
+Generator,SE0 0AC,offwind-dc,0.5313695947723036
+Generator,SE0 0AC,offwind-float,
+Generator,SE0 0AC,onwind,0.2148063373599926
+Generator,SE0 0AC,ror,0.40262950067476383
+Generator,SE0 0AC,solar,0.07342541477022463
+Generator,SE0 0AC,solar rooftop,0.07342541909425934
+Generator,SE0 0AC,solar-hsat,
+Generator,SI2 0AC,nuclear,0.7008888858321871
+Generator,SI2 0AC,offwind-ac,
+Generator,SI2 0AC,offwind-float,
+Generator,SI2 0AC,onwind,
+Generator,SI2 0AC,ror,0.5528420798723428
+Generator,SI2 0AC,solar,0.07687417218543047
+Generator,SI2 0AC,solar rooftop,
+Generator,SI2 0AC,solar-hsat,
+Generator,SK2 0AC,nuclear,0.7053333344663495
+Generator,SK2 0AC,onwind,
+Generator,SK2 0AC,ror,0.2700324784520138
+Generator,SK2 0AC,solar,0.06756543665436654
+Generator,SK2 0AC,solar rooftop,
+Generator,SK2 0AC,solar-hsat,
+Generator,XK2 0AC,onwind,0.08014088888888889
+Generator,XK2 0AC,ror,0.3305794701986755
+Generator,XK2 0AC,solar,0.09336617647058824
+Generator,XK2 0AC,solar rooftop,0.09336611722292056
+Generator,XK2 0AC,solar-hsat,
+Load,AL2 0AC,electricity,
+Load,AT2 0AC,electricity,
+Load,BA2 0AC,electricity,
+Load,BE2 0AC,electricity,
+Load,BG2 0AC,electricity,
+Load,CH2 0AC,electricity,
+Load,CZ2 0AC,electricity,
+Load,DE2 0AC,electricity,
+Load,DK0 0AC,electricity,
+Load,DK2 0AC,electricity,
+Load,EE2 0AC,electricity,
+Load,ES2 0AC,electricity,
+Load,ES7 0AC,electricity,
+Load,FI0 0AC,electricity,
+Load,FR2 0AC,electricity,
+Load,FR6 0AC,electricity,
+Load,GB1 0AC,electricity,
+Load,GB3 0AC,electricity,
+Load,GB5 0AC,electricity,
+Load,GR2 0AC,electricity,
+Load,HR2 0AC,electricity,
+Load,HU2 0AC,electricity,
+Load,IE3 0AC,electricity,
+Load,IT2 0AC,electricity,
+Load,IT4 0AC,electricity,
+Load,LT2 0AC,electricity,
+Load,LU2 0AC,electricity,
+Load,LV2 0AC,electricity,
+Load,ME2 0AC,electricity,
+Load,MK2 0AC,electricity,
+Load,NL2 0AC,electricity,
+Load,NO0 0AC,electricity,
+Load,PL2 0AC,electricity,
+Load,PT2 0AC,electricity,
+Load,RO2 0AC,electricity,
+Load,RS2 0AC,electricity,
+Load,SE0 0AC,electricity,
+Load,SI2 0AC,electricity,
+Load,SK2 0AC,electricity,
+Load,XK2 0AC,electricity,
+StorageUnit,AL2 0AC,hydro,0.6465412551014372
+StorageUnit,AT2 0AC,PHS,0.5147802140348011
+StorageUnit,AT2 0AC,hydro,0.27416470017701605
+StorageUnit,BA2 0AC,PHS,1.4795454545454546e-05
+StorageUnit,BA2 0AC,hydro,0.769639842519685
+StorageUnit,BE2 0AC,PHS,0.01633586391437309
+StorageUnit,BE2 0AC,hydro,1.0
+StorageUnit,BG2 0AC,PHS,0.059206365740740736
+StorageUnit,BG2 0AC,hydro,0.24854499927743254
+StorageUnit,CH2 0AC,PHS,0.14016784844012767
+StorageUnit,CH2 0AC,hydro,0.11170531792122701
+StorageUnit,CZ2 0AC,PHS,0.005495679653679654
+StorageUnit,CZ2 0AC,hydro,0.40906627931621653
+StorageUnit,DE2 0AC,PHS,0.0703549428666127
+StorageUnit,DE2 0AC,hydro,0.5926922147986212
+StorageUnit,ES2 0AC,PHS,0.6099823705082025
+StorageUnit,ES2 0AC,hydro,0.5416674666574369
+StorageUnit,FI0 0AC,hydro,0.5054551020408163
+StorageUnit,FR2 0AC,PHS,0.02584601711652403
+StorageUnit,FR2 0AC,hydro,0.42271171173784133
+StorageUnit,FR6 0AC,hydro,0.42271173775651993
+StorageUnit,GB1 0AC,PHS,0.040169890776699024
+StorageUnit,GB1 0AC,hydro,0.23324561902300336
+StorageUnit,GR2 0AC,PHS,0.013758454935622317
+StorageUnit,GR2 0AC,hydro,0.5557145120061967
+StorageUnit,HR2 0AC,PHS,0.07172922252010724
+StorageUnit,HR2 0AC,hydro,0.8579065821633108
+StorageUnit,HU2 0AC,hydro,0.4546053571428571
+StorageUnit,IE3 0AC,PHS,0.02306763698630137
+StorageUnit,IE3 0AC,hydro,0.4591393333333333
+StorageUnit,IT2 0AC,PHS,0.0774884878428413
+StorageUnit,IT2 0AC,hydro,0.26358316123344294
+StorageUnit,IT4 0AC,PHS,0.27643929166666664
+StorageUnit,IT4 0AC,hydro,0.2635831476870659
+StorageUnit,LT2 0AC,PHS,0.033678766666666665
+StorageUnit,LT2 0AC,hydro,0.8309965346534653
+StorageUnit,LU2 0AC,PHS,0.022452511591962907
+StorageUnit,ME2 0AC,PHS,0.011226254071661237
+StorageUnit,ME2 0AC,hydro,0.8582943859649123
+StorageUnit,MK2 0AC,hydro,0.3993339892183288
+StorageUnit,NO0 0AC,PHS,0.5444444297956493
+StorageUnit,NO0 0AC,hydro,0.19868751746678617
+StorageUnit,PL2 0AC,PHS,0.03422157333333334
+StorageUnit,PL2 0AC,hydro,0.680497402027823
+StorageUnit,PT2 0AC,PHS,0.47178104597216364
+StorageUnit,PT2 0AC,hydro,0.5747836592416256
+StorageUnit,RO2 0AC,hydro,0.12211922652676135
+StorageUnit,RS2 0AC,PHS,0.09675353762135921
+StorageUnit,RS2 0AC,hydro,0.6243406744848605
+StorageUnit,SE0 0AC,PHS,0.5444443956043956
+StorageUnit,SE0 0AC,hydro,0.362366551312673
+StorageUnit,SI2 0AC,PHS,0.011226277777777778
+StorageUnit,SI2 0AC,hydro,0.5066856531881804
+StorageUnit,SK2 0AC,PHS,0.01683938251237332
+StorageUnit,SK2 0AC,hydro,0.2430292663476874
+StorageUnit,XK2 0AC,hydro,0.29752142857142855
+Line,AL2 0AC,AC,0.32368126187279883
+Line,AT2 0AC,AC,0.29456976030621324
+Line,BA2 0AC,AC,0.2684518351395019
+Line,BE2 0AC,AC,0.39691519947227955
+Line,BG2 0AC,AC,0.3980556105191027
+Line,CH2 0AC,AC,0.363571403492223
+Line,CZ2 0AC,AC,0.2937029726372101
+Line,DE2 0AC,AC,0.4265936454329418
+Line,DK0 0AC,AC,0.5724798632131984
+Line,EE2 0AC,AC,0.41974188943724977
+Line,ES2 0AC,AC,0.3194894562198066
+Line,FI0 0AC,AC,0.2395118200538986
+Line,FR2 0AC,AC,0.31521815242427603
+Line,GB3 0AC,AC,0.22704051288941388
+Line,GR2 0AC,AC,0.6098674134959792
+Line,HR2 0AC,AC,0.2368290077243212
+Line,HU2 0AC,AC,0.21469718415979513
+Line,IT2 0AC,AC,0.2587281282458264
+Line,LT2 0AC,AC,0.40337837218838224
+Line,ME2 0AC,AC,0.2416497177991938
+Line,MK2 0AC,AC,0.4824233755811082
+Line,NO0 0AC,AC,0.4977502379701872
+Line,PL2 0AC,AC,0.30716791603847327
+Line,RO2 0AC,AC,0.12346009210949414
+Line,RS2 0AC,AC,0.4492946118428458

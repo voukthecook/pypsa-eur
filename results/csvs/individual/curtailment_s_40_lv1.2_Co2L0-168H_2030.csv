@@ -1,0 +1,27 @@
+carrier,0
+CCGT,
+DC,
+H2 Electrolysis,
+H2 Fuel Cell,
+H2 pipeline,
+H2 turbine,
+Haber-Bosch,
+OCGT,
+OCGT methanol,
+PHS,
+battery charger,
+battery discharger,
+electricity distribution grid,
+gas pipeline,
+home battery charger,
+home battery discharger,
+hydro,
+nuclear,10.063910931444688
+offwind-ac,0.6160425835452491
+offwind-dc,7.8063399010966e-08
+offwind-float,inf
+onwind,1.4615968628667488
+ror,0.06306321856651442
+solar,0.033790443251791334
+solar rooftop,0.0027846955834765564
+solar-hsat,inf

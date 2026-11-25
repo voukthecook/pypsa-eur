@@ -1,0 +1,18 @@
+INFO:__main__:Loaded COP profiles with dimensions: FrozenMappingWarningOnValuesAccess({'heat_system': 3, 'heat_source': 2, 'time': 744, 'name': 5})
+INFO:__main__:Processing heat system: urban central
+INFO:__main__:Converting Dataset to DataArray using variable: temperature
+INFO:__main__:Selected 'urban central' heat system
+INFO:__main__:Found 5 regions: ['DK0 0AC', 'DK0 1AC', 'DK0 2AC', 'DK1 0AC', 'DK1 1AC']...
+WARNING:__main__:Heat source 'ground' not found in timeseries data for DK0 0AC
+WARNING:__main__:Heat source 'ground' not found in monthly data for DK0 0AC
+INFO:__main__:Processing heat system: urban decentral
+INFO:__main__:Converting Dataset to DataArray using variable: temperature
+INFO:__main__:Selected 'urban decentral' heat system
+INFO:__main__:Found 5 regions: ['DK0 0AC', 'DK0 1AC', 'DK0 2AC', 'DK1 0AC', 'DK1 1AC']...
+WARNING:__main__:Heat source 'ground' not found in timeseries data for DK0 0AC
+WARNING:__main__:Heat source 'ground' not found in monthly data for DK0 0AC
+INFO:__main__:Processing heat system: rural
+INFO:__main__:Converting Dataset to DataArray using variable: temperature
+INFO:__main__:Selected 'rural' heat system
+INFO:__main__:Found 5 regions: ['DK0 0AC', 'DK0 1AC', 'DK0 2AC', 'DK1 0AC', 'DK1 1AC']...
+INFO:__main__:Interactive COP profile plots saved to results/graphs/cop_profiles_s_5_2030.html

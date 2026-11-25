@@ -1,0 +1,6 @@
+INFO:pypsa.network.io:New version 1.3.0 available! (Current: 1.2.4)
+WARNING:pypsa.consistency:The following links have buses which are not defined. Add them using n.add() or run n.sanitize() to add them automatically. Components with undefined buses:
+Index(['CO2 pipeline DK1 2AC -> DK1 5AC'], dtype='object', name='name')
+INFO:pypsa.network.io:Imported network 'Unnamed Network' has buses, carriers, generators, global_constraints, lines, links, loads, stores, sub_networks
+WARNING:scripts.add_electricity:tech_colors for carriers ['', 'none'] not defined in config.
+WARNING:__main__:Carrier oil is not in the network. Creating a placeholder output and skipping the interactive plot.

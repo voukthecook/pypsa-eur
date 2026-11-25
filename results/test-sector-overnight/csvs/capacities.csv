@@ -1,0 +1,118 @@
+cluster,,5
+opt,,
+planning_horizon,,2030
+component,carrier,
+Generator,biogas,67487.78574
+Generator,coal,1334.04321
+Generator,gas,98909.86106
+Generator,nuclear,4096.00082
+Generator,offwind-ac,2752.2
+Generator,offwind-dc,0.0
+Generator,offwind-float,0.0
+Generator,oil primary,28089.6321
+Generator,onwind,1724.02392
+Generator,rural heat vent,1.11465
+Generator,rural solar thermal,0.32308
+Generator,solar,48176.98859
+Generator,solar rooftop,20829.68363
+Generator,solar-hsat,0.0
+Generator,solid biomass,77357.06873
+Generator,unsustainable biogas,36010.68493
+Generator,unsustainable bioliquids,96116.03688
+Generator,unsustainable solid biomass,194262.21567
+Generator,urban central geothermal heat,0.03265
+Generator,urban central heat vent,0.12731
+Generator,urban central river_water heat,1196.4654
+Generator,urban central solar thermal,0.56944
+Generator,urban decentral heat vent,1.13006
+Generator,urban decentral solar thermal,0.3397
+Line,AC,20385.83391
+Link,BEV charger,13304.6122
+Link,CCGT,4351.8278
+Link,DAC,400.07716
+Link,Fischer-Tropsch,0.06159
+Link,H2 Electrolysis,0.14855
+Link,H2 Fuel Cell,0.26086
+Link,H2 pipeline,18.68276
+Link,H2 pipeline retrofitted,405.59408
+Link,HVC to air,4750.65769
+Link,OCGT,991.80819
+Link,SMR,0.15665
+Link,SMR CC,2767.88122
+Link,Sabatier,0.0748
+Link,V2G,6652.3061
+Link,agriculture machinery oil,157.05428
+Link,biogas to gas,214.40275
+Link,co2 sequestered,inf
+Link,coal for industry,1334.0
+Link,electricity distribution grid,29022.71475
+Link,gas for industry,0.12079
+Link,gas for industry CC,5063.37404
+Link,gas pipeline,59324.00986
+Link,home battery charger,4.9595
+Link,home battery discharger,5.06177
+Link,industry methanol,55.93607
+Link,kerosene for aviation,2329.73744
+Link,land transport oil,10789.54174
+Link,methanolisation,1456.67749
+Link,naphtha for industry,6351.59817
+Link,oil refining,1000000.0
+Link,process emissions,0.00179
+Link,process emissions CC,642.69848
+Link,rural air heat pump,2.98401
+Link,rural biomass boiler,0.34535
+Link,rural gas boiler,2.73845
+Link,rural ground heat pump,829.89175
+Link,rural resistive heater,2.3025
+Link,rural water tanks charger,8.75121
+Link,rural water tanks discharger,8.75121
+Link,shipping methanol,1223.91258
+Link,shipping oil,7975.83033
+Link,solid biomass for industry,0.03093
+Link,solid biomass for industry CC,1456.15972
+Link,unsustainable bioliquids,96116.03688
+Link,urban central air heat pump,0.15711
+Link,urban central aquifer thermal energy storage charger,0.17454
+Link,urban central aquifer thermal energy storage discharger,0.17454
+Link,urban central gas CHP,1.45024
+Link,urban central gas CHP CC,12153.44039
+Link,urban central gas boiler,1.13594
+Link,urban central geothermal heat direct utilisation,0.0
+Link,urban central geothermal heat pump,0.09696
+Link,urban central resistive heater,549.75352
+Link,urban central river_water heat pump,0.20959
+Link,urban central sea_water heat pump,0.05254
+Link,urban central solid biomass CHP,0.1148
+Link,urban central solid biomass CHP CC,160.34921
+Link,urban central water pits charger,287.72814
+Link,urban central water pits discharger,287.72814
+Link,urban central water tanks charger,3038.87019
+Link,urban central water tanks discharger,3038.87019
+Link,urban decentral air heat pump,9359.42191
+Link,urban decentral biomass boiler,0.45831
+Link,urban decentral gas boiler,3012.90431
+Link,urban decentral resistive heater,236.62256
+Link,urban decentral water tanks charger,8.71158
+Link,urban decentral water tanks discharger,8.71158
+Link,waste CHP,0.07065
+Link,waste CHP CC,0.13104
+StorageUnit,battery,5.87664
+Store,EV battery,30237.755
+Store,H2 Store,7.66669
+Store,co2,inf
+Store,co2 sequestered,712337.56032
+Store,co2 stored,11.14202
+Store,coal,669.20971
+Store,gas,415139.42871
+Store,home battery,113.36562
+Store,methanol,489.43704
+Store,non-sequestered HVC,489150.89806
+Store,oil,1008.81283
+Store,rural heat dsm,116.22019
+Store,rural water tanks,1.31268
+Store,urban central aquifer thermal energy storage,32523625.97342
+Store,urban central heat dsm,1992.11773
+Store,urban central water pits,6473.88312
+Store,urban central water tanks,183380.01402
+Store,urban decentral heat dsm,10577.33859
+Store,urban decentral water tanks,1.30674

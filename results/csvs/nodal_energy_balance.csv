@@ -1,0 +1,2245 @@
+cluster,,,,40
+opt,,,,lv1.2Co2L0-168H
+planning_horizon,,,,2030
+component,carrier,location,bus_carrier,
+Generator,nuclear,BE2 0AC,AC,5845883.85022
+Generator,nuclear,BG2 0AC,AC,2471366.47091
+Generator,nuclear,CH2 0AC,AC,4228086.35525
+Generator,nuclear,CZ2 0AC,AC,6562197.50409
+Generator,nuclear,ES2 0AC,AC,13521081.59999
+Generator,nuclear,FI0 0AC,AC,9334591.1894
+Generator,nuclear,FR2 0AC,AC,98052431.28839
+Generator,nuclear,GB1 0AC,AC,6359599.6094
+Generator,nuclear,HU2 0AC,AC,3032833.05395
+Generator,nuclear,NL2 0AC,AC,433032.6
+Generator,nuclear,RO2 0AC,AC,1970571.62776
+Generator,nuclear,SE0 0AC,AC,10671969.38961
+Generator,nuclear,SI2 0AC,AC,1100619.83999
+Generator,nuclear,SK2 0AC,AC,4482195.84001
+Generator,offwind-ac,AL2 0AC,AC,0.0
+Generator,offwind-ac,BA2 0AC,AC,0.0
+Generator,offwind-ac,BE2 0AC,AC,3195136.06111
+Generator,offwind-ac,BG2 0AC,AC,0.0
+Generator,offwind-ac,DE2 0AC,AC,13200683.99981
+Generator,offwind-ac,DK0 0AC,AC,1259353.85336
+Generator,offwind-ac,DK2 0AC,AC,1310899.69944
+Generator,offwind-ac,EE2 0AC,AC,0.0
+Generator,offwind-ac,ES2 0AC,AC,18144.78046
+Generator,offwind-ac,ES7 0AC,AC,0.0
+Generator,offwind-ac,FI0 0AC,AC,1e-05
+Generator,offwind-ac,FR2 0AC,AC,2242436.77915
+Generator,offwind-ac,FR6 0AC,AC,0.0
+Generator,offwind-ac,GB1 0AC,AC,27967001.67529
+Generator,offwind-ac,GB3 0AC,AC,0.0
+Generator,offwind-ac,GB5 0AC,AC,630435.68842
+Generator,offwind-ac,GR2 0AC,AC,0.0
+Generator,offwind-ac,HR2 0AC,AC,0.0
+Generator,offwind-ac,IE3 0AC,AC,32871.1349
+Generator,offwind-ac,IT2 0AC,AC,20568.28828
+Generator,offwind-ac,IT4 0AC,AC,0.0
+Generator,offwind-ac,LT2 0AC,AC,2e-05
+Generator,offwind-ac,LV2 0AC,AC,0.0
+Generator,offwind-ac,ME2 0AC,AC,0.0
+Generator,offwind-ac,NL2 0AC,AC,8535559.30456
+Generator,offwind-ac,NO0 0AC,AC,118295.15259
+Generator,offwind-ac,PL2 0AC,AC,3e-05
+Generator,offwind-ac,PT2 0AC,AC,25307.01148
+Generator,offwind-ac,RO2 0AC,AC,1830625.7544
+Generator,offwind-ac,SE0 0AC,AC,157497.62345
+Generator,offwind-ac,SI2 0AC,AC,0.0
+Generator,offwind-dc,BE2 0AC,AC,1085418.9138
+Generator,offwind-dc,BG2 0AC,AC,17442.37715
+Generator,offwind-dc,DE2 0AC,AC,15148061.19909
+Generator,offwind-dc,DK0 0AC,AC,0.0
+Generator,offwind-dc,DK2 0AC,AC,0.0
+Generator,offwind-dc,EE2 0AC,AC,0.0
+Generator,offwind-dc,FI0 0AC,AC,1e-05
+Generator,offwind-dc,FR2 0AC,AC,0.0
+Generator,offwind-dc,GB1 0AC,AC,0.0
+Generator,offwind-dc,GB3 0AC,AC,1e-05
+Generator,offwind-dc,GB5 0AC,AC,0.0
+Generator,offwind-dc,GR2 0AC,AC,0.0
+Generator,offwind-dc,HR2 0AC,AC,0.0
+Generator,offwind-dc,IE3 0AC,AC,1e-05
+Generator,offwind-dc,IT2 0AC,AC,0.0
+Generator,offwind-dc,LT2 0AC,AC,1058304.36424
+Generator,offwind-dc,LV2 0AC,AC,1e-05
+Generator,offwind-dc,NL2 0AC,AC,0.0
+Generator,offwind-dc,NO0 0AC,AC,7934350.9024
+Generator,offwind-dc,PL2 0AC,AC,7101259.45944
+Generator,offwind-dc,RO2 0AC,AC,3053721.90035
+Generator,offwind-dc,SE0 0AC,AC,18928085.46901
+Generator,offwind-float,AL2 0AC,AC,0.0
+Generator,offwind-float,BA2 0AC,AC,0.0
+Generator,offwind-float,BE2 0AC,AC,0.0
+Generator,offwind-float,BG2 0AC,AC,0.0
+Generator,offwind-float,DE2 0AC,AC,0.0
+Generator,offwind-float,DK0 0AC,AC,0.0
+Generator,offwind-float,DK2 0AC,AC,0.0
+Generator,offwind-float,EE2 0AC,AC,0.0
+Generator,offwind-float,ES2 0AC,AC,0.0
+Generator,offwind-float,ES7 0AC,AC,0.0
+Generator,offwind-float,FI0 0AC,AC,0.0
+Generator,offwind-float,FR2 0AC,AC,0.0
+Generator,offwind-float,FR6 0AC,AC,0.0
+Generator,offwind-float,GB1 0AC,AC,0.0
+Generator,offwind-float,GB3 0AC,AC,0.0
+Generator,offwind-float,GB5 0AC,AC,0.0
+Generator,offwind-float,GR2 0AC,AC,0.0
+Generator,offwind-float,HR2 0AC,AC,0.0
+Generator,offwind-float,IE3 0AC,AC,0.0
+Generator,offwind-float,IT2 0AC,AC,0.0
+Generator,offwind-float,IT4 0AC,AC,0.0
+Generator,offwind-float,LT2 0AC,AC,0.0
+Generator,offwind-float,LV2 0AC,AC,0.0
+Generator,offwind-float,ME2 0AC,AC,0.0
+Generator,offwind-float,NL2 0AC,AC,0.0
+Generator,offwind-float,NO0 0AC,AC,0.0
+Generator,offwind-float,PL2 0AC,AC,0.0
+Generator,offwind-float,PT2 0AC,AC,0.0
+Generator,offwind-float,RO2 0AC,AC,0.0
+Generator,offwind-float,SE0 0AC,AC,0.0
+Generator,offwind-float,SI2 0AC,AC,0.0
+Generator,onwind,AL2 0AC,AC,31939.31932
+Generator,onwind,AT2 0AC,AC,987570.95237
+Generator,onwind,BA2 0AC,AC,42211.88894
+Generator,onwind,BE2 0AC,AC,5020935.64657
+Generator,onwind,BG2 0AC,AC,241199.95183
+Generator,onwind,CH2 0AC,AC,5207.92061
+Generator,onwind,CZ2 0AC,AC,69115.08964
+Generator,onwind,DE2 0AC,AC,40549918.28597
+Generator,onwind,DK0 0AC,AC,17441374.3726
+Generator,onwind,DK2 0AC,AC,34613932.44323
+Generator,onwind,EE2 0AC,AC,7511445.89793
+Generator,onwind,ES2 0AC,AC,20149086.80013
+Generator,onwind,ES7 0AC,AC,130272.01907
+Generator,onwind,FI0 0AC,AC,3873165.0815
+Generator,onwind,FR2 0AC,AC,13184639.89405
+Generator,onwind,FR6 0AC,AC,7564.62061
+Generator,onwind,GB1 0AC,AC,55742550.77275
+Generator,onwind,GB3 0AC,AC,6485719.05663
+Generator,onwind,GB5 0AC,AC,1298196.53238
+Generator,onwind,GR2 0AC,AC,2533597.39517
+Generator,onwind,HR2 0AC,AC,345195.05139
+Generator,onwind,HU2 0AC,AC,143763.55213
+Generator,onwind,IE3 0AC,AC,4024368.21441
+Generator,onwind,IT2 0AC,AC,3945419.77643
+Generator,onwind,IT4 0AC,AC,2159898.11015
+Generator,onwind,LT2 0AC,AC,754903.72557
+Generator,onwind,LU2 0AC,AC,72155.44239
+Generator,onwind,LV2 0AC,AC,46778.84428
+Generator,onwind,ME2 0AC,AC,19713.02816
+Generator,onwind,MK2 0AC,AC,64034.76379
+Generator,onwind,NL2 0AC,AC,34437233.15854
+Generator,onwind,NO0 0AC,AC,2298361.31141
+Generator,onwind,PL2 0AC,AC,27257855.68347
+Generator,onwind,PT2 0AC,AC,2999875.34334
+Generator,onwind,RO2 0AC,AC,2197494.70384
+Generator,onwind,RS2 0AC,AC,255740.39496
+Generator,onwind,SE0 0AC,AC,8019830.68885
+Generator,onwind,SI2 0AC,AC,0.0
+Generator,onwind,SK2 0AC,AC,0.0
+Generator,onwind,XK2 0AC,AC,23369.0742
+Generator,ror,AL2 0AC,AC,497931.74484
+Generator,ror,AT2 0AC,AC,1576017.37745
+Generator,ror,BA2 0AC,AC,22487.10409
+Generator,ror,BE2 0AC,AC,125733.05806
+Generator,ror,BG2 0AC,AC,143997.03104
+Generator,ror,CH2 0AC,AC,1043477.62024
+Generator,ror,CZ2 0AC,AC,39492.61596
+Generator,ror,DE2 0AC,AC,5709928.57764
+Generator,ror,ES2 0AC,AC,599593.68487
+Generator,ror,FI0 0AC,AC,1457651.63261
+Generator,ror,FR2 0AC,AC,7229601.9955
+Generator,ror,GB1 0AC,AC,1874734.93619
+Generator,ror,GR2 0AC,AC,38861.40868
+Generator,ror,HR2 0AC,AC,662543.797
+Generator,ror,HU2 0AC,AC,19291.9804
+Generator,ror,IE3 0AC,AC,236915.86708
+Generator,ror,IT2 0AC,AC,5276234.81812
+Generator,ror,IT4 0AC,AC,12651.99176
+Generator,ror,LV2 0AC,AC,1137852.48643
+Generator,ror,ME2 0AC,AC,9874.46449
+Generator,ror,MK2 0AC,AC,192919.31835
+Generator,ror,NO0 0AC,AC,993278.63802
+Generator,ror,PL2 0AC,AC,297699.01557
+Generator,ror,PT2 0AC,AC,2547651.40142
+Generator,ror,RO2 0AC,AC,1169545.61015
+Generator,ror,RS2 0AC,AC,486093.43871
+Generator,ror,SE0 0AC,AC,1933298.02579
+Generator,ror,SI2 0AC,AC,965359.79402
+Generator,ror,SK2 0AC,AC,773480.39395
+Generator,ror,XK2 0AC,AC,21564.35556
+Generator,solar,AL2 0AC,AC,68557.54953
+Generator,solar,AT2 0AC,AC,4384533.87728
+Generator,solar,BA2 0AC,AC,110196.61804
+Generator,solar,BE2 0AC,AC,129642.32437
+Generator,solar,BG2 0AC,AC,698717.76079
+Generator,solar,CH2 0AC,AC,20298760.57961
+Generator,solar,CZ2 0AC,AC,400882.8888
+Generator,solar,DE2 0AC,AC,6969949.82595
+Generator,solar,DK0 0AC,AC,123053.80823
+Generator,solar,DK2 0AC,AC,350547.79329
+Generator,solar,EE2 0AC,AC,210234.64875
+Generator,solar,ES2 0AC,AC,12293416.1011
+Generator,solar,ES7 0AC,AC,124920.20372
+Generator,solar,FI0 0AC,AC,39317.98949
+Generator,solar,FR2 0AC,AC,2634914.7441
+Generator,solar,FR6 0AC,AC,0.0
+Generator,solar,GB1 0AC,AC,1778883.96168
+Generator,solar,GB3 0AC,AC,24279.15751
+Generator,solar,GB5 0AC,AC,0.0
+Generator,solar,GR2 0AC,AC,19377381.50001
+Generator,solar,HR2 0AC,AC,65275.41495
+Generator,solar,HU2 0AC,AC,612251.57491
+Generator,solar,IE3 0AC,AC,183909.99474
+Generator,solar,IT2 0AC,AC,33387372.56555
+Generator,solar,IT4 0AC,AC,149003.42158
+Generator,solar,LT2 0AC,AC,159360.63985
+Generator,solar,LU2 0AC,AC,14360.57355
+Generator,solar,LV2 0AC,AC,155813.75941
+Generator,solar,ME2 0AC,AC,5814.27706
+Generator,solar,MK2 0AC,AC,121743.22242
+Generator,solar,NL2 0AC,AC,1020011.52063
+Generator,solar,NO0 0AC,AC,5445.97063
+Generator,solar,PL2 0AC,AC,1266980.72028
+Generator,solar,PT2 0AC,AC,1064564.64104
+Generator,solar,RO2 0AC,AC,752103.78231
+Generator,solar,RS2 0AC,AC,31763.10431
+Generator,solar,SE0 0AC,AC,108021.70549
+Generator,solar,SI2 0AC,AC,15043.96421
+Generator,solar,SK2 0AC,AC,130515.34467
+Generator,solar,XK2 0AC,AC,4114.0846
+Generator,solar rooftop,AL2 0AC,low voltage,1144243.52226
+Generator,solar rooftop,AT2 0AC,low voltage,3794279.90724
+Generator,solar rooftop,BA2 0AC,low voltage,1302894.33568
+Generator,solar rooftop,BE2 0AC,low voltage,1e-05
+Generator,solar rooftop,BG2 0AC,low voltage,2564312.8459
+Generator,solar rooftop,CH2 0AC,low voltage,4175129.24123
+Generator,solar rooftop,CZ2 0AC,low voltage,0.0
+Generator,solar rooftop,DE2 0AC,low voltage,1e-05
+Generator,solar rooftop,DK0 0AC,low voltage,0.0
+Generator,solar rooftop,DK2 0AC,low voltage,0.0
+Generator,solar rooftop,EE2 0AC,low voltage,1e-05
+Generator,solar rooftop,ES2 0AC,low voltage,25068862.27902
+Generator,solar rooftop,ES7 0AC,low voltage,441657.25059
+Generator,solar rooftop,FI0 0AC,low voltage,0.00046
+Generator,solar rooftop,FR2 0AC,low voltage,12624287.63126
+Generator,solar rooftop,FR6 0AC,low voltage,130074.42089
+Generator,solar rooftop,GB1 0AC,low voltage,0.0
+Generator,solar rooftop,GB3 0AC,low voltage,0.0
+Generator,solar rooftop,GB5 0AC,low voltage,0.0
+Generator,solar rooftop,GR2 0AC,low voltage,4235966.87939
+Generator,solar rooftop,HR2 0AC,low voltage,1328466.99609
+Generator,solar rooftop,HU2 0AC,low voltage,1e-05
+Generator,solar rooftop,IE3 0AC,low voltage,0.0
+Generator,solar rooftop,IT2 0AC,low voltage,25923518.72078
+Generator,solar rooftop,IT4 0AC,low voltage,677737.86803
+Generator,solar rooftop,LT2 0AC,low voltage,2e-05
+Generator,solar rooftop,LU2 0AC,low voltage,1e-05
+Generator,solar rooftop,LV2 0AC,low voltage,246781.55605
+Generator,solar rooftop,ME2 0AC,low voltage,277826.74473
+Generator,solar rooftop,MK2 0AC,low voltage,882238.74601
+Generator,solar rooftop,NL2 0AC,low voltage,0.0
+Generator,solar rooftop,NO0 0AC,low voltage,1558773.58998
+Generator,solar rooftop,PL2 0AC,low voltage,0.0
+Generator,solar rooftop,PT2 0AC,low voltage,2784838.6404
+Generator,solar rooftop,RO2 0AC,low voltage,2154931.57857
+Generator,solar rooftop,RS2 0AC,low voltage,1857579.11226
+Generator,solar rooftop,SE0 0AC,low voltage,81072.35322
+Generator,solar rooftop,SI2 0AC,low voltage,1e-05
+Generator,solar rooftop,SK2 0AC,low voltage,0.0
+Generator,solar rooftop,XK2 0AC,low voltage,660069.77921
+Generator,solar-hsat,AL2 0AC,AC,0.0
+Generator,solar-hsat,AT2 0AC,AC,0.0
+Generator,solar-hsat,BA2 0AC,AC,0.0
+Generator,solar-hsat,BE2 0AC,AC,0.0
+Generator,solar-hsat,BG2 0AC,AC,0.0
+Generator,solar-hsat,CH2 0AC,AC,0.0
+Generator,solar-hsat,CZ2 0AC,AC,0.0
+Generator,solar-hsat,DE2 0AC,AC,0.0
+Generator,solar-hsat,DK0 0AC,AC,0.0
+Generator,solar-hsat,DK2 0AC,AC,0.0
+Generator,solar-hsat,EE2 0AC,AC,0.0
+Generator,solar-hsat,ES2 0AC,AC,0.0
+Generator,solar-hsat,ES7 0AC,AC,0.0
+Generator,solar-hsat,FI0 0AC,AC,0.0
+Generator,solar-hsat,FR2 0AC,AC,0.0
+Generator,solar-hsat,FR6 0AC,AC,0.0
+Generator,solar-hsat,GB1 0AC,AC,0.0
+Generator,solar-hsat,GB3 0AC,AC,0.0
+Generator,solar-hsat,GB5 0AC,AC,0.0
+Generator,solar-hsat,GR2 0AC,AC,0.0
+Generator,solar-hsat,HR2 0AC,AC,0.0
+Generator,solar-hsat,HU2 0AC,AC,0.0
+Generator,solar-hsat,IE3 0AC,AC,0.0
+Generator,solar-hsat,IT2 0AC,AC,0.0
+Generator,solar-hsat,IT4 0AC,AC,0.0
+Generator,solar-hsat,LT2 0AC,AC,0.0
+Generator,solar-hsat,LU2 0AC,AC,0.0
+Generator,solar-hsat,LV2 0AC,AC,0.0
+Generator,solar-hsat,ME2 0AC,AC,0.0
+Generator,solar-hsat,MK2 0AC,AC,0.0
+Generator,solar-hsat,NL2 0AC,AC,0.0
+Generator,solar-hsat,NO0 0AC,AC,0.0
+Generator,solar-hsat,PL2 0AC,AC,0.0
+Generator,solar-hsat,PT2 0AC,AC,0.0
+Generator,solar-hsat,RO2 0AC,AC,0.0
+Generator,solar-hsat,RS2 0AC,AC,0.0
+Generator,solar-hsat,SE0 0AC,AC,0.0
+Generator,solar-hsat,SI2 0AC,AC,0.0
+Generator,solar-hsat,SK2 0AC,AC,0.0
+Generator,solar-hsat,XK2 0AC,AC,0.0
+Line,AC,AL2 0AC,AC,-2156589.25704
+Line,AC,AT2 0AC,AC,5164752.91309
+Line,AC,BA2 0AC,AC,-1338391.80027
+Line,AC,BE2 0AC,AC,6865804.35989
+Line,AC,BG2 0AC,AC,3124982.65368
+Line,AC,CH2 0AC,AC,-18201544.8191
+Line,AC,CZ2 0AC,AC,9858901.20498
+Line,AC,DE2 0AC,AC,32697357.70819
+Line,AC,DK0 0AC,AC,-4296932.37294
+Line,AC,DK2 0AC,AC,-23004658.29462
+Line,AC,EE2 0AC,AC,-2409051.15471
+Line,AC,ES2 0AC,AC,-3871991.68293
+Line,AC,FI0 0AC,AC,5392378.06399
+Line,AC,FR2 0AC,AC,-7969380.22568
+Line,AC,GB3 0AC,AC,-2478845.31803
+Line,AC,GR2 0AC,AC,-17101806.00015
+Line,AC,HR2 0AC,AC,-483746.16136
+Line,AC,HU2 0AC,AC,6252850.3017
+Line,AC,IE3 0AC,AC,2478845.31753
+Line,AC,IT2 0AC,AC,6075383.71398
+Line,AC,LT2 0AC,AC,1088893.91522
+Line,AC,LU2 0AC,AC,1563336.07932
+Line,AC,LV2 0AC,AC,513594.93438
+Line,AC,ME2 0AC,AC,-883749.03771
+Line,AC,MK2 0AC,AC,707052.92274
+Line,AC,NL2 0AC,AC,-15208236.41553
+Line,AC,NO0 0AC,AC,6849477.25545
+Line,AC,PL2 0AC,AC,2965026.86278
+Line,AC,PT2 0AC,AC,1807237.38063
+Line,AC,RO2 0AC,AC,-201446.83859
+Line,AC,RS2 0AC,AC,6996390.16255
+Line,AC,SE0 0AC,AC,-7944922.9465
+Line,AC,SI2 0AC,AC,1027424.72143
+Line,AC,SK2 0AC,AC,2013287.39684
+Line,AC,XK2 0AC,AC,1152373.94943
+Link,CCGT,AL2 0AC,AC,0.0
+Link,CCGT,AL2 0AC,gas,0.0
+Link,CCGT,AT2 0AC,AC,0.0
+Link,CCGT,AT2 0AC,gas,0.0
+Link,CCGT,BA2 0AC,AC,0.0
+Link,CCGT,BA2 0AC,gas,0.0
+Link,CCGT,BE2 0AC,AC,0.0
+Link,CCGT,BE2 0AC,gas,0.0
+Link,CCGT,BG2 0AC,AC,0.0
+Link,CCGT,BG2 0AC,gas,0.0
+Link,CCGT,CH2 0AC,AC,0.0
+Link,CCGT,CH2 0AC,gas,0.0
+Link,CCGT,CZ2 0AC,AC,0.0
+Link,CCGT,CZ2 0AC,gas,0.0
+Link,CCGT,DE2 0AC,AC,0.0
+Link,CCGT,DE2 0AC,gas,0.0
+Link,CCGT,DK0 0AC,AC,0.0
+Link,CCGT,DK0 0AC,gas,0.0
+Link,CCGT,DK2 0AC,AC,0.0
+Link,CCGT,DK2 0AC,gas,0.0
+Link,CCGT,EE2 0AC,AC,0.0
+Link,CCGT,EE2 0AC,gas,0.0
+Link,CCGT,ES2 0AC,AC,0.0
+Link,CCGT,ES2 0AC,gas,0.0
+Link,CCGT,ES7 0AC,AC,0.0
+Link,CCGT,ES7 0AC,gas,0.0
+Link,CCGT,EU,co2,0.0
+Link,CCGT,FI0 0AC,AC,0.0
+Link,CCGT,FI0 0AC,gas,0.0
+Link,CCGT,FR2 0AC,AC,0.0
+Link,CCGT,FR2 0AC,gas,0.0
+Link,CCGT,FR6 0AC,AC,0.0
+Link,CCGT,FR6 0AC,gas,0.0
+Link,CCGT,GB1 0AC,AC,0.0
+Link,CCGT,GB1 0AC,gas,0.0
+Link,CCGT,GB3 0AC,AC,0.0
+Link,CCGT,GB3 0AC,gas,0.0
+Link,CCGT,GB5 0AC,AC,0.0
+Link,CCGT,GB5 0AC,gas,0.0
+Link,CCGT,GR2 0AC,AC,0.0
+Link,CCGT,GR2 0AC,gas,0.0
+Link,CCGT,HR2 0AC,AC,0.0
+Link,CCGT,HR2 0AC,gas,0.0
+Link,CCGT,HU2 0AC,AC,0.0
+Link,CCGT,HU2 0AC,gas,0.0
+Link,CCGT,IE3 0AC,AC,0.0
+Link,CCGT,IE3 0AC,gas,0.0
+Link,CCGT,IT2 0AC,AC,0.0
+Link,CCGT,IT2 0AC,gas,0.0
+Link,CCGT,IT4 0AC,AC,0.0
+Link,CCGT,IT4 0AC,gas,0.0
+Link,CCGT,LT2 0AC,AC,0.0
+Link,CCGT,LT2 0AC,gas,0.0
+Link,CCGT,LU2 0AC,AC,0.0
+Link,CCGT,LU2 0AC,gas,0.0
+Link,CCGT,LV2 0AC,AC,0.0
+Link,CCGT,LV2 0AC,gas,0.0
+Link,CCGT,ME2 0AC,AC,0.0
+Link,CCGT,ME2 0AC,gas,0.0
+Link,CCGT,MK2 0AC,AC,0.0
+Link,CCGT,MK2 0AC,gas,0.0
+Link,CCGT,NL2 0AC,AC,0.0
+Link,CCGT,NL2 0AC,gas,0.0
+Link,CCGT,NO0 0AC,AC,0.0
+Link,CCGT,NO0 0AC,gas,0.0
+Link,CCGT,PL2 0AC,AC,0.0
+Link,CCGT,PL2 0AC,gas,0.0
+Link,CCGT,PT2 0AC,AC,0.0
+Link,CCGT,PT2 0AC,gas,0.0
+Link,CCGT,RO2 0AC,AC,0.0
+Link,CCGT,RO2 0AC,gas,0.0
+Link,CCGT,RS2 0AC,AC,0.0
+Link,CCGT,RS2 0AC,gas,0.0
+Link,CCGT,SE0 0AC,AC,0.0
+Link,CCGT,SE0 0AC,gas,0.0
+Link,CCGT,SI2 0AC,AC,0.0
+Link,CCGT,SI2 0AC,gas,0.0
+Link,CCGT,SK2 0AC,AC,0.0
+Link,CCGT,SK2 0AC,gas,0.0
+Link,CCGT,XK2 0AC,AC,0.0
+Link,CCGT,XK2 0AC,gas,0.0
+Link,CO2 pipeline,AL2 0AC,co2 stored,0.0
+Link,CO2 pipeline,AT2 0AC,co2 stored,-0.0
+Link,CO2 pipeline,BA2 0AC,co2 stored,-0.0
+Link,CO2 pipeline,BE2 0AC,co2 stored,0.0
+Link,CO2 pipeline,BG2 0AC,co2 stored,0.0
+Link,CO2 pipeline,CH2 0AC,co2 stored,-0.0
+Link,CO2 pipeline,CZ2 0AC,co2 stored,0.0
+Link,CO2 pipeline,DE2 0AC,co2 stored,0.0
+Link,CO2 pipeline,DK0 0AC,co2 stored,0.0
+Link,CO2 pipeline,DK2 0AC,co2 stored,0.0
+Link,CO2 pipeline,EE2 0AC,co2 stored,0.0
+Link,CO2 pipeline,ES2 0AC,co2 stored,0.0
+Link,CO2 pipeline,ES7 0AC,co2 stored,0.0
+Link,CO2 pipeline,FI0 0AC,co2 stored,0.0
+Link,CO2 pipeline,FR2 0AC,co2 stored,0.0
+Link,CO2 pipeline,FR6 0AC,co2 stored,-0.0
+Link,CO2 pipeline,GB1 0AC,co2 stored,-0.0
+Link,CO2 pipeline,GB3 0AC,co2 stored,0.0
+Link,CO2 pipeline,GB5 0AC,co2 stored,0.0
+Link,CO2 pipeline,GR2 0AC,co2 stored,0.0
+Link,CO2 pipeline,HR2 0AC,co2 stored,-0.0
+Link,CO2 pipeline,HU2 0AC,co2 stored,0.0
+Link,CO2 pipeline,IE3 0AC,co2 stored,0.0
+Link,CO2 pipeline,IT2 0AC,co2 stored,-0.0
+Link,CO2 pipeline,IT4 0AC,co2 stored,0.0
+Link,CO2 pipeline,LT2 0AC,co2 stored,0.0
+Link,CO2 pipeline,LU2 0AC,co2 stored,-0.0
+Link,CO2 pipeline,LV2 0AC,co2 stored,0.0
+Link,CO2 pipeline,ME2 0AC,co2 stored,-0.0
+Link,CO2 pipeline,MK2 0AC,co2 stored,-0.0
+Link,CO2 pipeline,NL2 0AC,co2 stored,0.0
+Link,CO2 pipeline,NO0 0AC,co2 stored,-0.0
+Link,CO2 pipeline,PL2 0AC,co2 stored,0.0
+Link,CO2 pipeline,PT2 0AC,co2 stored,0.0
+Link,CO2 pipeline,RO2 0AC,co2 stored,-0.0
+Link,CO2 pipeline,RS2 0AC,co2 stored,-0.0
+Link,CO2 pipeline,SE0 0AC,co2 stored,0.0
+Link,CO2 pipeline,SI2 0AC,co2 stored,0.0
+Link,CO2 pipeline,SK2 0AC,co2 stored,0.0
+Link,CO2 pipeline,XK2 0AC,co2 stored,-0.0
+Link,DC,BE2 0AC,AC,762032.08122
+Link,DC,CH2 0AC,AC,-0.0
+Link,DC,DE2 0AC,AC,15702276.15264
+Link,DC,DK0 0AC,AC,-10120687.77285
+Link,DC,DK2 0AC,AC,-8690655.5286
+Link,DC,EE2 0AC,AC,-2916650.39254
+Link,DC,ES2 0AC,AC,-15451950.59461
+Link,DC,ES7 0AC,AC,277172.8791
+Link,DC,FI0 0AC,AC,2783756.2757
+Link,DC,FR2 0AC,AC,15431492.15194
+Link,DC,FR6 0AC,AC,100272.8303
+Link,DC,GB1 0AC,AC,-7227173.32779
+Link,DC,GB3 0AC,AC,-106021.55755
+Link,DC,GB5 0AC,AC,-1884508.08709
+Link,DC,GR2 0AC,AC,-223768.40354
+Link,DC,IE3 0AC,AC,-21187.40451
+Link,DC,IT2 0AC,AC,877160.40356
+Link,DC,IT4 0AC,AC,-1787121.78657
+Link,DC,LT2 0AC,AC,-361846.76878
+Link,DC,ME2 0AC,AC,897850.2024
+Link,DC,NL2 0AC,AC,623962.83255
+Link,DC,NO0 0AC,AC,6897411.30602
+Link,DC,PL2 0AC,AC,-385460.92981
+Link,DC,SE0 0AC,AC,1682104.31547
+Link,DC,SI2 0AC,AC,1e-05
+Link,H2 Electrolysis,AL2 0AC,AC,-0.0
+Link,H2 Electrolysis,AL2 0AC,H2,0.0
+Link,H2 Electrolysis,AT2 0AC,AC,-0.0
+Link,H2 Electrolysis,AT2 0AC,H2,0.0
+Link,H2 Electrolysis,BA2 0AC,AC,-0.0
+Link,H2 Electrolysis,BA2 0AC,H2,0.0
+Link,H2 Electrolysis,BE2 0AC,AC,-0.0
+Link,H2 Electrolysis,BE2 0AC,H2,0.0
+Link,H2 Electrolysis,BG2 0AC,AC,-0.0
+Link,H2 Electrolysis,BG2 0AC,H2,0.0
+Link,H2 Electrolysis,CH2 0AC,AC,-0.0
+Link,H2 Electrolysis,CH2 0AC,H2,0.0
+Link,H2 Electrolysis,CZ2 0AC,AC,-0.0
+Link,H2 Electrolysis,CZ2 0AC,H2,0.0
+Link,H2 Electrolysis,DE2 0AC,AC,-0.0
+Link,H2 Electrolysis,DE2 0AC,H2,0.0
+Link,H2 Electrolysis,DK0 0AC,AC,-0.0
+Link,H2 Electrolysis,DK0 0AC,H2,0.0
+Link,H2 Electrolysis,DK2 0AC,AC,-0.0
+Link,H2 Electrolysis,DK2 0AC,H2,0.0
+Link,H2 Electrolysis,EE2 0AC,AC,-0.0
+Link,H2 Electrolysis,EE2 0AC,H2,0.0
+Link,H2 Electrolysis,ES2 0AC,AC,-0.0
+Link,H2 Electrolysis,ES2 0AC,H2,0.0
+Link,H2 Electrolysis,ES7 0AC,AC,-0.0
+Link,H2 Electrolysis,ES7 0AC,H2,0.0
+Link,H2 Electrolysis,FI0 0AC,AC,-0.0
+Link,H2 Electrolysis,FI0 0AC,H2,0.0
+Link,H2 Electrolysis,FR2 0AC,AC,-0.0
+Link,H2 Electrolysis,FR2 0AC,H2,0.0
+Link,H2 Electrolysis,FR6 0AC,AC,-0.0
+Link,H2 Electrolysis,FR6 0AC,H2,0.0
+Link,H2 Electrolysis,GB1 0AC,AC,-2e-05
+Link,H2 Electrolysis,GB1 0AC,H2,1e-05
+Link,H2 Electrolysis,GB3 0AC,AC,-1550129.58635
+Link,H2 Electrolysis,GB3 0AC,H2,1084160.63269
+Link,H2 Electrolysis,GB5 0AC,AC,-1e-05
+Link,H2 Electrolysis,GB5 0AC,H2,1e-05
+Link,H2 Electrolysis,GR2 0AC,AC,-1e-05
+Link,H2 Electrolysis,GR2 0AC,H2,0.0
+Link,H2 Electrolysis,HR2 0AC,AC,-0.0
+Link,H2 Electrolysis,HR2 0AC,H2,0.0
+Link,H2 Electrolysis,HU2 0AC,AC,-0.0
+Link,H2 Electrolysis,HU2 0AC,H2,0.0
+Link,H2 Electrolysis,IE3 0AC,AC,-7e-05
+Link,H2 Electrolysis,IE3 0AC,H2,5e-05
+Link,H2 Electrolysis,IT2 0AC,AC,-0.0
+Link,H2 Electrolysis,IT2 0AC,H2,0.0
+Link,H2 Electrolysis,IT4 0AC,AC,-0.0
+Link,H2 Electrolysis,IT4 0AC,H2,0.0
+Link,H2 Electrolysis,LT2 0AC,AC,-0.0
+Link,H2 Electrolysis,LT2 0AC,H2,0.0
+Link,H2 Electrolysis,LU2 0AC,AC,-0.0
+Link,H2 Electrolysis,LU2 0AC,H2,0.0
+Link,H2 Electrolysis,LV2 0AC,AC,-0.0
+Link,H2 Electrolysis,LV2 0AC,H2,0.0
+Link,H2 Electrolysis,ME2 0AC,AC,-0.0
+Link,H2 Electrolysis,ME2 0AC,H2,0.0
+Link,H2 Electrolysis,MK2 0AC,AC,-0.0
+Link,H2 Electrolysis,MK2 0AC,H2,0.0
+Link,H2 Electrolysis,NL2 0AC,AC,-0.0
+Link,H2 Electrolysis,NL2 0AC,H2,0.0
+Link,H2 Electrolysis,NO0 0AC,AC,-0.0
+Link,H2 Electrolysis,NO0 0AC,H2,0.0
+Link,H2 Electrolysis,PL2 0AC,AC,-0.0
+Link,H2 Electrolysis,PL2 0AC,H2,0.0
+Link,H2 Electrolysis,PT2 0AC,AC,-0.0
+Link,H2 Electrolysis,PT2 0AC,H2,0.0
+Link,H2 Electrolysis,RO2 0AC,AC,-0.0
+Link,H2 Electrolysis,RO2 0AC,H2,0.0
+Link,H2 Electrolysis,RS2 0AC,AC,-0.0
+Link,H2 Electrolysis,RS2 0AC,H2,0.0
+Link,H2 Electrolysis,SE0 0AC,AC,-0.0
+Link,H2 Electrolysis,SE0 0AC,H2,0.0
+Link,H2 Electrolysis,SI2 0AC,AC,-0.0
+Link,H2 Electrolysis,SI2 0AC,H2,0.0
+Link,H2 Electrolysis,SK2 0AC,AC,-0.0
+Link,H2 Electrolysis,SK2 0AC,H2,0.0
+Link,H2 Electrolysis,XK2 0AC,AC,-0.0
+Link,H2 Electrolysis,XK2 0AC,H2,0.0
+Link,H2 Fuel Cell,AL2 0AC,AC,0.0
+Link,H2 Fuel Cell,AL2 0AC,H2,-0.0
+Link,H2 Fuel Cell,AT2 0AC,AC,0.0
+Link,H2 Fuel Cell,AT2 0AC,H2,-0.0
+Link,H2 Fuel Cell,BA2 0AC,AC,0.0
+Link,H2 Fuel Cell,BA2 0AC,H2,-0.0
+Link,H2 Fuel Cell,BE2 0AC,AC,0.0
+Link,H2 Fuel Cell,BE2 0AC,H2,-0.0
+Link,H2 Fuel Cell,BG2 0AC,AC,0.0
+Link,H2 Fuel Cell,BG2 0AC,H2,-0.0
+Link,H2 Fuel Cell,CH2 0AC,AC,0.0
+Link,H2 Fuel Cell,CH2 0AC,H2,-0.0
+Link,H2 Fuel Cell,CZ2 0AC,AC,0.0
+Link,H2 Fuel Cell,CZ2 0AC,H2,-0.0
+Link,H2 Fuel Cell,DE2 0AC,AC,0.0
+Link,H2 Fuel Cell,DE2 0AC,H2,-0.0
+Link,H2 Fuel Cell,DK0 0AC,AC,0.0
+Link,H2 Fuel Cell,DK0 0AC,H2,-0.0
+Link,H2 Fuel Cell,DK2 0AC,AC,0.0
+Link,H2 Fuel Cell,DK2 0AC,H2,-0.0
+Link,H2 Fuel Cell,EE2 0AC,AC,0.0
+Link,H2 Fuel Cell,EE2 0AC,H2,-0.0
+Link,H2 Fuel Cell,ES2 0AC,AC,0.0
+Link,H2 Fuel Cell,ES2 0AC,H2,-0.0
+Link,H2 Fuel Cell,ES7 0AC,AC,0.0
+Link,H2 Fuel Cell,ES7 0AC,H2,-0.0
+Link,H2 Fuel Cell,FI0 0AC,AC,0.0
+Link,H2 Fuel Cell,FI0 0AC,H2,-0.0
+Link,H2 Fuel Cell,FR2 0AC,AC,0.0
+Link,H2 Fuel Cell,FR2 0AC,H2,-0.0
+Link,H2 Fuel Cell,FR6 0AC,AC,0.0
+Link,H2 Fuel Cell,FR6 0AC,H2,-0.0
+Link,H2 Fuel Cell,GB1 0AC,AC,0.0
+Link,H2 Fuel Cell,GB1 0AC,H2,-0.0
+Link,H2 Fuel Cell,GB3 0AC,AC,0.0
+Link,H2 Fuel Cell,GB3 0AC,H2,-0.0
+Link,H2 Fuel Cell,GB5 0AC,AC,0.0
+Link,H2 Fuel Cell,GB5 0AC,H2,-0.0
+Link,H2 Fuel Cell,GR2 0AC,AC,0.0
+Link,H2 Fuel Cell,GR2 0AC,H2,-0.0
+Link,H2 Fuel Cell,HR2 0AC,AC,0.0
+Link,H2 Fuel Cell,HR2 0AC,H2,-0.0
+Link,H2 Fuel Cell,HU2 0AC,AC,0.0
+Link,H2 Fuel Cell,HU2 0AC,H2,-0.0
+Link,H2 Fuel Cell,IE3 0AC,AC,0.0
+Link,H2 Fuel Cell,IE3 0AC,H2,-0.0
+Link,H2 Fuel Cell,IT2 0AC,AC,0.0
+Link,H2 Fuel Cell,IT2 0AC,H2,-0.0
+Link,H2 Fuel Cell,IT4 0AC,AC,0.0
+Link,H2 Fuel Cell,IT4 0AC,H2,-0.0
+Link,H2 Fuel Cell,LT2 0AC,AC,0.0
+Link,H2 Fuel Cell,LT2 0AC,H2,-0.0
+Link,H2 Fuel Cell,LU2 0AC,AC,0.0
+Link,H2 Fuel Cell,LU2 0AC,H2,-0.0
+Link,H2 Fuel Cell,LV2 0AC,AC,0.0
+Link,H2 Fuel Cell,LV2 0AC,H2,-0.0
+Link,H2 Fuel Cell,ME2 0AC,AC,0.0
+Link,H2 Fuel Cell,ME2 0AC,H2,-0.0
+Link,H2 Fuel Cell,MK2 0AC,AC,0.0
+Link,H2 Fuel Cell,MK2 0AC,H2,-0.0
+Link,H2 Fuel Cell,NL2 0AC,AC,0.0
+Link,H2 Fuel Cell,NL2 0AC,H2,-0.0
+Link,H2 Fuel Cell,NO0 0AC,AC,0.0
+Link,H2 Fuel Cell,NO0 0AC,H2,-0.0
+Link,H2 Fuel Cell,PL2 0AC,AC,0.0
+Link,H2 Fuel Cell,PL2 0AC,H2,-0.0
+Link,H2 Fuel Cell,PT2 0AC,AC,0.0
+Link,H2 Fuel Cell,PT2 0AC,H2,-0.0
+Link,H2 Fuel Cell,RO2 0AC,AC,0.0
+Link,H2 Fuel Cell,RO2 0AC,H2,-0.0
+Link,H2 Fuel Cell,RS2 0AC,AC,0.0
+Link,H2 Fuel Cell,RS2 0AC,H2,-0.0
+Link,H2 Fuel Cell,SE0 0AC,AC,0.0
+Link,H2 Fuel Cell,SE0 0AC,H2,-0.0
+Link,H2 Fuel Cell,SI2 0AC,AC,0.0
+Link,H2 Fuel Cell,SI2 0AC,H2,-0.0
+Link,H2 Fuel Cell,SK2 0AC,AC,0.0
+Link,H2 Fuel Cell,SK2 0AC,H2,-0.0
+Link,H2 Fuel Cell,XK2 0AC,AC,0.0
+Link,H2 Fuel Cell,XK2 0AC,H2,-0.0
+Link,H2 pipeline,AL2 0AC,AC,-0.0
+Link,H2 pipeline,AL2 0AC,H2,0.0
+Link,H2 pipeline,AT2 0AC,AC,-0.0
+Link,H2 pipeline,AT2 0AC,H2,0.0
+Link,H2 pipeline,BA2 0AC,AC,-0.0
+Link,H2 pipeline,BA2 0AC,H2,0.0
+Link,H2 pipeline,BE2 0AC,AC,-0.0
+Link,H2 pipeline,BE2 0AC,H2,0.0
+Link,H2 pipeline,BG2 0AC,AC,-0.0
+Link,H2 pipeline,BG2 0AC,H2,0.0
+Link,H2 pipeline,CH2 0AC,AC,-0.0
+Link,H2 pipeline,CH2 0AC,H2,-0.0
+Link,H2 pipeline,CZ2 0AC,AC,-0.0
+Link,H2 pipeline,CZ2 0AC,H2,0.0
+Link,H2 pipeline,DE2 0AC,AC,-0.0
+Link,H2 pipeline,DE2 0AC,H2,0.0
+Link,H2 pipeline,DK0 0AC,AC,-0.0
+Link,H2 pipeline,DK0 0AC,H2,-0.0
+Link,H2 pipeline,DK2 0AC,AC,-0.0
+Link,H2 pipeline,DK2 0AC,H2,-0.0
+Link,H2 pipeline,EE2 0AC,AC,-0.0
+Link,H2 pipeline,EE2 0AC,H2,0.0
+Link,H2 pipeline,ES2 0AC,AC,-0.0
+Link,H2 pipeline,ES2 0AC,H2,-0.0
+Link,H2 pipeline,ES7 0AC,AC,-0.0
+Link,H2 pipeline,ES7 0AC,H2,-0.0
+Link,H2 pipeline,FI0 0AC,AC,-0.0
+Link,H2 pipeline,FI0 0AC,H2,0.0
+Link,H2 pipeline,FR2 0AC,AC,-0.0
+Link,H2 pipeline,FR2 0AC,H2,0.0
+Link,H2 pipeline,FR6 0AC,AC,-0.0
+Link,H2 pipeline,FR6 0AC,H2,0.0
+Link,H2 pipeline,GB1 0AC,AC,-0.0
+Link,H2 pipeline,GB1 0AC,H2,-1e-05
+Link,H2 pipeline,GB3 0AC,AC,-0.0
+Link,H2 pipeline,GB3 0AC,H2,2e-05
+Link,H2 pipeline,GB5 0AC,AC,-0.0
+Link,H2 pipeline,GB5 0AC,H2,-1e-05
+Link,H2 pipeline,GR2 0AC,AC,-0.0
+Link,H2 pipeline,GR2 0AC,H2,-0.0
+Link,H2 pipeline,HR2 0AC,AC,-0.0
+Link,H2 pipeline,HR2 0AC,H2,0.0
+Link,H2 pipeline,HU2 0AC,AC,-0.0
+Link,H2 pipeline,HU2 0AC,H2,0.0
+Link,H2 pipeline,IE3 0AC,AC,-0.0
+Link,H2 pipeline,IE3 0AC,H2,-3e-05
+Link,H2 pipeline,IT2 0AC,AC,-0.0
+Link,H2 pipeline,IT2 0AC,H2,0.0
+Link,H2 pipeline,IT4 0AC,AC,-0.0
+Link,H2 pipeline,IT4 0AC,H2,-0.0
+Link,H2 pipeline,LT2 0AC,AC,-0.0
+Link,H2 pipeline,LT2 0AC,H2,0.0
+Link,H2 pipeline,LU2 0AC,AC,-0.0
+Link,H2 pipeline,LU2 0AC,H2,0.0
+Link,H2 pipeline,LV2 0AC,AC,-0.0
+Link,H2 pipeline,LV2 0AC,H2,0.0
+Link,H2 pipeline,ME2 0AC,AC,-0.0
+Link,H2 pipeline,ME2 0AC,H2,0.0
+Link,H2 pipeline,MK2 0AC,AC,-0.0
+Link,H2 pipeline,MK2 0AC,H2,0.0
+Link,H2 pipeline,NL2 0AC,AC,-0.0
+Link,H2 pipeline,NL2 0AC,H2,0.0
+Link,H2 pipeline,NO0 0AC,AC,-0.0
+Link,H2 pipeline,NO0 0AC,H2,0.0
+Link,H2 pipeline,PL2 0AC,AC,-0.0
+Link,H2 pipeline,PL2 0AC,H2,0.0
+Link,H2 pipeline,PT2 0AC,AC,-0.0
+Link,H2 pipeline,PT2 0AC,H2,-0.0
+Link,H2 pipeline,RO2 0AC,AC,-0.0
+Link,H2 pipeline,RO2 0AC,H2,0.0
+Link,H2 pipeline,RS2 0AC,AC,-0.0
+Link,H2 pipeline,RS2 0AC,H2,0.0
+Link,H2 pipeline,SE0 0AC,AC,-0.0
+Link,H2 pipeline,SE0 0AC,H2,0.0
+Link,H2 pipeline,SI2 0AC,AC,-0.0
+Link,H2 pipeline,SI2 0AC,H2,0.0
+Link,H2 pipeline,SK2 0AC,AC,-0.0
+Link,H2 pipeline,SK2 0AC,H2,0.0
+Link,H2 pipeline,XK2 0AC,AC,-0.0
+Link,H2 pipeline,XK2 0AC,H2,0.0
+Link,H2 turbine,AL2 0AC,AC,0.0
+Link,H2 turbine,AL2 0AC,H2,-0.0
+Link,H2 turbine,AT2 0AC,AC,0.0
+Link,H2 turbine,AT2 0AC,H2,-0.0
+Link,H2 turbine,BA2 0AC,AC,0.0
+Link,H2 turbine,BA2 0AC,H2,-0.0
+Link,H2 turbine,BE2 0AC,AC,0.0
+Link,H2 turbine,BE2 0AC,H2,-0.0
+Link,H2 turbine,BG2 0AC,AC,0.0
+Link,H2 turbine,BG2 0AC,H2,-0.0
+Link,H2 turbine,CH2 0AC,AC,0.0
+Link,H2 turbine,CH2 0AC,H2,-0.0
+Link,H2 turbine,CZ2 0AC,AC,0.0
+Link,H2 turbine,CZ2 0AC,H2,-0.0
+Link,H2 turbine,DE2 0AC,AC,0.0
+Link,H2 turbine,DE2 0AC,H2,-0.0
+Link,H2 turbine,DK0 0AC,AC,0.0
+Link,H2 turbine,DK0 0AC,H2,-0.0
+Link,H2 turbine,DK2 0AC,AC,0.0
+Link,H2 turbine,DK2 0AC,H2,-0.0
+Link,H2 turbine,EE2 0AC,AC,0.0
+Link,H2 turbine,EE2 0AC,H2,-0.0
+Link,H2 turbine,ES2 0AC,AC,0.0
+Link,H2 turbine,ES2 0AC,H2,-0.0
+Link,H2 turbine,ES7 0AC,AC,0.0
+Link,H2 turbine,ES7 0AC,H2,-0.0
+Link,H2 turbine,FI0 0AC,AC,0.0
+Link,H2 turbine,FI0 0AC,H2,-0.0
+Link,H2 turbine,FR2 0AC,AC,0.0
+Link,H2 turbine,FR2 0AC,H2,-0.0
+Link,H2 turbine,FR6 0AC,AC,0.0
+Link,H2 turbine,FR6 0AC,H2,-0.0
+Link,H2 turbine,GB1 0AC,AC,0.0
+Link,H2 turbine,GB1 0AC,H2,-0.0
+Link,H2 turbine,GB3 0AC,AC,466189.07207
+Link,H2 turbine,GB3 0AC,H2,-1084160.63271
+Link,H2 turbine,GB5 0AC,AC,0.0
+Link,H2 turbine,GB5 0AC,H2,-0.0
+Link,H2 turbine,GR2 0AC,AC,0.0
+Link,H2 turbine,GR2 0AC,H2,-0.0
+Link,H2 turbine,HR2 0AC,AC,0.0
+Link,H2 turbine,HR2 0AC,H2,-0.0
+Link,H2 turbine,HU2 0AC,AC,0.0
+Link,H2 turbine,HU2 0AC,H2,-0.0
+Link,H2 turbine,IE3 0AC,AC,1e-05
+Link,H2 turbine,IE3 0AC,H2,-1e-05
+Link,H2 turbine,IT2 0AC,AC,0.0
+Link,H2 turbine,IT2 0AC,H2,-0.0
+Link,H2 turbine,IT4 0AC,AC,0.0
+Link,H2 turbine,IT4 0AC,H2,-0.0
+Link,H2 turbine,LT2 0AC,AC,0.0
+Link,H2 turbine,LT2 0AC,H2,-0.0
+Link,H2 turbine,LU2 0AC,AC,0.0
+Link,H2 turbine,LU2 0AC,H2,-0.0
+Link,H2 turbine,LV2 0AC,AC,0.0
+Link,H2 turbine,LV2 0AC,H2,-0.0
+Link,H2 turbine,ME2 0AC,AC,0.0
+Link,H2 turbine,ME2 0AC,H2,-0.0
+Link,H2 turbine,MK2 0AC,AC,0.0
+Link,H2 turbine,MK2 0AC,H2,-0.0
+Link,H2 turbine,NL2 0AC,AC,0.0
+Link,H2 turbine,NL2 0AC,H2,-0.0
+Link,H2 turbine,NO0 0AC,AC,0.0
+Link,H2 turbine,NO0 0AC,H2,-0.0
+Link,H2 turbine,PL2 0AC,AC,0.0
+Link,H2 turbine,PL2 0AC,H2,-0.0
+Link,H2 turbine,PT2 0AC,AC,0.0
+Link,H2 turbine,PT2 0AC,H2,-0.0
+Link,H2 turbine,RO2 0AC,AC,0.0
+Link,H2 turbine,RO2 0AC,H2,-0.0
+Link,H2 turbine,RS2 0AC,AC,0.0
+Link,H2 turbine,RS2 0AC,H2,-0.0
+Link,H2 turbine,SE0 0AC,AC,0.0
+Link,H2 turbine,SE0 0AC,H2,-0.0
+Link,H2 turbine,SI2 0AC,AC,0.0
+Link,H2 turbine,SI2 0AC,H2,-0.0
+Link,H2 turbine,SK2 0AC,AC,0.0
+Link,H2 turbine,SK2 0AC,H2,-0.0
+Link,H2 turbine,XK2 0AC,AC,0.0
+Link,H2 turbine,XK2 0AC,H2,-0.0
+Link,Haber-Bosch,AL2 0AC,AC,-0.0
+Link,Haber-Bosch,AL2 0AC,H2,-0.0
+Link,Haber-Bosch,AT2 0AC,AC,-0.0
+Link,Haber-Bosch,AT2 0AC,H2,-0.0
+Link,Haber-Bosch,BA2 0AC,AC,-0.0
+Link,Haber-Bosch,BA2 0AC,H2,-0.0
+Link,Haber-Bosch,BE2 0AC,AC,-0.0
+Link,Haber-Bosch,BE2 0AC,H2,-0.0
+Link,Haber-Bosch,BG2 0AC,AC,-0.0
+Link,Haber-Bosch,BG2 0AC,H2,-0.0
+Link,Haber-Bosch,CH2 0AC,AC,-0.0
+Link,Haber-Bosch,CH2 0AC,H2,-0.0
+Link,Haber-Bosch,CZ2 0AC,AC,-0.0
+Link,Haber-Bosch,CZ2 0AC,H2,-0.0
+Link,Haber-Bosch,DE2 0AC,AC,-0.0
+Link,Haber-Bosch,DE2 0AC,H2,-0.0
+Link,Haber-Bosch,DK0 0AC,AC,-0.0
+Link,Haber-Bosch,DK0 0AC,H2,-0.0
+Link,Haber-Bosch,DK2 0AC,AC,-0.0
+Link,Haber-Bosch,DK2 0AC,H2,-0.0
+Link,Haber-Bosch,EE2 0AC,AC,-0.0
+Link,Haber-Bosch,EE2 0AC,H2,-0.0
+Link,Haber-Bosch,ES2 0AC,AC,-0.0
+Link,Haber-Bosch,ES2 0AC,H2,-0.0
+Link,Haber-Bosch,ES7 0AC,AC,-0.0
+Link,Haber-Bosch,ES7 0AC,H2,-0.0
+Link,Haber-Bosch,EU,NH3,3e-05
+Link,Haber-Bosch,FI0 0AC,AC,-0.0
+Link,Haber-Bosch,FI0 0AC,H2,-0.0
+Link,Haber-Bosch,FR2 0AC,AC,-0.0
+Link,Haber-Bosch,FR2 0AC,H2,-0.0
+Link,Haber-Bosch,FR6 0AC,AC,-0.0
+Link,Haber-Bosch,FR6 0AC,H2,-0.0
+Link,Haber-Bosch,GB1 0AC,AC,-0.0
+Link,Haber-Bosch,GB1 0AC,H2,-0.0
+Link,Haber-Bosch,GB3 0AC,AC,-0.0
+Link,Haber-Bosch,GB3 0AC,H2,-0.0
+Link,Haber-Bosch,GB5 0AC,AC,-0.0
+Link,Haber-Bosch,GB5 0AC,H2,-0.0
+Link,Haber-Bosch,GR2 0AC,AC,-0.0
+Link,Haber-Bosch,GR2 0AC,H2,-0.0
+Link,Haber-Bosch,HR2 0AC,AC,-0.0
+Link,Haber-Bosch,HR2 0AC,H2,-0.0
+Link,Haber-Bosch,HU2 0AC,AC,-0.0
+Link,Haber-Bosch,HU2 0AC,H2,-0.0
+Link,Haber-Bosch,IE3 0AC,AC,-0.0
+Link,Haber-Bosch,IE3 0AC,H2,-0.0
+Link,Haber-Bosch,IT2 0AC,AC,-0.0
+Link,Haber-Bosch,IT2 0AC,H2,-0.0
+Link,Haber-Bosch,IT4 0AC,AC,-0.0
+Link,Haber-Bosch,IT4 0AC,H2,-0.0
+Link,Haber-Bosch,LT2 0AC,AC,-0.0
+Link,Haber-Bosch,LT2 0AC,H2,-0.0
+Link,Haber-Bosch,LU2 0AC,AC,-0.0
+Link,Haber-Bosch,LU2 0AC,H2,-0.0
+Link,Haber-Bosch,LV2 0AC,AC,-0.0
+Link,Haber-Bosch,LV2 0AC,H2,-0.0
+Link,Haber-Bosch,ME2 0AC,AC,-0.0
+Link,Haber-Bosch,ME2 0AC,H2,-0.0
+Link,Haber-Bosch,MK2 0AC,AC,-0.0
+Link,Haber-Bosch,MK2 0AC,H2,-0.0
+Link,Haber-Bosch,NL2 0AC,AC,-0.0
+Link,Haber-Bosch,NL2 0AC,H2,-0.0
+Link,Haber-Bosch,NO0 0AC,AC,-0.0
+Link,Haber-Bosch,NO0 0AC,H2,-0.0
+Link,Haber-Bosch,PL2 0AC,AC,-0.0
+Link,Haber-Bosch,PL2 0AC,H2,-0.0
+Link,Haber-Bosch,PT2 0AC,AC,-0.0
+Link,Haber-Bosch,PT2 0AC,H2,-0.0
+Link,Haber-Bosch,RO2 0AC,AC,-0.0
+Link,Haber-Bosch,RO2 0AC,H2,-0.0
+Link,Haber-Bosch,RS2 0AC,AC,-0.0
+Link,Haber-Bosch,RS2 0AC,H2,-0.0
+Link,Haber-Bosch,SE0 0AC,AC,-0.0
+Link,Haber-Bosch,SE0 0AC,H2,-0.0
+Link,Haber-Bosch,SI2 0AC,AC,-0.0
+Link,Haber-Bosch,SI2 0AC,H2,-0.0
+Link,Haber-Bosch,SK2 0AC,AC,-0.0
+Link,Haber-Bosch,SK2 0AC,H2,-0.0
+Link,Haber-Bosch,XK2 0AC,AC,-0.0
+Link,Haber-Bosch,XK2 0AC,H2,-0.0
+Link,OCGT,AL2 0AC,AC,0.0
+Link,OCGT,AL2 0AC,gas,0.0
+Link,OCGT,AT2 0AC,AC,0.0
+Link,OCGT,AT2 0AC,gas,0.0
+Link,OCGT,BA2 0AC,AC,0.0
+Link,OCGT,BA2 0AC,gas,0.0
+Link,OCGT,BE2 0AC,AC,0.0
+Link,OCGT,BE2 0AC,gas,0.0
+Link,OCGT,BG2 0AC,AC,0.0
+Link,OCGT,BG2 0AC,gas,0.0
+Link,OCGT,CH2 0AC,AC,0.0
+Link,OCGT,CH2 0AC,gas,0.0
+Link,OCGT,CZ2 0AC,AC,0.0
+Link,OCGT,CZ2 0AC,gas,0.0
+Link,OCGT,DE2 0AC,AC,0.0
+Link,OCGT,DE2 0AC,gas,0.0
+Link,OCGT,DK0 0AC,AC,0.0
+Link,OCGT,DK0 0AC,gas,0.0
+Link,OCGT,DK2 0AC,AC,0.0
+Link,OCGT,DK2 0AC,gas,0.0
+Link,OCGT,EE2 0AC,AC,0.0
+Link,OCGT,EE2 0AC,gas,0.0
+Link,OCGT,ES2 0AC,AC,0.0
+Link,OCGT,ES2 0AC,gas,0.0
+Link,OCGT,ES7 0AC,AC,0.0
+Link,OCGT,ES7 0AC,gas,0.0
+Link,OCGT,EU,co2,0.0
+Link,OCGT,FI0 0AC,AC,0.0
+Link,OCGT,FI0 0AC,gas,0.0
+Link,OCGT,FR2 0AC,AC,0.0
+Link,OCGT,FR2 0AC,gas,0.0
+Link,OCGT,FR6 0AC,AC,0.0
+Link,OCGT,FR6 0AC,gas,0.0
+Link,OCGT,GB1 0AC,AC,0.0
+Link,OCGT,GB1 0AC,gas,0.0
+Link,OCGT,GB3 0AC,AC,0.0
+Link,OCGT,GB3 0AC,gas,0.0
+Link,OCGT,GB5 0AC,AC,0.0
+Link,OCGT,GB5 0AC,gas,0.0
+Link,OCGT,GR2 0AC,AC,0.0
+Link,OCGT,GR2 0AC,gas,0.0
+Link,OCGT,HR2 0AC,AC,0.0
+Link,OCGT,HR2 0AC,gas,0.0
+Link,OCGT,HU2 0AC,AC,0.0
+Link,OCGT,HU2 0AC,gas,0.0
+Link,OCGT,IE3 0AC,AC,0.0
+Link,OCGT,IE3 0AC,gas,0.0
+Link,OCGT,IT2 0AC,AC,0.0
+Link,OCGT,IT2 0AC,gas,0.0
+Link,OCGT,IT4 0AC,AC,0.0
+Link,OCGT,IT4 0AC,gas,0.0
+Link,OCGT,LT2 0AC,AC,0.0
+Link,OCGT,LT2 0AC,gas,0.0
+Link,OCGT,LU2 0AC,AC,0.0
+Link,OCGT,LU2 0AC,gas,0.0
+Link,OCGT,LV2 0AC,AC,0.0
+Link,OCGT,LV2 0AC,gas,0.0
+Link,OCGT,ME2 0AC,AC,0.0
+Link,OCGT,ME2 0AC,gas,0.0
+Link,OCGT,MK2 0AC,AC,0.0
+Link,OCGT,MK2 0AC,gas,0.0
+Link,OCGT,NL2 0AC,AC,0.0
+Link,OCGT,NL2 0AC,gas,0.0
+Link,OCGT,NO0 0AC,AC,0.0
+Link,OCGT,NO0 0AC,gas,0.0
+Link,OCGT,PL2 0AC,AC,0.0
+Link,OCGT,PL2 0AC,gas,0.0
+Link,OCGT,PT2 0AC,AC,0.0
+Link,OCGT,PT2 0AC,gas,0.0
+Link,OCGT,RO2 0AC,AC,0.0
+Link,OCGT,RO2 0AC,gas,0.0
+Link,OCGT,RS2 0AC,AC,0.0
+Link,OCGT,RS2 0AC,gas,0.0
+Link,OCGT,SE0 0AC,AC,0.0
+Link,OCGT,SE0 0AC,gas,0.0
+Link,OCGT,SI2 0AC,AC,0.0
+Link,OCGT,SI2 0AC,gas,0.0
+Link,OCGT,SK2 0AC,AC,0.0
+Link,OCGT,SK2 0AC,gas,0.0
+Link,OCGT,XK2 0AC,AC,0.0
+Link,OCGT,XK2 0AC,gas,0.0
+Link,OCGT methanol,AL2 0AC,AC,0.0
+Link,OCGT methanol,AT2 0AC,AC,0.0
+Link,OCGT methanol,BA2 0AC,AC,0.0
+Link,OCGT methanol,BE2 0AC,AC,0.0
+Link,OCGT methanol,BG2 0AC,AC,0.0
+Link,OCGT methanol,CH2 0AC,AC,0.0
+Link,OCGT methanol,CZ2 0AC,AC,0.0
+Link,OCGT methanol,DE2 0AC,AC,0.0
+Link,OCGT methanol,DK0 0AC,AC,0.0
+Link,OCGT methanol,DK2 0AC,AC,0.0
+Link,OCGT methanol,EE2 0AC,AC,0.0
+Link,OCGT methanol,ES2 0AC,AC,0.0
+Link,OCGT methanol,ES7 0AC,AC,0.0
+Link,OCGT methanol,EU,co2,0.0
+Link,OCGT methanol,EU,methanol,0.0
+Link,OCGT methanol,FI0 0AC,AC,0.0
+Link,OCGT methanol,FR2 0AC,AC,0.0
+Link,OCGT methanol,FR6 0AC,AC,0.0
+Link,OCGT methanol,GB1 0AC,AC,0.0
+Link,OCGT methanol,GB3 0AC,AC,0.0
+Link,OCGT methanol,GB5 0AC,AC,0.0
+Link,OCGT methanol,GR2 0AC,AC,0.0
+Link,OCGT methanol,HR2 0AC,AC,0.0
+Link,OCGT methanol,HU2 0AC,AC,0.0
+Link,OCGT methanol,IE3 0AC,AC,0.0
+Link,OCGT methanol,IT2 0AC,AC,0.0
+Link,OCGT methanol,IT4 0AC,AC,0.0
+Link,OCGT methanol,LT2 0AC,AC,0.0
+Link,OCGT methanol,LU2 0AC,AC,0.0
+Link,OCGT methanol,LV2 0AC,AC,0.0
+Link,OCGT methanol,ME2 0AC,AC,0.0
+Link,OCGT methanol,MK2 0AC,AC,0.0
+Link,OCGT methanol,NL2 0AC,AC,0.0
+Link,OCGT methanol,NO0 0AC,AC,0.0
+Link,OCGT methanol,PL2 0AC,AC,0.0
+Link,OCGT methanol,PT2 0AC,AC,0.0
+Link,OCGT methanol,RO2 0AC,AC,0.0
+Link,OCGT methanol,RS2 0AC,AC,0.0
+Link,OCGT methanol,SE0 0AC,AC,0.0
+Link,OCGT methanol,SI2 0AC,AC,0.0
+Link,OCGT methanol,SK2 0AC,AC,0.0
+Link,OCGT methanol,XK2 0AC,AC,0.0
+Link,SMR,AL2 0AC,H2,0.0
+Link,SMR,AL2 0AC,gas,0.0
+Link,SMR,AT2 0AC,H2,0.0
+Link,SMR,AT2 0AC,gas,0.0
+Link,SMR,BA2 0AC,H2,0.0
+Link,SMR,BA2 0AC,gas,0.0
+Link,SMR,BE2 0AC,H2,0.0
+Link,SMR,BE2 0AC,gas,0.0
+Link,SMR,BG2 0AC,H2,0.0
+Link,SMR,BG2 0AC,gas,0.0
+Link,SMR,CH2 0AC,H2,0.0
+Link,SMR,CH2 0AC,gas,0.0
+Link,SMR,CZ2 0AC,H2,0.0
+Link,SMR,CZ2 0AC,gas,0.0
+Link,SMR,DE2 0AC,H2,0.0
+Link,SMR,DE2 0AC,gas,0.0
+Link,SMR,DK0 0AC,H2,0.0
+Link,SMR,DK0 0AC,gas,0.0
+Link,SMR,DK2 0AC,H2,0.0
+Link,SMR,DK2 0AC,gas,0.0
+Link,SMR,EE2 0AC,H2,0.0
+Link,SMR,EE2 0AC,gas,0.0
+Link,SMR,ES2 0AC,H2,0.0
+Link,SMR,ES2 0AC,gas,0.0
+Link,SMR,ES7 0AC,H2,0.0
+Link,SMR,ES7 0AC,gas,0.0
+Link,SMR,EU,co2,0.0
+Link,SMR,FI0 0AC,H2,0.0
+Link,SMR,FI0 0AC,gas,0.0
+Link,SMR,FR2 0AC,H2,0.0
+Link,SMR,FR2 0AC,gas,0.0
+Link,SMR,FR6 0AC,H2,0.0
+Link,SMR,FR6 0AC,gas,0.0
+Link,SMR,GB1 0AC,H2,0.0
+Link,SMR,GB1 0AC,gas,0.0
+Link,SMR,GB3 0AC,H2,0.0
+Link,SMR,GB3 0AC,gas,0.0
+Link,SMR,GB5 0AC,H2,0.0
+Link,SMR,GB5 0AC,gas,0.0
+Link,SMR,GR2 0AC,H2,0.0
+Link,SMR,GR2 0AC,gas,0.0
+Link,SMR,HR2 0AC,H2,0.0
+Link,SMR,HR2 0AC,gas,0.0
+Link,SMR,HU2 0AC,H2,0.0
+Link,SMR,HU2 0AC,gas,0.0
+Link,SMR,IE3 0AC,H2,0.0
+Link,SMR,IE3 0AC,gas,0.0
+Link,SMR,IT2 0AC,H2,0.0
+Link,SMR,IT2 0AC,gas,0.0
+Link,SMR,IT4 0AC,H2,0.0
+Link,SMR,IT4 0AC,gas,0.0
+Link,SMR,LT2 0AC,H2,0.0
+Link,SMR,LT2 0AC,gas,0.0
+Link,SMR,LU2 0AC,H2,0.0
+Link,SMR,LU2 0AC,gas,0.0
+Link,SMR,LV2 0AC,H2,0.0
+Link,SMR,LV2 0AC,gas,0.0
+Link,SMR,ME2 0AC,H2,0.0
+Link,SMR,ME2 0AC,gas,0.0
+Link,SMR,MK2 0AC,H2,0.0
+Link,SMR,MK2 0AC,gas,0.0
+Link,SMR,NL2 0AC,H2,0.0
+Link,SMR,NL2 0AC,gas,0.0
+Link,SMR,NO0 0AC,H2,0.0
+Link,SMR,NO0 0AC,gas,0.0
+Link,SMR,PL2 0AC,H2,0.0
+Link,SMR,PL2 0AC,gas,0.0
+Link,SMR,PT2 0AC,H2,0.0
+Link,SMR,PT2 0AC,gas,0.0
+Link,SMR,RO2 0AC,H2,0.0
+Link,SMR,RO2 0AC,gas,0.0
+Link,SMR,RS2 0AC,H2,0.0
+Link,SMR,RS2 0AC,gas,0.0
+Link,SMR,SE0 0AC,H2,0.0
+Link,SMR,SE0 0AC,gas,0.0
+Link,SMR,SI2 0AC,H2,0.0
+Link,SMR,SI2 0AC,gas,0.0
+Link,SMR,SK2 0AC,H2,0.0
+Link,SMR,SK2 0AC,gas,0.0
+Link,SMR,XK2 0AC,H2,0.0
+Link,SMR,XK2 0AC,gas,0.0
+Link,SMR CC,AL2 0AC,H2,0.0
+Link,SMR CC,AL2 0AC,gas,0.0
+Link,SMR CC,AT2 0AC,H2,0.0
+Link,SMR CC,AT2 0AC,gas,0.0
+Link,SMR CC,BA2 0AC,H2,0.0
+Link,SMR CC,BA2 0AC,gas,0.0
+Link,SMR CC,BE2 0AC,H2,0.0
+Link,SMR CC,BE2 0AC,gas,0.0
+Link,SMR CC,BG2 0AC,H2,0.0
+Link,SMR CC,BG2 0AC,gas,0.0
+Link,SMR CC,CH2 0AC,H2,0.0
+Link,SMR CC,CH2 0AC,gas,0.0
+Link,SMR CC,CZ2 0AC,H2,0.0
+Link,SMR CC,CZ2 0AC,gas,0.0
+Link,SMR CC,DE2 0AC,H2,0.0
+Link,SMR CC,DE2 0AC,gas,0.0
+Link,SMR CC,DK0 0AC,H2,0.0
+Link,SMR CC,DK0 0AC,gas,0.0
+Link,SMR CC,DK2 0AC,H2,0.0
+Link,SMR CC,DK2 0AC,gas,0.0
+Link,SMR CC,EE2 0AC,H2,0.0
+Link,SMR CC,EE2 0AC,gas,0.0
+Link,SMR CC,ES2 0AC,H2,0.0
+Link,SMR CC,ES2 0AC,gas,0.0
+Link,SMR CC,ES7 0AC,H2,0.0
+Link,SMR CC,ES7 0AC,gas,0.0
+Link,SMR CC,EU,co2,0.0
+Link,SMR CC,FI0 0AC,H2,0.0
+Link,SMR CC,FI0 0AC,gas,0.0
+Link,SMR CC,FR2 0AC,H2,0.0
+Link,SMR CC,FR2 0AC,gas,0.0
+Link,SMR CC,FR6 0AC,H2,0.0
+Link,SMR CC,FR6 0AC,gas,0.0
+Link,SMR CC,GB1 0AC,H2,0.0
+Link,SMR CC,GB1 0AC,gas,0.0
+Link,SMR CC,GB3 0AC,H2,0.0
+Link,SMR CC,GB3 0AC,gas,0.0
+Link,SMR CC,GB5 0AC,H2,0.0
+Link,SMR CC,GB5 0AC,gas,0.0
+Link,SMR CC,GR2 0AC,H2,0.0
+Link,SMR CC,GR2 0AC,gas,0.0
+Link,SMR CC,HR2 0AC,H2,0.0
+Link,SMR CC,HR2 0AC,gas,0.0
+Link,SMR CC,HU2 0AC,H2,0.0
+Link,SMR CC,HU2 0AC,gas,0.0
+Link,SMR CC,IE3 0AC,H2,0.0
+Link,SMR CC,IE3 0AC,gas,0.0
+Link,SMR CC,IT2 0AC,H2,0.0
+Link,SMR CC,IT2 0AC,gas,0.0
+Link,SMR CC,IT4 0AC,H2,0.0
+Link,SMR CC,IT4 0AC,gas,0.0
+Link,SMR CC,LT2 0AC,H2,0.0
+Link,SMR CC,LT2 0AC,gas,0.0
+Link,SMR CC,LU2 0AC,H2,0.0
+Link,SMR CC,LU2 0AC,gas,0.0
+Link,SMR CC,LV2 0AC,H2,0.0
+Link,SMR CC,LV2 0AC,gas,0.0
+Link,SMR CC,ME2 0AC,H2,0.0
+Link,SMR CC,ME2 0AC,gas,0.0
+Link,SMR CC,MK2 0AC,H2,0.0
+Link,SMR CC,MK2 0AC,gas,0.0
+Link,SMR CC,NL2 0AC,H2,0.0
+Link,SMR CC,NL2 0AC,gas,0.0
+Link,SMR CC,NO0 0AC,H2,0.0
+Link,SMR CC,NO0 0AC,gas,0.0
+Link,SMR CC,PL2 0AC,H2,0.0
+Link,SMR CC,PL2 0AC,gas,0.0
+Link,SMR CC,PT2 0AC,H2,0.0
+Link,SMR CC,PT2 0AC,gas,0.0
+Link,SMR CC,RO2 0AC,H2,0.0
+Link,SMR CC,RO2 0AC,gas,0.0
+Link,SMR CC,RS2 0AC,H2,0.0
+Link,SMR CC,RS2 0AC,gas,0.0
+Link,SMR CC,SE0 0AC,H2,0.0
+Link,SMR CC,SE0 0AC,gas,0.0
+Link,SMR CC,SI2 0AC,H2,0.0
+Link,SMR CC,SI2 0AC,gas,0.0
+Link,SMR CC,SK2 0AC,H2,0.0
+Link,SMR CC,SK2 0AC,gas,0.0
+Link,SMR CC,XK2 0AC,H2,0.0
+Link,SMR CC,XK2 0AC,gas,0.0
+Link,Sabatier,AL2 0AC,H2,-0.0
+Link,Sabatier,AL2 0AC,co2 stored,-0.0
+Link,Sabatier,AL2 0AC,gas,0.0
+Link,Sabatier,AT2 0AC,H2,-0.0
+Link,Sabatier,AT2 0AC,co2 stored,-0.0
+Link,Sabatier,AT2 0AC,gas,0.0
+Link,Sabatier,BA2 0AC,H2,-0.0
+Link,Sabatier,BA2 0AC,co2 stored,-0.0
+Link,Sabatier,BA2 0AC,gas,0.0
+Link,Sabatier,BE2 0AC,H2,-0.0
+Link,Sabatier,BE2 0AC,co2 stored,-0.0
+Link,Sabatier,BE2 0AC,gas,0.0
+Link,Sabatier,BG2 0AC,H2,-0.0
+Link,Sabatier,BG2 0AC,co2 stored,-0.0
+Link,Sabatier,BG2 0AC,gas,0.0
+Link,Sabatier,CH2 0AC,H2,-0.0
+Link,Sabatier,CH2 0AC,co2 stored,-0.0
+Link,Sabatier,CH2 0AC,gas,0.0
+Link,Sabatier,CZ2 0AC,H2,-0.0
+Link,Sabatier,CZ2 0AC,co2 stored,-0.0
+Link,Sabatier,CZ2 0AC,gas,0.0
+Link,Sabatier,DE2 0AC,H2,-0.0
+Link,Sabatier,DE2 0AC,co2 stored,-0.0
+Link,Sabatier,DE2 0AC,gas,0.0
+Link,Sabatier,DK0 0AC,H2,-0.0
+Link,Sabatier,DK0 0AC,co2 stored,-0.0
+Link,Sabatier,DK0 0AC,gas,0.0
+Link,Sabatier,DK2 0AC,H2,-0.0
+Link,Sabatier,DK2 0AC,co2 stored,-0.0
+Link,Sabatier,DK2 0AC,gas,0.0
+Link,Sabatier,EE2 0AC,H2,-0.0
+Link,Sabatier,EE2 0AC,co2 stored,-0.0
+Link,Sabatier,EE2 0AC,gas,0.0
+Link,Sabatier,ES2 0AC,H2,-0.0
+Link,Sabatier,ES2 0AC,co2 stored,-0.0
+Link,Sabatier,ES2 0AC,gas,0.0
+Link,Sabatier,ES7 0AC,H2,-0.0
+Link,Sabatier,ES7 0AC,co2 stored,-0.0
+Link,Sabatier,ES7 0AC,gas,0.0
+Link,Sabatier,FI0 0AC,H2,-0.0
+Link,Sabatier,FI0 0AC,co2 stored,-0.0
+Link,Sabatier,FI0 0AC,gas,0.0
+Link,Sabatier,FR2 0AC,H2,-0.0
+Link,Sabatier,FR2 0AC,co2 stored,-0.0
+Link,Sabatier,FR2 0AC,gas,0.0
+Link,Sabatier,FR6 0AC,H2,-0.0
+Link,Sabatier,FR6 0AC,co2 stored,-0.0
+Link,Sabatier,FR6 0AC,gas,0.0
+Link,Sabatier,GB1 0AC,H2,-0.0
+Link,Sabatier,GB1 0AC,co2 stored,-0.0
+Link,Sabatier,GB1 0AC,gas,0.0
+Link,Sabatier,GB3 0AC,H2,-0.0
+Link,Sabatier,GB3 0AC,co2 stored,-0.0
+Link,Sabatier,GB3 0AC,gas,0.0
+Link,Sabatier,GB5 0AC,H2,-0.0
+Link,Sabatier,GB5 0AC,co2 stored,-0.0
+Link,Sabatier,GB5 0AC,gas,0.0
+Link,Sabatier,GR2 0AC,H2,-0.0
+Link,Sabatier,GR2 0AC,co2 stored,-0.0
+Link,Sabatier,GR2 0AC,gas,0.0
+Link,Sabatier,HR2 0AC,H2,-0.0
+Link,Sabatier,HR2 0AC,co2 stored,-0.0
+Link,Sabatier,HR2 0AC,gas,0.0
+Link,Sabatier,HU2 0AC,H2,-0.0
+Link,Sabatier,HU2 0AC,co2 stored,-0.0
+Link,Sabatier,HU2 0AC,gas,0.0
+Link,Sabatier,IE3 0AC,H2,-0.0
+Link,Sabatier,IE3 0AC,co2 stored,-0.0
+Link,Sabatier,IE3 0AC,gas,0.0
+Link,Sabatier,IT2 0AC,H2,-0.0
+Link,Sabatier,IT2 0AC,co2 stored,-0.0
+Link,Sabatier,IT2 0AC,gas,0.0
+Link,Sabatier,IT4 0AC,H2,-0.0
+Link,Sabatier,IT4 0AC,co2 stored,-0.0
+Link,Sabatier,IT4 0AC,gas,0.0
+Link,Sabatier,LT2 0AC,H2,-0.0
+Link,Sabatier,LT2 0AC,co2 stored,-0.0
+Link,Sabatier,LT2 0AC,gas,0.0
+Link,Sabatier,LU2 0AC,H2,-0.0
+Link,Sabatier,LU2 0AC,co2 stored,-0.0
+Link,Sabatier,LU2 0AC,gas,0.0
+Link,Sabatier,LV2 0AC,H2,-0.0
+Link,Sabatier,LV2 0AC,co2 stored,-0.0
+Link,Sabatier,LV2 0AC,gas,0.0
+Link,Sabatier,ME2 0AC,H2,-0.0
+Link,Sabatier,ME2 0AC,co2 stored,-0.0
+Link,Sabatier,ME2 0AC,gas,0.0
+Link,Sabatier,MK2 0AC,H2,-0.0
+Link,Sabatier,MK2 0AC,co2 stored,-0.0
+Link,Sabatier,MK2 0AC,gas,0.0
+Link,Sabatier,NL2 0AC,H2,-0.0
+Link,Sabatier,NL2 0AC,co2 stored,-0.0
+Link,Sabatier,NL2 0AC,gas,0.0
+Link,Sabatier,NO0 0AC,H2,-0.0
+Link,Sabatier,NO0 0AC,co2 stored,-0.0
+Link,Sabatier,NO0 0AC,gas,0.0
+Link,Sabatier,PL2 0AC,H2,-0.0
+Link,Sabatier,PL2 0AC,co2 stored,-0.0
+Link,Sabatier,PL2 0AC,gas,0.0
+Link,Sabatier,PT2 0AC,H2,-0.0
+Link,Sabatier,PT2 0AC,co2 stored,-0.0
+Link,Sabatier,PT2 0AC,gas,0.0
+Link,Sabatier,RO2 0AC,H2,-0.0
+Link,Sabatier,RO2 0AC,co2 stored,-0.0
+Link,Sabatier,RO2 0AC,gas,0.0
+Link,Sabatier,RS2 0AC,H2,-0.0
+Link,Sabatier,RS2 0AC,co2 stored,-0.0
+Link,Sabatier,RS2 0AC,gas,0.0
+Link,Sabatier,SE0 0AC,H2,-0.0
+Link,Sabatier,SE0 0AC,co2 stored,-0.0
+Link,Sabatier,SE0 0AC,gas,0.0
+Link,Sabatier,SI2 0AC,H2,-0.0
+Link,Sabatier,SI2 0AC,co2 stored,-0.0
+Link,Sabatier,SI2 0AC,gas,0.0
+Link,Sabatier,SK2 0AC,H2,-0.0
+Link,Sabatier,SK2 0AC,co2 stored,-0.0
+Link,Sabatier,SK2 0AC,gas,0.0
+Link,Sabatier,XK2 0AC,H2,-0.0
+Link,Sabatier,XK2 0AC,co2 stored,-0.0
+Link,Sabatier,XK2 0AC,gas,0.0
+Link,ammonia cracker,AL2 0AC,H2,0.0
+Link,ammonia cracker,AT2 0AC,H2,0.0
+Link,ammonia cracker,BA2 0AC,H2,0.0
+Link,ammonia cracker,BE2 0AC,H2,0.0
+Link,ammonia cracker,BG2 0AC,H2,0.0
+Link,ammonia cracker,CH2 0AC,H2,0.0
+Link,ammonia cracker,CZ2 0AC,H2,0.0
+Link,ammonia cracker,DE2 0AC,H2,0.0
+Link,ammonia cracker,DK0 0AC,H2,0.0
+Link,ammonia cracker,DK2 0AC,H2,0.0
+Link,ammonia cracker,EE2 0AC,H2,0.0
+Link,ammonia cracker,ES2 0AC,H2,0.0
+Link,ammonia cracker,ES7 0AC,H2,0.0
+Link,ammonia cracker,EU,NH3,-3e-05
+Link,ammonia cracker,FI0 0AC,H2,0.0
+Link,ammonia cracker,FR2 0AC,H2,0.0
+Link,ammonia cracker,FR6 0AC,H2,0.0
+Link,ammonia cracker,GB1 0AC,H2,0.0
+Link,ammonia cracker,GB3 0AC,H2,0.0
+Link,ammonia cracker,GB5 0AC,H2,0.0
+Link,ammonia cracker,GR2 0AC,H2,0.0
+Link,ammonia cracker,HR2 0AC,H2,0.0
+Link,ammonia cracker,HU2 0AC,H2,0.0
+Link,ammonia cracker,IE3 0AC,H2,0.0
+Link,ammonia cracker,IT2 0AC,H2,0.0
+Link,ammonia cracker,IT4 0AC,H2,0.0
+Link,ammonia cracker,LT2 0AC,H2,0.0
+Link,ammonia cracker,LU2 0AC,H2,0.0
+Link,ammonia cracker,LV2 0AC,H2,0.0
+Link,ammonia cracker,ME2 0AC,H2,0.0
+Link,ammonia cracker,MK2 0AC,H2,0.0
+Link,ammonia cracker,NL2 0AC,H2,0.0
+Link,ammonia cracker,NO0 0AC,H2,0.0
+Link,ammonia cracker,PL2 0AC,H2,0.0
+Link,ammonia cracker,PT2 0AC,H2,0.0
+Link,ammonia cracker,RO2 0AC,H2,0.0
+Link,ammonia cracker,RS2 0AC,H2,0.0
+Link,ammonia cracker,SE0 0AC,H2,0.0
+Link,ammonia cracker,SI2 0AC,H2,0.0
+Link,ammonia cracker,SK2 0AC,H2,0.0
+Link,ammonia cracker,XK2 0AC,H2,0.0
+Link,battery charger,AL2 0AC,AC,-1e-05
+Link,battery charger,AL2 0AC,battery,1e-05
+Link,battery charger,AT2 0AC,AC,-1e-05
+Link,battery charger,AT2 0AC,battery,1e-05
+Link,battery charger,BA2 0AC,AC,-1e-05
+Link,battery charger,BA2 0AC,battery,1e-05
+Link,battery charger,BE2 0AC,AC,-1e-05
+Link,battery charger,BE2 0AC,battery,1e-05
+Link,battery charger,BG2 0AC,AC,-1e-05
+Link,battery charger,BG2 0AC,battery,1e-05
+Link,battery charger,CH2 0AC,AC,-1e-05
+Link,battery charger,CH2 0AC,battery,1e-05
+Link,battery charger,CZ2 0AC,AC,-1e-05
+Link,battery charger,CZ2 0AC,battery,1e-05
+Link,battery charger,DE2 0AC,AC,-1e-05
+Link,battery charger,DE2 0AC,battery,1e-05
+Link,battery charger,DK0 0AC,AC,-1e-05
+Link,battery charger,DK0 0AC,battery,1e-05
+Link,battery charger,DK2 0AC,AC,-1e-05
+Link,battery charger,DK2 0AC,battery,1e-05
+Link,battery charger,EE2 0AC,AC,-1e-05
+Link,battery charger,EE2 0AC,battery,1e-05
+Link,battery charger,ES2 0AC,AC,-1e-05
+Link,battery charger,ES2 0AC,battery,1e-05
+Link,battery charger,ES7 0AC,AC,-1e-05
+Link,battery charger,ES7 0AC,battery,1e-05
+Link,battery charger,FI0 0AC,AC,-1e-05
+Link,battery charger,FI0 0AC,battery,1e-05
+Link,battery charger,FR2 0AC,AC,-1e-05
+Link,battery charger,FR2 0AC,battery,1e-05
+Link,battery charger,FR6 0AC,AC,-1e-05
+Link,battery charger,FR6 0AC,battery,1e-05
+Link,battery charger,GB1 0AC,AC,-1e-05
+Link,battery charger,GB1 0AC,battery,1e-05
+Link,battery charger,GB3 0AC,AC,-1e-05
+Link,battery charger,GB3 0AC,battery,1e-05
+Link,battery charger,GB5 0AC,AC,-1e-05
+Link,battery charger,GB5 0AC,battery,1e-05
+Link,battery charger,GR2 0AC,AC,-1e-05
+Link,battery charger,GR2 0AC,battery,1e-05
+Link,battery charger,HR2 0AC,AC,-1e-05
+Link,battery charger,HR2 0AC,battery,1e-05
+Link,battery charger,HU2 0AC,AC,-1e-05
+Link,battery charger,HU2 0AC,battery,1e-05
+Link,battery charger,IE3 0AC,AC,-1e-05
+Link,battery charger,IE3 0AC,battery,1e-05
+Link,battery charger,IT2 0AC,AC,-1e-05
+Link,battery charger,IT2 0AC,battery,1e-05
+Link,battery charger,IT4 0AC,AC,-1e-05
+Link,battery charger,IT4 0AC,battery,1e-05
+Link,battery charger,LT2 0AC,AC,-1e-05
+Link,battery charger,LT2 0AC,battery,1e-05
+Link,battery charger,LU2 0AC,AC,-1e-05
+Link,battery charger,LU2 0AC,battery,1e-05
+Link,battery charger,LV2 0AC,AC,-1e-05
+Link,battery charger,LV2 0AC,battery,1e-05
+Link,battery charger,ME2 0AC,AC,-1e-05
+Link,battery charger,ME2 0AC,battery,1e-05
+Link,battery charger,MK2 0AC,AC,-1e-05
+Link,battery charger,MK2 0AC,battery,1e-05
+Link,battery charger,NL2 0AC,AC,-1e-05
+Link,battery charger,NL2 0AC,battery,1e-05
+Link,battery charger,NO0 0AC,AC,-1e-05
+Link,battery charger,NO0 0AC,battery,1e-05
+Link,battery charger,PL2 0AC,AC,-1e-05
+Link,battery charger,PL2 0AC,battery,1e-05
+Link,battery charger,PT2 0AC,AC,-1e-05
+Link,battery charger,PT2 0AC,battery,1e-05
+Link,battery charger,RO2 0AC,AC,-1e-05
+Link,battery charger,RO2 0AC,battery,1e-05
+Link,battery charger,RS2 0AC,AC,-1e-05
+Link,battery charger,RS2 0AC,battery,1e-05
+Link,battery charger,SE0 0AC,AC,-1e-05
+Link,battery charger,SE0 0AC,battery,1e-05
+Link,battery charger,SI2 0AC,AC,-1e-05
+Link,battery charger,SI2 0AC,battery,1e-05
+Link,battery charger,SK2 0AC,AC,-1e-05
+Link,battery charger,SK2 0AC,battery,1e-05
+Link,battery charger,XK2 0AC,AC,-1e-05
+Link,battery charger,XK2 0AC,battery,1e-05
+Link,battery discharger,AL2 0AC,AC,1e-05
+Link,battery discharger,AL2 0AC,battery,-1e-05
+Link,battery discharger,AT2 0AC,AC,1e-05
+Link,battery discharger,AT2 0AC,battery,-1e-05
+Link,battery discharger,BA2 0AC,AC,1e-05
+Link,battery discharger,BA2 0AC,battery,-1e-05
+Link,battery discharger,BE2 0AC,AC,1e-05
+Link,battery discharger,BE2 0AC,battery,-1e-05
+Link,battery discharger,BG2 0AC,AC,1e-05
+Link,battery discharger,BG2 0AC,battery,-1e-05
+Link,battery discharger,CH2 0AC,AC,1e-05
+Link,battery discharger,CH2 0AC,battery,-1e-05
+Link,battery discharger,CZ2 0AC,AC,1e-05
+Link,battery discharger,CZ2 0AC,battery,-1e-05
+Link,battery discharger,DE2 0AC,AC,1e-05
+Link,battery discharger,DE2 0AC,battery,-1e-05
+Link,battery discharger,DK0 0AC,AC,1e-05
+Link,battery discharger,DK0 0AC,battery,-1e-05
+Link,battery discharger,DK2 0AC,AC,1e-05
+Link,battery discharger,DK2 0AC,battery,-1e-05
+Link,battery discharger,EE2 0AC,AC,1e-05
+Link,battery discharger,EE2 0AC,battery,-1e-05
+Link,battery discharger,ES2 0AC,AC,1e-05
+Link,battery discharger,ES2 0AC,battery,-1e-05
+Link,battery discharger,ES7 0AC,AC,1e-05
+Link,battery discharger,ES7 0AC,battery,-1e-05
+Link,battery discharger,FI0 0AC,AC,1e-05
+Link,battery discharger,FI0 0AC,battery,-1e-05
+Link,battery discharger,FR2 0AC,AC,1e-05
+Link,battery discharger,FR2 0AC,battery,-1e-05
+Link,battery discharger,FR6 0AC,AC,1e-05
+Link,battery discharger,FR6 0AC,battery,-1e-05
+Link,battery discharger,GB1 0AC,AC,1e-05
+Link,battery discharger,GB1 0AC,battery,-1e-05
+Link,battery discharger,GB3 0AC,AC,1e-05
+Link,battery discharger,GB3 0AC,battery,-1e-05
+Link,battery discharger,GB5 0AC,AC,1e-05
+Link,battery discharger,GB5 0AC,battery,-1e-05
+Link,battery discharger,GR2 0AC,AC,1e-05
+Link,battery discharger,GR2 0AC,battery,-1e-05
+Link,battery discharger,HR2 0AC,AC,1e-05
+Link,battery discharger,HR2 0AC,battery,-1e-05
+Link,battery discharger,HU2 0AC,AC,1e-05
+Link,battery discharger,HU2 0AC,battery,-1e-05
+Link,battery discharger,IE3 0AC,AC,1e-05
+Link,battery discharger,IE3 0AC,battery,-1e-05
+Link,battery discharger,IT2 0AC,AC,1e-05
+Link,battery discharger,IT2 0AC,battery,-1e-05
+Link,battery discharger,IT4 0AC,AC,1e-05
+Link,battery discharger,IT4 0AC,battery,-1e-05
+Link,battery discharger,LT2 0AC,AC,1e-05
+Link,battery discharger,LT2 0AC,battery,-1e-05
+Link,battery discharger,LU2 0AC,AC,1e-05
+Link,battery discharger,LU2 0AC,battery,-1e-05
+Link,battery discharger,LV2 0AC,AC,1e-05
+Link,battery discharger,LV2 0AC,battery,-1e-05
+Link,battery discharger,ME2 0AC,AC,1e-05
+Link,battery discharger,ME2 0AC,battery,-1e-05
+Link,battery discharger,MK2 0AC,AC,1e-05
+Link,battery discharger,MK2 0AC,battery,-1e-05
+Link,battery discharger,NL2 0AC,AC,1e-05
+Link,battery discharger,NL2 0AC,battery,-1e-05
+Link,battery discharger,NO0 0AC,AC,1e-05
+Link,battery discharger,NO0 0AC,battery,-1e-05
+Link,battery discharger,PL2 0AC,AC,1e-05
+Link,battery discharger,PL2 0AC,battery,-1e-05
+Link,battery discharger,PT2 0AC,AC,1e-05
+Link,battery discharger,PT2 0AC,battery,-1e-05
+Link,battery discharger,RO2 0AC,AC,1e-05
+Link,battery discharger,RO2 0AC,battery,-1e-05
+Link,battery discharger,RS2 0AC,AC,1e-05
+Link,battery discharger,RS2 0AC,battery,-1e-05
+Link,battery discharger,SE0 0AC,AC,1e-05
+Link,battery discharger,SE0 0AC,battery,-1e-05
+Link,battery discharger,SI2 0AC,AC,1e-05
+Link,battery discharger,SI2 0AC,battery,-1e-05
+Link,battery discharger,SK2 0AC,AC,1e-05
+Link,battery discharger,SK2 0AC,battery,-1e-05
+Link,battery discharger,XK2 0AC,AC,1e-05
+Link,battery discharger,XK2 0AC,battery,-1e-05
+Link,co2 sequestered,AL2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,AL2 0AC,co2 stored,0.0
+Link,co2 sequestered,AT2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,AT2 0AC,co2 stored,0.0
+Link,co2 sequestered,BA2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,BA2 0AC,co2 stored,0.0
+Link,co2 sequestered,BE2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,BE2 0AC,co2 stored,0.0
+Link,co2 sequestered,BG2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,BG2 0AC,co2 stored,-0.0
+Link,co2 sequestered,CH2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,CH2 0AC,co2 stored,0.0
+Link,co2 sequestered,CZ2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,CZ2 0AC,co2 stored,0.0
+Link,co2 sequestered,DE2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,DE2 0AC,co2 stored,-0.0
+Link,co2 sequestered,DK0 0AC,co2 sequestered,0.0
+Link,co2 sequestered,DK0 0AC,co2 stored,-0.0
+Link,co2 sequestered,DK2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,DK2 0AC,co2 stored,-0.0
+Link,co2 sequestered,EE2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,EE2 0AC,co2 stored,0.0
+Link,co2 sequestered,ES2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,ES2 0AC,co2 stored,0.0
+Link,co2 sequestered,ES7 0AC,co2 sequestered,0.0
+Link,co2 sequestered,ES7 0AC,co2 stored,0.0
+Link,co2 sequestered,FI0 0AC,co2 sequestered,0.0
+Link,co2 sequestered,FI0 0AC,co2 stored,0.0
+Link,co2 sequestered,FR2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,FR2 0AC,co2 stored,0.0
+Link,co2 sequestered,FR6 0AC,co2 sequestered,0.0
+Link,co2 sequestered,FR6 0AC,co2 stored,0.0
+Link,co2 sequestered,GB1 0AC,co2 sequestered,0.0
+Link,co2 sequestered,GB1 0AC,co2 stored,-0.0
+Link,co2 sequestered,GB3 0AC,co2 sequestered,0.0
+Link,co2 sequestered,GB3 0AC,co2 stored,0.0
+Link,co2 sequestered,GB5 0AC,co2 sequestered,0.0
+Link,co2 sequestered,GB5 0AC,co2 stored,-0.0
+Link,co2 sequestered,GR2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,GR2 0AC,co2 stored,-0.0
+Link,co2 sequestered,HR2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,HR2 0AC,co2 stored,0.0
+Link,co2 sequestered,HU2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,HU2 0AC,co2 stored,0.0
+Link,co2 sequestered,IE3 0AC,co2 sequestered,0.0
+Link,co2 sequestered,IE3 0AC,co2 stored,0.0
+Link,co2 sequestered,IT2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,IT2 0AC,co2 stored,0.0
+Link,co2 sequestered,IT4 0AC,co2 sequestered,0.0
+Link,co2 sequestered,IT4 0AC,co2 stored,0.0
+Link,co2 sequestered,LT2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,LT2 0AC,co2 stored,-0.0
+Link,co2 sequestered,LU2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,LU2 0AC,co2 stored,0.0
+Link,co2 sequestered,LV2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,LV2 0AC,co2 stored,-0.0
+Link,co2 sequestered,ME2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,ME2 0AC,co2 stored,0.0
+Link,co2 sequestered,MK2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,MK2 0AC,co2 stored,0.0
+Link,co2 sequestered,NL2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,NL2 0AC,co2 stored,-0.0
+Link,co2 sequestered,NO0 0AC,co2 sequestered,0.0
+Link,co2 sequestered,NO0 0AC,co2 stored,-0.0
+Link,co2 sequestered,PL2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,PL2 0AC,co2 stored,0.0
+Link,co2 sequestered,PT2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,PT2 0AC,co2 stored,0.0
+Link,co2 sequestered,RO2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,RO2 0AC,co2 stored,0.0
+Link,co2 sequestered,RS2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,RS2 0AC,co2 stored,0.0
+Link,co2 sequestered,SE0 0AC,co2 sequestered,0.0
+Link,co2 sequestered,SE0 0AC,co2 stored,0.0
+Link,co2 sequestered,SI2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,SI2 0AC,co2 stored,0.0
+Link,co2 sequestered,SK2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,SK2 0AC,co2 stored,0.0
+Link,co2 sequestered,XK2 0AC,co2 sequestered,0.0
+Link,co2 sequestered,XK2 0AC,co2 stored,0.0
+Link,electricity distribution grid,AL2 0AC,AC,-802951.13533
+Link,electricity distribution grid,AL2 0AC,low voltage,778727.15802
+Link,electricity distribution grid,AT2 0AC,AC,-14840706.2293
+Link,electricity distribution grid,AT2 0AC,low voltage,14395485.04242
+Link,electricity distribution grid,BA2 0AC,AC,-1581160.61861
+Link,electricity distribution grid,BA2 0AC,low voltage,1533725.80006
+Link,electricity distribution grid,BE2 0AC,AC,-23051501.99974
+Link,electricity distribution grid,BE2 0AC,low voltage,22359956.93975
+Link,electricity distribution grid,BG2 0AC,AC,-7647802.75074
+Link,electricity distribution grid,BG2 0AC,low voltage,7418368.66821
+Link,electricity distribution grid,CH2 0AC,AC,-9518242.05252
+Link,electricity distribution grid,CH2 0AC,low voltage,9232694.79094
+Link,electricity distribution grid,CZ2 0AC,AC,-17477675.00088
+Link,electricity distribution grid,CZ2 0AC,low voltage,16953344.75086
+Link,electricity distribution grid,DE2 0AC,AC,-130333307.6894
+Link,electricity distribution grid,DE2 0AC,low voltage,126423308.45871
+Link,electricity distribution grid,DK0 0AC,AC,-4406161.88839
+Link,electricity distribution grid,DK0 0AC,low voltage,4273977.03171
+Link,electricity distribution grid,DK2 0AC,AC,-4580066.11273
+Link,electricity distribution grid,DK2 0AC,low voltage,4442664.12932
+Link,electricity distribution grid,EE2 0AC,AC,-2395978.99945
+Link,electricity distribution grid,EE2 0AC,low voltage,2324099.62945
+Link,electricity distribution grid,ES2 0AC,AC,-37396616.22695
+Link,electricity distribution grid,ES2 0AC,low voltage,36274717.74014
+Link,electricity distribution grid,ES7 0AC,AC,-532365.10189
+Link,electricity distribution grid,ES7 0AC,low voltage,516394.14884
+Link,electricity distribution grid,FI0 0AC,AC,-24592775.99832
+Link,electricity distribution grid,FI0 0AC,low voltage,23854992.71837
+Link,electricity distribution grid,FR2 0AC,AC,-138448350.16876
+Link,electricity distribution grid,FR2 0AC,low voltage,134294899.6637
+Link,electricity distribution grid,FR6 0AC,AC,-281739.97196
+Link,electricity distribution grid,FR6 0AC,low voltage,273287.7728
+Link,electricity distribution grid,GB1 0AC,AC,-86680308.20771
+Link,electricity distribution grid,GB1 0AC,low voltage,84079898.96145
+Link,electricity distribution grid,GB3 0AC,AC,-2841190.82429
+Link,electricity distribution grid,GB3 0AC,low voltage,2755955.09951
+Link,electricity distribution grid,GB5 0AC,AC,-44124.13369
+Link,electricity distribution grid,GB5 0AC,low voltage,42800.40961
+Link,electricity distribution grid,GR2 0AC,AC,-7720584.83571
+Link,electricity distribution grid,GR2 0AC,low voltage,7488967.29063
+Link,electricity distribution grid,HR2 0AC,AC,-3189868.39594
+Link,electricity distribution grid,HR2 0AC,low voltage,3094172.34406
+Link,electricity distribution grid,HU2 0AC,AC,-10088484.99944
+Link,electricity distribution grid,HU2 0AC,low voltage,9785830.44945
+Link,electricity distribution grid,IE3 0AC,AC,-6978273.00086
+Link,electricity distribution grid,IE3 0AC,low voltage,6768924.8108
+Link,electricity distribution grid,IT2 0AC,AC,-52396434.08987
+Link,electricity distribution grid,IT2 0AC,low voltage,50824541.06718
+Link,electricity distribution grid,IT4 0AC,AC,-600852.04625
+Link,electricity distribution grid,IT4 0AC,low voltage,582826.48486
+Link,electricity distribution grid,LT2 0AC,AC,-2871552.99932
+Link,electricity distribution grid,LT2 0AC,low voltage,2785406.40933
+Link,electricity distribution grid,LU2 0AC,AC,-1640887.00028
+Link,electricity distribution grid,LU2 0AC,low voltage,1591660.39027
+Link,electricity distribution grid,LV2 0AC,AC,-1854040.02451
+Link,electricity distribution grid,LV2 0AC,low voltage,1798418.82376
+Link,electricity distribution grid,ME2 0AC,AC,-682478.67586
+Link,electricity distribution grid,ME2 0AC,low voltage,662004.31558
+Link,electricity distribution grid,MK2 0AC,AC,-1405760.51953
+Link,electricity distribution grid,MK2 0AC,low voltage,1363587.70395
+Link,electricity distribution grid,NL2 0AC,AC,-29841563.00074
+Link,electricity distribution grid,NL2 0AC,low voltage,28946316.1107
+Link,electricity distribution grid,NO0 0AC,AC,-38415905.91958
+Link,electricity distribution grid,NO0 0AC,low voltage,37263428.742
+Link,electricity distribution grid,PL2 0AC,AC,-38723895.00325
+Link,electricity distribution grid,PL2 0AC,low voltage,37562178.15314
+Link,electricity distribution grid,PT2 0AC,AC,-9944740.32797
+Link,electricity distribution grid,PT2 0AC,low voltage,9646398.11813
+Link,electricity distribution grid,RO2 0AC,AC,-11714814.05479
+Link,electricity distribution grid,RO2 0AC,low voltage,11363369.63314
+Link,electricity distribution grid,RS2 0AC,AC,-9756190.98582
+Link,electricity distribution grid,RS2 0AC,low voltage,9463505.25624
+Link,electricity distribution grid,SE0 0AC,AC,-43171365.25402
+Link,electricity distribution grid,SE0 0AC,low voltage,41876224.2964
+Link,electricity distribution grid,SI2 0AC,AC,-3389314.99994
+Link,electricity distribution grid,SI2 0AC,low voltage,3287635.54994
+Link,electricity distribution grid,SK2 0AC,AC,-7460015.49997
+Link,electricity distribution grid,SK2 0AC,low voltage,7236215.03497
+Link,electricity distribution grid,XK2 0AC,AC,-1223914.0863
+Link,electricity distribution grid,XK2 0AC,low voltage,1187196.66371
+Link,gas pipeline,AL2 0AC,AC,0.0
+Link,gas pipeline,AL2 0AC,gas,0.0
+Link,gas pipeline,AT2 0AC,AC,-0.0
+Link,gas pipeline,AT2 0AC,gas,1e-05
+Link,gas pipeline,BA2 0AC,AC,-0.0
+Link,gas pipeline,BA2 0AC,gas,2e-05
+Link,gas pipeline,BE2 0AC,AC,-0.0
+Link,gas pipeline,BE2 0AC,gas,-3e-05
+Link,gas pipeline,BG2 0AC,AC,-0.0
+Link,gas pipeline,BG2 0AC,gas,-0.0
+Link,gas pipeline,CH2 0AC,AC,-0.0
+Link,gas pipeline,CH2 0AC,gas,-1e-05
+Link,gas pipeline,CZ2 0AC,AC,-0.0
+Link,gas pipeline,CZ2 0AC,gas,1e-05
+Link,gas pipeline,DE2 0AC,AC,-2e-05
+Link,gas pipeline,DE2 0AC,gas,-2e-05
+Link,gas pipeline,DK0 0AC,AC,-0.0
+Link,gas pipeline,DK0 0AC,gas,-5e-05
+Link,gas pipeline,DK2 0AC,AC,-1e-05
+Link,gas pipeline,DK2 0AC,gas,4e-05
+Link,gas pipeline,EE2 0AC,AC,0.0
+Link,gas pipeline,EE2 0AC,gas,0.0
+Link,gas pipeline,ES2 0AC,AC,-0.0
+Link,gas pipeline,ES2 0AC,gas,-7e-05
+Link,gas pipeline,ES7 0AC,AC,-0.0
+Link,gas pipeline,ES7 0AC,gas,0.0
+Link,gas pipeline,FR2 0AC,AC,-0.0
+Link,gas pipeline,FR2 0AC,gas,1e-05
+Link,gas pipeline,GB1 0AC,AC,-2e-05
+Link,gas pipeline,GB1 0AC,gas,-2e-05
+Link,gas pipeline,GB3 0AC,AC,-0.0
+Link,gas pipeline,GB3 0AC,gas,4e-05
+Link,gas pipeline,GB5 0AC,AC,-1e-05
+Link,gas pipeline,GB5 0AC,gas,0.0
+Link,gas pipeline,GR2 0AC,AC,0.0
+Link,gas pipeline,GR2 0AC,gas,0.0
+Link,gas pipeline,HR2 0AC,AC,-0.0
+Link,gas pipeline,HR2 0AC,gas,-2e-05
+Link,gas pipeline,HU2 0AC,AC,-0.0
+Link,gas pipeline,HU2 0AC,gas,0.0001
+Link,gas pipeline,IE3 0AC,AC,0.0
+Link,gas pipeline,IE3 0AC,gas,0.0
+Link,gas pipeline,IT2 0AC,AC,-0.0
+Link,gas pipeline,IT2 0AC,gas,-3e-05
+Link,gas pipeline,LT2 0AC,AC,-0.0
+Link,gas pipeline,LT2 0AC,gas,-0.0
+Link,gas pipeline,LU2 0AC,AC,-0.0
+Link,gas pipeline,LU2 0AC,gas,2e-05
+Link,gas pipeline,LV2 0AC,AC,-0.0
+Link,gas pipeline,LV2 0AC,gas,0.0
+Link,gas pipeline,MK2 0AC,AC,0.0
+Link,gas pipeline,MK2 0AC,gas,0.0
+Link,gas pipeline,NL2 0AC,AC,-2e-05
+Link,gas pipeline,NL2 0AC,gas,-0.0
+Link,gas pipeline,NO0 0AC,AC,-0.0
+Link,gas pipeline,NO0 0AC,gas,0.0
+Link,gas pipeline,PL2 0AC,AC,-0.0
+Link,gas pipeline,PL2 0AC,gas,-1e-05
+Link,gas pipeline,PT2 0AC,AC,0.0
+Link,gas pipeline,PT2 0AC,gas,0.0
+Link,gas pipeline,RO2 0AC,AC,-0.0
+Link,gas pipeline,RO2 0AC,gas,0.0
+Link,gas pipeline,RS2 0AC,AC,-0.0
+Link,gas pipeline,RS2 0AC,gas,-2e-05
+Link,gas pipeline,SE0 0AC,AC,0.0
+Link,gas pipeline,SE0 0AC,gas,0.0
+Link,gas pipeline,SI2 0AC,AC,-0.0
+Link,gas pipeline,SI2 0AC,gas,1e-05
+Link,gas pipeline,SK2 0AC,AC,-0.0
+Link,gas pipeline,SK2 0AC,gas,3e-05
+Link,gas pipeline new,AL2 0AC,gas,-0.0
+Link,gas pipeline new,AT2 0AC,gas,2e-05
+Link,gas pipeline new,BA2 0AC,gas,-2e-05
+Link,gas pipeline new,BE2 0AC,gas,1e-05
+Link,gas pipeline new,BG2 0AC,gas,0.0
+Link,gas pipeline new,CH2 0AC,gas,1e-05
+Link,gas pipeline new,CZ2 0AC,gas,-3e-05
+Link,gas pipeline new,DK0 0AC,gas,0.0
+Link,gas pipeline new,DK2 0AC,gas,-0.0
+Link,gas pipeline new,EE2 0AC,gas,-0.0
+Link,gas pipeline new,ES2 0AC,gas,-0.0
+Link,gas pipeline new,ES7 0AC,gas,-0.0
+Link,gas pipeline new,FI0 0AC,gas,-0.0
+Link,gas pipeline new,FR6 0AC,gas,-0.0
+Link,gas pipeline new,GB1 0AC,gas,0.0
+Link,gas pipeline new,GB3 0AC,gas,0.0
+Link,gas pipeline new,GB5 0AC,gas,-0.0
+Link,gas pipeline new,GR2 0AC,gas,0.0
+Link,gas pipeline new,HR2 0AC,gas,3e-05
+Link,gas pipeline new,HU2 0AC,gas,2e-05
+Link,gas pipeline new,IE3 0AC,gas,-0.0
+Link,gas pipeline new,IT2 0AC,gas,0.0
+Link,gas pipeline new,IT4 0AC,gas,-0.0
+Link,gas pipeline new,LT2 0AC,gas,0.0
+Link,gas pipeline new,LU2 0AC,gas,-2e-05
+Link,gas pipeline new,LV2 0AC,gas,-0.0
+Link,gas pipeline new,ME2 0AC,gas,-0.0
+Link,gas pipeline new,MK2 0AC,gas,-0.0
+Link,gas pipeline new,NO0 0AC,gas,-0.0
+Link,gas pipeline new,PT2 0AC,gas,0.0
+Link,gas pipeline new,RO2 0AC,gas,-0.0
+Link,gas pipeline new,RS2 0AC,gas,-1e-05
+Link,gas pipeline new,SE0 0AC,gas,0.0
+Link,gas pipeline new,SI2 0AC,gas,-1e-05
+Link,gas pipeline new,SK2 0AC,gas,-1e-05
+Link,gas pipeline new,XK2 0AC,gas,-0.0
+Link,home battery charger,AL2 0AC,home battery,2e-05
+Link,home battery charger,AL2 0AC,low voltage,-2e-05
+Link,home battery charger,AT2 0AC,home battery,2e-05
+Link,home battery charger,AT2 0AC,low voltage,-2e-05
+Link,home battery charger,BA2 0AC,home battery,2e-05
+Link,home battery charger,BA2 0AC,low voltage,-2e-05
+Link,home battery charger,BE2 0AC,home battery,2e-05
+Link,home battery charger,BE2 0AC,low voltage,-2e-05
+Link,home battery charger,BG2 0AC,home battery,2e-05
+Link,home battery charger,BG2 0AC,low voltage,-2e-05
+Link,home battery charger,CH2 0AC,home battery,2e-05
+Link,home battery charger,CH2 0AC,low voltage,-2e-05
+Link,home battery charger,CZ2 0AC,home battery,2e-05
+Link,home battery charger,CZ2 0AC,low voltage,-2e-05
+Link,home battery charger,DE2 0AC,home battery,2e-05
+Link,home battery charger,DE2 0AC,low voltage,-2e-05
+Link,home battery charger,DK0 0AC,home battery,2e-05
+Link,home battery charger,DK0 0AC,low voltage,-2e-05
+Link,home battery charger,DK2 0AC,home battery,2e-05
+Link,home battery charger,DK2 0AC,low voltage,-2e-05
+Link,home battery charger,EE2 0AC,home battery,2e-05
+Link,home battery charger,EE2 0AC,low voltage,-2e-05
+Link,home battery charger,ES2 0AC,home battery,2e-05
+Link,home battery charger,ES2 0AC,low voltage,-2e-05
+Link,home battery charger,ES7 0AC,home battery,2e-05
+Link,home battery charger,ES7 0AC,low voltage,-2e-05
+Link,home battery charger,FI0 0AC,home battery,2e-05
+Link,home battery charger,FI0 0AC,low voltage,-2e-05
+Link,home battery charger,FR2 0AC,home battery,2e-05
+Link,home battery charger,FR2 0AC,low voltage,-2e-05
+Link,home battery charger,FR6 0AC,home battery,2e-05
+Link,home battery charger,FR6 0AC,low voltage,-2e-05
+Link,home battery charger,GB1 0AC,home battery,2e-05
+Link,home battery charger,GB1 0AC,low voltage,-2e-05
+Link,home battery charger,GB3 0AC,home battery,2e-05
+Link,home battery charger,GB3 0AC,low voltage,-2e-05
+Link,home battery charger,GB5 0AC,home battery,2e-05
+Link,home battery charger,GB5 0AC,low voltage,-2e-05
+Link,home battery charger,GR2 0AC,home battery,2e-05
+Link,home battery charger,GR2 0AC,low voltage,-2e-05
+Link,home battery charger,HR2 0AC,home battery,2e-05
+Link,home battery charger,HR2 0AC,low voltage,-2e-05
+Link,home battery charger,HU2 0AC,home battery,2e-05
+Link,home battery charger,HU2 0AC,low voltage,-2e-05
+Link,home battery charger,IE3 0AC,home battery,2e-05
+Link,home battery charger,IE3 0AC,low voltage,-2e-05
+Link,home battery charger,IT2 0AC,home battery,2e-05
+Link,home battery charger,IT2 0AC,low voltage,-2e-05
+Link,home battery charger,IT4 0AC,home battery,2e-05
+Link,home battery charger,IT4 0AC,low voltage,-2e-05
+Link,home battery charger,LT2 0AC,home battery,2e-05
+Link,home battery charger,LT2 0AC,low voltage,-2e-05
+Link,home battery charger,LU2 0AC,home battery,2e-05
+Link,home battery charger,LU2 0AC,low voltage,-2e-05
+Link,home battery charger,LV2 0AC,home battery,2e-05
+Link,home battery charger,LV2 0AC,low voltage,-2e-05
+Link,home battery charger,ME2 0AC,home battery,2e-05
+Link,home battery charger,ME2 0AC,low voltage,-2e-05
+Link,home battery charger,MK2 0AC,home battery,2e-05
+Link,home battery charger,MK2 0AC,low voltage,-2e-05
+Link,home battery charger,NL2 0AC,home battery,2e-05
+Link,home battery charger,NL2 0AC,low voltage,-2e-05
+Link,home battery charger,NO0 0AC,home battery,2e-05
+Link,home battery charger,NO0 0AC,low voltage,-2e-05
+Link,home battery charger,PL2 0AC,home battery,2e-05
+Link,home battery charger,PL2 0AC,low voltage,-2e-05
+Link,home battery charger,PT2 0AC,home battery,2e-05
+Link,home battery charger,PT2 0AC,low voltage,-2e-05
+Link,home battery charger,RO2 0AC,home battery,2e-05
+Link,home battery charger,RO2 0AC,low voltage,-2e-05
+Link,home battery charger,RS2 0AC,home battery,2e-05
+Link,home battery charger,RS2 0AC,low voltage,-2e-05
+Link,home battery charger,SE0 0AC,home battery,2e-05
+Link,home battery charger,SE0 0AC,low voltage,-2e-05
+Link,home battery charger,SI2 0AC,home battery,2e-05
+Link,home battery charger,SI2 0AC,low voltage,-2e-05
+Link,home battery charger,SK2 0AC,home battery,2e-05
+Link,home battery charger,SK2 0AC,low voltage,-2e-05
+Link,home battery charger,XK2 0AC,home battery,2e-05
+Link,home battery charger,XK2 0AC,low voltage,-2e-05
+Link,home battery discharger,AL2 0AC,home battery,-2e-05
+Link,home battery discharger,AL2 0AC,low voltage,2e-05
+Link,home battery discharger,AT2 0AC,home battery,-2e-05
+Link,home battery discharger,AT2 0AC,low voltage,2e-05
+Link,home battery discharger,BA2 0AC,home battery,-2e-05
+Link,home battery discharger,BA2 0AC,low voltage,2e-05
+Link,home battery discharger,BE2 0AC,home battery,-2e-05
+Link,home battery discharger,BE2 0AC,low voltage,2e-05
+Link,home battery discharger,BG2 0AC,home battery,-2e-05
+Link,home battery discharger,BG2 0AC,low voltage,2e-05
+Link,home battery discharger,CH2 0AC,home battery,-2e-05
+Link,home battery discharger,CH2 0AC,low voltage,2e-05
+Link,home battery discharger,CZ2 0AC,home battery,-2e-05
+Link,home battery discharger,CZ2 0AC,low voltage,2e-05
+Link,home battery discharger,DE2 0AC,home battery,-2e-05
+Link,home battery discharger,DE2 0AC,low voltage,2e-05
+Link,home battery discharger,DK0 0AC,home battery,-2e-05
+Link,home battery discharger,DK0 0AC,low voltage,2e-05
+Link,home battery discharger,DK2 0AC,home battery,-2e-05
+Link,home battery discharger,DK2 0AC,low voltage,2e-05
+Link,home battery discharger,EE2 0AC,home battery,-2e-05
+Link,home battery discharger,EE2 0AC,low voltage,2e-05
+Link,home battery discharger,ES2 0AC,home battery,-2e-05
+Link,home battery discharger,ES2 0AC,low voltage,2e-05
+Link,home battery discharger,ES7 0AC,home battery,-2e-05
+Link,home battery discharger,ES7 0AC,low voltage,2e-05
+Link,home battery discharger,FI0 0AC,home battery,-2e-05
+Link,home battery discharger,FI0 0AC,low voltage,2e-05
+Link,home battery discharger,FR2 0AC,home battery,-2e-05
+Link,home battery discharger,FR2 0AC,low voltage,2e-05
+Link,home battery discharger,FR6 0AC,home battery,-2e-05
+Link,home battery discharger,FR6 0AC,low voltage,2e-05
+Link,home battery discharger,GB1 0AC,home battery,-2e-05
+Link,home battery discharger,GB1 0AC,low voltage,2e-05
+Link,home battery discharger,GB3 0AC,home battery,-2e-05
+Link,home battery discharger,GB3 0AC,low voltage,2e-05
+Link,home battery discharger,GB5 0AC,home battery,-2e-05
+Link,home battery discharger,GB5 0AC,low voltage,2e-05
+Link,home battery discharger,GR2 0AC,home battery,-2e-05
+Link,home battery discharger,GR2 0AC,low voltage,2e-05
+Link,home battery discharger,HR2 0AC,home battery,-2e-05
+Link,home battery discharger,HR2 0AC,low voltage,2e-05
+Link,home battery discharger,HU2 0AC,home battery,-2e-05
+Link,home battery discharger,HU2 0AC,low voltage,2e-05
+Link,home battery discharger,IE3 0AC,home battery,-2e-05
+Link,home battery discharger,IE3 0AC,low voltage,2e-05
+Link,home battery discharger,IT2 0AC,home battery,-2e-05
+Link,home battery discharger,IT2 0AC,low voltage,2e-05
+Link,home battery discharger,IT4 0AC,home battery,-2e-05
+Link,home battery discharger,IT4 0AC,low voltage,2e-05
+Link,home battery discharger,LT2 0AC,home battery,-2e-05
+Link,home battery discharger,LT2 0AC,low voltage,2e-05
+Link,home battery discharger,LU2 0AC,home battery,-2e-05
+Link,home battery discharger,LU2 0AC,low voltage,2e-05
+Link,home battery discharger,LV2 0AC,home battery,-2e-05
+Link,home battery discharger,LV2 0AC,low voltage,2e-05
+Link,home battery discharger,ME2 0AC,home battery,-2e-05
+Link,home battery discharger,ME2 0AC,low voltage,2e-05
+Link,home battery discharger,MK2 0AC,home battery,-2e-05
+Link,home battery discharger,MK2 0AC,low voltage,2e-05
+Link,home battery discharger,NL2 0AC,home battery,-2e-05
+Link,home battery discharger,NL2 0AC,low voltage,2e-05
+Link,home battery discharger,NO0 0AC,home battery,-2e-05
+Link,home battery discharger,NO0 0AC,low voltage,2e-05
+Link,home battery discharger,PL2 0AC,home battery,-2e-05
+Link,home battery discharger,PL2 0AC,low voltage,2e-05
+Link,home battery discharger,PT2 0AC,home battery,-2e-05
+Link,home battery discharger,PT2 0AC,low voltage,2e-05
+Link,home battery discharger,RO2 0AC,home battery,-2e-05
+Link,home battery discharger,RO2 0AC,low voltage,2e-05
+Link,home battery discharger,RS2 0AC,home battery,-2e-05
+Link,home battery discharger,RS2 0AC,low voltage,2e-05
+Link,home battery discharger,SE0 0AC,home battery,-2e-05
+Link,home battery discharger,SE0 0AC,low voltage,2e-05
+Link,home battery discharger,SI2 0AC,home battery,-2e-05
+Link,home battery discharger,SI2 0AC,low voltage,2e-05
+Link,home battery discharger,SK2 0AC,home battery,-2e-05
+Link,home battery discharger,SK2 0AC,low voltage,2e-05
+Link,home battery discharger,XK2 0AC,home battery,-2e-05
+Link,home battery discharger,XK2 0AC,low voltage,2e-05
+Load,electricity,AL2 0AC,low voltage,-1922970.68027
+Load,electricity,AT2 0AC,low voltage,-18189764.94966
+Load,electricity,BA2 0AC,low voltage,-2836620.13573
+Load,electricity,BE2 0AC,low voltage,-22359956.93976
+Load,electricity,BG2 0AC,low voltage,-9982681.51411
+Load,electricity,CH2 0AC,low voltage,-13407824.03217
+Load,electricity,CZ2 0AC,low voltage,-16953344.75086
+Load,electricity,DE2 0AC,low voltage,-126423308.45871
+Load,electricity,DK0 0AC,low voltage,-4273977.03172
+Load,electricity,DK2 0AC,low voltage,-4442664.12932
+Load,electricity,EE2 0AC,low voltage,-2324099.62946
+Load,electricity,ES2 0AC,low voltage,-61343580.01916
+Load,electricity,ES7 0AC,low voltage,-958051.39943
+Load,electricity,FI0 0AC,low voltage,-23854992.71883
+Load,electricity,FR2 0AC,low voltage,-146919187.29496
+Load,electricity,FR6 0AC,low voltage,-403362.19369
+Load,electricity,GB1 0AC,low voltage,-84079898.96145
+Load,electricity,GB3 0AC,low voltage,-2755955.09951
+Load,electricity,GB5 0AC,low voltage,-42800.40961
+Load,electricity,GR2 0AC,low voltage,-11724934.17001
+Load,electricity,HR2 0AC,low voltage,-4422639.34015
+Load,electricity,HU2 0AC,low voltage,-9785830.44946
+Load,electricity,IE3 0AC,low voltage,-6768924.8108
+Load,electricity,IT2 0AC,low voltage,-76748059.78796
+Load,electricity,IT4 0AC,low voltage,-1260564.35289
+Load,electricity,LT2 0AC,low voltage,-2785406.40935
+Load,electricity,LU2 0AC,low voltage,-1591660.39027
+Load,electricity,LV2 0AC,low voltage,-2045200.37981
+Load,electricity,ME2 0AC,low voltage,-939831.06031
+Load,electricity,MK2 0AC,low voltage,-2245826.44996
+Load,electricity,NL2 0AC,low voltage,-28946316.1107
+Load,electricity,NO0 0AC,low voltage,-38822202.33198
+Load,electricity,PL2 0AC,low voltage,-37562178.15315
+Load,electricity,PT2 0AC,low voltage,-12431236.75853
+Load,electricity,RO2 0AC,low voltage,-13518301.21171
+Load,electricity,RS2 0AC,low voltage,-11321084.3685
+Load,electricity,SE0 0AC,low voltage,-41957296.64962
+Load,electricity,SI2 0AC,low voltage,-3287635.54995
+Load,electricity,SK2 0AC,low voltage,-7236215.03498
+Load,electricity,XK2 0AC,low voltage,-1847266.44292
+StorageUnit,PHS,AT2 0AC,AC,-972219.79421
+StorageUnit,PHS,BA2 0AC,AC,-2.00865
+StorageUnit,PHS,BE2 0AC,AC,-6593.34007
+StorageUnit,PHS,BG2 0AC,AC,-15784.75636
+StorageUnit,PHS,CH2 0AC,AC,-189034.12601
+StorageUnit,PHS,CZ2 0AC,AC,-1958.66079
+StorageUnit,PHS,DE2 0AC,AC,-159819.44692
+StorageUnit,PHS,ES2 0AC,AC,-1387851.96569
+StorageUnit,PHS,FR2 0AC,AC,-48458.17911
+StorageUnit,PHS,GB1 0AC,AC,-10213.71127
+StorageUnit,PHS,GR2 0AC,AC,-2967.58043
+StorageUnit,PHS,HR2 0AC,AC,-7430.24695
+StorageUnit,PHS,IE3 0AC,AC,-2078.46111
+StorageUnit,PHS,IT2 0AC,AC,-202777.36651
+StorageUnit,PHS,IT4 0AC,AC,-20472.30485
+StorageUnit,PHS,LT2 0AC,AC,-9353.07439
+StorageUnit,PHS,LU2 0AC,AC,-8965.09498
+StorageUnit,PHS,ME2 0AC,AC,-1063.4792
+StorageUnit,PHS,NO0 0AC,AC,-25485.6
+StorageUnit,PHS,PL2 0AC,AC,-19799.62566
+StorageUnit,PHS,PT2 0AC,AC,-690331.59486
+StorageUnit,PHS,RS2 0AC,AC,-49201.66305
+StorageUnit,PHS,SE0 0AC,AC,-15288.0
+StorageUnit,PHS,SI2 0AC,AC,-623.5383
+StorageUnit,PHS,SK2 0AC,AC,-5291.34593
+StorageUnit,hydro,AL2 0AC,AC,2361111.77869
+StorageUnit,hydro,AT2 0AC,AC,3700050.90332
+StorageUnit,hydro,BA2 0AC,AC,2744658.81647
+StorageUnit,hydro,BE2 0AC,AC,27509.04459
+StorageUnit,hydro,BG2 0AC,AC,965881.26171
+StorageUnit,hydro,CH2 0AC,AC,2333288.52192
+StorageUnit,hydro,CZ2 0AC,AC,549044.3582
+StorageUnit,hydro,DE2 0AC,AC,514951.38706
+StorageUnit,hydro,ES2 0AC,AC,11527087.50363
+StorageUnit,hydro,FI0 0AC,AC,1711915.7656
+StorageUnit,hydro,FR2 0AC,AC,7690671.72041
+StorageUnit,hydro,FR6 0AC,AC,173902.52104
+StorageUnit,hydro,GB1 0AC,AC,194924.2915
+StorageUnit,hydro,GR2 0AC,AC,3099286.51597
+StorageUnit,hydro,HR2 0AC,AC,2608030.54091
+StorageUnit,hydro,HU2 0AC,AC,27494.53635
+StorageUnit,hydro,IE3 0AC,AC,44628.33786
+StorageUnit,hydro,IT2 0AC,AC,3017071.89046
+StorageUnit,hydro,IT4 0AC,AC,86892.61418
+StorageUnit,hydro,LT2 0AC,AC,181290.19761
+StorageUnit,hydro,ME2 0AC,AC,634039.22066
+StorageUnit,hydro,MK2 0AC,AC,320010.29224
+StorageUnit,hydro,NO0 0AC,AC,13344770.98306
+StorageUnit,hydro,PL2 0AC,AC,240333.81714
+StorageUnit,hydro,PT2 0AC,AC,2190436.14493
+StorageUnit,hydro,RO2 0AC,AC,942197.51458
+StorageUnit,hydro,RS2 0AC,AC,2035405.54834
+StorageUnit,hydro,SE0 0AC,AC,9630768.98286
+StorageUnit,hydro,SI2 0AC,AC,281490.21857
+StorageUnit,hydro,SK2 0AC,AC,65827.87043
+StorageUnit,hydro,XK2 0AC,AC,22492.62252
+Store,H2 Store,AL2 0AC,H2,0.0
+Store,H2 Store,AT2 0AC,H2,0.0
+Store,H2 Store,BA2 0AC,H2,0.0
+Store,H2 Store,BE2 0AC,H2,0.0
+Store,H2 Store,BG2 0AC,H2,0.0
+Store,H2 Store,CH2 0AC,H2,0.0
+Store,H2 Store,CZ2 0AC,H2,0.0
+Store,H2 Store,DE2 0AC,H2,-0.0
+Store,H2 Store,DK0 0AC,H2,0.0
+Store,H2 Store,DK2 0AC,H2,-0.0
+Store,H2 Store,EE2 0AC,H2,0.0
+Store,H2 Store,ES2 0AC,H2,-0.0
+Store,H2 Store,ES7 0AC,H2,0.0
+Store,H2 Store,FI0 0AC,H2,0.0
+Store,H2 Store,FR2 0AC,H2,-0.0
+Store,H2 Store,FR6 0AC,H2,0.0
+Store,H2 Store,GB1 0AC,H2,-0.0
+Store,H2 Store,GB3 0AC,H2,0.0
+Store,H2 Store,GB5 0AC,H2,0.0
+Store,H2 Store,GR2 0AC,H2,-0.0
+Store,H2 Store,HR2 0AC,H2,-0.0
+Store,H2 Store,HU2 0AC,H2,-0.0
+Store,H2 Store,IE3 0AC,H2,0.0
+Store,H2 Store,IT2 0AC,H2,0.0
+Store,H2 Store,IT4 0AC,H2,-0.0
+Store,H2 Store,LT2 0AC,H2,0.0
+Store,H2 Store,LU2 0AC,H2,0.0
+Store,H2 Store,LV2 0AC,H2,0.0
+Store,H2 Store,ME2 0AC,H2,0.0
+Store,H2 Store,MK2 0AC,H2,0.0
+Store,H2 Store,NL2 0AC,H2,-0.0
+Store,H2 Store,NO0 0AC,H2,-0.0
+Store,H2 Store,PL2 0AC,H2,-0.0
+Store,H2 Store,PT2 0AC,H2,0.0
+Store,H2 Store,RO2 0AC,H2,0.0
+Store,H2 Store,RS2 0AC,H2,-0.0
+Store,H2 Store,SE0 0AC,H2,-0.0
+Store,H2 Store,SI2 0AC,H2,-0.0
+Store,H2 Store,SK2 0AC,H2,0.0
+Store,H2 Store,XK2 0AC,H2,-0.0
+Store,ammonia store,EU,NH3,-0.0
+Store,battery,AL2 0AC,battery,0.0
+Store,battery,AT2 0AC,battery,0.0
+Store,battery,BA2 0AC,battery,0.0
+Store,battery,BE2 0AC,battery,0.0
+Store,battery,BG2 0AC,battery,0.0
+Store,battery,CH2 0AC,battery,0.0
+Store,battery,CZ2 0AC,battery,0.0
+Store,battery,DE2 0AC,battery,0.0
+Store,battery,DK0 0AC,battery,0.0
+Store,battery,DK2 0AC,battery,0.0
+Store,battery,EE2 0AC,battery,0.0
+Store,battery,ES2 0AC,battery,0.0
+Store,battery,ES7 0AC,battery,0.0
+Store,battery,FI0 0AC,battery,0.0
+Store,battery,FR2 0AC,battery,0.0
+Store,battery,FR6 0AC,battery,0.0
+Store,battery,GB1 0AC,battery,0.0
+Store,battery,GB3 0AC,battery,0.0
+Store,battery,GB5 0AC,battery,0.0
+Store,battery,GR2 0AC,battery,0.0
+Store,battery,HR2 0AC,battery,0.0
+Store,battery,HU2 0AC,battery,0.0
+Store,battery,IE3 0AC,battery,0.0
+Store,battery,IT2 0AC,battery,0.0
+Store,battery,IT4 0AC,battery,0.0
+Store,battery,LT2 0AC,battery,0.0
+Store,battery,LU2 0AC,battery,0.0
+Store,battery,LV2 0AC,battery,0.0
+Store,battery,ME2 0AC,battery,0.0
+Store,battery,MK2 0AC,battery,0.0
+Store,battery,NL2 0AC,battery,0.0
+Store,battery,NO0 0AC,battery,0.0
+Store,battery,PL2 0AC,battery,0.0
+Store,battery,PT2 0AC,battery,0.0
+Store,battery,RO2 0AC,battery,0.0
+Store,battery,RS2 0AC,battery,0.0
+Store,battery,SE0 0AC,battery,0.0
+Store,battery,SI2 0AC,battery,0.0
+Store,battery,SK2 0AC,battery,0.0
+Store,battery,XK2 0AC,battery,0.0
+Store,co2,EU,co2,0.0
+Store,co2 sequestered,AL2 0AC,co2 sequestered,0.0
+Store,co2 sequestered,AT2 0AC,co2 sequestered,0.0
+Store,co2 sequestered,BA2 0AC,co2 sequestered,0.0
+Store,co2 sequestered,BE2 0AC,co2 sequestered,0.0
+Store,co2 sequestered,BG2 0AC,co2 sequestered,-0.0
+Store,co2 sequestered,CH2 0AC,co2 sequestered,0.0
+Store,co2 sequestered,CZ2 0AC,co2 sequestered,0.0
+Store,co2 sequestered,DE2 0AC,co2 sequestered,-0.0
+Store,co2 sequestered,DK0 0AC,co2 sequestered,-0.0
+Store,co2 sequestered,DK2 0AC,co2 sequestered,-0.0
+Store,co2 sequestered,EE2 0AC,co2 sequestered,0.0
+Store,co2 sequestered,ES2 0AC,co2 sequestered,0.0
+Store,co2 sequestered,ES7 0AC,co2 sequestered,0.0
+Store,co2 sequestered,FI0 0AC,co2 sequestered,0.0
+Store,co2 sequestered,FR2 0AC,co2 sequestered,0.0
+Store,co2 sequestered,FR6 0AC,co2 sequestered,0.0
+Store,co2 sequestered,GB1 0AC,co2 sequestered,-0.0
+Store,co2 sequestered,GB3 0AC,co2 sequestered,0.0
+Store,co2 sequestered,GB5 0AC,co2 sequestered,-0.0
+Store,co2 sequestered,GR2 0AC,co2 sequestered,-0.0
+Store,co2 sequestered,HR2 0AC,co2 sequestered,0.0
+Store,co2 sequestered,HU2 0AC,co2 sequestered,0.0
+Store,co2 sequestered,IE3 0AC,co2 sequestered,0.0
+Store,co2 sequestered,IT2 0AC,co2 sequestered,0.0
+Store,co2 sequestered,IT4 0AC,co2 sequestered,0.0
+Store,co2 sequestered,LT2 0AC,co2 sequestered,-0.0
+Store,co2 sequestered,LU2 0AC,co2 sequestered,0.0
+Store,co2 sequestered,LV2 0AC,co2 sequestered,-0.0
+Store,co2 sequestered,ME2 0AC,co2 sequestered,0.0
+Store,co2 sequestered,MK2 0AC,co2 sequestered,0.0
+Store,co2 sequestered,NL2 0AC,co2 sequestered,-0.0
+Store,co2 sequestered,NO0 0AC,co2 sequestered,-0.0
+Store,co2 sequestered,PL2 0AC,co2 sequestered,0.0
+Store,co2 sequestered,PT2 0AC,co2 sequestered,0.0
+Store,co2 sequestered,RO2 0AC,co2 sequestered,0.0
+Store,co2 sequestered,RS2 0AC,co2 sequestered,0.0
+Store,co2 sequestered,SE0 0AC,co2 sequestered,0.0
+Store,co2 sequestered,SI2 0AC,co2 sequestered,0.0
+Store,co2 sequestered,SK2 0AC,co2 sequestered,0.0
+Store,co2 sequestered,XK2 0AC,co2 sequestered,0.0
+Store,co2 stored,AL2 0AC,co2 stored,0.0
+Store,co2 stored,AT2 0AC,co2 stored,0.0
+Store,co2 stored,BA2 0AC,co2 stored,-0.0
+Store,co2 stored,BE2 0AC,co2 stored,-0.0
+Store,co2 stored,BG2 0AC,co2 stored,-0.0
+Store,co2 stored,CH2 0AC,co2 stored,-0.0
+Store,co2 stored,CZ2 0AC,co2 stored,0.0
+Store,co2 stored,DE2 0AC,co2 stored,-0.0
+Store,co2 stored,DK0 0AC,co2 stored,-0.0
+Store,co2 stored,DK2 0AC,co2 stored,-0.0
+Store,co2 stored,EE2 0AC,co2 stored,0.0
+Store,co2 stored,ES2 0AC,co2 stored,-0.0
+Store,co2 stored,ES7 0AC,co2 stored,-0.0
+Store,co2 stored,FI0 0AC,co2 stored,-0.0
+Store,co2 stored,FR2 0AC,co2 stored,-0.0
+Store,co2 stored,FR6 0AC,co2 stored,0.0
+Store,co2 stored,GB1 0AC,co2 stored,-0.0
+Store,co2 stored,GB3 0AC,co2 stored,-0.0
+Store,co2 stored,GB5 0AC,co2 stored,0.0
+Store,co2 stored,GR2 0AC,co2 stored,0.0
+Store,co2 stored,HR2 0AC,co2 stored,0.0
+Store,co2 stored,HU2 0AC,co2 stored,-0.0
+Store,co2 stored,IE3 0AC,co2 stored,0.0
+Store,co2 stored,IT2 0AC,co2 stored,-0.0
+Store,co2 stored,IT4 0AC,co2 stored,-0.0
+Store,co2 stored,LT2 0AC,co2 stored,-0.0
+Store,co2 stored,LU2 0AC,co2 stored,0.0
+Store,co2 stored,LV2 0AC,co2 stored,-0.0
+Store,co2 stored,ME2 0AC,co2 stored,0.0
+Store,co2 stored,MK2 0AC,co2 stored,0.0
+Store,co2 stored,NL2 0AC,co2 stored,-0.0
+Store,co2 stored,NO0 0AC,co2 stored,0.0
+Store,co2 stored,PL2 0AC,co2 stored,-0.0
+Store,co2 stored,PT2 0AC,co2 stored,-0.0
+Store,co2 stored,RO2 0AC,co2 stored,0.0
+Store,co2 stored,RS2 0AC,co2 stored,0.0
+Store,co2 stored,SE0 0AC,co2 stored,-0.0
+Store,co2 stored,SI2 0AC,co2 stored,-0.0
+Store,co2 stored,SK2 0AC,co2 stored,-0.0
+Store,co2 stored,XK2 0AC,co2 stored,0.0
+Store,gas,AL2 0AC,gas,-0.0
+Store,gas,AT2 0AC,gas,0.0
+Store,gas,BA2 0AC,gas,-0.0
+Store,gas,BE2 0AC,gas,0.0
+Store,gas,BG2 0AC,gas,-0.0
+Store,gas,CH2 0AC,gas,-0.0
+Store,gas,CZ2 0AC,gas,0.0
+Store,gas,DE2 0AC,gas,0.0
+Store,gas,DK0 0AC,gas,-0.0
+Store,gas,DK2 0AC,gas,0.0
+Store,gas,EE2 0AC,gas,0.0
+Store,gas,ES2 0AC,gas,-0.0
+Store,gas,ES7 0AC,gas,-0.0
+Store,gas,FI0 0AC,gas,-0.0
+Store,gas,FR2 0AC,gas,0.0
+Store,gas,FR6 0AC,gas,0.0
+Store,gas,GB1 0AC,gas,-0.0
+Store,gas,GB3 0AC,gas,-0.0
+Store,gas,GB5 0AC,gas,-0.0
+Store,gas,GR2 0AC,gas,0.0
+Store,gas,HR2 0AC,gas,0.0
+Store,gas,HU2 0AC,gas,0.0
+Store,gas,IE3 0AC,gas,0.0
+Store,gas,IT2 0AC,gas,0.0
+Store,gas,IT4 0AC,gas,-0.0
+Store,gas,LT2 0AC,gas,-0.0
+Store,gas,LU2 0AC,gas,0.0
+Store,gas,LV2 0AC,gas,0.0
+Store,gas,ME2 0AC,gas,0.0
+Store,gas,MK2 0AC,gas,-0.0
+Store,gas,NL2 0AC,gas,0.0
+Store,gas,NO0 0AC,gas,0.0
+Store,gas,PL2 0AC,gas,0.0
+Store,gas,PT2 0AC,gas,-0.0
+Store,gas,RO2 0AC,gas,0.0
+Store,gas,RS2 0AC,gas,-0.0
+Store,gas,SE0 0AC,gas,-0.0
+Store,gas,SI2 0AC,gas,0.0
+Store,gas,SK2 0AC,gas,0.0
+Store,gas,XK2 0AC,gas,-0.0
+Store,home battery,AL2 0AC,home battery,0.0
+Store,home battery,AT2 0AC,home battery,-0.0
+Store,home battery,BA2 0AC,home battery,-0.0
+Store,home battery,BE2 0AC,home battery,0.0
+Store,home battery,BG2 0AC,home battery,-0.0
+Store,home battery,CH2 0AC,home battery,-0.0
+Store,home battery,CZ2 0AC,home battery,0.0
+Store,home battery,DE2 0AC,home battery,-0.0
+Store,home battery,DK0 0AC,home battery,-0.0
+Store,home battery,DK2 0AC,home battery,0.0
+Store,home battery,EE2 0AC,home battery,0.0
+Store,home battery,ES2 0AC,home battery,0.0
+Store,home battery,ES7 0AC,home battery,-0.0
+Store,home battery,FI0 0AC,home battery,-0.0
+Store,home battery,FR2 0AC,home battery,-0.0
+Store,home battery,FR6 0AC,home battery,-0.0
+Store,home battery,GB1 0AC,home battery,0.0
+Store,home battery,GB3 0AC,home battery,0.0
+Store,home battery,GB5 0AC,home battery,0.0
+Store,home battery,GR2 0AC,home battery,-0.0
+Store,home battery,HR2 0AC,home battery,0.0
+Store,home battery,HU2 0AC,home battery,0.0
+Store,home battery,IE3 0AC,home battery,-0.0
+Store,home battery,IT2 0AC,home battery,-0.0
+Store,home battery,IT4 0AC,home battery,-0.0
+Store,home battery,LT2 0AC,home battery,0.0
+Store,home battery,LU2 0AC,home battery,0.0
+Store,home battery,LV2 0AC,home battery,0.0
+Store,home battery,ME2 0AC,home battery,-0.0
+Store,home battery,MK2 0AC,home battery,0.0
+Store,home battery,NL2 0AC,home battery,0.0
+Store,home battery,NO0 0AC,home battery,-0.0
+Store,home battery,PL2 0AC,home battery,-0.0
+Store,home battery,PT2 0AC,home battery,0.0
+Store,home battery,RO2 0AC,home battery,-0.0
+Store,home battery,RS2 0AC,home battery,-0.0
+Store,home battery,SE0 0AC,home battery,0.0
+Store,home battery,SI2 0AC,home battery,0.0
+Store,home battery,SK2 0AC,home battery,-0.0
+Store,home battery,XK2 0AC,home battery,-0.0
+Store,methanol,EU,methanol,0.0

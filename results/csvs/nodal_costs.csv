@@ -1,0 +1,2707 @@
+cluster,,,,40
+opt,,,,lv1.2Co2L0-168H
+planning_horizon,,,,2030
+cost,component,location,carrier,
+capital,Generator,AL2 0AC,offwind-ac,9e-05
+capital,Generator,AL2 0AC,offwind-float,9e-05
+capital,Generator,AL2 0AC,onwind,5057456.21685
+capital,Generator,AL2 0AC,ror,37018925.44979
+capital,Generator,AL2 0AC,solar,4787484.47515
+capital,Generator,AL2 0AC,solar rooftop,57222004.20028
+capital,Generator,AL2 0AC,solar-hsat,0.00014
+capital,Generator,AT2 0AC,onwind,94021482.70859
+capital,Generator,AT2 0AC,ror,231104667.83959
+capital,Generator,AT2 0AC,solar,282944860.87239
+capital,Generator,AT2 0AC,solar rooftop,196268771.60715
+capital,Generator,AT2 0AC,solar-hsat,0.00021
+capital,Generator,BA2 0AC,offwind-ac,7e-05
+capital,Generator,BA2 0AC,offwind-float,5e-05
+capital,Generator,BA2 0AC,onwind,8226795.44607
+capital,Generator,BA2 0AC,ror,1350823.2585
+capital,Generator,BA2 0AC,solar,7629968.90515
+capital,Generator,BA2 0AC,solar rooftop,72311464.30125
+capital,Generator,BA2 0AC,solar-hsat,9e-05
+capital,Generator,BE2 0AC,nuclear,957210598.97419
+capital,Generator,BE2 0AC,offwind-ac,185816176.97456
+capital,Generator,BE2 0AC,offwind-dc,63972073.97947
+capital,Generator,BE2 0AC,offwind-float,8e-05
+capital,Generator,BE2 0AC,onwind,252161410.54794
+capital,Generator,BE2 0AC,ror,5642049.19445
+capital,Generator,BE2 0AC,solar,12672912.03802
+capital,Generator,BE2 0AC,solar rooftop,0.00059
+capital,Generator,BE2 0AC,solar-hsat,7e-05
+capital,Generator,BG2 0AC,nuclear,486083507.29158
+capital,Generator,BG2 0AC,offwind-ac,0.0002
+capital,Generator,BG2 0AC,offwind-dc,1163596.55489
+capital,Generator,BG2 0AC,offwind-float,0.00012
+capital,Generator,BG2 0AC,onwind,20499555.86561
+capital,Generator,BG2 0AC,ror,23292052.47163
+capital,Generator,BG2 0AC,solar,48712857.27924
+capital,Generator,BG2 0AC,solar rooftop,143303331.64796
+capital,Generator,BG2 0AC,solar-hsat,9e-05
+capital,Generator,CH2 0AC,nuclear,723282911.09012
+capital,Generator,CH2 0AC,onwind,1854400.61284
+capital,Generator,CH2 0AC,ror,375550672.01089
+capital,Generator,CH2 0AC,solar,1063660614.98454
+capital,Generator,CH2 0AC,solar rooftop,175366623.07947
+capital,Generator,CH2 0AC,solar-hsat,0.00021
+capital,Generator,CZ2 0AC,nuclear,973101790.55872
+capital,Generator,CZ2 0AC,onwind,5234804.34819
+capital,Generator,CZ2 0AC,ror,3881338.05556
+capital,Generator,CZ2 0AC,solar,39967858.64012
+capital,Generator,CZ2 0AC,solar rooftop,0.00024
+capital,Generator,CZ2 0AC,solar-hsat,6e-05
+capital,Generator,DE2 0AC,offwind-ac,754459038.25982
+capital,Generator,DE2 0AC,offwind-dc,909671021.7577
+capital,Generator,DE2 0AC,offwind-float,9e-05
+capital,Generator,DE2 0AC,onwind,2472491417.19934
+capital,Generator,DE2 0AC,ror,387311779.60798
+capital,Generator,DE2 0AC,solar,659235450.08885
+capital,Generator,DE2 0AC,solar rooftop,0.00051
+capital,Generator,DE2 0AC,solar-hsat,7e-05
+capital,Generator,DK0 0AC,offwind-ac,73490941.70488
+capital,Generator,DK0 0AC,offwind-dc,0.00013
+capital,Generator,DK0 0AC,offwind-float,7e-05
+capital,Generator,DK0 0AC,onwind,540658334.04909
+capital,Generator,DK0 0AC,solar,11548353.29062
+capital,Generator,DK0 0AC,solar rooftop,0.00017
+capital,Generator,DK0 0AC,solar-hsat,6e-05
+capital,Generator,DK2 0AC,offwind-ac,109295631.87125
+capital,Generator,DK2 0AC,offwind-dc,0.0001
+capital,Generator,DK2 0AC,offwind-float,7e-05
+capital,Generator,DK2 0AC,onwind,1385139872.17766
+capital,Generator,DK2 0AC,solar,34189559.51383
+capital,Generator,DK2 0AC,solar rooftop,0.00013
+capital,Generator,DK2 0AC,solar-hsat,5e-05
+capital,Generator,EE2 0AC,offwind-ac,0.00015
+capital,Generator,EE2 0AC,offwind-dc,0.00016
+capital,Generator,EE2 0AC,offwind-float,7e-05
+capital,Generator,EE2 0AC,onwind,429528210.00894
+capital,Generator,EE2 0AC,solar,15661372.84391
+capital,Generator,EE2 0AC,solar rooftop,0.00051
+capital,Generator,EE2 0AC,solar-hsat,7e-05
+capital,Generator,ES2 0AC,nuclear,1731205106.73848
+capital,Generator,ES2 0AC,offwind-ac,1329943.31587
+capital,Generator,ES2 0AC,offwind-float,6e-05
+capital,Generator,ES2 0AC,onwind,1071934588.43485
+capital,Generator,ES2 0AC,ror,47934522.95478
+capital,Generator,ES2 0AC,solar,552505714.68304
+capital,Generator,ES2 0AC,solar rooftop,903113377.3589
+capital,Generator,ES2 0AC,solar-hsat,9e-05
+capital,Generator,ES7 0AC,offwind-ac,7e-05
+capital,Generator,ES7 0AC,offwind-float,6e-05
+capital,Generator,ES7 0AC,onwind,4742231.21433
+capital,Generator,ES7 0AC,solar,5292995.25821
+capital,Generator,ES7 0AC,solar rooftop,15000220.52186
+capital,Generator,ES7 0AC,solar-hsat,0.0001
+capital,Generator,FI0 0AC,nuclear,1080133639.76043
+capital,Generator,FI0 0AC,offwind-ac,0.00092
+capital,Generator,FI0 0AC,offwind-dc,0.00098
+capital,Generator,FI0 0AC,offwind-float,0.0001
+capital,Generator,FI0 0AC,onwind,291926487.74863
+capital,Generator,FI0 0AC,ror,115939230.52985
+capital,Generator,FI0 0AC,solar,3425038.30038
+capital,Generator,FI0 0AC,solar rooftop,0.03207
+capital,Generator,FI0 0AC,solar-hsat,8e-05
+capital,Generator,FR2 0AC,nuclear,15351358458.64613
+capital,Generator,FR2 0AC,offwind-ac,135700783.52942
+capital,Generator,FR2 0AC,offwind-dc,0.00018
+capital,Generator,FR2 0AC,offwind-float,0.0001
+capital,Generator,FR2 0AC,onwind,817150059.14273
+capital,Generator,FR2 0AC,ror,687589698.29108
+capital,Generator,FR2 0AC,solar,178940193.10603
+capital,Generator,FR2 0AC,solar rooftop,687213485.20377
+capital,Generator,FR2 0AC,solar-hsat,8e-05
+capital,Generator,FR6 0AC,offwind-ac,6e-05
+capital,Generator,FR6 0AC,offwind-float,6e-05
+capital,Generator,FR6 0AC,onwind,573178.37125
+capital,Generator,FR6 0AC,solar,0.00025
+capital,Generator,FR6 0AC,solar rooftop,5726174.451
+capital,Generator,FR6 0AC,solar-hsat,0.00012
+capital,Generator,GB1 0AC,nuclear,1526956556.07846
+capital,Generator,GB1 0AC,offwind-ac,1530328991.32324
+capital,Generator,GB1 0AC,offwind-dc,0.00013
+capital,Generator,GB1 0AC,offwind-float,0.00011
+capital,Generator,GB1 0AC,onwind,2355963051.14199
+capital,Generator,GB1 0AC,ror,323136220.90919
+capital,Generator,GB1 0AC,solar,181370240.47924
+capital,Generator,GB1 0AC,solar rooftop,0.00026
+capital,Generator,GB1 0AC,solar-hsat,6e-05
+capital,Generator,GB3 0AC,offwind-ac,0.00027
+capital,Generator,GB3 0AC,offwind-dc,0.00039
+capital,Generator,GB3 0AC,offwind-float,0.00012
+capital,Generator,GB3 0AC,onwind,270966685.05048
+capital,Generator,GB3 0AC,solar,2828968.09893
+capital,Generator,GB3 0AC,solar rooftop,0.00029
+capital,Generator,GB3 0AC,solar-hsat,7e-05
+capital,Generator,GB5 0AC,offwind-ac,41826641.50184
+capital,Generator,GB5 0AC,offwind-dc,0.00027
+capital,Generator,GB5 0AC,offwind-float,0.00011
+capital,Generator,GB5 0AC,onwind,45563197.41808
+capital,Generator,GB5 0AC,solar,5e-05
+capital,Generator,GB5 0AC,solar rooftop,0.00013
+capital,Generator,GB5 0AC,solar-hsat,4e-05
+capital,Generator,GR2 0AC,offwind-ac,9e-05
+capital,Generator,GR2 0AC,offwind-dc,0.00027
+capital,Generator,GR2 0AC,offwind-float,9e-05
+capital,Generator,GR2 0AC,onwind,205447358.07809
+capital,Generator,GR2 0AC,ror,2827080.1053
+capital,Generator,GR2 0AC,solar,1020262600.66002
+capital,Generator,GR2 0AC,solar rooftop,175716421.15786
+capital,Generator,GR2 0AC,solar-hsat,0.00017
+capital,Generator,HR2 0AC,offwind-ac,8e-05
+capital,Generator,HR2 0AC,offwind-dc,8e-05
+capital,Generator,HR2 0AC,offwind-float,7e-05
+capital,Generator,HR2 0AC,onwind,38436667.24801
+capital,Generator,HR2 0AC,ror,36256842.13379
+capital,Generator,HR2 0AC,solar,4957790.24696
+capital,Generator,HR2 0AC,solar rooftop,80878434.26054
+capital,Generator,HR2 0AC,solar-hsat,8e-05
+capital,Generator,HU2 0AC,nuclear,473697725.6154
+capital,Generator,HU2 0AC,onwind,10755523.55449
+capital,Generator,HU2 0AC,ror,1727124.02337
+capital,Generator,HU2 0AC,solar,54942534.28257
+capital,Generator,HU2 0AC,solar rooftop,0.00068
+capital,Generator,HU2 0AC,solar-hsat,7e-05
+capital,Generator,IE3 0AC,offwind-ac,1666373.21632
+capital,Generator,IE3 0AC,offwind-dc,0.00042
+capital,Generator,IE3 0AC,offwind-float,0.00014
+capital,Generator,IE3 0AC,onwind,153837703.20395
+capital,Generator,IE3 0AC,ror,20744785.75559
+capital,Generator,IE3 0AC,solar,18851226.98318
+capital,Generator,IE3 0AC,solar rooftop,0.00037
+capital,Generator,IE3 0AC,solar-hsat,7e-05
+capital,Generator,IT2 0AC,offwind-ac,2001310.90243
+capital,Generator,IT2 0AC,offwind-dc,0.00011
+capital,Generator,IT2 0AC,offwind-float,8e-05
+capital,Generator,IT2 0AC,onwind,308757702.03828
+capital,Generator,IT2 0AC,ror,804758745.49607
+capital,Generator,IT2 0AC,solar,1830048061.33857
+capital,Generator,IT2 0AC,solar rooftop,1138984096.73707
+capital,Generator,IT2 0AC,solar-hsat,0.00017
+capital,Generator,IT4 0AC,offwind-ac,0.0001
+capital,Generator,IT4 0AC,offwind-float,8e-05
+capital,Generator,IT4 0AC,onwind,107919232.78
+capital,Generator,IT4 0AC,ror,1929747.51215
+capital,Generator,IT4 0AC,solar,7942196.15353
+capital,Generator,IT4 0AC,solar rooftop,28956734.08282
+capital,Generator,IT4 0AC,solar-hsat,0.00012
+capital,Generator,LT2 0AC,offwind-ac,0.00106
+capital,Generator,LT2 0AC,offwind-dc,68114279.30484
+capital,Generator,LT2 0AC,offwind-float,0.00011
+capital,Generator,LT2 0AC,onwind,50338547.545
+capital,Generator,LT2 0AC,solar,11761911.32198
+capital,Generator,LT2 0AC,solar rooftop,0.00127
+capital,Generator,LT2 0AC,solar-hsat,8e-05
+capital,Generator,LU2 0AC,onwind,4504507.67048
+capital,Generator,LU2 0AC,solar,1370420.81009
+capital,Generator,LU2 0AC,solar rooftop,0.00057
+capital,Generator,LU2 0AC,solar-hsat,8e-05
+capital,Generator,LV2 0AC,offwind-ac,0.00022
+capital,Generator,LV2 0AC,offwind-dc,0.00041
+capital,Generator,LV2 0AC,offwind-float,0.0001
+capital,Generator,LV2 0AC,onwind,3371637.47791
+capital,Generator,LV2 0AC,ror,148204608.93297
+capital,Generator,LV2 0AC,solar,10952283.08918
+capital,Generator,LV2 0AC,solar rooftop,13904488.24298
+capital,Generator,LV2 0AC,solar-hsat,8e-05
+capital,Generator,ME2 0AC,offwind-ac,7e-05
+capital,Generator,ME2 0AC,offwind-float,8e-05
+capital,Generator,ME2 0AC,onwind,3978532.22392
+capital,Generator,ME2 0AC,ror,517172.33326
+capital,Generator,ME2 0AC,solar,352776.24988
+capital,Generator,ME2 0AC,solar rooftop,13512046.30563
+capital,Generator,ME2 0AC,solar-hsat,0.0002
+capital,Generator,MK2 0AC,onwind,18409140.62931
+capital,Generator,MK2 0AC,ror,20030779.1761
+capital,Generator,MK2 0AC,solar,7554277.45101
+capital,Generator,MK2 0AC,solar rooftop,43881122.01962
+capital,Generator,MK2 0AC,solar-hsat,0.00012
+capital,Generator,NL2 0AC,nuclear,120352406.85344
+capital,Generator,NL2 0AC,offwind-ac,484810833.13137
+capital,Generator,NL2 0AC,offwind-dc,0.00018
+capital,Generator,NL2 0AC,offwind-float,7e-05
+capital,Generator,NL2 0AC,onwind,1579671115.78039
+capital,Generator,NL2 0AC,solar,95888907.71257
+capital,Generator,NL2 0AC,solar rooftop,0.00027
+capital,Generator,NL2 0AC,solar-hsat,6e-05
+capital,Generator,NO0 0AC,offwind-ac,9361380.36643
+capital,Generator,NO0 0AC,offwind-dc,519606612.99639
+capital,Generator,NO0 0AC,offwind-float,0.0001
+capital,Generator,NO0 0AC,onwind,169134822.44116
+capital,Generator,NO0 0AC,ror,200983203.39022
+capital,Generator,NO0 0AC,solar,467665.05602
+capital,Generator,NO0 0AC,solar rooftop,107296640.18265
+capital,Generator,NO0 0AC,solar-hsat,7e-05
+capital,Generator,PL2 0AC,offwind-ac,0.00191
+capital,Generator,PL2 0AC,offwind-dc,433182772.20585
+capital,Generator,PL2 0AC,offwind-float,0.00012
+capital,Generator,PL2 0AC,onwind,1450626425.81463
+capital,Generator,PL2 0AC,ror,17599332.89336
+capital,Generator,PL2 0AC,solar,125881646.42029
+capital,Generator,PL2 0AC,solar rooftop,0.00023
+capital,Generator,PL2 0AC,solar-hsat,6e-05
+capital,Generator,PT2 0AC,offwind-ac,1665647.06498
+capital,Generator,PT2 0AC,offwind-float,6e-05
+capital,Generator,PT2 0AC,onwind,189452309.88295
+capital,Generator,PT2 0AC,ror,229032083.47929
+capital,Generator,PT2 0AC,solar,52998885.8706
+capital,Generator,PT2 0AC,solar rooftop,111131761.2522
+capital,Generator,PT2 0AC,solar-hsat,8e-05
+capital,Generator,RO2 0AC,nuclear,329742225.37905
+capital,Generator,RO2 0AC,offwind-ac,112180829.99197
+capital,Generator,RO2 0AC,offwind-dc,194888054.57469
+capital,Generator,RO2 0AC,offwind-float,0.00012
+capital,Generator,RO2 0AC,onwind,192965556.13491
+capital,Generator,RO2 0AC,ror,385028047.99256
+capital,Generator,RO2 0AC,solar,57280859.56262
+capital,Generator,RO2 0AC,solar rooftop,131555405.37933
+capital,Generator,RO2 0AC,solar-hsat,7e-05
+capital,Generator,RS2 0AC,onwind,22593342.73938
+capital,Generator,RS2 0AC,ror,32902195.08212
+capital,Generator,RS2 0AC,solar,2446455.92885
+capital,Generator,RS2 0AC,solar rooftop,114684633.98958
+capital,Generator,RS2 0AC,solar-hsat,7e-05
+capital,Generator,SE0 0AC,nuclear,1678857652.10708
+capital,Generator,SE0 0AC,offwind-ac,10713662.08475
+capital,Generator,SE0 0AC,offwind-dc,1248440824.12445
+capital,Generator,SE0 0AC,offwind-float,0.0001
+capital,Generator,SE0 0AC,onwind,582780794.77928
+capital,Generator,SE0 0AC,ror,214491435.97525
+capital,Generator,SE0 0AC,solar,9205973.11124
+capital,Generator,SE0 0AC,solar rooftop,5538280.00986
+capital,Generator,SE0 0AC,solar-hsat,9e-05
+capital,Generator,SI2 0AC,nuclear,169895533.55816
+capital,Generator,SI2 0AC,offwind-ac,7e-05
+capital,Generator,SI2 0AC,offwind-float,5e-05
+capital,Generator,SI2 0AC,onwind,5e-05
+capital,Generator,SI2 0AC,ror,78001841.75166
+capital,Generator,SI2 0AC,solar,1224579.59754
+capital,Generator,SI2 0AC,solar rooftop,0.00084
+capital,Generator,SI2 0AC,solar-hsat,8e-05
+capital,Generator,SK2 0AC,nuclear,687527730.02492
+capital,Generator,SK2 0AC,onwind,8e-05
+capital,Generator,SK2 0AC,ror,127952873.66673
+capital,Generator,SK2 0AC,solar,12087654.90145
+capital,Generator,SK2 0AC,solar rooftop,0.00041
+capital,Generator,SK2 0AC,solar-hsat,7e-05
+capital,Generator,XK2 0AC,onwind,4551710.59516
+capital,Generator,XK2 0AC,ror,2913918.74334
+capital,Generator,XK2 0AC,solar,275733.15442
+capital,Generator,XK2 0AC,solar rooftop,35460844.89486
+capital,Generator,XK2 0AC,solar-hsat,0.0001
+capital,Line,AL2 0AC,AC,28001087.49296
+capital,Line,AT2 0AC,AC,198585786.33136
+capital,Line,BA2 0AC,AC,42358450.25465
+capital,Line,BE2 0AC,AC,76352392.44585
+capital,Line,BG2 0AC,AC,86621865.08097
+capital,Line,CH2 0AC,AC,269501937.42886
+capital,Line,CZ2 0AC,AC,89917517.95764
+capital,Line,DE2 0AC,AC,332305048.37746
+capital,Line,DK0 0AC,AC,51435562.22963
+capital,Line,EE2 0AC,AC,14296597.53975
+capital,Line,ES2 0AC,AC,163997773.6717
+capital,Line,FI0 0AC,AC,78576124.90034
+capital,Line,FR2 0AC,AC,66811556.60202
+capital,Line,GB3 0AC,AC,15817260.3513
+capital,Line,GR2 0AC,AC,18442704.61187
+capital,Line,HR2 0AC,AC,60730737.90596
+capital,Line,HU2 0AC,AC,90847423.21948
+capital,Line,IT2 0AC,AC,12345104.61498
+capital,Line,LT2 0AC,AC,35197325.56605
+capital,Line,ME2 0AC,AC,17848187.62836
+capital,Line,MK2 0AC,AC,12229458.92206
+capital,Line,NO0 0AC,AC,42737110.0451
+capital,Line,PL2 0AC,AC,22271247.90817
+capital,Line,RO2 0AC,AC,36244549.1527
+capital,Line,RS2 0AC,AC,6911310.88413
+capital,Link,AL2 0AC,CCGT,0.0
+capital,Link,AL2 0AC,CO2 pipeline,0.00016
+capital,Link,AL2 0AC,H2 Electrolysis,7e-05
+capital,Link,AL2 0AC,H2 Fuel Cell,3e-05
+capital,Link,AL2 0AC,H2 pipeline,0.00033
+capital,Link,AL2 0AC,H2 turbine,2e-05
+capital,Link,AL2 0AC,Haber-Bosch,3e-05
+capital,Link,AL2 0AC,OCGT,0.0
+capital,Link,AL2 0AC,SMR,0.0
+capital,Link,AL2 0AC,SMR CC,0.0
+capital,Link,AL2 0AC,Sabatier,0.0
+capital,Link,AL2 0AC,battery charger,6e-05
+capital,Link,AL2 0AC,battery discharger,0.0
+capital,Link,AL2 0AC,co2 sequestered,0.0
+capital,Link,AL2 0AC,electricity distribution grid,11021053.42051
+capital,Link,AL2 0AC,gas pipeline,0.0
+capital,Link,AL2 0AC,gas pipeline new,8e-05
+capital,Link,AL2 0AC,home battery charger,0.00012
+capital,Link,AL2 0AC,home battery discharger,0.0
+capital,Link,AT2 0AC,CCGT,0.0
+capital,Link,AT2 0AC,CO2 pipeline,0.00024
+capital,Link,AT2 0AC,H2 Electrolysis,5e-05
+capital,Link,AT2 0AC,H2 Fuel Cell,3e-05
+capital,Link,AT2 0AC,H2 pipeline,0.00046
+capital,Link,AT2 0AC,H2 turbine,2e-05
+capital,Link,AT2 0AC,Haber-Bosch,3e-05
+capital,Link,AT2 0AC,OCGT,0.0
+capital,Link,AT2 0AC,SMR,0.0
+capital,Link,AT2 0AC,SMR CC,0.0
+capital,Link,AT2 0AC,Sabatier,0.0
+capital,Link,AT2 0AC,battery charger,6e-05
+capital,Link,AT2 0AC,battery discharger,0.0
+capital,Link,AT2 0AC,co2 sequestered,0.0
+capital,Link,AT2 0AC,electricity distribution grid,128857956.01443
+capital,Link,AT2 0AC,gas pipeline,3776535.20987
+capital,Link,AT2 0AC,gas pipeline new,8e-05
+capital,Link,AT2 0AC,home battery charger,0.00012
+capital,Link,AT2 0AC,home battery discharger,0.0
+capital,Link,BA2 0AC,CCGT,0.0
+capital,Link,BA2 0AC,CO2 pipeline,0.00012
+capital,Link,BA2 0AC,H2 Electrolysis,5e-05
+capital,Link,BA2 0AC,H2 Fuel Cell,3e-05
+capital,Link,BA2 0AC,H2 pipeline,0.0002
+capital,Link,BA2 0AC,H2 turbine,2e-05
+capital,Link,BA2 0AC,Haber-Bosch,3e-05
+capital,Link,BA2 0AC,OCGT,0.0
+capital,Link,BA2 0AC,SMR,0.0
+capital,Link,BA2 0AC,SMR CC,0.0
+capital,Link,BA2 0AC,Sabatier,0.0
+capital,Link,BA2 0AC,battery charger,6e-05
+capital,Link,BA2 0AC,battery discharger,0.0
+capital,Link,BA2 0AC,co2 sequestered,0.0
+capital,Link,BA2 0AC,electricity distribution grid,20186157.48445
+capital,Link,BA2 0AC,gas pipeline,1114126.89443
+capital,Link,BA2 0AC,gas pipeline new,0.00012
+capital,Link,BA2 0AC,home battery charger,0.00012
+capital,Link,BA2 0AC,home battery discharger,0.0
+capital,Link,BE2 0AC,CCGT,0.0
+capital,Link,BE2 0AC,CO2 pipeline,0.0002
+capital,Link,BE2 0AC,DC,22274707.77712
+capital,Link,BE2 0AC,H2 Electrolysis,6e-05
+capital,Link,BE2 0AC,H2 Fuel Cell,4e-05
+capital,Link,BE2 0AC,H2 pipeline,0.00042
+capital,Link,BE2 0AC,H2 turbine,8e-05
+capital,Link,BE2 0AC,Haber-Bosch,3e-05
+capital,Link,BE2 0AC,OCGT,0.0
+capital,Link,BE2 0AC,SMR,0.0
+capital,Link,BE2 0AC,SMR CC,0.0
+capital,Link,BE2 0AC,Sabatier,0.0
+capital,Link,BE2 0AC,battery charger,6e-05
+capital,Link,BE2 0AC,battery discharger,0.0
+capital,Link,BE2 0AC,co2 sequestered,0.0
+capital,Link,BE2 0AC,electricity distribution grid,178931938.9959
+capital,Link,BE2 0AC,gas pipeline,10001886.80466
+capital,Link,BE2 0AC,gas pipeline new,4e-05
+capital,Link,BE2 0AC,home battery charger,0.00012
+capital,Link,BE2 0AC,home battery discharger,0.0
+capital,Link,BG2 0AC,CCGT,0.0
+capital,Link,BG2 0AC,CO2 pipeline,0.00016
+capital,Link,BG2 0AC,H2 Electrolysis,7e-05
+capital,Link,BG2 0AC,H2 Fuel Cell,3e-05
+capital,Link,BG2 0AC,H2 pipeline,0.00026
+capital,Link,BG2 0AC,H2 turbine,2e-05
+capital,Link,BG2 0AC,Haber-Bosch,3e-05
+capital,Link,BG2 0AC,OCGT,0.0
+capital,Link,BG2 0AC,SMR,0.0
+capital,Link,BG2 0AC,SMR CC,0.0
+capital,Link,BG2 0AC,Sabatier,0.0
+capital,Link,BG2 0AC,battery charger,6e-05
+capital,Link,BG2 0AC,battery discharger,0.0
+capital,Link,BG2 0AC,co2 sequestered,0.0
+capital,Link,BG2 0AC,electricity distribution grid,72283858.74969
+capital,Link,BG2 0AC,gas pipeline,1487567.22863
+capital,Link,BG2 0AC,gas pipeline new,8e-05
+capital,Link,BG2 0AC,home battery charger,0.00012
+capital,Link,BG2 0AC,home battery discharger,0.0
+capital,Link,CH2 0AC,CCGT,0.0
+capital,Link,CH2 0AC,CO2 pipeline,0.00012
+capital,Link,CH2 0AC,DC,0.0
+capital,Link,CH2 0AC,H2 Electrolysis,8e-05
+capital,Link,CH2 0AC,H2 Fuel Cell,3e-05
+capital,Link,CH2 0AC,H2 pipeline,0.0002
+capital,Link,CH2 0AC,H2 turbine,2e-05
+capital,Link,CH2 0AC,Haber-Bosch,3e-05
+capital,Link,CH2 0AC,OCGT,0.0
+capital,Link,CH2 0AC,SMR,0.0
+capital,Link,CH2 0AC,SMR CC,0.0
+capital,Link,CH2 0AC,Sabatier,0.0
+capital,Link,CH2 0AC,battery charger,6e-05
+capital,Link,CH2 0AC,battery discharger,0.0
+capital,Link,CH2 0AC,co2 sequestered,0.0
+capital,Link,CH2 0AC,electricity distribution grid,84714254.82738
+capital,Link,CH2 0AC,gas pipeline,2096219.01479
+capital,Link,CH2 0AC,gas pipeline new,4e-05
+capital,Link,CH2 0AC,home battery charger,0.00012
+capital,Link,CH2 0AC,home battery discharger,0.0
+capital,Link,CZ2 0AC,CCGT,0.0
+capital,Link,CZ2 0AC,CO2 pipeline,0.00012
+capital,Link,CZ2 0AC,H2 Electrolysis,5e-05
+capital,Link,CZ2 0AC,H2 Fuel Cell,4e-05
+capital,Link,CZ2 0AC,H2 pipeline,0.0002
+capital,Link,CZ2 0AC,H2 turbine,5e-05
+capital,Link,CZ2 0AC,Haber-Bosch,3e-05
+capital,Link,CZ2 0AC,OCGT,0.0
+capital,Link,CZ2 0AC,SMR,0.0
+capital,Link,CZ2 0AC,SMR CC,0.0
+capital,Link,CZ2 0AC,Sabatier,0.0
+capital,Link,CZ2 0AC,battery charger,6e-05
+capital,Link,CZ2 0AC,battery discharger,0.0
+capital,Link,CZ2 0AC,co2 sequestered,0.0
+capital,Link,CZ2 0AC,electricity distribution grid,137045916.44563
+capital,Link,CZ2 0AC,gas pipeline,5625453.42048
+capital,Link,CZ2 0AC,gas pipeline new,4e-05
+capital,Link,CZ2 0AC,home battery charger,0.00012
+capital,Link,CZ2 0AC,home battery discharger,0.0
+capital,Link,DE2 0AC,CCGT,0.0
+capital,Link,DE2 0AC,CO2 pipeline,0.00036
+capital,Link,DE2 0AC,DC,158926130.88613
+capital,Link,DE2 0AC,H2 Electrolysis,7e-05
+capital,Link,DE2 0AC,H2 Fuel Cell,4e-05
+capital,Link,DE2 0AC,H2 pipeline,0.00062
+capital,Link,DE2 0AC,H2 turbine,5e-05
+capital,Link,DE2 0AC,Haber-Bosch,3e-05
+capital,Link,DE2 0AC,OCGT,0.0
+capital,Link,DE2 0AC,SMR,0.0
+capital,Link,DE2 0AC,SMR CC,0.0
+capital,Link,DE2 0AC,Sabatier,0.0
+capital,Link,DE2 0AC,battery charger,6e-05
+capital,Link,DE2 0AC,battery discharger,0.0
+capital,Link,DE2 0AC,co2 sequestered,0.0
+capital,Link,DE2 0AC,electricity distribution grid,1002003204.03851
+capital,Link,DE2 0AC,gas pipeline,28274881.75835
+capital,Link,DE2 0AC,home battery charger,0.00012
+capital,Link,DE2 0AC,home battery discharger,0.0
+capital,Link,DK0 0AC,CCGT,0.0
+capital,Link,DK0 0AC,CO2 pipeline,8e-05
+capital,Link,DK0 0AC,DC,173163960.73676
+capital,Link,DK0 0AC,H2 Electrolysis,9e-05
+capital,Link,DK0 0AC,H2 Fuel Cell,3e-05
+capital,Link,DK0 0AC,H2 pipeline,0.00013
+capital,Link,DK0 0AC,H2 turbine,2e-05
+capital,Link,DK0 0AC,Haber-Bosch,3e-05
+capital,Link,DK0 0AC,OCGT,0.0
+capital,Link,DK0 0AC,SMR,0.0
+capital,Link,DK0 0AC,SMR CC,0.0
+capital,Link,DK0 0AC,Sabatier,0.0
+capital,Link,DK0 0AC,battery charger,6e-05
+capital,Link,DK0 0AC,battery discharger,0.0
+capital,Link,DK0 0AC,co2 sequestered,0.0
+capital,Link,DK0 0AC,electricity distribution grid,36450564.89604
+capital,Link,DK0 0AC,gas pipeline,0.0
+capital,Link,DK0 0AC,gas pipeline new,4e-05
+capital,Link,DK0 0AC,home battery charger,0.00012
+capital,Link,DK0 0AC,home battery discharger,0.0
+capital,Link,DK2 0AC,CCGT,0.0
+capital,Link,DK2 0AC,CO2 pipeline,0.00016
+capital,Link,DK2 0AC,DC,257720148.31485
+capital,Link,DK2 0AC,H2 Electrolysis,0.00015
+capital,Link,DK2 0AC,H2 Fuel Cell,3e-05
+capital,Link,DK2 0AC,H2 pipeline,0.00029
+capital,Link,DK2 0AC,H2 turbine,2e-05
+capital,Link,DK2 0AC,Haber-Bosch,3e-05
+capital,Link,DK2 0AC,OCGT,0.0
+capital,Link,DK2 0AC,SMR,0.0
+capital,Link,DK2 0AC,SMR CC,0.0
+capital,Link,DK2 0AC,Sabatier,0.0
+capital,Link,DK2 0AC,battery charger,6e-05
+capital,Link,DK2 0AC,battery discharger,0.0
+capital,Link,DK2 0AC,co2 sequestered,0.0
+capital,Link,DK2 0AC,electricity distribution grid,37889210.89374
+capital,Link,DK2 0AC,gas pipeline,14604078.66079
+capital,Link,DK2 0AC,home battery charger,0.00012
+capital,Link,DK2 0AC,home battery discharger,0.0
+capital,Link,EE2 0AC,CCGT,0.0
+capital,Link,EE2 0AC,CO2 pipeline,8e-05
+capital,Link,EE2 0AC,DC,88928475.41727
+capital,Link,EE2 0AC,H2 Electrolysis,7e-05
+capital,Link,EE2 0AC,H2 Fuel Cell,3e-05
+capital,Link,EE2 0AC,H2 pipeline,0.00013
+capital,Link,EE2 0AC,H2 turbine,3e-05
+capital,Link,EE2 0AC,Haber-Bosch,3e-05
+capital,Link,EE2 0AC,OCGT,0.0
+capital,Link,EE2 0AC,SMR,0.0
+capital,Link,EE2 0AC,SMR CC,0.0
+capital,Link,EE2 0AC,Sabatier,0.0
+capital,Link,EE2 0AC,battery charger,6e-05
+capital,Link,EE2 0AC,battery discharger,0.0
+capital,Link,EE2 0AC,co2 sequestered,0.0
+capital,Link,EE2 0AC,electricity distribution grid,19041031.62012
+capital,Link,EE2 0AC,gas pipeline,0.0
+capital,Link,EE2 0AC,gas pipeline new,8e-05
+capital,Link,EE2 0AC,home battery charger,0.00012
+capital,Link,EE2 0AC,home battery discharger,0.0
+capital,Link,ES2 0AC,CCGT,0.0
+capital,Link,ES2 0AC,CO2 pipeline,0.00012
+capital,Link,ES2 0AC,DC,18767837.92648
+capital,Link,ES2 0AC,H2 Electrolysis,8e-05
+capital,Link,ES2 0AC,H2 Fuel Cell,2e-05
+capital,Link,ES2 0AC,H2 pipeline,0.00022
+capital,Link,ES2 0AC,H2 turbine,2e-05
+capital,Link,ES2 0AC,Haber-Bosch,3e-05
+capital,Link,ES2 0AC,OCGT,0.0
+capital,Link,ES2 0AC,SMR,0.0
+capital,Link,ES2 0AC,SMR CC,0.0
+capital,Link,ES2 0AC,Sabatier,0.0
+capital,Link,ES2 0AC,battery charger,6e-05
+capital,Link,ES2 0AC,battery discharger,0.0
+capital,Link,ES2 0AC,co2 sequestered,0.0
+capital,Link,ES2 0AC,electricity distribution grid,353356716.75394
+capital,Link,ES2 0AC,gas pipeline,6613536.16032
+capital,Link,ES2 0AC,gas pipeline new,4e-05
+capital,Link,ES2 0AC,home battery charger,0.00012
+capital,Link,ES2 0AC,home battery discharger,0.0
+capital,Link,ES7 0AC,CCGT,0.0
+capital,Link,ES7 0AC,DC,0.0
+capital,Link,ES7 0AC,H2 Electrolysis,6e-05
+capital,Link,ES7 0AC,H2 Fuel Cell,2e-05
+capital,Link,ES7 0AC,H2 pipeline,0.0
+capital,Link,ES7 0AC,H2 turbine,2e-05
+capital,Link,ES7 0AC,Haber-Bosch,3e-05
+capital,Link,ES7 0AC,OCGT,0.0
+capital,Link,ES7 0AC,SMR,0.0
+capital,Link,ES7 0AC,SMR CC,0.0
+capital,Link,ES7 0AC,Sabatier,0.0
+capital,Link,ES7 0AC,battery charger,6e-05
+capital,Link,ES7 0AC,battery discharger,0.0
+capital,Link,ES7 0AC,co2 sequestered,0.0
+capital,Link,ES7 0AC,electricity distribution grid,5802863.12716
+capital,Link,ES7 0AC,gas pipeline,3400126.89244
+capital,Link,ES7 0AC,gas pipeline new,4e-05
+capital,Link,ES7 0AC,home battery charger,0.00012
+capital,Link,ES7 0AC,home battery discharger,0.0
+capital,Link,EU,OCGT methanol,0.0
+capital,Link,EU,ammonia cracker,0.00101
+capital,Link,FI0 0AC,CCGT,0.0
+capital,Link,FI0 0AC,CO2 pipeline,8e-05
+capital,Link,FI0 0AC,DC,28536281.1232
+capital,Link,FI0 0AC,H2 Electrolysis,4e-05
+capital,Link,FI0 0AC,H2 Fuel Cell,3e-05
+capital,Link,FI0 0AC,H2 pipeline,0.00013
+capital,Link,FI0 0AC,H2 turbine,2e-05
+capital,Link,FI0 0AC,Haber-Bosch,3e-05
+capital,Link,FI0 0AC,OCGT,0.0
+capital,Link,FI0 0AC,SMR,0.0
+capital,Link,FI0 0AC,SMR CC,0.0
+capital,Link,FI0 0AC,Sabatier,0.0
+capital,Link,FI0 0AC,battery charger,5e-05
+capital,Link,FI0 0AC,battery discharger,0.0
+capital,Link,FI0 0AC,co2 sequestered,0.0
+capital,Link,FI0 0AC,electricity distribution grid,191572282.60896
+capital,Link,FI0 0AC,gas pipeline new,4e-05
+capital,Link,FI0 0AC,home battery charger,0.00011
+capital,Link,FI0 0AC,home battery discharger,0.0
+capital,Link,FR2 0AC,CCGT,0.0
+capital,Link,FR2 0AC,CO2 pipeline,0.00016
+capital,Link,FR2 0AC,DC,339126920.75434
+capital,Link,FR2 0AC,H2 Electrolysis,5e-05
+capital,Link,FR2 0AC,H2 Fuel Cell,3e-05
+capital,Link,FR2 0AC,H2 pipeline,0.00041
+capital,Link,FR2 0AC,H2 turbine,2e-05
+capital,Link,FR2 0AC,Haber-Bosch,3e-05
+capital,Link,FR2 0AC,OCGT,0.0
+capital,Link,FR2 0AC,SMR,0.0
+capital,Link,FR2 0AC,SMR CC,0.0
+capital,Link,FR2 0AC,Sabatier,0.0
+capital,Link,FR2 0AC,battery charger,6e-05
+capital,Link,FR2 0AC,battery discharger,0.0
+capital,Link,FR2 0AC,co2 sequestered,0.0
+capital,Link,FR2 0AC,electricity distribution grid,1180259147.83102
+capital,Link,FR2 0AC,gas pipeline,73157858.02648
+capital,Link,FR2 0AC,home battery charger,0.00012
+capital,Link,FR2 0AC,home battery discharger,0.0
+capital,Link,FR6 0AC,CCGT,0.0
+capital,Link,FR6 0AC,CO2 pipeline,8e-05
+capital,Link,FR6 0AC,DC,6906493.08338
+capital,Link,FR6 0AC,H2 Electrolysis,6e-05
+capital,Link,FR6 0AC,H2 Fuel Cell,3e-05
+capital,Link,FR6 0AC,H2 pipeline,0.00013
+capital,Link,FR6 0AC,H2 turbine,2e-05
+capital,Link,FR6 0AC,Haber-Bosch,3e-05
+capital,Link,FR6 0AC,OCGT,0.0
+capital,Link,FR6 0AC,SMR,0.0
+capital,Link,FR6 0AC,SMR CC,0.0
+capital,Link,FR6 0AC,Sabatier,0.0
+capital,Link,FR6 0AC,battery charger,6e-05
+capital,Link,FR6 0AC,battery discharger,0.0
+capital,Link,FR6 0AC,co2 sequestered,0.0
+capital,Link,FR6 0AC,electricity distribution grid,2700406.37279
+capital,Link,FR6 0AC,gas pipeline new,8e-05
+capital,Link,FR6 0AC,home battery charger,0.00012
+capital,Link,FR6 0AC,home battery discharger,0.0
+capital,Link,GB1 0AC,CCGT,0.0
+capital,Link,GB1 0AC,CO2 pipeline,0.0002
+capital,Link,GB1 0AC,DC,687159297.60239
+capital,Link,GB1 0AC,H2 Electrolysis,0.00052
+capital,Link,GB1 0AC,H2 Fuel Cell,3e-05
+capital,Link,GB1 0AC,H2 pipeline,0.00055
+capital,Link,GB1 0AC,H2 turbine,2e-05
+capital,Link,GB1 0AC,Haber-Bosch,3e-05
+capital,Link,GB1 0AC,OCGT,0.0
+capital,Link,GB1 0AC,SMR,0.0
+capital,Link,GB1 0AC,SMR CC,0.0
+capital,Link,GB1 0AC,Sabatier,0.0
+capital,Link,GB1 0AC,battery charger,6e-05
+capital,Link,GB1 0AC,battery discharger,0.0
+capital,Link,GB1 0AC,co2 sequestered,0.0
+capital,Link,GB1 0AC,electricity distribution grid,676051288.02295
+capital,Link,GB1 0AC,gas pipeline,33260670.48738
+capital,Link,GB1 0AC,gas pipeline new,4e-05
+capital,Link,GB1 0AC,home battery charger,0.00013
+capital,Link,GB1 0AC,home battery discharger,0.0
+capital,Link,GB3 0AC,CCGT,0.0
+capital,Link,GB3 0AC,CO2 pipeline,4e-05
+capital,Link,GB3 0AC,DC,24656748.41609
+capital,Link,GB3 0AC,H2 Electrolysis,49449662.09604
+capital,Link,GB3 0AC,H2 Fuel Cell,5e-05
+capital,Link,GB3 0AC,H2 pipeline,9e-05
+capital,Link,GB3 0AC,H2 turbine,29751833.07883
+capital,Link,GB3 0AC,Haber-Bosch,3e-05
+capital,Link,GB3 0AC,OCGT,0.0
+capital,Link,GB3 0AC,SMR,0.0
+capital,Link,GB3 0AC,SMR CC,0.0
+capital,Link,GB3 0AC,Sabatier,0.0
+capital,Link,GB3 0AC,battery charger,6e-05
+capital,Link,GB3 0AC,battery discharger,0.0
+capital,Link,GB3 0AC,co2 sequestered,0.0
+capital,Link,GB3 0AC,electricity distribution grid,22159481.84984
+capital,Link,GB3 0AC,gas pipeline,2732293.42242
+capital,Link,GB3 0AC,gas pipeline new,8e-05
+capital,Link,GB3 0AC,home battery charger,0.00013
+capital,Link,GB3 0AC,home battery discharger,0.0
+capital,Link,GB5 0AC,CCGT,0.0
+capital,Link,GB5 0AC,DC,0.0
+capital,Link,GB5 0AC,H2 Electrolysis,0.00044
+capital,Link,GB5 0AC,H2 Fuel Cell,3e-05
+capital,Link,GB5 0AC,H2 pipeline,8e-05
+capital,Link,GB5 0AC,H2 turbine,2e-05
+capital,Link,GB5 0AC,Haber-Bosch,3e-05
+capital,Link,GB5 0AC,OCGT,0.0
+capital,Link,GB5 0AC,SMR,0.0
+capital,Link,GB5 0AC,SMR CC,0.0
+capital,Link,GB5 0AC,Sabatier,0.0
+capital,Link,GB5 0AC,battery charger,6e-05
+capital,Link,GB5 0AC,battery discharger,0.0
+capital,Link,GB5 0AC,co2 sequestered,0.0
+capital,Link,GB5 0AC,electricity distribution grid,344140.18643
+capital,Link,GB5 0AC,gas pipeline,3317618.07941
+capital,Link,GB5 0AC,home battery charger,0.00012
+capital,Link,GB5 0AC,home battery discharger,0.0
+capital,Link,GR2 0AC,CCGT,0.0
+capital,Link,GR2 0AC,CO2 pipeline,8e-05
+capital,Link,GR2 0AC,DC,0.0
+capital,Link,GR2 0AC,H2 Electrolysis,0.00019
+capital,Link,GR2 0AC,H2 Fuel Cell,3e-05
+capital,Link,GR2 0AC,H2 pipeline,0.00013
+capital,Link,GR2 0AC,H2 turbine,2e-05
+capital,Link,GR2 0AC,Haber-Bosch,3e-05
+capital,Link,GR2 0AC,OCGT,0.0
+capital,Link,GR2 0AC,SMR,0.0
+capital,Link,GR2 0AC,SMR CC,0.0
+capital,Link,GR2 0AC,Sabatier,0.0
+capital,Link,GR2 0AC,battery charger,6e-05
+capital,Link,GR2 0AC,battery discharger,0.0
+capital,Link,GR2 0AC,co2 sequestered,0.0
+capital,Link,GR2 0AC,electricity distribution grid,72948247.59442
+capital,Link,GR2 0AC,gas pipeline,0.0
+capital,Link,GR2 0AC,gas pipeline new,4e-05
+capital,Link,GR2 0AC,home battery charger,0.00012
+capital,Link,GR2 0AC,home battery discharger,0.0
+capital,Link,HR2 0AC,CCGT,0.0
+capital,Link,HR2 0AC,CO2 pipeline,0.00012
+capital,Link,HR2 0AC,H2 Electrolysis,5e-05
+capital,Link,HR2 0AC,H2 Fuel Cell,3e-05
+capital,Link,HR2 0AC,H2 pipeline,0.0002
+capital,Link,HR2 0AC,H2 turbine,2e-05
+capital,Link,HR2 0AC,Haber-Bosch,3e-05
+capital,Link,HR2 0AC,OCGT,0.0
+capital,Link,HR2 0AC,SMR,0.0
+capital,Link,HR2 0AC,SMR CC,0.0
+capital,Link,HR2 0AC,Sabatier,0.0
+capital,Link,HR2 0AC,battery charger,6e-05
+capital,Link,HR2 0AC,battery discharger,0.0
+capital,Link,HR2 0AC,co2 sequestered,0.0
+capital,Link,HR2 0AC,electricity distribution grid,29137929.27177
+capital,Link,HR2 0AC,gas pipeline,1055077.46099
+capital,Link,HR2 0AC,gas pipeline new,4e-05
+capital,Link,HR2 0AC,home battery charger,0.00012
+capital,Link,HR2 0AC,home battery discharger,0.0
+capital,Link,HU2 0AC,CCGT,0.0
+capital,Link,HU2 0AC,CO2 pipeline,0.00016
+capital,Link,HU2 0AC,H2 Electrolysis,5e-05
+capital,Link,HU2 0AC,H2 Fuel Cell,3e-05
+capital,Link,HU2 0AC,H2 pipeline,0.00026
+capital,Link,HU2 0AC,H2 turbine,2e-05
+capital,Link,HU2 0AC,Haber-Bosch,3e-05
+capital,Link,HU2 0AC,OCGT,0.0
+capital,Link,HU2 0AC,SMR,0.0
+capital,Link,HU2 0AC,SMR CC,0.0
+capital,Link,HU2 0AC,Sabatier,0.0
+capital,Link,HU2 0AC,battery charger,6e-05
+capital,Link,HU2 0AC,battery discharger,0.0
+capital,Link,HU2 0AC,co2 sequestered,0.0
+capital,Link,HU2 0AC,electricity distribution grid,76066240.36319
+capital,Link,HU2 0AC,gas pipeline,1922547.51684
+capital,Link,HU2 0AC,gas pipeline new,4e-05
+capital,Link,HU2 0AC,home battery charger,0.00012
+capital,Link,HU2 0AC,home battery discharger,0.0
+capital,Link,IE3 0AC,CCGT,0.0
+capital,Link,IE3 0AC,DC,0.00075
+capital,Link,IE3 0AC,H2 Electrolysis,0.00208
+capital,Link,IE3 0AC,H2 Fuel Cell,5e-05
+capital,Link,IE3 0AC,H2 pipeline,0.0
+capital,Link,IE3 0AC,H2 turbine,0.00046
+capital,Link,IE3 0AC,Haber-Bosch,3e-05
+capital,Link,IE3 0AC,OCGT,0.0
+capital,Link,IE3 0AC,SMR,0.0
+capital,Link,IE3 0AC,SMR CC,0.0
+capital,Link,IE3 0AC,Sabatier,0.0
+capital,Link,IE3 0AC,battery charger,6e-05
+capital,Link,IE3 0AC,battery discharger,0.0
+capital,Link,IE3 0AC,co2 sequestered,0.0
+capital,Link,IE3 0AC,electricity distribution grid,52726882.82494
+capital,Link,IE3 0AC,gas pipeline,0.0
+capital,Link,IE3 0AC,home battery charger,0.00012
+capital,Link,IE3 0AC,home battery discharger,0.0
+capital,Link,IT2 0AC,CCGT,0.0
+capital,Link,IT2 0AC,CO2 pipeline,0.00012
+capital,Link,IT2 0AC,DC,88964580.63366
+capital,Link,IT2 0AC,H2 Electrolysis,6e-05
+capital,Link,IT2 0AC,H2 Fuel Cell,3e-05
+capital,Link,IT2 0AC,H2 pipeline,0.0002
+capital,Link,IT2 0AC,H2 turbine,2e-05
+capital,Link,IT2 0AC,Haber-Bosch,3e-05
+capital,Link,IT2 0AC,OCGT,0.0
+capital,Link,IT2 0AC,SMR,0.0
+capital,Link,IT2 0AC,SMR CC,0.0
+capital,Link,IT2 0AC,Sabatier,0.0
+capital,Link,IT2 0AC,battery charger,6e-05
+capital,Link,IT2 0AC,battery discharger,0.0
+capital,Link,IT2 0AC,co2 sequestered,0.0
+capital,Link,IT2 0AC,electricity distribution grid,487960432.96014
+capital,Link,IT2 0AC,gas pipeline,30821858.99893
+capital,Link,IT2 0AC,home battery charger,0.00012
+capital,Link,IT2 0AC,home battery discharger,0.0
+capital,Link,IT4 0AC,CCGT,0.0
+capital,Link,IT4 0AC,DC,47405146.83631
+capital,Link,IT4 0AC,H2 Electrolysis,7e-05
+capital,Link,IT4 0AC,H2 Fuel Cell,3e-05
+capital,Link,IT4 0AC,H2 pipeline,0.0
+capital,Link,IT4 0AC,H2 turbine,2e-05
+capital,Link,IT4 0AC,Haber-Bosch,3e-05
+capital,Link,IT4 0AC,OCGT,0.0
+capital,Link,IT4 0AC,SMR,0.0
+capital,Link,IT4 0AC,SMR CC,0.0
+capital,Link,IT4 0AC,Sabatier,0.0
+capital,Link,IT4 0AC,battery charger,6e-05
+capital,Link,IT4 0AC,battery discharger,0.0
+capital,Link,IT4 0AC,co2 sequestered,0.0
+capital,Link,IT4 0AC,electricity distribution grid,6018258.50912
+capital,Link,IT4 0AC,home battery charger,0.00012
+capital,Link,IT4 0AC,home battery discharger,0.0
+capital,Link,LT2 0AC,CCGT,0.0
+capital,Link,LT2 0AC,CO2 pipeline,0.00012
+capital,Link,LT2 0AC,DC,39300766.34803
+capital,Link,LT2 0AC,H2 Electrolysis,7e-05
+capital,Link,LT2 0AC,H2 Fuel Cell,3e-05
+capital,Link,LT2 0AC,H2 pipeline,0.0002
+capital,Link,LT2 0AC,H2 turbine,4e-05
+capital,Link,LT2 0AC,Haber-Bosch,3e-05
+capital,Link,LT2 0AC,OCGT,0.0
+capital,Link,LT2 0AC,SMR,0.0
+capital,Link,LT2 0AC,SMR CC,0.0
+capital,Link,LT2 0AC,Sabatier,0.0
+capital,Link,LT2 0AC,battery charger,6e-05
+capital,Link,LT2 0AC,battery discharger,0.0
+capital,Link,LT2 0AC,co2 sequestered,0.0
+capital,Link,LT2 0AC,electricity distribution grid,22878240.52875
+capital,Link,LT2 0AC,gas pipeline,810193.20923
+capital,Link,LT2 0AC,gas pipeline new,4e-05
+capital,Link,LT2 0AC,home battery charger,0.00012
+capital,Link,LT2 0AC,home battery discharger,0.0
+capital,Link,LU2 0AC,CCGT,0.0
+capital,Link,LU2 0AC,H2 Electrolysis,6e-05
+capital,Link,LU2 0AC,H2 Fuel Cell,4e-05
+capital,Link,LU2 0AC,H2 pipeline,0.0
+capital,Link,LU2 0AC,H2 turbine,5e-05
+capital,Link,LU2 0AC,Haber-Bosch,3e-05
+capital,Link,LU2 0AC,OCGT,0.0
+capital,Link,LU2 0AC,SMR,0.0
+capital,Link,LU2 0AC,SMR CC,0.0
+capital,Link,LU2 0AC,Sabatier,0.0
+capital,Link,LU2 0AC,battery charger,6e-05
+capital,Link,LU2 0AC,battery discharger,0.0
+capital,Link,LU2 0AC,co2 sequestered,0.0
+capital,Link,LU2 0AC,electricity distribution grid,12667539.36821
+capital,Link,LU2 0AC,gas pipeline,2520772.46995
+capital,Link,LU2 0AC,home battery charger,0.00012
+capital,Link,LU2 0AC,home battery discharger,0.0
+capital,Link,LV2 0AC,CCGT,0.0
+capital,Link,LV2 0AC,H2 Electrolysis,6e-05
+capital,Link,LV2 0AC,H2 Fuel Cell,3e-05
+capital,Link,LV2 0AC,H2 pipeline,0.0
+capital,Link,LV2 0AC,H2 turbine,4e-05
+capital,Link,LV2 0AC,Haber-Bosch,3e-05
+capital,Link,LV2 0AC,OCGT,0.0
+capital,Link,LV2 0AC,SMR,0.0
+capital,Link,LV2 0AC,SMR CC,0.0
+capital,Link,LV2 0AC,Sabatier,0.0
+capital,Link,LV2 0AC,battery charger,6e-05
+capital,Link,LV2 0AC,battery discharger,0.0
+capital,Link,LV2 0AC,co2 sequestered,0.0
+capital,Link,LV2 0AC,electricity distribution grid,16112481.40265
+capital,Link,LV2 0AC,gas pipeline,809218.32134
+capital,Link,LV2 0AC,home battery charger,0.00012
+capital,Link,LV2 0AC,home battery discharger,0.0
+capital,Link,ME2 0AC,CCGT,0.0
+capital,Link,ME2 0AC,CO2 pipeline,8e-05
+capital,Link,ME2 0AC,DC,0.0
+capital,Link,ME2 0AC,H2 Electrolysis,6e-05
+capital,Link,ME2 0AC,H2 Fuel Cell,3e-05
+capital,Link,ME2 0AC,H2 pipeline,0.00013
+capital,Link,ME2 0AC,H2 turbine,2e-05
+capital,Link,ME2 0AC,Haber-Bosch,3e-05
+capital,Link,ME2 0AC,OCGT,0.0
+capital,Link,ME2 0AC,SMR,0.0
+capital,Link,ME2 0AC,SMR CC,0.0
+capital,Link,ME2 0AC,Sabatier,0.0
+capital,Link,ME2 0AC,battery charger,6e-05
+capital,Link,ME2 0AC,battery discharger,0.0
+capital,Link,ME2 0AC,co2 sequestered,0.0
+capital,Link,ME2 0AC,electricity distribution grid,6086582.05835
+capital,Link,ME2 0AC,home battery charger,0.00012
+capital,Link,ME2 0AC,home battery discharger,0.0
+capital,Link,MK2 0AC,CCGT,0.0
+capital,Link,MK2 0AC,CO2 pipeline,8e-05
+capital,Link,MK2 0AC,H2 Electrolysis,6e-05
+capital,Link,MK2 0AC,H2 Fuel Cell,3e-05
+capital,Link,MK2 0AC,H2 pipeline,0.00013
+capital,Link,MK2 0AC,H2 turbine,2e-05
+capital,Link,MK2 0AC,Haber-Bosch,3e-05
+capital,Link,MK2 0AC,OCGT,0.0
+capital,Link,MK2 0AC,SMR,0.0
+capital,Link,MK2 0AC,SMR CC,0.0
+capital,Link,MK2 0AC,Sabatier,0.0
+capital,Link,MK2 0AC,battery charger,6e-05
+capital,Link,MK2 0AC,battery discharger,0.0
+capital,Link,MK2 0AC,co2 sequestered,0.0
+capital,Link,MK2 0AC,electricity distribution grid,13029987.47098
+capital,Link,MK2 0AC,gas pipeline,0.0
+capital,Link,MK2 0AC,gas pipeline new,4e-05
+capital,Link,MK2 0AC,home battery charger,0.00012
+capital,Link,MK2 0AC,home battery discharger,0.0
+capital,Link,NL2 0AC,CCGT,0.0
+capital,Link,NL2 0AC,CO2 pipeline,4e-05
+capital,Link,NL2 0AC,DC,57856604.98969
+capital,Link,NL2 0AC,H2 Electrolysis,0.0001
+capital,Link,NL2 0AC,H2 Fuel Cell,4e-05
+capital,Link,NL2 0AC,H2 pipeline,7e-05
+capital,Link,NL2 0AC,H2 turbine,7e-05
+capital,Link,NL2 0AC,Haber-Bosch,3e-05
+capital,Link,NL2 0AC,OCGT,0.0
+capital,Link,NL2 0AC,SMR,0.0
+capital,Link,NL2 0AC,SMR CC,0.0
+capital,Link,NL2 0AC,Sabatier,0.0
+capital,Link,NL2 0AC,battery charger,6e-05
+capital,Link,NL2 0AC,battery discharger,0.0
+capital,Link,NL2 0AC,co2 sequestered,0.0
+capital,Link,NL2 0AC,electricity distribution grid,229877220.64615
+capital,Link,NL2 0AC,gas pipeline,18279770.67613
+capital,Link,NL2 0AC,home battery charger,0.00012
+capital,Link,NL2 0AC,home battery discharger,0.0
+capital,Link,NO0 0AC,CCGT,0.0
+capital,Link,NO0 0AC,CO2 pipeline,4e-05
+capital,Link,NO0 0AC,DC,121276252.75569
+capital,Link,NO0 0AC,H2 Electrolysis,4e-05
+capital,Link,NO0 0AC,H2 Fuel Cell,3e-05
+capital,Link,NO0 0AC,H2 pipeline,7e-05
+capital,Link,NO0 0AC,H2 turbine,2e-05
+capital,Link,NO0 0AC,Haber-Bosch,3e-05
+capital,Link,NO0 0AC,OCGT,0.0
+capital,Link,NO0 0AC,SMR,0.0
+capital,Link,NO0 0AC,SMR CC,0.0
+capital,Link,NO0 0AC,Sabatier,0.0
+capital,Link,NO0 0AC,battery charger,5e-05
+capital,Link,NO0 0AC,battery discharger,0.0
+capital,Link,NO0 0AC,co2 sequestered,0.0
+capital,Link,NO0 0AC,electricity distribution grid,323337654.50765
+capital,Link,NO0 0AC,gas pipeline,9633181.40491
+capital,Link,NO0 0AC,gas pipeline new,4e-05
+capital,Link,NO0 0AC,home battery charger,0.00011
+capital,Link,NO0 0AC,home battery discharger,0.0
+capital,Link,PL2 0AC,CCGT,0.0
+capital,Link,PL2 0AC,CO2 pipeline,8e-05
+capital,Link,PL2 0AC,DC,46134983.98606
+capital,Link,PL2 0AC,H2 Electrolysis,7e-05
+capital,Link,PL2 0AC,H2 Fuel Cell,4e-05
+capital,Link,PL2 0AC,H2 pipeline,0.00013
+capital,Link,PL2 0AC,H2 turbine,6e-05
+capital,Link,PL2 0AC,Haber-Bosch,3e-05
+capital,Link,PL2 0AC,OCGT,0.0
+capital,Link,PL2 0AC,SMR,0.0
+capital,Link,PL2 0AC,SMR CC,0.0
+capital,Link,PL2 0AC,Sabatier,0.0
+capital,Link,PL2 0AC,battery charger,6e-05
+capital,Link,PL2 0AC,battery discharger,0.0
+capital,Link,PL2 0AC,co2 sequestered,0.0
+capital,Link,PL2 0AC,electricity distribution grid,294965597.47602
+capital,Link,PL2 0AC,gas pipeline,7377847.01068
+capital,Link,PL2 0AC,home battery charger,0.00012
+capital,Link,PL2 0AC,home battery discharger,0.0
+capital,Link,PT2 0AC,CCGT,0.0
+capital,Link,PT2 0AC,H2 Electrolysis,7e-05
+capital,Link,PT2 0AC,H2 Fuel Cell,2e-05
+capital,Link,PT2 0AC,H2 pipeline,0.0
+capital,Link,PT2 0AC,H2 turbine,2e-05
+capital,Link,PT2 0AC,Haber-Bosch,3e-05
+capital,Link,PT2 0AC,OCGT,0.0
+capital,Link,PT2 0AC,SMR,0.0
+capital,Link,PT2 0AC,SMR CC,0.0
+capital,Link,PT2 0AC,Sabatier,0.0
+capital,Link,PT2 0AC,battery charger,6e-05
+capital,Link,PT2 0AC,battery discharger,0.0
+capital,Link,PT2 0AC,co2 sequestered,0.0
+capital,Link,PT2 0AC,electricity distribution grid,84646225.6794
+capital,Link,PT2 0AC,gas pipeline,0.0
+capital,Link,PT2 0AC,home battery charger,0.00012
+capital,Link,PT2 0AC,home battery discharger,0.0
+capital,Link,RO2 0AC,CCGT,0.0
+capital,Link,RO2 0AC,CO2 pipeline,4e-05
+capital,Link,RO2 0AC,H2 Electrolysis,7e-05
+capital,Link,RO2 0AC,H2 Fuel Cell,3e-05
+capital,Link,RO2 0AC,H2 pipeline,7e-05
+capital,Link,RO2 0AC,H2 turbine,2e-05
+capital,Link,RO2 0AC,Haber-Bosch,3e-05
+capital,Link,RO2 0AC,OCGT,0.0
+capital,Link,RO2 0AC,SMR,0.0
+capital,Link,RO2 0AC,SMR CC,0.0
+capital,Link,RO2 0AC,Sabatier,0.0
+capital,Link,RO2 0AC,battery charger,6e-05
+capital,Link,RO2 0AC,battery discharger,0.0
+capital,Link,RO2 0AC,co2 sequestered,0.0
+capital,Link,RO2 0AC,electricity distribution grid,95730167.27772
+capital,Link,RO2 0AC,gas pipeline,0.0
+capital,Link,RO2 0AC,home battery charger,0.00012
+capital,Link,RO2 0AC,home battery discharger,0.0
+capital,Link,RS2 0AC,CCGT,0.0
+capital,Link,RS2 0AC,CO2 pipeline,4e-05
+capital,Link,RS2 0AC,H2 Electrolysis,6e-05
+capital,Link,RS2 0AC,H2 Fuel Cell,3e-05
+capital,Link,RS2 0AC,H2 pipeline,7e-05
+capital,Link,RS2 0AC,H2 turbine,2e-05
+capital,Link,RS2 0AC,Haber-Bosch,3e-05
+capital,Link,RS2 0AC,OCGT,0.0
+capital,Link,RS2 0AC,SMR,0.0
+capital,Link,RS2 0AC,SMR CC,0.0
+capital,Link,RS2 0AC,Sabatier,0.0
+capital,Link,RS2 0AC,battery charger,6e-05
+capital,Link,RS2 0AC,battery discharger,0.0
+capital,Link,RS2 0AC,co2 sequestered,0.0
+capital,Link,RS2 0AC,electricity distribution grid,79050711.93524
+capital,Link,RS2 0AC,gas pipeline,0.0
+capital,Link,RS2 0AC,home battery charger,0.00012
+capital,Link,RS2 0AC,home battery discharger,0.0
+capital,Link,SE0 0AC,CCGT,0.0
+capital,Link,SE0 0AC,DC,20520707.53753
+capital,Link,SE0 0AC,H2 Electrolysis,4e-05
+capital,Link,SE0 0AC,H2 Fuel Cell,3e-05
+capital,Link,SE0 0AC,H2 pipeline,0.0
+capital,Link,SE0 0AC,H2 turbine,2e-05
+capital,Link,SE0 0AC,Haber-Bosch,3e-05
+capital,Link,SE0 0AC,OCGT,0.0
+capital,Link,SE0 0AC,SMR,0.0
+capital,Link,SE0 0AC,SMR CC,0.0
+capital,Link,SE0 0AC,Sabatier,0.0
+capital,Link,SE0 0AC,battery charger,5e-05
+capital,Link,SE0 0AC,battery discharger,0.0
+capital,Link,SE0 0AC,co2 sequestered,0.0
+capital,Link,SE0 0AC,electricity distribution grid,347090921.85515
+capital,Link,SE0 0AC,gas pipeline,0.0
+capital,Link,SE0 0AC,home battery charger,0.00011
+capital,Link,SE0 0AC,home battery discharger,0.0
+capital,Link,SI2 0AC,CCGT,0.0
+capital,Link,SI2 0AC,DC,0.0
+capital,Link,SI2 0AC,H2 Electrolysis,5e-05
+capital,Link,SI2 0AC,H2 Fuel Cell,3e-05
+capital,Link,SI2 0AC,H2 pipeline,0.0
+capital,Link,SI2 0AC,H2 turbine,2e-05
+capital,Link,SI2 0AC,Haber-Bosch,3e-05
+capital,Link,SI2 0AC,OCGT,0.0
+capital,Link,SI2 0AC,SMR,0.0
+capital,Link,SI2 0AC,SMR CC,0.0
+capital,Link,SI2 0AC,Sabatier,0.0
+capital,Link,SI2 0AC,battery charger,6e-05
+capital,Link,SI2 0AC,battery discharger,0.0
+capital,Link,SI2 0AC,co2 sequestered,0.0
+capital,Link,SI2 0AC,electricity distribution grid,25775426.40258
+capital,Link,SI2 0AC,gas pipeline,1055596.53479
+capital,Link,SI2 0AC,home battery charger,0.00012
+capital,Link,SI2 0AC,home battery discharger,0.0
+capital,Link,SK2 0AC,CCGT,0.0
+capital,Link,SK2 0AC,H2 Electrolysis,5e-05
+capital,Link,SK2 0AC,H2 Fuel Cell,3e-05
+capital,Link,SK2 0AC,H2 pipeline,0.0
+capital,Link,SK2 0AC,H2 turbine,3e-05
+capital,Link,SK2 0AC,Haber-Bosch,3e-05
+capital,Link,SK2 0AC,OCGT,0.0
+capital,Link,SK2 0AC,SMR,0.0
+capital,Link,SK2 0AC,SMR CC,0.0
+capital,Link,SK2 0AC,Sabatier,0.0
+capital,Link,SK2 0AC,battery charger,6e-05
+capital,Link,SK2 0AC,battery discharger,0.0
+capital,Link,SK2 0AC,co2 sequestered,0.0
+capital,Link,SK2 0AC,electricity distribution grid,56348388.42205
+capital,Link,SK2 0AC,gas pipeline,0.0
+capital,Link,SK2 0AC,home battery charger,0.00012
+capital,Link,SK2 0AC,home battery discharger,0.0
+capital,Link,XK2 0AC,CCGT,0.0
+capital,Link,XK2 0AC,H2 Electrolysis,6e-05
+capital,Link,XK2 0AC,H2 Fuel Cell,3e-05
+capital,Link,XK2 0AC,H2 pipeline,0.0
+capital,Link,XK2 0AC,H2 turbine,2e-05
+capital,Link,XK2 0AC,Haber-Bosch,3e-05
+capital,Link,XK2 0AC,OCGT,0.0
+capital,Link,XK2 0AC,SMR,0.0
+capital,Link,XK2 0AC,SMR CC,0.0
+capital,Link,XK2 0AC,Sabatier,0.0
+capital,Link,XK2 0AC,battery charger,6e-05
+capital,Link,XK2 0AC,battery discharger,0.0
+capital,Link,XK2 0AC,co2 sequestered,0.0
+capital,Link,XK2 0AC,electricity distribution grid,13468413.04848
+capital,Link,XK2 0AC,home battery charger,0.00012
+capital,Link,XK2 0AC,home battery discharger,0.0
+capital,StorageUnit,AL2 0AC,hydro,96712298.48047
+capital,StorageUnit,AT2 0AC,PHS,350108016.11743
+capital,StorageUnit,AT2 0AC,hydro,357402481.31068
+capital,StorageUnit,BA2 0AC,PHS,25169108.25777
+capital,StorageUnit,BA2 0AC,hydro,94441358.4854
+capital,StorageUnit,BE2 0AC,PHS,74820894.54809
+capital,StorageUnit,BE2 0AC,hydro,728512.33297
+capital,StorageUnit,BG2 0AC,PHS,49422976.21525
+capital,StorageUnit,BG2 0AC,hydro,102915339.61564
+capital,StorageUnit,CH2 0AC,PHS,250006468.39997
+capital,StorageUnit,CH2 0AC,hydro,553166661.28922
+capital,StorageUnit,CZ2 0AC,PHS,66068909.17664
+capital,StorageUnit,CZ2 0AC,hydro,35544724.33235
+capital,StorageUnit,DE2 0AC,PHS,421108926.46221
+capital,StorageUnit,DE2 0AC,hydro,23009035.32444
+capital,StorageUnit,ES2 0AC,PHS,421779339.98217
+capital,StorageUnit,ES2 0AC,hydro,563570483.79512
+capital,StorageUnit,FI0 0AC,hydro,89693549.42768
+capital,StorageUnit,FR2 0AC,PHS,347562504.03227
+capital,StorageUnit,FR2 0AC,hydro,481816196.18962
+capital,StorageUnit,FR6 0AC,hydro,10894893.74172
+capital,StorageUnit,GB1 0AC,PHS,47134875.46455
+capital,StorageUnit,GB1 0AC,hydro,22131654.51121
+capital,StorageUnit,GR2 0AC,PHS,39984560.61859
+capital,StorageUnit,GR2 0AC,hydro,147696903.45808
+capital,StorageUnit,HR2 0AC,PHS,19202885.5503
+capital,StorageUnit,HR2 0AC,hydro,80507079.95667
+capital,StorageUnit,HU2 0AC,hydro,1601670.52549
+capital,StorageUnit,IE3 0AC,PHS,16703135.48015
+capital,StorageUnit,IE3 0AC,hydro,2574113.34454
+capital,StorageUnit,IT2 0AC,PHS,485111680.66097
+capital,StorageUnit,IT2 0AC,hydro,303130333.17445
+capital,StorageUnit,IT4 0AC,PHS,13728604.50424
+capital,StorageUnit,IT4 0AC,hydro,8730248.41432
+capital,StorageUnit,LT2 0AC,PHS,51482266.89089
+capital,StorageUnit,LT2 0AC,hydro,5777454.39553
+capital,StorageUnit,LU2 0AC,PHS,74020059.28534
+capital,StorageUnit,ME2 0AC,PHS,17561173.26167
+capital,StorageUnit,ME2 0AC,hydro,19563261.41854
+capital,StorageUnit,MK2 0AC,hydro,21222134.4628
+capital,StorageUnit,NO0 0AC,PHS,8677622.09705
+capital,StorageUnit,NO0 0AC,hydro,1778696876.40013
+capital,StorageUnit,PL2 0AC,PHS,107254722.68935
+capital,StorageUnit,PL2 0AC,hydro,9352976.16576
+capital,StorageUnit,PT2 0AC,PHS,271254343.99622
+capital,StorageUnit,PT2 0AC,hydro,100922403.86177
+capital,StorageUnit,RO2 0AC,hydro,204323964.88693
+capital,StorageUnit,RS2 0AC,PHS,94269750.92909
+capital,StorageUnit,RS2 0AC,hydro,86335761.57602
+capital,StorageUnit,SE0 0AC,PHS,5205429.20786
+capital,StorageUnit,SE0 0AC,hydro,703840516.70726
+capital,StorageUnit,SI2 0AC,PHS,10296453.37818
+capital,StorageUnit,SI2 0AC,hydro,14712487.82704
+capital,StorageUnit,SK2 0AC,PHS,58250468.91148
+capital,StorageUnit,SK2 0AC,hydro,7173195.85346
+capital,StorageUnit,XK2 0AC,hydro,2002088.15687
+capital,Store,AL2 0AC,H2 Store,6e-05
+capital,Store,AL2 0AC,battery,4e-05
+capital,Store,AL2 0AC,co2 sequestered,0.0
+capital,Store,AL2 0AC,co2 stored,4e-05
+capital,Store,AL2 0AC,gas,4e-05
+capital,Store,AL2 0AC,home battery,4e-05
+capital,Store,AT2 0AC,H2 Store,4e-05
+capital,Store,AT2 0AC,battery,4e-05
+capital,Store,AT2 0AC,co2 sequestered,0.0
+capital,Store,AT2 0AC,co2 stored,4e-05
+capital,Store,AT2 0AC,gas,482909953.50604
+capital,Store,AT2 0AC,home battery,4e-05
+capital,Store,BA2 0AC,H2 Store,6e-05
+capital,Store,BA2 0AC,battery,4e-05
+capital,Store,BA2 0AC,co2 sequestered,0.0
+capital,Store,BA2 0AC,co2 stored,4e-05
+capital,Store,BA2 0AC,gas,4e-05
+capital,Store,BA2 0AC,home battery,4e-05
+capital,Store,BE2 0AC,H2 Store,4e-05
+capital,Store,BE2 0AC,battery,4e-05
+capital,Store,BE2 0AC,co2 sequestered,0.0
+capital,Store,BE2 0AC,co2 stored,4e-05
+capital,Store,BE2 0AC,gas,3016909.6971
+capital,Store,BE2 0AC,home battery,4e-05
+capital,Store,BG2 0AC,H2 Store,4e-05
+capital,Store,BG2 0AC,battery,4e-05
+capital,Store,BG2 0AC,co2 sequestered,0.0
+capital,Store,BG2 0AC,co2 stored,4e-05
+capital,Store,BG2 0AC,gas,31426142.67813
+capital,Store,BG2 0AC,home battery,4e-05
+capital,Store,CH2 0AC,H2 Store,4e-05
+capital,Store,CH2 0AC,battery,4e-05
+capital,Store,CH2 0AC,co2 sequestered,0.0
+capital,Store,CH2 0AC,co2 stored,4e-05
+capital,Store,CH2 0AC,gas,4e-05
+capital,Store,CH2 0AC,home battery,4e-05
+capital,Store,CZ2 0AC,H2 Store,4e-05
+capital,Store,CZ2 0AC,battery,4e-05
+capital,Store,CZ2 0AC,co2 sequestered,0.0
+capital,Store,CZ2 0AC,co2 stored,4e-05
+capital,Store,CZ2 0AC,gas,203124325.66885
+capital,Store,CZ2 0AC,home battery,4e-05
+capital,Store,DE2 0AC,H2 Store,6e-05
+capital,Store,DE2 0AC,battery,4e-05
+capital,Store,DE2 0AC,co2 sequestered,0.0
+capital,Store,DE2 0AC,co2 stored,4e-05
+capital,Store,DE2 0AC,gas,818834982.9788
+capital,Store,DE2 0AC,home battery,4e-05
+capital,Store,DK0 0AC,H2 Store,6e-05
+capital,Store,DK0 0AC,battery,4e-05
+capital,Store,DK0 0AC,co2 sequestered,0.0
+capital,Store,DK0 0AC,co2 stored,4e-05
+capital,Store,DK0 0AC,gas,37711371.21375
+capital,Store,DK0 0AC,home battery,4e-05
+capital,Store,DK2 0AC,H2 Store,6e-05
+capital,Store,DK2 0AC,battery,4e-05
+capital,Store,DK2 0AC,co2 sequestered,0.0
+capital,Store,DK2 0AC,co2 stored,4e-05
+capital,Store,DK2 0AC,gas,21055515.59435
+capital,Store,DK2 0AC,home battery,4e-05
+capital,Store,EE2 0AC,H2 Store,4e-05
+capital,Store,EE2 0AC,battery,4e-05
+capital,Store,EE2 0AC,co2 sequestered,0.0
+capital,Store,EE2 0AC,co2 stored,4e-05
+capital,Store,EE2 0AC,gas,4e-05
+capital,Store,EE2 0AC,home battery,4e-05
+capital,Store,ES2 0AC,H2 Store,5e-05
+capital,Store,ES2 0AC,battery,4e-05
+capital,Store,ES2 0AC,co2 sequestered,0.0
+capital,Store,ES2 0AC,co2 stored,4e-05
+capital,Store,ES2 0AC,gas,229092354.75982
+capital,Store,ES2 0AC,home battery,4e-05
+capital,Store,ES7 0AC,H2 Store,4e-05
+capital,Store,ES7 0AC,battery,4e-05
+capital,Store,ES7 0AC,co2 sequestered,0.0
+capital,Store,ES7 0AC,co2 stored,4e-05
+capital,Store,ES7 0AC,gas,4e-05
+capital,Store,ES7 0AC,home battery,4e-05
+capital,Store,EU,ammonia store,4e-05
+capital,Store,EU,co2,0.0
+capital,Store,EU,methanol,0.0
+capital,Store,FI0 0AC,H2 Store,4e-05
+capital,Store,FI0 0AC,battery,4e-05
+capital,Store,FI0 0AC,co2 sequestered,0.0
+capital,Store,FI0 0AC,co2 stored,4e-05
+capital,Store,FI0 0AC,gas,4e-05
+capital,Store,FI0 0AC,home battery,4e-05
+capital,Store,FR2 0AC,H2 Store,6e-05
+capital,Store,FR2 0AC,battery,4e-05
+capital,Store,FR2 0AC,co2 sequestered,0.0
+capital,Store,FR2 0AC,co2 stored,4e-05
+capital,Store,FR2 0AC,gas,818834982.9788
+capital,Store,FR2 0AC,home battery,4e-05
+capital,Store,FR6 0AC,H2 Store,4e-05
+capital,Store,FR6 0AC,battery,4e-05
+capital,Store,FR6 0AC,co2 sequestered,0.0
+capital,Store,FR6 0AC,co2 stored,4e-05
+capital,Store,FR6 0AC,gas,4e-05
+capital,Store,FR6 0AC,home battery,4e-05
+capital,Store,GB1 0AC,H2 Store,0.0001
+capital,Store,GB1 0AC,battery,4e-05
+capital,Store,GB1 0AC,co2 sequestered,0.0
+capital,Store,GB1 0AC,co2 stored,4e-05
+capital,Store,GB1 0AC,gas,762438362.3267
+capital,Store,GB1 0AC,home battery,4e-05
+capital,Store,GB3 0AC,H2 Store,22881502.02365
+capital,Store,GB3 0AC,battery,5e-05
+capital,Store,GB3 0AC,co2 sequestered,0.0
+capital,Store,GB3 0AC,co2 stored,4e-05
+capital,Store,GB3 0AC,gas,25982289.69353
+capital,Store,GB3 0AC,home battery,4e-05
+capital,Store,GB5 0AC,H2 Store,4e-05
+capital,Store,GB5 0AC,battery,4e-05
+capital,Store,GB5 0AC,co2 sequestered,0.0
+capital,Store,GB5 0AC,co2 stored,4e-05
+capital,Store,GB5 0AC,gas,4e-05
+capital,Store,GB5 0AC,home battery,4e-05
+capital,Store,GR2 0AC,H2 Store,6e-05
+capital,Store,GR2 0AC,battery,4e-05
+capital,Store,GR2 0AC,co2 sequestered,0.0
+capital,Store,GR2 0AC,co2 stored,4e-05
+capital,Store,GR2 0AC,gas,25982289.69353
+capital,Store,GR2 0AC,home battery,4e-05
+capital,Store,HR2 0AC,H2 Store,4e-05
+capital,Store,HR2 0AC,battery,4e-05
+capital,Store,HR2 0AC,co2 sequestered,0.0
+capital,Store,HR2 0AC,co2 stored,4e-05
+capital,Store,HR2 0AC,gas,55522863.81097
+capital,Store,HR2 0AC,home battery,4e-05
+capital,Store,HU2 0AC,H2 Store,4e-05
+capital,Store,HU2 0AC,battery,4e-05
+capital,Store,HU2 0AC,co2 sequestered,0.0
+capital,Store,HU2 0AC,co2 stored,4e-05
+capital,Store,HU2 0AC,gas,493903293.56827
+capital,Store,HU2 0AC,home battery,4e-05
+capital,Store,IE3 0AC,H2 Store,4e-05
+capital,Store,IE3 0AC,battery,5e-05
+capital,Store,IE3 0AC,co2 sequestered,0.0
+capital,Store,IE3 0AC,co2 stored,4e-05
+capital,Store,IE3 0AC,gas,51964579.38706
+capital,Store,IE3 0AC,home battery,4e-05
+capital,Store,IT2 0AC,H2 Store,4e-05
+capital,Store,IT2 0AC,battery,4e-05
+capital,Store,IT2 0AC,co2 sequestered,0.0
+capital,Store,IT2 0AC,co2 stored,4e-05
+capital,Store,IT2 0AC,gas,818834982.9788
+capital,Store,IT2 0AC,home battery,4e-05
+capital,Store,IT4 0AC,H2 Store,4e-05
+capital,Store,IT4 0AC,battery,4e-05
+capital,Store,IT4 0AC,co2 sequestered,0.0
+capital,Store,IT4 0AC,co2 stored,4e-05
+capital,Store,IT4 0AC,gas,4e-05
+capital,Store,IT4 0AC,home battery,4e-05
+capital,Store,LT2 0AC,H2 Store,4e-05
+capital,Store,LT2 0AC,battery,4e-05
+capital,Store,LT2 0AC,co2 sequestered,0.0
+capital,Store,LT2 0AC,co2 stored,4e-05
+capital,Store,LT2 0AC,gas,4e-05
+capital,Store,LT2 0AC,home battery,4e-05
+capital,Store,LU2 0AC,H2 Store,4e-05
+capital,Store,LU2 0AC,battery,4e-05
+capital,Store,LU2 0AC,co2 sequestered,0.0
+capital,Store,LU2 0AC,co2 stored,4e-05
+capital,Store,LU2 0AC,gas,4e-05
+capital,Store,LU2 0AC,home battery,4e-05
+capital,Store,LV2 0AC,H2 Store,4e-05
+capital,Store,LV2 0AC,battery,4e-05
+capital,Store,LV2 0AC,co2 sequestered,0.0
+capital,Store,LV2 0AC,co2 stored,4e-05
+capital,Store,LV2 0AC,gas,135132413.51594
+capital,Store,LV2 0AC,home battery,4e-05
+capital,Store,ME2 0AC,H2 Store,4e-05
+capital,Store,ME2 0AC,battery,4e-05
+capital,Store,ME2 0AC,co2 sequestered,0.0
+capital,Store,ME2 0AC,co2 stored,4e-05
+capital,Store,ME2 0AC,gas,4e-05
+capital,Store,ME2 0AC,home battery,4e-05
+capital,Store,MK2 0AC,H2 Store,4e-05
+capital,Store,MK2 0AC,battery,4e-05
+capital,Store,MK2 0AC,co2 sequestered,0.0
+capital,Store,MK2 0AC,co2 stored,4e-05
+capital,Store,MK2 0AC,gas,4e-05
+capital,Store,MK2 0AC,home battery,4e-05
+capital,Store,NL2 0AC,H2 Store,7e-05
+capital,Store,NL2 0AC,battery,4e-05
+capital,Store,NL2 0AC,co2 sequestered,0.0
+capital,Store,NL2 0AC,co2 stored,4e-05
+capital,Store,NL2 0AC,gas,818834982.9788
+capital,Store,NL2 0AC,home battery,4e-05
+capital,Store,NO0 0AC,H2 Store,4e-05
+capital,Store,NO0 0AC,battery,4e-05
+capital,Store,NO0 0AC,co2 sequestered,0.0
+capital,Store,NO0 0AC,co2 stored,4e-05
+capital,Store,NO0 0AC,gas,4e-05
+capital,Store,NO0 0AC,home battery,4e-05
+capital,Store,PL2 0AC,H2 Store,6e-05
+capital,Store,PL2 0AC,battery,4e-05
+capital,Store,PL2 0AC,co2 sequestered,0.0
+capital,Store,PL2 0AC,co2 stored,4e-05
+capital,Store,PL2 0AC,gas,564119331.55004
+capital,Store,PL2 0AC,home battery,4e-05
+capital,Store,PT2 0AC,H2 Store,5e-05
+capital,Store,PT2 0AC,battery,4e-05
+capital,Store,PT2 0AC,co2 sequestered,0.0
+capital,Store,PT2 0AC,co2 stored,4e-05
+capital,Store,PT2 0AC,gas,25982289.69353
+capital,Store,PT2 0AC,home battery,4e-05
+capital,Store,RO2 0AC,H2 Store,6e-05
+capital,Store,RO2 0AC,battery,4e-05
+capital,Store,RO2 0AC,co2 sequestered,0.0
+capital,Store,RO2 0AC,co2 stored,4e-05
+capital,Store,RO2 0AC,gas,286839344.39966
+capital,Store,RO2 0AC,home battery,4e-05
+capital,Store,RS2 0AC,H2 Store,4e-05
+capital,Store,RS2 0AC,battery,4e-05
+capital,Store,RS2 0AC,co2 sequestered,0.0
+capital,Store,RS2 0AC,co2 stored,4e-05
+capital,Store,RS2 0AC,gas,25982289.69353
+capital,Store,RS2 0AC,home battery,4e-05
+capital,Store,SE0 0AC,H2 Store,4e-05
+capital,Store,SE0 0AC,battery,4e-05
+capital,Store,SE0 0AC,co2 sequestered,0.0
+capital,Store,SE0 0AC,co2 stored,4e-05
+capital,Store,SE0 0AC,gas,19798469.88722
+capital,Store,SE0 0AC,home battery,4e-05
+capital,Store,SI2 0AC,H2 Store,4e-05
+capital,Store,SI2 0AC,battery,4e-05
+capital,Store,SI2 0AC,co2 sequestered,0.0
+capital,Store,SI2 0AC,co2 stored,4e-05
+capital,Store,SI2 0AC,gas,4e-05
+capital,Store,SI2 0AC,home battery,4e-05
+capital,Store,SK2 0AC,H2 Store,4e-05
+capital,Store,SK2 0AC,battery,4e-05
+capital,Store,SK2 0AC,co2 sequestered,0.0
+capital,Store,SK2 0AC,co2 stored,4e-05
+capital,Store,SK2 0AC,gas,188566891.3076
+capital,Store,SK2 0AC,home battery,4e-05
+capital,Store,XK2 0AC,H2 Store,4e-05
+capital,Store,XK2 0AC,battery,4e-05
+capital,Store,XK2 0AC,co2 sequestered,0.0
+capital,Store,XK2 0AC,co2 stored,4e-05
+capital,Store,XK2 0AC,gas,4e-05
+capital,Store,XK2 0AC,home battery,4e-05
+marginal,Generator,AL2 0AC,offwind-ac,0.0
+marginal,Generator,AL2 0AC,offwind-float,0.0
+marginal,Generator,AL2 0AC,onwind,801.88499
+marginal,Generator,AL2 0AC,ror,5323.42114
+marginal,Generator,AL2 0AC,solar,1357.17132
+marginal,Generator,AL2 0AC,solar rooftop,23568.86288
+marginal,Generator,AL2 0AC,solar-hsat,0.0
+marginal,Generator,AT2 0AC,onwind,25389.36777
+marginal,Generator,AT2 0AC,ror,14773.28351
+marginal,Generator,AT2 0AC,solar,89777.67538
+marginal,Generator,AT2 0AC,solar rooftop,74563.73173
+marginal,Generator,AT2 0AC,solar-hsat,0.0
+marginal,Generator,BA2 0AC,offwind-ac,0.0
+marginal,Generator,BA2 0AC,offwind-float,0.0
+marginal,Generator,BA2 0AC,onwind,1045.5748
+marginal,Generator,BA2 0AC,ror,221.15127
+marginal,Generator,BA2 0AC,solar,2133.95569
+marginal,Generator,BA2 0AC,solar rooftop,26222.20913
+marginal,Generator,BA2 0AC,solar-hsat,0.0
+marginal,Generator,BE2 0AC,nuclear,159786692.69189
+marginal,Generator,BE2 0AC,offwind-ac,79348.15088
+marginal,Generator,BE2 0AC,offwind-dc,27877.183
+marginal,Generator,BE2 0AC,offwind-float,0.0
+marginal,Generator,BE2 0AC,onwind,123683.59881
+marginal,Generator,BE2 0AC,ror,1380.30619
+marginal,Generator,BE2 0AC,solar,2508.69611
+marginal,Generator,BE2 0AC,solar rooftop,0.0
+marginal,Generator,BE2 0AC,solar-hsat,0.0
+marginal,Generator,BG2 0AC,nuclear,67548317.51691
+marginal,Generator,BG2 0AC,offwind-ac,0.0
+marginal,Generator,BG2 0AC,offwind-dc,431.08478
+marginal,Generator,BG2 0AC,offwind-float,0.0
+marginal,Generator,BG2 0AC,onwind,5959.69609
+marginal,Generator,BG2 0AC,ror,1364.11262
+marginal,Generator,BG2 0AC,solar,14018.44623
+marginal,Generator,BG2 0AC,solar rooftop,52609.98141
+marginal,Generator,BG2 0AC,solar-hsat,0.0
+marginal,Generator,CH2 0AC,nuclear,115563144.50313
+marginal,Generator,CH2 0AC,onwind,126.77206
+marginal,Generator,CH2 0AC,ror,11304.68662
+marginal,Generator,CH2 0AC,solar,407267.33273
+marginal,Generator,CH2 0AC,solar rooftop,80547.21196
+marginal,Generator,CH2 0AC,solar-hsat,0.0
+marginal,Generator,CZ2 0AC,nuclear,179363929.5704
+marginal,Generator,CZ2 0AC,onwind,1773.37054
+marginal,Generator,CZ2 0AC,ror,427.97338
+marginal,Generator,CZ2 0AC,solar,8125.41587
+marginal,Generator,CZ2 0AC,solar rooftop,0.0
+marginal,Generator,CZ2 0AC,solar-hsat,0.0
+marginal,Generator,DE2 0AC,offwind-ac,339929.67424
+marginal,Generator,DE2 0AC,offwind-dc,364874.1211
+marginal,Generator,DE2 0AC,offwind-float,0.0
+marginal,Generator,DE2 0AC,onwind,1000664.18912
+marginal,Generator,DE2 0AC,ror,52431.94839
+marginal,Generator,DE2 0AC,solar,144270.04066
+marginal,Generator,DE2 0AC,solar rooftop,0.0
+marginal,Generator,DE2 0AC,solar-hsat,0.0
+marginal,Generator,DK0 0AC,offwind-ac,31510.09716
+marginal,Generator,DK0 0AC,offwind-dc,0.0
+marginal,Generator,DK0 0AC,offwind-float,0.0
+marginal,Generator,DK0 0AC,onwind,437861.17149
+marginal,Generator,DK0 0AC,solar,2516.31633
+marginal,Generator,DK0 0AC,solar rooftop,0.0
+marginal,Generator,DK0 0AC,solar-hsat,0.0
+marginal,Generator,DK2 0AC,offwind-ac,33216.39926
+marginal,Generator,DK2 0AC,offwind-dc,0.0
+marginal,Generator,DK2 0AC,offwind-float,0.0
+marginal,Generator,DK2 0AC,onwind,870786.2615
+marginal,Generator,DK2 0AC,solar,7088.79396
+marginal,Generator,DK2 0AC,solar rooftop,0.0
+marginal,Generator,DK2 0AC,solar-hsat,0.0
+marginal,Generator,EE2 0AC,offwind-ac,0.0
+marginal,Generator,EE2 0AC,offwind-dc,0.0
+marginal,Generator,EE2 0AC,offwind-float,0.0
+marginal,Generator,EE2 0AC,onwind,188109.63627
+marginal,Generator,EE2 0AC,solar,4298.22359
+marginal,Generator,EE2 0AC,solar rooftop,0.0
+marginal,Generator,EE2 0AC,solar-hsat,0.0
+marginal,Generator,ES2 0AC,nuclear,369575003.84282
+marginal,Generator,ES2 0AC,offwind-ac,458.1522
+marginal,Generator,ES2 0AC,offwind-float,0.0
+marginal,Generator,ES2 0AC,onwind,483686.4073
+marginal,Generator,ES2 0AC,ror,5952.34966
+marginal,Generator,ES2 0AC,solar,241515.44254
+marginal,Generator,ES2 0AC,solar rooftop,492440.48553
+marginal,Generator,ES2 0AC,solar-hsat,0.0
+marginal,Generator,ES7 0AC,offwind-ac,0.0
+marginal,Generator,ES7 0AC,offwind-float,0.0
+marginal,Generator,ES7 0AC,onwind,3384.03596
+marginal,Generator,ES7 0AC,solar,2463.8733
+marginal,Generator,ES7 0AC,solar rooftop,8555.63496
+marginal,Generator,ES7 0AC,solar-hsat,0.0
+marginal,Generator,FI0 0AC,nuclear,255139112.88252
+marginal,Generator,FI0 0AC,offwind-ac,0.0
+marginal,Generator,FI0 0AC,offwind-dc,0.0
+marginal,Generator,FI0 0AC,offwind-float,0.0
+marginal,Generator,FI0 0AC,onwind,99969.03671
+marginal,Generator,FI0 0AC,ror,14582.97762
+marginal,Generator,FI0 0AC,solar,764.9915
+marginal,Generator,FI0 0AC,solar rooftop,1e-05
+marginal,Generator,FI0 0AC,solar-hsat,0.0
+marginal,Generator,FR2 0AC,nuclear,2680142135.04559
+marginal,Generator,FR2 0AC,offwind-ac,54191.6017
+marginal,Generator,FR2 0AC,offwind-dc,0.0
+marginal,Generator,FR2 0AC,offwind-float,0.0
+marginal,Generator,FR2 0AC,onwind,321906.56558
+marginal,Generator,FR2 0AC,ror,69601.82129
+marginal,Generator,FR2 0AC,solar,51611.20308
+marginal,Generator,FR2 0AC,solar rooftop,247263.14717
+marginal,Generator,FR2 0AC,solar-hsat,0.0
+marginal,Generator,FR6 0AC,offwind-ac,0.0
+marginal,Generator,FR6 0AC,offwind-float,0.0
+marginal,Generator,FR6 0AC,onwind,185.97604
+marginal,Generator,FR6 0AC,solar,0.0
+marginal,Generator,FR6 0AC,solar rooftop,2557.03511
+marginal,Generator,FR6 0AC,solar-hsat,0.0
+marginal,Generator,GB1 0AC,nuclear,173828038.49974
+marginal,Generator,GB1 0AC,offwind-ac,684837.27602
+marginal,Generator,GB1 0AC,offwind-dc,0.0
+marginal,Generator,GB1 0AC,offwind-float,0.0
+marginal,Generator,GB1 0AC,onwind,1395794.60327
+marginal,Generator,GB1 0AC,ror,17050.11259
+marginal,Generator,GB1 0AC,solar,34126.48327
+marginal,Generator,GB1 0AC,solar rooftop,0.0
+marginal,Generator,GB1 0AC,solar-hsat,0.0
+marginal,Generator,GB3 0AC,offwind-ac,0.0
+marginal,Generator,GB3 0AC,offwind-dc,0.0
+marginal,Generator,GB3 0AC,offwind-float,0.0
+marginal,Generator,GB3 0AC,onwind,167356.34491
+marginal,Generator,GB3 0AC,solar,482.36379
+marginal,Generator,GB3 0AC,solar rooftop,0.0
+marginal,Generator,GB3 0AC,solar-hsat,0.0
+marginal,Generator,GB5 0AC,offwind-ac,15852.25111
+marginal,Generator,GB5 0AC,offwind-dc,0.0
+marginal,Generator,GB5 0AC,offwind-float,0.0
+marginal,Generator,GB5 0AC,onwind,33710.60918
+marginal,Generator,GB5 0AC,solar,0.0
+marginal,Generator,GB5 0AC,solar rooftop,0.0
+marginal,Generator,GB5 0AC,solar-hsat,0.0
+marginal,Generator,GR2 0AC,offwind-ac,0.0
+marginal,Generator,GR2 0AC,offwind-dc,0.0
+marginal,Generator,GR2 0AC,offwind-float,0.0
+marginal,Generator,GR2 0AC,onwind,62111.35329
+marginal,Generator,GR2 0AC,ror,368.53717
+marginal,Generator,GR2 0AC,solar,387302.89746
+marginal,Generator,GR2 0AC,solar rooftop,88289.11003
+marginal,Generator,GR2 0AC,solar-hsat,0.0
+marginal,Generator,HR2 0AC,offwind-ac,0.0
+marginal,Generator,HR2 0AC,offwind-dc,0.0
+marginal,Generator,HR2 0AC,offwind-float,0.0
+marginal,Generator,HR2 0AC,onwind,8674.30913
+marginal,Generator,HR2 0AC,ror,6089.47932
+marginal,Generator,HR2 0AC,solar,1295.82538
+marginal,Generator,HR2 0AC,solar rooftop,27457.6478
+marginal,Generator,HR2 0AC,solar-hsat,0.0
+marginal,Generator,HU2 0AC,nuclear,82895714.80019
+marginal,Generator,HU2 0AC,onwind,3682.35062
+marginal,Generator,HU2 0AC,ror,182.82045
+marginal,Generator,HU2 0AC,solar,12015.14477
+marginal,Generator,HU2 0AC,solar rooftop,0.0
+marginal,Generator,HU2 0AC,solar-hsat,0.0
+marginal,Generator,IE3 0AC,offwind-ac,830.14401
+marginal,Generator,IE3 0AC,offwind-dc,0.0
+marginal,Generator,IE3 0AC,offwind-float,0.0
+marginal,Generator,IE3 0AC,onwind,99759.01777
+marginal,Generator,IE3 0AC,ror,2514.99986
+marginal,Generator,IE3 0AC,solar,3651.11043
+marginal,Generator,IE3 0AC,solar rooftop,0.0
+marginal,Generator,IE3 0AC,solar-hsat,0.0
+marginal,Generator,IT2 0AC,offwind-ac,523.39779
+marginal,Generator,IT2 0AC,offwind-dc,0.0
+marginal,Generator,IT2 0AC,offwind-float,0.0
+marginal,Generator,IT2 0AC,onwind,100458.85466
+marginal,Generator,IT2 0AC,ror,56930.34457
+marginal,Generator,IT2 0AC,solar,694015.91242
+marginal,Generator,IT2 0AC,solar rooftop,520772.55582
+marginal,Generator,IT2 0AC,solar-hsat,0.0
+marginal,Generator,IT4 0AC,offwind-ac,0.0
+marginal,Generator,IT4 0AC,offwind-float,0.0
+marginal,Generator,IT4 0AC,onwind,52533.33996
+marginal,Generator,IT4 0AC,ror,114.96164
+marginal,Generator,IT4 0AC,solar,3112.43116
+marginal,Generator,IT4 0AC,solar rooftop,14014.7862
+marginal,Generator,IT4 0AC,solar-hsat,0.0
+marginal,Generator,LT2 0AC,offwind-ac,0.0
+marginal,Generator,LT2 0AC,offwind-dc,26485.39627
+marginal,Generator,LT2 0AC,offwind-float,0.0
+marginal,Generator,LT2 0AC,onwind,19024.62859
+marginal,Generator,LT2 0AC,solar,3187.79818
+marginal,Generator,LT2 0AC,solar rooftop,0.0
+marginal,Generator,LT2 0AC,solar-hsat,0.0
+marginal,Generator,LU2 0AC,onwind,1856.68428
+marginal,Generator,LU2 0AC,solar,290.77154
+marginal,Generator,LU2 0AC,solar rooftop,0.0
+marginal,Generator,LU2 0AC,solar-hsat,0.0
+marginal,Generator,LV2 0AC,offwind-ac,0.0
+marginal,Generator,LV2 0AC,offwind-dc,0.0
+marginal,Generator,LV2 0AC,offwind-float,0.0
+marginal,Generator,LV2 0AC,onwind,1214.70827
+marginal,Generator,LV2 0AC,ror,10927.81429
+marginal,Generator,LV2 0AC,solar,2996.4913
+marginal,Generator,LV2 0AC,solar rooftop,4711.69161
+marginal,Generator,LV2 0AC,solar-hsat,0.0
+marginal,Generator,ME2 0AC,offwind-ac,0.0
+marginal,Generator,ME2 0AC,offwind-float,0.0
+marginal,Generator,ME2 0AC,onwind,476.24176
+marginal,Generator,ME2 0AC,ror,108.23563
+marginal,Generator,ME2 0AC,solar,114.16084
+marginal,Generator,ME2 0AC,solar rooftop,5584.49064
+marginal,Generator,ME2 0AC,solar-hsat,0.0
+marginal,Generator,MK2 0AC,onwind,1591.69256
+marginal,Generator,MK2 0AC,ror,1944.43567
+marginal,Generator,MK2 0AC,solar,2414.12579
+marginal,Generator,MK2 0AC,solar rooftop,17559.67087
+marginal,Generator,MK2 0AC,solar-hsat,0.0
+marginal,Generator,NL2 0AC,nuclear,11835901.61002
+marginal,Generator,NL2 0AC,offwind-ac,207466.50823
+marginal,Generator,NL2 0AC,offwind-dc,0.0
+marginal,Generator,NL2 0AC,offwind-float,0.0
+marginal,Generator,NL2 0AC,onwind,840581.3761
+marginal,Generator,NL2 0AC,solar,21147.50953
+marginal,Generator,NL2 0AC,solar rooftop,0.0
+marginal,Generator,NL2 0AC,solar-hsat,0.0
+marginal,Generator,NO0 0AC,offwind-ac,3003.63921
+marginal,Generator,NO0 0AC,offwind-dc,192501.5546
+marginal,Generator,NO0 0AC,offwind-float,0.0
+marginal,Generator,NO0 0AC,onwind,57232.12242
+marginal,Generator,NO0 0AC,ror,10183.70716
+marginal,Generator,NO0 0AC,solar,106.20139
+marginal,Generator,NO0 0AC,solar rooftop,31538.81968
+marginal,Generator,NO0 0AC,solar-hsat,0.0
+marginal,Generator,PL2 0AC,offwind-ac,0.0
+marginal,Generator,PL2 0AC,offwind-dc,175003.16268
+marginal,Generator,PL2 0AC,offwind-float,0.0
+marginal,Generator,PL2 0AC,onwind,684050.25723
+marginal,Generator,PL2 0AC,ror,2682.59287
+marginal,Generator,PL2 0AC,solar,25296.62389
+marginal,Generator,PL2 0AC,solar rooftop,0.0
+marginal,Generator,PL2 0AC,solar-hsat,0.0
+marginal,Generator,PT2 0AC,offwind-ac,642.39168
+marginal,Generator,PT2 0AC,offwind-float,0.0
+marginal,Generator,PT2 0AC,onwind,72556.94523
+marginal,Generator,PT2 0AC,ror,25399.62306
+marginal,Generator,PT2 0AC,solar,22325.11238
+marginal,Generator,PT2 0AC,solar rooftop,56133.70813
+marginal,Generator,PT2 0AC,solar-hsat,0.0
+marginal,Generator,RO2 0AC,nuclear,53860629.38289
+marginal,Generator,RO2 0AC,offwind-ac,45964.75462
+marginal,Generator,RO2 0AC,offwind-dc,77329.79262
+marginal,Generator,RO2 0AC,offwind-float,0.0
+marginal,Generator,RO2 0AC,onwind,54044.57286
+marginal,Generator,RO2 0AC,ror,12837.70109
+marginal,Generator,RO2 0AC,solar,15071.38531
+marginal,Generator,RO2 0AC,solar rooftop,44232.7991
+marginal,Generator,RO2 0AC,solar-hsat,0.0
+marginal,Generator,RS2 0AC,onwind,6612.211
+marginal,Generator,RS2 0AC,ror,4739.59139
+marginal,Generator,RS2 0AC,solar,642.43385
+marginal,Generator,RS2 0AC,solar rooftop,37256.71412
+marginal,Generator,RS2 0AC,solar-hsat,0.0
+marginal,Generator,SE0 0AC,nuclear,291699733.0385
+marginal,Generator,SE0 0AC,offwind-ac,3902.46054
+marginal,Generator,SE0 0AC,offwind-dc,486319.53562
+marginal,Generator,SE0 0AC,offwind-float,0.0
+marginal,Generator,SE0 0AC,onwind,201602.56371
+marginal,Generator,SE0 0AC,ror,17774.88959
+marginal,Generator,SE0 0AC,solar,2078.47343
+marginal,Generator,SE0 0AC,solar rooftop,1618.34774
+marginal,Generator,SE0 0AC,solar-hsat,0.0
+marginal,Generator,SI2 0AC,nuclear,30082890.79654
+marginal,Generator,SI2 0AC,offwind-ac,0.0
+marginal,Generator,SI2 0AC,offwind-float,0.0
+marginal,Generator,SI2 0AC,onwind,0.0
+marginal,Generator,SI2 0AC,ror,9580.05444
+marginal,Generator,SI2 0AC,solar,310.6982
+marginal,Generator,SI2 0AC,solar rooftop,0.0
+marginal,Generator,SI2 0AC,solar-hsat,0.0
+marginal,Generator,SK2 0AC,nuclear,122507031.73504
+marginal,Generator,SK2 0AC,onwind,0.0
+marginal,Generator,SK2 0AC,ror,8451.05369
+marginal,Generator,SK2 0AC,solar,2637.20875
+marginal,Generator,SK2 0AC,solar rooftop,0.0
+marginal,Generator,SK2 0AC,solar-hsat,0.0
+marginal,Generator,XK2 0AC,onwind,595.53104
+marginal,Generator,XK2 0AC,ror,208.82191
+marginal,Generator,XK2 0AC,solar,82.65252
+marginal,Generator,XK2 0AC,solar rooftop,13352.9143
+marginal,Generator,XK2 0AC,solar-hsat,0.0
+marginal,Link,AL2 0AC,CCGT,0.0
+marginal,Link,AL2 0AC,CO2 pipeline,-0.0
+marginal,Link,AL2 0AC,H2 Electrolysis,0.0
+marginal,Link,AL2 0AC,H2 Fuel Cell,0.0
+marginal,Link,AL2 0AC,H2 pipeline,0.0
+marginal,Link,AL2 0AC,H2 turbine,0.0
+marginal,Link,AL2 0AC,Haber-Bosch,0.0
+marginal,Link,AL2 0AC,OCGT,0.0
+marginal,Link,AL2 0AC,SMR,0.0
+marginal,Link,AL2 0AC,SMR CC,0.0
+marginal,Link,AL2 0AC,Sabatier,0.0
+marginal,Link,AL2 0AC,battery charger,0.0
+marginal,Link,AL2 0AC,battery discharger,0.0
+marginal,Link,AL2 0AC,co2 sequestered,0.0
+marginal,Link,AL2 0AC,electricity distribution grid,7949.76847
+marginal,Link,AL2 0AC,gas pipeline,0.0
+marginal,Link,AL2 0AC,gas pipeline new,0.0
+marginal,Link,AL2 0AC,home battery charger,0.0
+marginal,Link,AL2 0AC,home battery discharger,0.0
+marginal,Link,AT2 0AC,CCGT,0.0
+marginal,Link,AT2 0AC,CO2 pipeline,0.0
+marginal,Link,AT2 0AC,H2 Electrolysis,0.0
+marginal,Link,AT2 0AC,H2 Fuel Cell,0.0
+marginal,Link,AT2 0AC,H2 pipeline,0.0
+marginal,Link,AT2 0AC,H2 turbine,0.0
+marginal,Link,AT2 0AC,Haber-Bosch,0.0
+marginal,Link,AT2 0AC,OCGT,0.0
+marginal,Link,AT2 0AC,SMR,0.0
+marginal,Link,AT2 0AC,SMR CC,0.0
+marginal,Link,AT2 0AC,Sabatier,0.0
+marginal,Link,AT2 0AC,battery charger,0.0
+marginal,Link,AT2 0AC,battery discharger,0.0
+marginal,Link,AT2 0AC,co2 sequestered,0.0
+marginal,Link,AT2 0AC,electricity distribution grid,142217.26061
+marginal,Link,AT2 0AC,gas pipeline,0.0
+marginal,Link,AT2 0AC,gas pipeline new,-0.0
+marginal,Link,AT2 0AC,home battery charger,0.0
+marginal,Link,AT2 0AC,home battery discharger,0.0
+marginal,Link,BA2 0AC,CCGT,0.0
+marginal,Link,BA2 0AC,CO2 pipeline,0.0
+marginal,Link,BA2 0AC,H2 Electrolysis,0.0
+marginal,Link,BA2 0AC,H2 Fuel Cell,0.0
+marginal,Link,BA2 0AC,H2 pipeline,0.0
+marginal,Link,BA2 0AC,H2 turbine,0.0
+marginal,Link,BA2 0AC,Haber-Bosch,0.0
+marginal,Link,BA2 0AC,OCGT,0.0
+marginal,Link,BA2 0AC,SMR,0.0
+marginal,Link,BA2 0AC,SMR CC,0.0
+marginal,Link,BA2 0AC,Sabatier,0.0
+marginal,Link,BA2 0AC,battery charger,0.0
+marginal,Link,BA2 0AC,battery discharger,0.0
+marginal,Link,BA2 0AC,co2 sequestered,0.0
+marginal,Link,BA2 0AC,electricity distribution grid,15447.96042
+marginal,Link,BA2 0AC,gas pipeline,0.0
+marginal,Link,BA2 0AC,gas pipeline new,0.0
+marginal,Link,BA2 0AC,home battery charger,0.0
+marginal,Link,BA2 0AC,home battery discharger,0.0
+marginal,Link,BE2 0AC,CCGT,0.0
+marginal,Link,BE2 0AC,CO2 pipeline,-0.0
+marginal,Link,BE2 0AC,DC,14350.3616
+marginal,Link,BE2 0AC,H2 Electrolysis,0.0
+marginal,Link,BE2 0AC,H2 Fuel Cell,0.0
+marginal,Link,BE2 0AC,H2 pipeline,0.0
+marginal,Link,BE2 0AC,H2 turbine,1e-05
+marginal,Link,BE2 0AC,Haber-Bosch,0.0
+marginal,Link,BE2 0AC,OCGT,0.0
+marginal,Link,BE2 0AC,SMR,0.0
+marginal,Link,BE2 0AC,SMR CC,0.0
+marginal,Link,BE2 0AC,Sabatier,0.0
+marginal,Link,BE2 0AC,battery charger,0.0
+marginal,Link,BE2 0AC,battery discharger,0.0
+marginal,Link,BE2 0AC,co2 sequestered,0.0
+marginal,Link,BE2 0AC,electricity distribution grid,238857.28034
+marginal,Link,BE2 0AC,gas pipeline,1e-05
+marginal,Link,BE2 0AC,gas pipeline new,-0.0
+marginal,Link,BE2 0AC,home battery charger,0.0
+marginal,Link,BE2 0AC,home battery discharger,0.0
+marginal,Link,BG2 0AC,CCGT,0.0
+marginal,Link,BG2 0AC,CO2 pipeline,-0.0
+marginal,Link,BG2 0AC,H2 Electrolysis,0.0
+marginal,Link,BG2 0AC,H2 Fuel Cell,0.0
+marginal,Link,BG2 0AC,H2 pipeline,0.0
+marginal,Link,BG2 0AC,H2 turbine,0.0
+marginal,Link,BG2 0AC,Haber-Bosch,0.0
+marginal,Link,BG2 0AC,OCGT,0.0
+marginal,Link,BG2 0AC,SMR,0.0
+marginal,Link,BG2 0AC,SMR CC,0.0
+marginal,Link,BG2 0AC,Sabatier,0.0
+marginal,Link,BG2 0AC,battery charger,0.0
+marginal,Link,BG2 0AC,battery discharger,0.0
+marginal,Link,BG2 0AC,co2 sequestered,0.0
+marginal,Link,BG2 0AC,electricity distribution grid,79536.03447
+marginal,Link,BG2 0AC,gas pipeline,0.0
+marginal,Link,BG2 0AC,gas pipeline new,-0.0
+marginal,Link,BG2 0AC,home battery charger,0.0
+marginal,Link,BG2 0AC,home battery discharger,0.0
+marginal,Link,CH2 0AC,CCGT,0.0
+marginal,Link,CH2 0AC,CO2 pipeline,0.0
+marginal,Link,CH2 0AC,DC,0.0
+marginal,Link,CH2 0AC,H2 Electrolysis,0.0
+marginal,Link,CH2 0AC,H2 Fuel Cell,0.0
+marginal,Link,CH2 0AC,H2 pipeline,0.0
+marginal,Link,CH2 0AC,H2 turbine,0.0
+marginal,Link,CH2 0AC,Haber-Bosch,0.0
+marginal,Link,CH2 0AC,OCGT,0.0
+marginal,Link,CH2 0AC,SMR,0.0
+marginal,Link,CH2 0AC,SMR CC,0.0
+marginal,Link,CH2 0AC,Sabatier,0.0
+marginal,Link,CH2 0AC,battery charger,0.0
+marginal,Link,CH2 0AC,battery discharger,0.0
+marginal,Link,CH2 0AC,co2 sequestered,0.0
+marginal,Link,CH2 0AC,electricity distribution grid,90943.05867
+marginal,Link,CH2 0AC,gas pipeline,0.0
+marginal,Link,CH2 0AC,gas pipeline new,-0.0
+marginal,Link,CH2 0AC,home battery charger,0.0
+marginal,Link,CH2 0AC,home battery discharger,0.0
+marginal,Link,CZ2 0AC,CCGT,0.0
+marginal,Link,CZ2 0AC,CO2 pipeline,0.0
+marginal,Link,CZ2 0AC,H2 Electrolysis,0.0
+marginal,Link,CZ2 0AC,H2 Fuel Cell,0.0
+marginal,Link,CZ2 0AC,H2 pipeline,0.0
+marginal,Link,CZ2 0AC,H2 turbine,1e-05
+marginal,Link,CZ2 0AC,Haber-Bosch,0.0
+marginal,Link,CZ2 0AC,OCGT,0.0
+marginal,Link,CZ2 0AC,SMR,0.0
+marginal,Link,CZ2 0AC,SMR CC,0.0
+marginal,Link,CZ2 0AC,Sabatier,0.0
+marginal,Link,CZ2 0AC,battery charger,0.0
+marginal,Link,CZ2 0AC,battery discharger,0.0
+marginal,Link,CZ2 0AC,co2 sequestered,0.0
+marginal,Link,CZ2 0AC,electricity distribution grid,189646.54498
+marginal,Link,CZ2 0AC,gas pipeline,0.0
+marginal,Link,CZ2 0AC,gas pipeline new,0.0
+marginal,Link,CZ2 0AC,home battery charger,0.0
+marginal,Link,CZ2 0AC,home battery discharger,0.0
+marginal,Link,DE2 0AC,CCGT,0.0
+marginal,Link,DE2 0AC,CO2 pipeline,0.0
+marginal,Link,DE2 0AC,DC,42900.87969
+marginal,Link,DE2 0AC,H2 Electrolysis,0.0
+marginal,Link,DE2 0AC,H2 Fuel Cell,0.0
+marginal,Link,DE2 0AC,H2 pipeline,0.0
+marginal,Link,DE2 0AC,H2 turbine,1e-05
+marginal,Link,DE2 0AC,Haber-Bosch,0.0
+marginal,Link,DE2 0AC,OCGT,0.0
+marginal,Link,DE2 0AC,SMR,0.0
+marginal,Link,DE2 0AC,SMR CC,0.0
+marginal,Link,DE2 0AC,Sabatier,0.0
+marginal,Link,DE2 0AC,battery charger,0.0
+marginal,Link,DE2 0AC,battery discharger,0.0
+marginal,Link,DE2 0AC,co2 sequestered,0.0
+marginal,Link,DE2 0AC,electricity distribution grid,1271786.79743
+marginal,Link,DE2 0AC,gas pipeline,3e-05
+marginal,Link,DE2 0AC,home battery charger,0.0
+marginal,Link,DE2 0AC,home battery discharger,0.0
+marginal,Link,DK0 0AC,CCGT,0.0
+marginal,Link,DK0 0AC,CO2 pipeline,-0.0
+marginal,Link,DK0 0AC,DC,112948.2528
+marginal,Link,DK0 0AC,H2 Electrolysis,0.0
+marginal,Link,DK0 0AC,H2 Fuel Cell,0.0
+marginal,Link,DK0 0AC,H2 pipeline,0.0
+marginal,Link,DK0 0AC,H2 turbine,0.0
+marginal,Link,DK0 0AC,Haber-Bosch,0.0
+marginal,Link,DK0 0AC,OCGT,0.0
+marginal,Link,DK0 0AC,SMR,0.0
+marginal,Link,DK0 0AC,SMR CC,0.0
+marginal,Link,DK0 0AC,Sabatier,0.0
+marginal,Link,DK0 0AC,battery charger,0.0
+marginal,Link,DK0 0AC,battery discharger,0.0
+marginal,Link,DK0 0AC,co2 sequestered,0.0
+marginal,Link,DK0 0AC,electricity distribution grid,47231.36417
+marginal,Link,DK0 0AC,gas pipeline,1e-05
+marginal,Link,DK0 0AC,gas pipeline new,-0.0
+marginal,Link,DK0 0AC,home battery charger,0.0
+marginal,Link,DK0 0AC,home battery discharger,0.0
+marginal,Link,DK2 0AC,CCGT,0.0
+marginal,Link,DK2 0AC,CO2 pipeline,-0.0
+marginal,Link,DK2 0AC,DC,113558.74533
+marginal,Link,DK2 0AC,H2 Electrolysis,0.0
+marginal,Link,DK2 0AC,H2 Fuel Cell,0.0
+marginal,Link,DK2 0AC,H2 pipeline,0.0
+marginal,Link,DK2 0AC,H2 turbine,0.0
+marginal,Link,DK2 0AC,Haber-Bosch,0.0
+marginal,Link,DK2 0AC,OCGT,0.0
+marginal,Link,DK2 0AC,SMR,0.0
+marginal,Link,DK2 0AC,SMR CC,0.0
+marginal,Link,DK2 0AC,Sabatier,0.0
+marginal,Link,DK2 0AC,battery charger,0.0
+marginal,Link,DK2 0AC,battery discharger,0.0
+marginal,Link,DK2 0AC,co2 sequestered,0.0
+marginal,Link,DK2 0AC,electricity distribution grid,46360.82235
+marginal,Link,DK2 0AC,gas pipeline,1e-05
+marginal,Link,DK2 0AC,home battery charger,0.0
+marginal,Link,DK2 0AC,home battery discharger,0.0
+marginal,Link,EE2 0AC,CCGT,0.0
+marginal,Link,EE2 0AC,CO2 pipeline,-0.0
+marginal,Link,EE2 0AC,DC,38187.88568
+marginal,Link,EE2 0AC,H2 Electrolysis,0.0
+marginal,Link,EE2 0AC,H2 Fuel Cell,0.0
+marginal,Link,EE2 0AC,H2 pipeline,0.0
+marginal,Link,EE2 0AC,H2 turbine,0.0
+marginal,Link,EE2 0AC,Haber-Bosch,0.0
+marginal,Link,EE2 0AC,OCGT,0.0
+marginal,Link,EE2 0AC,SMR,0.0
+marginal,Link,EE2 0AC,SMR CC,0.0
+marginal,Link,EE2 0AC,Sabatier,0.0
+marginal,Link,EE2 0AC,battery charger,0.0
+marginal,Link,EE2 0AC,battery discharger,0.0
+marginal,Link,EE2 0AC,co2 sequestered,0.0
+marginal,Link,EE2 0AC,electricity distribution grid,23774.49145
+marginal,Link,EE2 0AC,gas pipeline,0.0
+marginal,Link,EE2 0AC,gas pipeline new,0.0
+marginal,Link,EE2 0AC,home battery charger,0.0
+marginal,Link,EE2 0AC,home battery discharger,0.0
+marginal,Link,ES2 0AC,CCGT,0.0
+marginal,Link,ES2 0AC,CO2 pipeline,-0.0
+marginal,Link,ES2 0AC,DC,155662.7331
+marginal,Link,ES2 0AC,H2 Electrolysis,0.0
+marginal,Link,ES2 0AC,H2 Fuel Cell,0.0
+marginal,Link,ES2 0AC,H2 pipeline,0.0
+marginal,Link,ES2 0AC,H2 turbine,0.0
+marginal,Link,ES2 0AC,Haber-Bosch,0.0
+marginal,Link,ES2 0AC,OCGT,0.0
+marginal,Link,ES2 0AC,SMR,0.0
+marginal,Link,ES2 0AC,SMR CC,0.0
+marginal,Link,ES2 0AC,Sabatier,0.0
+marginal,Link,ES2 0AC,battery charger,0.0
+marginal,Link,ES2 0AC,battery discharger,0.0
+marginal,Link,ES2 0AC,co2 sequestered,0.0
+marginal,Link,ES2 0AC,electricity distribution grid,368629.0474
+marginal,Link,ES2 0AC,gas pipeline,0.0
+marginal,Link,ES2 0AC,gas pipeline new,0.0
+marginal,Link,ES2 0AC,home battery charger,0.0
+marginal,Link,ES2 0AC,home battery discharger,0.0
+marginal,Link,ES7 0AC,CCGT,0.0
+marginal,Link,ES7 0AC,DC,73.72858
+marginal,Link,ES7 0AC,H2 Electrolysis,0.0
+marginal,Link,ES7 0AC,H2 Fuel Cell,0.0
+marginal,Link,ES7 0AC,H2 pipeline,0.0
+marginal,Link,ES7 0AC,H2 turbine,0.0
+marginal,Link,ES7 0AC,Haber-Bosch,0.0
+marginal,Link,ES7 0AC,OCGT,0.0
+marginal,Link,ES7 0AC,SMR,0.0
+marginal,Link,ES7 0AC,SMR CC,0.0
+marginal,Link,ES7 0AC,Sabatier,0.0
+marginal,Link,ES7 0AC,battery charger,0.0
+marginal,Link,ES7 0AC,battery discharger,0.0
+marginal,Link,ES7 0AC,co2 sequestered,0.0
+marginal,Link,ES7 0AC,electricity distribution grid,5646.5812
+marginal,Link,ES7 0AC,gas pipeline,0.0
+marginal,Link,ES7 0AC,gas pipeline new,0.0
+marginal,Link,ES7 0AC,home battery charger,0.0
+marginal,Link,ES7 0AC,home battery discharger,0.0
+marginal,Link,EU,OCGT methanol,0.0
+marginal,Link,EU,ammonia cracker,0.0
+marginal,Link,FI0 0AC,CCGT,0.0
+marginal,Link,FI0 0AC,CO2 pipeline,-0.0
+marginal,Link,FI0 0AC,DC,7626.24771
+marginal,Link,FI0 0AC,H2 Electrolysis,0.0
+marginal,Link,FI0 0AC,H2 Fuel Cell,0.0
+marginal,Link,FI0 0AC,H2 pipeline,0.0
+marginal,Link,FI0 0AC,H2 turbine,0.0
+marginal,Link,FI0 0AC,Haber-Bosch,0.0
+marginal,Link,FI0 0AC,OCGT,0.0
+marginal,Link,FI0 0AC,SMR,0.0
+marginal,Link,FI0 0AC,SMR CC,0.0
+marginal,Link,FI0 0AC,Sabatier,0.0
+marginal,Link,FI0 0AC,battery charger,0.0
+marginal,Link,FI0 0AC,battery discharger,0.0
+marginal,Link,FI0 0AC,co2 sequestered,0.0
+marginal,Link,FI0 0AC,electricity distribution grid,247756.74693
+marginal,Link,FI0 0AC,gas pipeline new,-0.0
+marginal,Link,FI0 0AC,home battery charger,0.0
+marginal,Link,FI0 0AC,home battery discharger,0.0
+marginal,Link,FR2 0AC,CCGT,0.0
+marginal,Link,FR2 0AC,CO2 pipeline,-0.0
+marginal,Link,FR2 0AC,DC,44746.63993
+marginal,Link,FR2 0AC,H2 Electrolysis,0.0
+marginal,Link,FR2 0AC,H2 Fuel Cell,0.0
+marginal,Link,FR2 0AC,H2 pipeline,0.0
+marginal,Link,FR2 0AC,H2 turbine,0.0
+marginal,Link,FR2 0AC,Haber-Bosch,0.0
+marginal,Link,FR2 0AC,OCGT,0.0
+marginal,Link,FR2 0AC,SMR,0.0
+marginal,Link,FR2 0AC,SMR CC,0.0
+marginal,Link,FR2 0AC,Sabatier,0.0
+marginal,Link,FR2 0AC,battery charger,0.0
+marginal,Link,FR2 0AC,battery discharger,0.0
+marginal,Link,FR2 0AC,co2 sequestered,0.0
+marginal,Link,FR2 0AC,electricity distribution grid,1309702.39661
+marginal,Link,FR2 0AC,gas pipeline,0.0
+marginal,Link,FR2 0AC,home battery charger,0.0
+marginal,Link,FR2 0AC,home battery discharger,0.0
+marginal,Link,FR6 0AC,CCGT,0.0
+marginal,Link,FR6 0AC,CO2 pipeline,0.0
+marginal,Link,FR6 0AC,DC,1468.27827
+marginal,Link,FR6 0AC,H2 Electrolysis,0.0
+marginal,Link,FR6 0AC,H2 Fuel Cell,0.0
+marginal,Link,FR6 0AC,H2 pipeline,0.0
+marginal,Link,FR6 0AC,H2 turbine,0.0
+marginal,Link,FR6 0AC,Haber-Bosch,0.0
+marginal,Link,FR6 0AC,OCGT,0.0
+marginal,Link,FR6 0AC,SMR,0.0
+marginal,Link,FR6 0AC,SMR CC,0.0
+marginal,Link,FR6 0AC,Sabatier,0.0
+marginal,Link,FR6 0AC,battery charger,0.0
+marginal,Link,FR6 0AC,battery discharger,0.0
+marginal,Link,FR6 0AC,co2 sequestered,0.0
+marginal,Link,FR6 0AC,electricity distribution grid,2926.13554
+marginal,Link,FR6 0AC,gas pipeline new,-0.0
+marginal,Link,FR6 0AC,home battery charger,0.0
+marginal,Link,FR6 0AC,home battery discharger,0.0
+marginal,Link,GB1 0AC,CCGT,0.0
+marginal,Link,GB1 0AC,CO2 pipeline,0.0
+marginal,Link,GB1 0AC,DC,173293.59737
+marginal,Link,GB1 0AC,H2 Electrolysis,0.0
+marginal,Link,GB1 0AC,H2 Fuel Cell,0.0
+marginal,Link,GB1 0AC,H2 pipeline,0.0
+marginal,Link,GB1 0AC,H2 turbine,0.0
+marginal,Link,GB1 0AC,Haber-Bosch,0.0
+marginal,Link,GB1 0AC,OCGT,0.0
+marginal,Link,GB1 0AC,SMR,0.0
+marginal,Link,GB1 0AC,SMR CC,0.0
+marginal,Link,GB1 0AC,Sabatier,0.0
+marginal,Link,GB1 0AC,battery charger,0.0
+marginal,Link,GB1 0AC,battery discharger,0.0
+marginal,Link,GB1 0AC,co2 sequestered,0.0
+marginal,Link,GB1 0AC,electricity distribution grid,907613.9941
+marginal,Link,GB1 0AC,gas pipeline,2e-05
+marginal,Link,GB1 0AC,gas pipeline new,-0.0
+marginal,Link,GB1 0AC,home battery charger,0.0
+marginal,Link,GB1 0AC,home battery discharger,0.0
+marginal,Link,GB3 0AC,CCGT,0.0
+marginal,Link,GB3 0AC,CO2 pipeline,0.0
+marginal,Link,GB3 0AC,DC,5647.14605
+marginal,Link,GB3 0AC,H2 Electrolysis,15796.04952
+marginal,Link,GB3 0AC,H2 Fuel Cell,0.0
+marginal,Link,GB3 0AC,H2 pipeline,0.0
+marginal,Link,GB3 0AC,H2 turbine,2813034.18661
+marginal,Link,GB3 0AC,Haber-Bosch,0.0
+marginal,Link,GB3 0AC,OCGT,0.0
+marginal,Link,GB3 0AC,SMR,0.0
+marginal,Link,GB3 0AC,SMR CC,0.0
+marginal,Link,GB3 0AC,Sabatier,0.0
+marginal,Link,GB3 0AC,battery charger,0.0
+marginal,Link,GB3 0AC,battery discharger,0.0
+marginal,Link,GB3 0AC,co2 sequestered,0.0
+marginal,Link,GB3 0AC,electricity distribution grid,28399.77212
+marginal,Link,GB3 0AC,gas pipeline,1e-05
+marginal,Link,GB3 0AC,gas pipeline new,-0.0
+marginal,Link,GB3 0AC,home battery charger,0.0
+marginal,Link,GB3 0AC,home battery discharger,0.0
+marginal,Link,GB5 0AC,CCGT,0.0
+marginal,Link,GB5 0AC,DC,19997.59213
+marginal,Link,GB5 0AC,H2 Electrolysis,0.0
+marginal,Link,GB5 0AC,H2 Fuel Cell,0.0
+marginal,Link,GB5 0AC,H2 pipeline,0.0
+marginal,Link,GB5 0AC,H2 turbine,0.0
+marginal,Link,GB5 0AC,Haber-Bosch,0.0
+marginal,Link,GB5 0AC,OCGT,0.0
+marginal,Link,GB5 0AC,SMR,0.0
+marginal,Link,GB5 0AC,SMR CC,0.0
+marginal,Link,GB5 0AC,Sabatier,0.0
+marginal,Link,GB5 0AC,battery charger,0.0
+marginal,Link,GB5 0AC,battery discharger,0.0
+marginal,Link,GB5 0AC,co2 sequestered,0.0
+marginal,Link,GB5 0AC,electricity distribution grid,472.01708
+marginal,Link,GB5 0AC,gas pipeline,1e-05
+marginal,Link,GB5 0AC,home battery charger,0.0
+marginal,Link,GB5 0AC,home battery discharger,0.0
+marginal,Link,GR2 0AC,CCGT,0.0
+marginal,Link,GR2 0AC,CO2 pipeline,-0.0
+marginal,Link,GR2 0AC,DC,4499.40948
+marginal,Link,GR2 0AC,H2 Electrolysis,0.0
+marginal,Link,GR2 0AC,H2 Fuel Cell,0.0
+marginal,Link,GR2 0AC,H2 pipeline,0.0
+marginal,Link,GR2 0AC,H2 turbine,0.0
+marginal,Link,GR2 0AC,Haber-Bosch,0.0
+marginal,Link,GR2 0AC,OCGT,0.0
+marginal,Link,GR2 0AC,SMR,0.0
+marginal,Link,GR2 0AC,SMR CC,0.0
+marginal,Link,GR2 0AC,Sabatier,0.0
+marginal,Link,GR2 0AC,battery charger,0.0
+marginal,Link,GR2 0AC,battery discharger,0.0
+marginal,Link,GR2 0AC,co2 sequestered,0.0
+marginal,Link,GR2 0AC,electricity distribution grid,73342.58576
+marginal,Link,GR2 0AC,gas pipeline,0.0
+marginal,Link,GR2 0AC,gas pipeline new,-0.0
+marginal,Link,GR2 0AC,home battery charger,0.0
+marginal,Link,GR2 0AC,home battery discharger,0.0
+marginal,Link,HR2 0AC,CCGT,0.0
+marginal,Link,HR2 0AC,CO2 pipeline,0.0
+marginal,Link,HR2 0AC,H2 Electrolysis,0.0
+marginal,Link,HR2 0AC,H2 Fuel Cell,0.0
+marginal,Link,HR2 0AC,H2 pipeline,0.0
+marginal,Link,HR2 0AC,H2 turbine,0.0
+marginal,Link,HR2 0AC,Haber-Bosch,0.0
+marginal,Link,HR2 0AC,OCGT,0.0
+marginal,Link,HR2 0AC,SMR,0.0
+marginal,Link,HR2 0AC,SMR CC,0.0
+marginal,Link,HR2 0AC,Sabatier,0.0
+marginal,Link,HR2 0AC,battery charger,0.0
+marginal,Link,HR2 0AC,battery discharger,0.0
+marginal,Link,HR2 0AC,co2 sequestered,0.0
+marginal,Link,HR2 0AC,electricity distribution grid,32031.11724
+marginal,Link,HR2 0AC,gas pipeline,0.0
+marginal,Link,HR2 0AC,gas pipeline new,-0.0
+marginal,Link,HR2 0AC,home battery charger,0.0
+marginal,Link,HR2 0AC,home battery discharger,0.0
+marginal,Link,HU2 0AC,CCGT,0.0
+marginal,Link,HU2 0AC,CO2 pipeline,-0.0
+marginal,Link,HU2 0AC,H2 Electrolysis,0.0
+marginal,Link,HU2 0AC,H2 Fuel Cell,0.0
+marginal,Link,HU2 0AC,H2 pipeline,0.0
+marginal,Link,HU2 0AC,H2 turbine,0.0
+marginal,Link,HU2 0AC,Haber-Bosch,0.0
+marginal,Link,HU2 0AC,OCGT,0.0
+marginal,Link,HU2 0AC,SMR,0.0
+marginal,Link,HU2 0AC,SMR CC,0.0
+marginal,Link,HU2 0AC,Sabatier,0.0
+marginal,Link,HU2 0AC,battery charger,0.0
+marginal,Link,HU2 0AC,battery discharger,0.0
+marginal,Link,HU2 0AC,co2 sequestered,0.0
+marginal,Link,HU2 0AC,electricity distribution grid,96199.38413
+marginal,Link,HU2 0AC,gas pipeline,0.0
+marginal,Link,HU2 0AC,gas pipeline new,-0.0
+marginal,Link,HU2 0AC,home battery charger,0.0
+marginal,Link,HU2 0AC,home battery discharger,0.0
+marginal,Link,IE3 0AC,CCGT,0.0
+marginal,Link,IE3 0AC,DC,2548.56515
+marginal,Link,IE3 0AC,H2 Electrolysis,0.0
+marginal,Link,IE3 0AC,H2 Fuel Cell,0.0
+marginal,Link,IE3 0AC,H2 pipeline,0.0
+marginal,Link,IE3 0AC,H2 turbine,4e-05
+marginal,Link,IE3 0AC,Haber-Bosch,0.0
+marginal,Link,IE3 0AC,OCGT,0.0
+marginal,Link,IE3 0AC,SMR,0.0
+marginal,Link,IE3 0AC,SMR CC,0.0
+marginal,Link,IE3 0AC,Sabatier,0.0
+marginal,Link,IE3 0AC,battery charger,0.0
+marginal,Link,IE3 0AC,battery discharger,0.0
+marginal,Link,IE3 0AC,co2 sequestered,0.0
+marginal,Link,IE3 0AC,electricity distribution grid,68384.01954
+marginal,Link,IE3 0AC,gas pipeline,0.0
+marginal,Link,IE3 0AC,home battery charger,0.0
+marginal,Link,IE3 0AC,home battery discharger,0.0
+marginal,Link,IT2 0AC,CCGT,0.0
+marginal,Link,IT2 0AC,CO2 pipeline,-0.0
+marginal,Link,IT2 0AC,DC,13148.96317
+marginal,Link,IT2 0AC,H2 Electrolysis,0.0
+marginal,Link,IT2 0AC,H2 Fuel Cell,0.0
+marginal,Link,IT2 0AC,H2 pipeline,0.0
+marginal,Link,IT2 0AC,H2 turbine,0.0
+marginal,Link,IT2 0AC,Haber-Bosch,0.0
+marginal,Link,IT2 0AC,OCGT,0.0
+marginal,Link,IT2 0AC,SMR,0.0
+marginal,Link,IT2 0AC,SMR CC,0.0
+marginal,Link,IT2 0AC,Sabatier,0.0
+marginal,Link,IT2 0AC,battery charger,0.0
+marginal,Link,IT2 0AC,battery discharger,0.0
+marginal,Link,IT2 0AC,co2 sequestered,0.0
+marginal,Link,IT2 0AC,electricity distribution grid,528572.18842
+marginal,Link,IT2 0AC,gas pipeline,0.0
+marginal,Link,IT2 0AC,home battery charger,0.0
+marginal,Link,IT2 0AC,home battery discharger,0.0
+marginal,Link,IT4 0AC,CCGT,0.0
+marginal,Link,IT4 0AC,DC,16708.2658
+marginal,Link,IT4 0AC,H2 Electrolysis,0.0
+marginal,Link,IT4 0AC,H2 Fuel Cell,0.0
+marginal,Link,IT4 0AC,H2 pipeline,0.0
+marginal,Link,IT4 0AC,H2 turbine,0.0
+marginal,Link,IT4 0AC,Haber-Bosch,0.0
+marginal,Link,IT4 0AC,OCGT,0.0
+marginal,Link,IT4 0AC,SMR,0.0
+marginal,Link,IT4 0AC,SMR CC,0.0
+marginal,Link,IT4 0AC,Sabatier,0.0
+marginal,Link,IT4 0AC,battery charger,0.0
+marginal,Link,IT4 0AC,battery discharger,0.0
+marginal,Link,IT4 0AC,co2 sequestered,0.0
+marginal,Link,IT4 0AC,electricity distribution grid,5957.1342
+marginal,Link,IT4 0AC,home battery charger,0.0
+marginal,Link,IT4 0AC,home battery discharger,0.0
+marginal,Link,LT2 0AC,CCGT,0.0
+marginal,Link,LT2 0AC,CO2 pipeline,-0.0
+marginal,Link,LT2 0AC,DC,7568.3181
+marginal,Link,LT2 0AC,H2 Electrolysis,0.0
+marginal,Link,LT2 0AC,H2 Fuel Cell,0.0
+marginal,Link,LT2 0AC,H2 pipeline,0.0
+marginal,Link,LT2 0AC,H2 turbine,0.0
+marginal,Link,LT2 0AC,Haber-Bosch,0.0
+marginal,Link,LT2 0AC,OCGT,0.0
+marginal,Link,LT2 0AC,SMR,0.0
+marginal,Link,LT2 0AC,SMR CC,0.0
+marginal,Link,LT2 0AC,Sabatier,0.0
+marginal,Link,LT2 0AC,battery charger,0.0
+marginal,Link,LT2 0AC,battery discharger,0.0
+marginal,Link,LT2 0AC,co2 sequestered,0.0
+marginal,Link,LT2 0AC,electricity distribution grid,28704.82126
+marginal,Link,LT2 0AC,gas pipeline,1e-05
+marginal,Link,LT2 0AC,gas pipeline new,-0.0
+marginal,Link,LT2 0AC,home battery charger,0.0
+marginal,Link,LT2 0AC,home battery discharger,0.0
+marginal,Link,LU2 0AC,CCGT,0.0
+marginal,Link,LU2 0AC,H2 Electrolysis,0.0
+marginal,Link,LU2 0AC,H2 Fuel Cell,0.0
+marginal,Link,LU2 0AC,H2 pipeline,0.0
+marginal,Link,LU2 0AC,H2 turbine,1e-05
+marginal,Link,LU2 0AC,Haber-Bosch,0.0
+marginal,Link,LU2 0AC,OCGT,0.0
+marginal,Link,LU2 0AC,SMR,0.0
+marginal,Link,LU2 0AC,SMR CC,0.0
+marginal,Link,LU2 0AC,Sabatier,0.0
+marginal,Link,LU2 0AC,battery charger,0.0
+marginal,Link,LU2 0AC,battery discharger,0.0
+marginal,Link,LU2 0AC,co2 sequestered,0.0
+marginal,Link,LU2 0AC,electricity distribution grid,17501.98124
+marginal,Link,LU2 0AC,gas pipeline,0.0
+marginal,Link,LU2 0AC,home battery charger,0.0
+marginal,Link,LU2 0AC,home battery discharger,0.0
+marginal,Link,LV2 0AC,CCGT,0.0
+marginal,Link,LV2 0AC,H2 Electrolysis,0.0
+marginal,Link,LV2 0AC,H2 Fuel Cell,0.0
+marginal,Link,LV2 0AC,H2 pipeline,0.0
+marginal,Link,LV2 0AC,H2 turbine,0.0
+marginal,Link,LV2 0AC,Haber-Bosch,0.0
+marginal,Link,LV2 0AC,OCGT,0.0
+marginal,Link,LV2 0AC,SMR,0.0
+marginal,Link,LV2 0AC,SMR CC,0.0
+marginal,Link,LV2 0AC,Sabatier,0.0
+marginal,Link,LV2 0AC,battery charger,0.0
+marginal,Link,LV2 0AC,battery discharger,0.0
+marginal,Link,LV2 0AC,co2 sequestered,0.0
+marginal,Link,LV2 0AC,electricity distribution grid,18409.43538
+marginal,Link,LV2 0AC,gas pipeline,1e-05
+marginal,Link,LV2 0AC,home battery charger,0.0
+marginal,Link,LV2 0AC,home battery discharger,0.0
+marginal,Link,ME2 0AC,CCGT,0.0
+marginal,Link,ME2 0AC,CO2 pipeline,-0.0
+marginal,Link,ME2 0AC,DC,2072.60198
+marginal,Link,ME2 0AC,H2 Electrolysis,0.0
+marginal,Link,ME2 0AC,H2 Fuel Cell,0.0
+marginal,Link,ME2 0AC,H2 pipeline,0.0
+marginal,Link,ME2 0AC,H2 turbine,0.0
+marginal,Link,ME2 0AC,Haber-Bosch,0.0
+marginal,Link,ME2 0AC,OCGT,0.0
+marginal,Link,ME2 0AC,SMR,0.0
+marginal,Link,ME2 0AC,SMR CC,0.0
+marginal,Link,ME2 0AC,Sabatier,0.0
+marginal,Link,ME2 0AC,battery charger,0.0
+marginal,Link,ME2 0AC,battery discharger,0.0
+marginal,Link,ME2 0AC,co2 sequestered,0.0
+marginal,Link,ME2 0AC,electricity distribution grid,6746.73664
+marginal,Link,ME2 0AC,home battery charger,0.0
+marginal,Link,ME2 0AC,home battery discharger,0.0
+marginal,Link,MK2 0AC,CCGT,0.0
+marginal,Link,MK2 0AC,CO2 pipeline,-0.0
+marginal,Link,MK2 0AC,H2 Electrolysis,0.0
+marginal,Link,MK2 0AC,H2 Fuel Cell,0.0
+marginal,Link,MK2 0AC,H2 pipeline,0.0
+marginal,Link,MK2 0AC,H2 turbine,0.0
+marginal,Link,MK2 0AC,Haber-Bosch,0.0
+marginal,Link,MK2 0AC,OCGT,0.0
+marginal,Link,MK2 0AC,SMR,0.0
+marginal,Link,MK2 0AC,SMR CC,0.0
+marginal,Link,MK2 0AC,Sabatier,0.0
+marginal,Link,MK2 0AC,battery charger,0.0
+marginal,Link,MK2 0AC,battery discharger,0.0
+marginal,Link,MK2 0AC,co2 sequestered,0.0
+marginal,Link,MK2 0AC,electricity distribution grid,13799.48036
+marginal,Link,MK2 0AC,gas pipeline,0.0
+marginal,Link,MK2 0AC,gas pipeline new,-0.0
+marginal,Link,MK2 0AC,home battery charger,0.0
+marginal,Link,MK2 0AC,home battery discharger,0.0
+marginal,Link,NL2 0AC,CCGT,0.0
+marginal,Link,NL2 0AC,CO2 pipeline,0.0
+marginal,Link,NL2 0AC,DC,20931.67496
+marginal,Link,NL2 0AC,H2 Electrolysis,0.0
+marginal,Link,NL2 0AC,H2 Fuel Cell,0.0
+marginal,Link,NL2 0AC,H2 pipeline,0.0
+marginal,Link,NL2 0AC,H2 turbine,1e-05
+marginal,Link,NL2 0AC,Haber-Bosch,0.0
+marginal,Link,NL2 0AC,OCGT,0.0
+marginal,Link,NL2 0AC,SMR,0.0
+marginal,Link,NL2 0AC,SMR CC,0.0
+marginal,Link,NL2 0AC,Sabatier,0.0
+marginal,Link,NL2 0AC,battery charger,0.0
+marginal,Link,NL2 0AC,battery discharger,0.0
+marginal,Link,NL2 0AC,co2 sequestered,0.0
+marginal,Link,NL2 0AC,electricity distribution grid,297312.57805
+marginal,Link,NL2 0AC,gas pipeline,3e-05
+marginal,Link,NL2 0AC,home battery charger,0.0
+marginal,Link,NL2 0AC,home battery discharger,0.0
+marginal,Link,NO0 0AC,CCGT,0.0
+marginal,Link,NO0 0AC,CO2 pipeline,0.0
+marginal,Link,NO0 0AC,DC,38299.97254
+marginal,Link,NO0 0AC,H2 Electrolysis,0.0
+marginal,Link,NO0 0AC,H2 Fuel Cell,0.0
+marginal,Link,NO0 0AC,H2 pipeline,0.0
+marginal,Link,NO0 0AC,H2 turbine,0.0
+marginal,Link,NO0 0AC,Haber-Bosch,0.0
+marginal,Link,NO0 0AC,OCGT,0.0
+marginal,Link,NO0 0AC,SMR,0.0
+marginal,Link,NO0 0AC,SMR CC,0.0
+marginal,Link,NO0 0AC,Sabatier,0.0
+marginal,Link,NO0 0AC,battery charger,0.0
+marginal,Link,NO0 0AC,battery discharger,0.0
+marginal,Link,NO0 0AC,co2 sequestered,0.0
+marginal,Link,NO0 0AC,electricity distribution grid,379970.70266
+marginal,Link,NO0 0AC,gas pipeline,0.0
+marginal,Link,NO0 0AC,gas pipeline new,0.0
+marginal,Link,NO0 0AC,home battery charger,0.0
+marginal,Link,NO0 0AC,home battery discharger,0.0
+marginal,Link,PL2 0AC,CCGT,0.0
+marginal,Link,PL2 0AC,CO2 pipeline,-0.0
+marginal,Link,PL2 0AC,DC,7298.50155
+marginal,Link,PL2 0AC,H2 Electrolysis,0.0
+marginal,Link,PL2 0AC,H2 Fuel Cell,0.0
+marginal,Link,PL2 0AC,H2 pipeline,0.0
+marginal,Link,PL2 0AC,H2 turbine,1e-05
+marginal,Link,PL2 0AC,Haber-Bosch,0.0
+marginal,Link,PL2 0AC,OCGT,0.0
+marginal,Link,PL2 0AC,SMR,0.0
+marginal,Link,PL2 0AC,SMR CC,0.0
+marginal,Link,PL2 0AC,Sabatier,0.0
+marginal,Link,PL2 0AC,battery charger,0.0
+marginal,Link,PL2 0AC,battery discharger,0.0
+marginal,Link,PL2 0AC,co2 sequestered,0.0
+marginal,Link,PL2 0AC,electricity distribution grid,396522.90841
+marginal,Link,PL2 0AC,gas pipeline,1e-05
+marginal,Link,PL2 0AC,home battery charger,0.0
+marginal,Link,PL2 0AC,home battery discharger,0.0
+marginal,Link,PT2 0AC,CCGT,0.0
+marginal,Link,PT2 0AC,H2 Electrolysis,0.0
+marginal,Link,PT2 0AC,H2 Fuel Cell,0.0
+marginal,Link,PT2 0AC,H2 pipeline,0.0
+marginal,Link,PT2 0AC,H2 turbine,0.0
+marginal,Link,PT2 0AC,Haber-Bosch,0.0
+marginal,Link,PT2 0AC,OCGT,0.0
+marginal,Link,PT2 0AC,SMR,0.0
+marginal,Link,PT2 0AC,SMR CC,0.0
+marginal,Link,PT2 0AC,Sabatier,0.0
+marginal,Link,PT2 0AC,battery charger,0.0
+marginal,Link,PT2 0AC,battery discharger,0.0
+marginal,Link,PT2 0AC,co2 sequestered,0.0
+marginal,Link,PT2 0AC,electricity distribution grid,100840.1334
+marginal,Link,PT2 0AC,gas pipeline,0.0
+marginal,Link,PT2 0AC,home battery charger,0.0
+marginal,Link,PT2 0AC,home battery discharger,0.0
+marginal,Link,RO2 0AC,CCGT,0.0
+marginal,Link,RO2 0AC,CO2 pipeline,-0.0
+marginal,Link,RO2 0AC,H2 Electrolysis,0.0
+marginal,Link,RO2 0AC,H2 Fuel Cell,0.0
+marginal,Link,RO2 0AC,H2 pipeline,0.0
+marginal,Link,RO2 0AC,H2 turbine,0.0
+marginal,Link,RO2 0AC,Haber-Bosch,0.0
+marginal,Link,RO2 0AC,OCGT,0.0
+marginal,Link,RO2 0AC,SMR,0.0
+marginal,Link,RO2 0AC,SMR CC,0.0
+marginal,Link,RO2 0AC,Sabatier,0.0
+marginal,Link,RO2 0AC,battery charger,0.0
+marginal,Link,RO2 0AC,battery discharger,0.0
+marginal,Link,RO2 0AC,co2 sequestered,0.0
+marginal,Link,RO2 0AC,electricity distribution grid,121759.05247
+marginal,Link,RO2 0AC,gas pipeline,0.0
+marginal,Link,RO2 0AC,home battery charger,0.0
+marginal,Link,RO2 0AC,home battery discharger,0.0
+marginal,Link,RS2 0AC,CCGT,0.0
+marginal,Link,RS2 0AC,CO2 pipeline,-0.0
+marginal,Link,RS2 0AC,H2 Electrolysis,0.0
+marginal,Link,RS2 0AC,H2 Fuel Cell,0.0
+marginal,Link,RS2 0AC,H2 pipeline,0.0
+marginal,Link,RS2 0AC,H2 turbine,0.0
+marginal,Link,RS2 0AC,Haber-Bosch,0.0
+marginal,Link,RS2 0AC,OCGT,0.0
+marginal,Link,RS2 0AC,SMR,0.0
+marginal,Link,RS2 0AC,SMR CC,0.0
+marginal,Link,RS2 0AC,Sabatier,0.0
+marginal,Link,RS2 0AC,battery charger,0.0
+marginal,Link,RS2 0AC,battery discharger,0.0
+marginal,Link,RS2 0AC,co2 sequestered,0.0
+marginal,Link,RS2 0AC,electricity distribution grid,98853.91882
+marginal,Link,RS2 0AC,gas pipeline,0.0
+marginal,Link,RS2 0AC,home battery charger,0.0
+marginal,Link,RS2 0AC,home battery discharger,0.0
+marginal,Link,SE0 0AC,CCGT,0.0
+marginal,Link,SE0 0AC,DC,12687.56269
+marginal,Link,SE0 0AC,H2 Electrolysis,0.0
+marginal,Link,SE0 0AC,H2 Fuel Cell,0.0
+marginal,Link,SE0 0AC,H2 pipeline,0.0
+marginal,Link,SE0 0AC,H2 turbine,0.0
+marginal,Link,SE0 0AC,Haber-Bosch,0.0
+marginal,Link,SE0 0AC,OCGT,0.0
+marginal,Link,SE0 0AC,SMR,0.0
+marginal,Link,SE0 0AC,SMR CC,0.0
+marginal,Link,SE0 0AC,Sabatier,0.0
+marginal,Link,SE0 0AC,battery charger,0.0
+marginal,Link,SE0 0AC,battery discharger,0.0
+marginal,Link,SE0 0AC,co2 sequestered,0.0
+marginal,Link,SE0 0AC,electricity distribution grid,427715.99467
+marginal,Link,SE0 0AC,gas pipeline,0.0
+marginal,Link,SE0 0AC,home battery charger,0.0
+marginal,Link,SE0 0AC,home battery discharger,0.0
+marginal,Link,SI2 0AC,CCGT,0.0
+marginal,Link,SI2 0AC,DC,0.0
+marginal,Link,SI2 0AC,H2 Electrolysis,0.0
+marginal,Link,SI2 0AC,H2 Fuel Cell,0.0
+marginal,Link,SI2 0AC,H2 pipeline,0.0
+marginal,Link,SI2 0AC,H2 turbine,0.0
+marginal,Link,SI2 0AC,Haber-Bosch,0.0
+marginal,Link,SI2 0AC,OCGT,0.0
+marginal,Link,SI2 0AC,SMR,0.0
+marginal,Link,SI2 0AC,SMR CC,0.0
+marginal,Link,SI2 0AC,Sabatier,0.0
+marginal,Link,SI2 0AC,battery charger,0.0
+marginal,Link,SI2 0AC,battery discharger,0.0
+marginal,Link,SI2 0AC,co2 sequestered,0.0
+marginal,Link,SI2 0AC,electricity distribution grid,34923.93287
+marginal,Link,SI2 0AC,gas pipeline,0.0
+marginal,Link,SI2 0AC,home battery charger,0.0
+marginal,Link,SI2 0AC,home battery discharger,0.0
+marginal,Link,SK2 0AC,CCGT,0.0
+marginal,Link,SK2 0AC,H2 Electrolysis,0.0
+marginal,Link,SK2 0AC,H2 Fuel Cell,0.0
+marginal,Link,SK2 0AC,H2 pipeline,0.0
+marginal,Link,SK2 0AC,H2 turbine,0.0
+marginal,Link,SK2 0AC,Haber-Bosch,0.0
+marginal,Link,SK2 0AC,OCGT,0.0
+marginal,Link,SK2 0AC,SMR,0.0
+marginal,Link,SK2 0AC,SMR CC,0.0
+marginal,Link,SK2 0AC,Sabatier,0.0
+marginal,Link,SK2 0AC,battery charger,0.0
+marginal,Link,SK2 0AC,battery discharger,0.0
+marginal,Link,SK2 0AC,co2 sequestered,0.0
+marginal,Link,SK2 0AC,electricity distribution grid,75331.595
+marginal,Link,SK2 0AC,gas pipeline,0.0
+marginal,Link,SK2 0AC,home battery charger,0.0
+marginal,Link,SK2 0AC,home battery discharger,0.0
+marginal,Link,XK2 0AC,CCGT,0.0
+marginal,Link,XK2 0AC,H2 Electrolysis,0.0
+marginal,Link,XK2 0AC,H2 Fuel Cell,0.0
+marginal,Link,XK2 0AC,H2 pipeline,0.0
+marginal,Link,XK2 0AC,H2 turbine,0.0
+marginal,Link,XK2 0AC,Haber-Bosch,0.0
+marginal,Link,XK2 0AC,OCGT,0.0
+marginal,Link,XK2 0AC,SMR,0.0
+marginal,Link,XK2 0AC,SMR CC,0.0
+marginal,Link,XK2 0AC,Sabatier,0.0
+marginal,Link,XK2 0AC,battery charger,0.0
+marginal,Link,XK2 0AC,battery discharger,0.0
+marginal,Link,XK2 0AC,co2 sequestered,0.0
+marginal,Link,XK2 0AC,electricity distribution grid,12686.85755
+marginal,Link,XK2 0AC,home battery charger,0.0
+marginal,Link,XK2 0AC,home battery discharger,0.0
+marginal,StorageUnit,AL2 0AC,hydro,22472.17387
+marginal,StorageUnit,AT2 0AC,PHS,29898.17041
+marginal,StorageUnit,AT2 0AC,hydro,39933.14563
+marginal,StorageUnit,BA2 0AC,PHS,0.05872
+marginal,StorageUnit,BA2 0AC,hydro,28023.55312
+marginal,StorageUnit,BE2 0AC,PHS,211.71907
+marginal,StorageUnit,BE2 0AC,hydro,283.32738
+marginal,StorageUnit,BG2 0AC,PHS,446.51047
+marginal,StorageUnit,BG2 0AC,hydro,9112.36277
+marginal,StorageUnit,CH2 0AC,PHS,5657.71093
+marginal,StorageUnit,CH2 0AC,hydro,22679.39225
+marginal,StorageUnit,CZ2 0AC,PHS,59.53238
+marginal,StorageUnit,CZ2 0AC,hydro,5831.38148
+marginal,StorageUnit,DE2 0AC,PHS,4876.88373
+marginal,StorageUnit,DE2 0AC,hydro,4984.9099
+marginal,StorageUnit,ES2 0AC,PHS,37617.80974
+marginal,StorageUnit,ES2 0AC,hydro,122478.77805
+marginal,StorageUnit,FI0 0AC,hydro,16091.95621
+marginal,StorageUnit,FR2 0AC,PHS,1417.97378
+marginal,StorageUnit,FR2 0AC,hydro,80480.96619
+marginal,StorageUnit,FR6 0AC,hydro,1605.75014
+marginal,StorageUnit,GB1 0AC,PHS,307.324
+marginal,StorageUnit,GB1 0AC,hydro,2074.92439
+marginal,StorageUnit,GR2 0AC,PHS,88.27686
+marginal,StorageUnit,GR2 0AC,hydro,32063.43319
+marginal,StorageUnit,HR2 0AC,PHS,237.2601
+marginal,StorageUnit,HR2 0AC,hydro,28465.70298
+marginal,StorageUnit,HU2 0AC,hydro,249.07422
+marginal,StorageUnit,IE3 0AC,PHS,65.13408
+marginal,StorageUnit,IE3 0AC,hydro,413.42416
+marginal,StorageUnit,IT2 0AC,PHS,6609.11848
+marginal,StorageUnit,IT2 0AC,hydro,27318.22598
+marginal,StorageUnit,IT4 0AC,PHS,580.24008
+marginal,StorageUnit,IT4 0AC,hydro,784.94448
+marginal,StorageUnit,LT2 0AC,PHS,261.29965
+marginal,StorageUnit,LT2 0AC,hydro,1938.37393
+marginal,StorageUnit,LU2 0AC,PHS,252.98883
+marginal,StorageUnit,ME2 0AC,PHS,32.9022
+marginal,StorageUnit,ME2 0AC,hydro,6507.0495
+marginal,StorageUnit,MK2 0AC,hydro,3292.11481
+marginal,StorageUnit,NO0 0AC,PHS,726.59712
+marginal,StorageUnit,NO0 0AC,hydro,130141.61437
+marginal,StorageUnit,PL2 0AC,PHS,613.53923
+marginal,StorageUnit,PL2 0AC,hydro,2188.62294
+marginal,StorageUnit,PT2 0AC,PHS,21469.3896
+marginal,StorageUnit,PT2 0AC,hydro,21602.90141
+marginal,StorageUnit,RO2 0AC,hydro,8776.31941
+marginal,StorageUnit,RS2 0AC,PHS,1352.45325
+marginal,StorageUnit,RS2 0AC,hydro,22123.21061
+marginal,StorageUnit,SE0 0AC,PHS,480.65568
+marginal,StorageUnit,SE0 0AC,hydro,103599.04853
+marginal,StorageUnit,SI2 0AC,PHS,18.01015
+marginal,StorageUnit,SI2 0AC,hydro,2702.82358
+marginal,StorageUnit,SK2 0AC,PHS,149.88649
+marginal,StorageUnit,SK2 0AC,hydro,594.73211
+marginal,StorageUnit,XK2 0AC,hydro,203.37495
+marginal,Store,AL2 0AC,H2 Store,-0.0
+marginal,Store,AL2 0AC,battery,0.0
+marginal,Store,AL2 0AC,co2 sequestered,0.0
+marginal,Store,AL2 0AC,co2 stored,0.0
+marginal,Store,AL2 0AC,gas,-0.0
+marginal,Store,AL2 0AC,home battery,0.0
+marginal,Store,AT2 0AC,H2 Store,0.0
+marginal,Store,AT2 0AC,battery,0.0
+marginal,Store,AT2 0AC,co2 sequestered,0.0
+marginal,Store,AT2 0AC,co2 stored,0.0
+marginal,Store,AT2 0AC,gas,0.0
+marginal,Store,AT2 0AC,home battery,0.0
+marginal,Store,BA2 0AC,H2 Store,-0.0
+marginal,Store,BA2 0AC,battery,0.0
+marginal,Store,BA2 0AC,co2 sequestered,0.0
+marginal,Store,BA2 0AC,co2 stored,-0.0
+marginal,Store,BA2 0AC,gas,-0.0
+marginal,Store,BA2 0AC,home battery,-0.0
+marginal,Store,BE2 0AC,H2 Store,-0.0
+marginal,Store,BE2 0AC,battery,0.0
+marginal,Store,BE2 0AC,co2 sequestered,0.0
+marginal,Store,BE2 0AC,co2 stored,-0.0
+marginal,Store,BE2 0AC,gas,0.0
+marginal,Store,BE2 0AC,home battery,0.0
+marginal,Store,BG2 0AC,H2 Store,0.0
+marginal,Store,BG2 0AC,battery,0.0
+marginal,Store,BG2 0AC,co2 sequestered,0.0
+marginal,Store,BG2 0AC,co2 stored,-0.0
+marginal,Store,BG2 0AC,gas,-0.0
+marginal,Store,BG2 0AC,home battery,0.0
+marginal,Store,CH2 0AC,H2 Store,0.0
+marginal,Store,CH2 0AC,battery,0.0
+marginal,Store,CH2 0AC,co2 sequestered,0.0
+marginal,Store,CH2 0AC,co2 stored,-0.0
+marginal,Store,CH2 0AC,gas,-0.0
+marginal,Store,CH2 0AC,home battery,0.0
+marginal,Store,CZ2 0AC,H2 Store,0.0
+marginal,Store,CZ2 0AC,battery,0.0
+marginal,Store,CZ2 0AC,co2 sequestered,0.0
+marginal,Store,CZ2 0AC,co2 stored,0.0
+marginal,Store,CZ2 0AC,gas,0.0
+marginal,Store,CZ2 0AC,home battery,0.0
+marginal,Store,DE2 0AC,H2 Store,-0.0
+marginal,Store,DE2 0AC,battery,0.0
+marginal,Store,DE2 0AC,co2 sequestered,0.0
+marginal,Store,DE2 0AC,co2 stored,-0.0
+marginal,Store,DE2 0AC,gas,0.0
+marginal,Store,DE2 0AC,home battery,-0.0
+marginal,Store,DK0 0AC,H2 Store,0.0
+marginal,Store,DK0 0AC,battery,0.0
+marginal,Store,DK0 0AC,co2 sequestered,0.0
+marginal,Store,DK0 0AC,co2 stored,-0.0
+marginal,Store,DK0 0AC,gas,-0.0
+marginal,Store,DK0 0AC,home battery,0.0
+marginal,Store,DK2 0AC,H2 Store,-0.0
+marginal,Store,DK2 0AC,battery,0.0
+marginal,Store,DK2 0AC,co2 sequestered,0.0
+marginal,Store,DK2 0AC,co2 stored,-0.0
+marginal,Store,DK2 0AC,gas,0.0
+marginal,Store,DK2 0AC,home battery,0.0
+marginal,Store,EE2 0AC,H2 Store,0.0
+marginal,Store,EE2 0AC,battery,0.0
+marginal,Store,EE2 0AC,co2 sequestered,0.0
+marginal,Store,EE2 0AC,co2 stored,0.0
+marginal,Store,EE2 0AC,gas,0.0
+marginal,Store,EE2 0AC,home battery,0.0
+marginal,Store,ES2 0AC,H2 Store,-0.0
+marginal,Store,ES2 0AC,battery,0.0
+marginal,Store,ES2 0AC,co2 sequestered,0.0
+marginal,Store,ES2 0AC,co2 stored,-0.0
+marginal,Store,ES2 0AC,gas,-0.0
+marginal,Store,ES2 0AC,home battery,0.0
+marginal,Store,ES7 0AC,H2 Store,0.0
+marginal,Store,ES7 0AC,battery,0.0
+marginal,Store,ES7 0AC,co2 sequestered,0.0
+marginal,Store,ES7 0AC,co2 stored,-0.0
+marginal,Store,ES7 0AC,gas,-0.0
+marginal,Store,ES7 0AC,home battery,-0.0
+marginal,Store,EU,ammonia store,-0.0
+marginal,Store,EU,co2,0.0
+marginal,Store,EU,methanol,0.0
+marginal,Store,FI0 0AC,H2 Store,0.0
+marginal,Store,FI0 0AC,battery,0.0
+marginal,Store,FI0 0AC,co2 sequestered,0.0
+marginal,Store,FI0 0AC,co2 stored,-0.0
+marginal,Store,FI0 0AC,gas,-0.0
+marginal,Store,FI0 0AC,home battery,-0.0
+marginal,Store,FR2 0AC,H2 Store,0.0
+marginal,Store,FR2 0AC,battery,0.0
+marginal,Store,FR2 0AC,co2 sequestered,0.0
+marginal,Store,FR2 0AC,co2 stored,-0.0
+marginal,Store,FR2 0AC,gas,0.0
+marginal,Store,FR2 0AC,home battery,0.0
+marginal,Store,FR6 0AC,H2 Store,0.0
+marginal,Store,FR6 0AC,battery,0.0
+marginal,Store,FR6 0AC,co2 sequestered,0.0
+marginal,Store,FR6 0AC,co2 stored,0.0
+marginal,Store,FR6 0AC,gas,0.0
+marginal,Store,FR6 0AC,home battery,-0.0
+marginal,Store,GB1 0AC,H2 Store,-0.0
+marginal,Store,GB1 0AC,battery,0.0
+marginal,Store,GB1 0AC,co2 sequestered,0.0
+marginal,Store,GB1 0AC,co2 stored,-0.0
+marginal,Store,GB1 0AC,gas,-0.0
+marginal,Store,GB1 0AC,home battery,0.0
+marginal,Store,GB3 0AC,H2 Store,0.0
+marginal,Store,GB3 0AC,battery,0.0
+marginal,Store,GB3 0AC,co2 sequestered,0.0
+marginal,Store,GB3 0AC,co2 stored,-0.0
+marginal,Store,GB3 0AC,gas,-0.0
+marginal,Store,GB3 0AC,home battery,0.0
+marginal,Store,GB5 0AC,H2 Store,0.0
+marginal,Store,GB5 0AC,battery,0.0
+marginal,Store,GB5 0AC,co2 sequestered,0.0
+marginal,Store,GB5 0AC,co2 stored,0.0
+marginal,Store,GB5 0AC,gas,-0.0
+marginal,Store,GB5 0AC,home battery,-0.0
+marginal,Store,GR2 0AC,H2 Store,-0.0
+marginal,Store,GR2 0AC,battery,0.0
+marginal,Store,GR2 0AC,co2 sequestered,0.0
+marginal,Store,GR2 0AC,co2 stored,0.0
+marginal,Store,GR2 0AC,gas,0.0
+marginal,Store,GR2 0AC,home battery,-0.0
+marginal,Store,HR2 0AC,H2 Store,-0.0
+marginal,Store,HR2 0AC,battery,0.0
+marginal,Store,HR2 0AC,co2 sequestered,0.0
+marginal,Store,HR2 0AC,co2 stored,0.0
+marginal,Store,HR2 0AC,gas,0.0
+marginal,Store,HR2 0AC,home battery,0.0
+marginal,Store,HU2 0AC,H2 Store,0.0
+marginal,Store,HU2 0AC,battery,0.0
+marginal,Store,HU2 0AC,co2 sequestered,0.0
+marginal,Store,HU2 0AC,co2 stored,-0.0
+marginal,Store,HU2 0AC,gas,0.0
+marginal,Store,HU2 0AC,home battery,-0.0
+marginal,Store,IE3 0AC,H2 Store,0.0
+marginal,Store,IE3 0AC,battery,0.0
+marginal,Store,IE3 0AC,co2 sequestered,0.0
+marginal,Store,IE3 0AC,co2 stored,0.0
+marginal,Store,IE3 0AC,gas,0.0
+marginal,Store,IE3 0AC,home battery,-0.0
+marginal,Store,IT2 0AC,H2 Store,0.0
+marginal,Store,IT2 0AC,battery,0.0
+marginal,Store,IT2 0AC,co2 sequestered,0.0
+marginal,Store,IT2 0AC,co2 stored,-0.0
+marginal,Store,IT2 0AC,gas,0.0
+marginal,Store,IT2 0AC,home battery,0.0
+marginal,Store,IT4 0AC,H2 Store,-0.0
+marginal,Store,IT4 0AC,battery,0.0
+marginal,Store,IT4 0AC,co2 sequestered,0.0
+marginal,Store,IT4 0AC,co2 stored,-0.0
+marginal,Store,IT4 0AC,gas,-0.0
+marginal,Store,IT4 0AC,home battery,-0.0
+marginal,Store,LT2 0AC,H2 Store,0.0
+marginal,Store,LT2 0AC,battery,0.0
+marginal,Store,LT2 0AC,co2 sequestered,0.0
+marginal,Store,LT2 0AC,co2 stored,-0.0
+marginal,Store,LT2 0AC,gas,-0.0
+marginal,Store,LT2 0AC,home battery,-0.0
+marginal,Store,LU2 0AC,H2 Store,0.0
+marginal,Store,LU2 0AC,battery,0.0
+marginal,Store,LU2 0AC,co2 sequestered,0.0
+marginal,Store,LU2 0AC,co2 stored,0.0
+marginal,Store,LU2 0AC,gas,0.0
+marginal,Store,LU2 0AC,home battery,0.0
+marginal,Store,LV2 0AC,H2 Store,0.0
+marginal,Store,LV2 0AC,battery,0.0
+marginal,Store,LV2 0AC,co2 sequestered,0.0
+marginal,Store,LV2 0AC,co2 stored,-0.0
+marginal,Store,LV2 0AC,gas,0.0
+marginal,Store,LV2 0AC,home battery,0.0
+marginal,Store,ME2 0AC,H2 Store,0.0
+marginal,Store,ME2 0AC,battery,0.0
+marginal,Store,ME2 0AC,co2 sequestered,0.0
+marginal,Store,ME2 0AC,co2 stored,0.0
+marginal,Store,ME2 0AC,gas,0.0
+marginal,Store,ME2 0AC,home battery,0.0
+marginal,Store,MK2 0AC,H2 Store,0.0
+marginal,Store,MK2 0AC,battery,0.0
+marginal,Store,MK2 0AC,co2 sequestered,0.0
+marginal,Store,MK2 0AC,co2 stored,0.0
+marginal,Store,MK2 0AC,gas,-0.0
+marginal,Store,MK2 0AC,home battery,0.0
+marginal,Store,NL2 0AC,H2 Store,0.0
+marginal,Store,NL2 0AC,battery,0.0
+marginal,Store,NL2 0AC,co2 sequestered,0.0
+marginal,Store,NL2 0AC,co2 stored,-0.0
+marginal,Store,NL2 0AC,gas,0.0
+marginal,Store,NL2 0AC,home battery,0.0
+marginal,Store,NO0 0AC,H2 Store,0.0
+marginal,Store,NO0 0AC,battery,0.0
+marginal,Store,NO0 0AC,co2 sequestered,0.0
+marginal,Store,NO0 0AC,co2 stored,0.0
+marginal,Store,NO0 0AC,gas,0.0
+marginal,Store,NO0 0AC,home battery,-0.0
+marginal,Store,PL2 0AC,H2 Store,-0.0
+marginal,Store,PL2 0AC,battery,0.0
+marginal,Store,PL2 0AC,co2 sequestered,0.0
+marginal,Store,PL2 0AC,co2 stored,-0.0
+marginal,Store,PL2 0AC,gas,0.0
+marginal,Store,PL2 0AC,home battery,-0.0
+marginal,Store,PT2 0AC,H2 Store,0.0
+marginal,Store,PT2 0AC,battery,0.0
+marginal,Store,PT2 0AC,co2 sequestered,0.0
+marginal,Store,PT2 0AC,co2 stored,-0.0
+marginal,Store,PT2 0AC,gas,-0.0
+marginal,Store,PT2 0AC,home battery,0.0
+marginal,Store,RO2 0AC,H2 Store,0.0
+marginal,Store,RO2 0AC,battery,0.0
+marginal,Store,RO2 0AC,co2 sequestered,0.0
+marginal,Store,RO2 0AC,co2 stored,0.0
+marginal,Store,RO2 0AC,gas,0.0
+marginal,Store,RO2 0AC,home battery,0.0
+marginal,Store,RS2 0AC,H2 Store,0.0
+marginal,Store,RS2 0AC,battery,0.0
+marginal,Store,RS2 0AC,co2 sequestered,0.0
+marginal,Store,RS2 0AC,co2 stored,0.0
+marginal,Store,RS2 0AC,gas,-0.0
+marginal,Store,RS2 0AC,home battery,0.0
+marginal,Store,SE0 0AC,H2 Store,-0.0
+marginal,Store,SE0 0AC,battery,0.0
+marginal,Store,SE0 0AC,co2 sequestered,0.0
+marginal,Store,SE0 0AC,co2 stored,-0.0
+marginal,Store,SE0 0AC,gas,-0.0
+marginal,Store,SE0 0AC,home battery,0.0
+marginal,Store,SI2 0AC,H2 Store,-0.0
+marginal,Store,SI2 0AC,battery,0.0
+marginal,Store,SI2 0AC,co2 sequestered,0.0
+marginal,Store,SI2 0AC,co2 stored,-0.0
+marginal,Store,SI2 0AC,gas,0.0
+marginal,Store,SI2 0AC,home battery,0.0
+marginal,Store,SK2 0AC,H2 Store,0.0
+marginal,Store,SK2 0AC,battery,0.0
+marginal,Store,SK2 0AC,co2 sequestered,0.0
+marginal,Store,SK2 0AC,co2 stored,-0.0
+marginal,Store,SK2 0AC,gas,-0.0
+marginal,Store,SK2 0AC,home battery,0.0
+marginal,Store,XK2 0AC,H2 Store,-0.0
+marginal,Store,XK2 0AC,battery,0.0
+marginal,Store,XK2 0AC,co2 sequestered,0.0
+marginal,Store,XK2 0AC,co2 stored,0.0
+marginal,Store,XK2 0AC,gas,-0.0
+marginal,Store,XK2 0AC,home battery,-0.0
