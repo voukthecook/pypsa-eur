@@ -1,0 +1,2 @@
+,peak time,net import MW,electricity load,rooftop PV,EV charge,home battery (net),resistive heater,V2G,heat pump,residual,hours within 1% of peak,EV charge peak time,EV share of import peak
+all,2013-01-09 03:00:00,7835.8725561565,2052.5063117180257,-0.0,0.0005417194764272219,-2524.323282846963,7203.4739710880785,-1378.1871769417753,2482.4022071187583,-1.5699100913479924e-05,14,2013-12-20 09:00:00,6.913326787092816e-08

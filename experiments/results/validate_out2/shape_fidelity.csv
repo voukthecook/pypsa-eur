@@ -1,0 +1,6 @@
+country,timezone,profile,kind,corr_local,corr_utc,slope_vs_table,spearman_local,residual_std
+GR,Europe/Athens,urban,factor,0.9999838881205878,0.6829130797469711,0.5230505150730215,,
+GR,Europe/Athens,suburban,factor,0.9999441519905842,0.38846667903751897,0.5411113139835431,,
+GR,Europe/Athens,rural,factor,0.9999864340682753,0.5961832953830242,0.5285665616636727,,
+GR,Europe/Athens,urban/rural,log_ratio,0.9992221447993643,,,0.9995133085720725,0.22337403365108227
+GR,Europe/Athens,suburban/rural,log_ratio,0.9981126775379671,,,0.9991490298631067,0.18272345664854747

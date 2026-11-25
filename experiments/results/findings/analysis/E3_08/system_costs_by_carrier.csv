@@ -1,0 +1,72 @@
+carrier,capex,opex,total
+Solar,27021782.86082,10887.22999,27032670.09081
+Onshore Wind,15979240.66383,4002.36254,15983243.02637
+solar rooftop,13366071.28921,6167.26218,13372238.55139
+Reservoir & Dam,11487536.93563,529.39323,11488066.32886
+Battery Storage,9406518.95577,0.0,9406518.95577
+urban decentral air heat pump,6722129.7012,-4104.48079,6718025.22041
+AC,5107533.44338,0.0,5107533.44338
+home battery,4463891.90851,0.0,4463891.90851
+Pumped Hydro Storage,3109910.27033,103.52561,3110013.79594
+battery charger,2505249.97688,3634.24201,2508884.21889
+rural ground heat pump,2012821.11991,-994.58048,2011826.53943
+gas,1535845.32479,0.0,1535845.32479
+home battery charger,1218498.16965,1163.25536,1219661.4250100001
+gas pipeline,730846.7842,0.22077,730847.00497
+urban central resistive heater,446575.05679,501.45303,447076.50982
+urban central air heat pump,438825.0734,-389.20609,438435.86731
+Run of River,219884.00819,6.57095,219890.57914
+urban decentral resistive heater,218876.73101,107.05895,218983.78996
+rural air heat pump,120065.89563,-26.91849,120038.97714
+urban central water pits,96980.0073,-1.56982,96978.43748
+rural resistive heater,53833.9473,29.42076,53863.36806
+electricity distribution grid,0.0,7371.52438,7371.52438
+battery discharger,0.0,3532.62167,3532.62167
+urban central water pits charger,0.0,1474.65614,1474.65614
+home battery discharger,0.0,1136.62448,1136.62448
+rural water tanks,1114.58003,-0.01847,1114.56156
+urban central water pits discharger,0.0,417.58807,417.58807
+urban decentral water tanks,99.96311,-0.00191,99.9612
+H2 Electrolysis,54.16124,0.01468,54.17592
+DAC,19.9244,0.00071,19.92511
+urban central water tanks,15.4275,-0.00015,15.42735
+Sabatier,9.99867,0.00936,10.00803
+Offshore Wind (Floating),9.63265,0.00091,9.63356
+Offshore Wind (AC),8.59137,0.00084,8.59221
+Offshore Wind (DC),8.44839,0.00125,8.44964
+urban decentral gas boiler,8.3187,0.00113,8.31983
+rural gas boiler,8.15218,0.00106,8.15324
+solar-hsat,8.10274,0.00174,8.10448
+H2 pipeline,7.90741,0.04526,7.9526699999999995
+urban decentral solar thermal,6.33641,0.00042,6.33683
+H2 Store,5.58827,0.0,5.58827
+rural solar thermal,5.34069,0.00032,5.341010000000001
+Haber-Bosch,4.95041,0.00397,4.95438
+co2 stored,4.92505,0.0,4.92505
+rural water tanks charger,0.0,4.60972,4.60972
+urban central solar thermal,4.59281,0.00064,4.59345
+H2 Fuel Cell,4.2643,0.00097,4.26527
+SMR CC,3.97489,0.00086,3.9757499999999997
+ammonia cracker,3.93766,0.00133,3.93899
+urban central gas CHP CC,3.6902,0.13807,3.82827
+SMR,3.60569,0.0006,3.60629
+CO2 pipeline,3.57546,8e-05,3.57554
+Combined-Cycle Gas,3.38675,0.14275,3.5295
+urban central gas CHP,3.12245,0.12222,3.24467
+H2 turbine,3.04858,0.19308,3.24166
+Open-Cycle Gas,2.95699,0.10535,3.06234
+OCGT methanol,2.73463,0.00057,2.7352000000000003
+urban central gas boiler,2.67598,0.00053,2.67651
+urban decentral water tanks charger,0.0,2.55351,2.55351
+gas pipeline new,1.74096,-0.00071,1.74025
+ammonia store,1.63808,0.0,1.63808
+rural water tanks discharger,0.0,1.08912,1.08912
+urban decentral water tanks discharger,0.0,0.61295,0.61295
+urban central water tanks charger,0.0,0.13481,0.13481
+co2 sequestered,0.0,0.12361,0.12361
+rural heat vent,0.0,0.05836,0.05836
+urban decentral heat vent,0.0,0.03838,0.03838
+urban central water tanks discharger,0.0,0.03244,0.03244
+methanol,0.02845,0.0,0.02845
+urban central heat vent,0.0,0.00074,0.00074
+co2,0.0,0.00029,0.00029

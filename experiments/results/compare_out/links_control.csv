@@ -1,0 +1,4 @@
+carrier,direction,profile,existing_MW,capacity_MW,added_MW,peak_flow_MW,link_hours_at_limit
+BEV charger,forward,node,64655.34899999999,64655.34899999999,0.0,13117.882009124034,0.0
+electricity distribution grid,forward,node,0.0,7355.4726365843,7355.4726365843,7355.472592201343,1965.0
+electricity distribution grid,reverse,node,0.0,7355.4726365843,7355.4726365843,111.38697283646695,0.0

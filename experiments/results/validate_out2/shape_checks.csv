@@ -1,0 +1,11 @@
+group,check,pass,detail
+A,Household node total unchanged in every snapshot,True,largest relative difference 7.75e-14 over 3 nodes
+A,"Other loads (EV, heat, ...) unchanged",True,largest relative difference 1.81e-16 over 12 loads
+A,Each profile has the same yearly share at every node,True,"shares urban 0.400, suburban 0.300, rural 0.300"
+B,[GR] Profile curves follow the table snapshot by snapshot,True,"urban 1.000, suburban 1.000, rural 1.000"
+B,[GR] Profile-to-profile ratios follow the table (rank),True,"urban/rural 1.000, suburban/rural 0.999"
+B,"[GR] Daily pattern (local hours, weekdays) follows the table",True,"urban 1.000, suburban 1.000, rural 1.000"
+B,[GR] Peak hour matches the table within one snapshot step,True,"urban 23h vs 23h, suburban 17h vs 17h, rural 12h vs 12h"
+B,[GR] Weekend vs weekday change in urban/rural gap has the table's sign,True,"achieved +0.050, table +0.088"
+C,[GR] Local-time reading fits at least as well as UTC reading,True,"UTC+2 in winter; gain in correlation urban +0.317, suburban +0.611, rural +0.404"
+D,Profiles follow different shapes,True,largest gap between profile factors in one snapshot 0.554

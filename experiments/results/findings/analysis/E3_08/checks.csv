@@ -1,0 +1,46 @@
+status,check,detail
+INFO,snapshot window,"2013-01-01 to 2013-01-07, months [1]"
+INFO,no summer months in the horizon,PV-export limits cannot bind here; add a summer window before drawing export conclusions
+PASS,LV buses exist,6 found
+PASS,all LV buses are split into a/b,
+PASS,2 LV buses per AC node,6 LV vs 3 AC
+PASS,no leftover unsplit LV / home battery buses,
+PASS,every LV bus has exactly one forward (import) distribution link,6 forward links for 6 LV buses
+PASS,forward distribution links start at AC buses,
+INFO,reversed (export) distribution links present (lossy bidirectional),6 links; forward p_min_pu values: [0.0]
+PASS,every LV bus has a reversed (export) link,
+PASS,no dangling LV bus,
+PASS,home battery buses are split,
+PASS,one home battery store per battery bus,6 stores / 6 buses
+PASS,battery chargers/dischargers stay within their own half,no cross-half battery path
+PASS,no battery link mixes a and b buses,
+INFO,headroom constraint detected,6/6 forward links fixed; 0 reinforcement links
+PASS,fixed existing links are sunk (capital_cost = 0),
+PASS,export side is capped wherever the import side is,reversed links are fixed too
+PASS,import and export capacities are equal,max diff 0 MW
+PASS,objective is finite,57723912.96597054
+PASS,network contains a solution (generators_t.p filled),
+PASS,nodal energy balance holds at every bus,"max residual 4.011e-03 MW at 'GR0 2AC gas' (tol 1.13e-01); worst: GR0 2AC gas: 4.01e-03, EU methanol: 7.16e-05, EU NH3: 7.79e-06, GR0 1AC rural heat a: 6.42e-06"
+PASS,distribution link flows within limits,max violation -1.057e-04 MW
+PASS,rooftop PV capacity <= potential,max excess -2.577e-04 MW
+PASS,rooftop PV output <= availability,max excess 0.000e+00 MW
+INFO,rooftop PV generators with ~zero capacity,0/6
+PASS,little simultaneous battery charge/discharge,0.00% of throughput
+PASS,battery state of charge non-negative,
+PASS,battery state of charge <= capacity,
+PASS,headroom limit binds somewhere (>0.5% of time),max time at limit 31.0%
+INFO,a vs b: pv_opt_MW,a=7930.78  b=7930.78
+INFO,a vs b: pv_curtail_GWh,a=0.00  b=0.00
+INFO,a vs b: batt_E_MWh,a=9946.25  b=9946.43
+INFO,a vs b: import_GWh,a=376.89  b=375.32
+INFO,a vs b: export_GWh,a=0.20  b=0.30
+INFO,objective vs baseline,rel. difference -9.526e-02 (raw; fixed grid is free)
+INFO,adjusted objective (fixed grid priced at baseline capex),"64,151,196  (+0.55% vs baseline; existing grid 5,281 MW vs baseline-optimal 5,475 MW at 1,217 EUR/MW)"
+PASS,adjusted objective >= baseline (constraint cannot make the system cheaper),+0.548%
+PASS,no component connects buses of different halves (a vs b),
+PASS,LV decomposition closes at every LV bus (all technologies accounted for),max residual 1.24e-05 MW
+PASS,heat pumps present on both halves,"halves found: ['a', 'b']"
+INFO,import peak half a,at 2013-01-07 15:00:00
+INFO,export peak half a,at 2013-01-03 09:00:00
+INFO,import peak half b,at 2013-01-07 15:00:00
+INFO,export peak half b,at 2013-01-02 12:00:00

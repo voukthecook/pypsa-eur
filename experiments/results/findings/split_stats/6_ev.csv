@@ -1,0 +1,5 @@
+,charge_GWh,v2g_GWh,charger_cap_MW,peak_charge_MW,charge_at_peak_LV_%
+urban,1649.45,168.53,5172.43,2061.05,40.71
+suburban,1303.18,185.89,3879.32,1797.86,0.0
+rural,1308.68,190.84,3879.32,2192.63,0.0
+sum of profiles,4261.31,545.26,12931.07,5961.27,

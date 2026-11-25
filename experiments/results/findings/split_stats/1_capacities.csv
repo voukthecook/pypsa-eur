@@ -1,0 +1,78 @@
+component,carrier,unit,urban,suburban,rural,shared,total,urban %,suburban %,rural %
+generators,gas,MW,0.0,0.0,0.0,16944.49,16944.49,,,
+generators,offwind-ac,MW,0.0,0.0,0.0,0.0,0.0,,,
+generators,offwind-dc,MW,0.0,0.0,0.0,0.01,0.01,,,
+generators,offwind-float,MW,0.0,0.0,0.0,0.0,0.0,,,
+generators,oil primary,MW,0.0,0.0,0.0,11912.7,11912.7,,,
+generators,onwind,MW,0.0,0.0,0.0,6670.36,6670.36,,,
+generators,ror,MW,0.0,0.0,0.0,29.3,29.3,,,
+generators,rural heat vent,MW,4.49,4.63,4.18,0.0,13.31,33.76,34.81,31.43
+generators,rural solar thermal,MW,0.01,0.01,0.01,0.0,0.03,33.36,33.32,33.32
+generators,solar,MW,0.0,0.0,0.0,11358.72,11358.72,,,
+generators,solar rooftop,MW,6344.62,4758.46,4758.46,0.0,15861.55,40.0,30.0,30.0
+generators,solar-hsat,MW,0.0,0.0,0.0,1061.78,1061.78,,,
+generators,urban central heat vent,MW,23.78,16.29,16.63,0.0,56.7,41.94,28.73,29.33
+generators,urban central solar thermal,MW,0.03,0.03,0.03,0.0,0.08,33.28,33.36,33.36
+generators,urban decentral heat vent,MW,3.25,3.55,3.12,0.0,9.93,32.77,35.78,31.45
+generators,urban decentral solar thermal,MW,0.01,0.01,0.01,0.0,0.03,33.34,33.32,33.33
+links,BEV charger,MW,5172.43,3879.32,3879.32,0.0,12931.07,40.0,30.0,30.0
+links,CCGT,MW,0.0,0.0,0.0,0.01,0.01,,,
+links,CO2 pipeline,MW,0.0,0.0,0.0,145.78,145.78,,,
+links,DAC,MW,367.43,269.07,272.63,0.0,909.13,40.42,29.6,29.99
+links,H2 Electrolysis,MW,0.01,0.01,0.01,0.0,0.02,33.33,33.33,33.33
+links,H2 Fuel Cell,MW,0.01,0.01,0.01,0.0,0.02,33.33,33.33,33.33
+links,H2 pipeline,MW,0.0,0.0,0.0,0.15,0.15,,,
+links,H2 turbine,MW,0.0,0.0,0.0,0.03,0.03,,,
+links,Haber-Bosch,MW,0.0,0.0,0.0,0.0,0.0,33.33,33.33,33.33
+links,OCGT,MW,0.0,0.0,0.0,0.04,0.04,,,
+links,OCGT methanol,MW,0.0,0.0,0.0,0.02,0.02,,,
+links,SMR,MW,0.0,0.0,0.0,0.01,0.01,,,
+links,SMR CC,MW,0.0,0.0,0.0,0.02,0.02,,,
+links,Sabatier,MW,0.0,0.0,0.0,0.0,0.01,33.33,33.33,33.33
+links,V2G,MW,2586.21,1939.66,1939.66,0.0,6465.53,40.0,30.0,30.0
+links,ammonia cracker,MW,0.0,0.0,0.0,0.01,0.01,,,
+links,battery charger,MW,0.0,0.0,0.0,4067.44,4067.44,,,
+links,battery discharger,MW,0.0,0.0,0.0,4151.31,4151.31,,,
+links,co2 sequestered,MW,0.0,0.0,0.0,inf,inf,,,
+links,electricity distribution grid,MW,6452.73,4872.33,4831.58,0.0,16156.64,39.94,30.16,29.9
+links,gas pipeline,MW,0.0,0.0,0.0,9000.0,9000.0,,,
+links,gas pipeline new,MW,0.0,0.0,0.0,0.17,0.17,,,
+links,home battery charger,MW,1008.93,759.49,755.89,0.0,2524.31,39.97,30.09,29.94
+links,home battery discharger,MW,1029.73,775.15,771.47,0.0,2576.36,39.97,30.09,29.94
+links,land transport oil,MW,0.0,0.0,0.0,11321.59,11321.59,,,
+links,oil refining,MW,0.0,0.0,0.0,1000000.0,1000000.0,,,
+links,rural air heat pump,MW,0.15,0.19,0.16,0.0,0.5,29.73,37.94,32.33
+links,rural gas boiler,MW,384.62,288.4,288.46,0.0,961.48,40.0,30.0,30.0
+links,rural ground heat pump,MW,411.37,308.52,308.49,0.0,1028.38,40.0,30.0,30.0
+links,rural resistive heater,MW,547.82,410.85,410.85,0.0,1369.51,40.0,30.0,30.0
+links,rural water tanks charger,MW,0.69,0.69,0.69,0.0,2.07,33.18,33.45,33.36
+links,rural water tanks discharger,MW,0.69,0.69,0.69,0.0,2.07,33.18,33.45,33.36
+links,urban central air heat pump,MW,200.25,140.05,141.87,0.0,482.16,41.53,29.05,29.42
+links,urban central gas CHP,MW,538.88,389.12,390.65,0.0,1318.65,40.87,29.51,29.62
+links,urban central gas CHP CC,MW,1472.73,1086.99,1099.59,0.0,3659.31,40.25,29.7,30.05
+links,urban central gas boiler,MW,145.7,109.41,109.51,0.0,364.62,39.96,30.01,30.04
+links,urban central resistive heater,MW,1487.83,1121.8,1120.99,0.0,3730.63,39.88,30.07,30.05
+links,urban central water pits charger,MW,1932.69,1464.01,1462.01,0.0,4858.71,39.78,30.13,30.09
+links,urban central water pits discharger,MW,1932.69,1464.01,1462.01,0.0,4858.71,39.78,30.13,30.09
+links,urban central water tanks charger,MW,0.11,0.11,0.11,0.0,0.32,33.35,33.33,33.32
+links,urban central water tanks discharger,MW,0.11,0.11,0.11,0.0,0.32,33.35,33.33,33.32
+links,urban decentral air heat pump,MW,1721.82,1291.34,1293.74,0.0,4306.9,39.98,29.98,30.04
+links,urban decentral gas boiler,MW,2402.78,1785.12,1805.15,0.0,5993.04,40.09,29.79,30.12
+links,urban decentral resistive heater,MW,2328.54,1765.09,1740.38,0.0,5834.01,39.91,30.26,29.83
+links,urban decentral water tanks charger,MW,0.56,0.55,0.56,0.0,1.67,33.62,33.16,33.22
+links,urban decentral water tanks discharger,MW,0.56,0.55,0.56,0.0,1.67,33.62,33.16,33.22
+stores,EV battery,MWh,11755.52,8816.64,8816.64,0.0,29388.8,40.0,30.0,30.0
+stores,H2 Store,MWh,0.0,0.0,0.0,2.37,2.37,,,
+stores,ammonia store,MWh,0.0,0.0,0.0,9.62,9.62,,,
+stores,battery,MWh,0.0,0.0,0.0,35866.48,35866.48,,,
+stores,co2,MWh,0.0,0.0,0.0,inf,inf,,,
+stores,co2 sequestered,MWh,0.0,0.0,0.0,40062963.6,40062963.6,,,
+stores,co2 stored,MWh,0.0,0.0,0.0,2.33,2.33,,,
+stores,gas,MWh,0.0,0.0,0.0,3573510.89,3573510.89,,,
+stores,home battery,MWh,6067.19,4567.5,4545.08,0.0,15179.77,39.97,30.09,29.94
+stores,methanol,MWh,0.0,0.0,0.0,0.01,0.01,,,
+stores,oil,MWh,0.0,0.0,0.0,44.34,44.34,,,
+stores,rural water tanks,MWh,0.1,0.1,0.1,0.0,0.31,33.18,33.45,33.36
+stores,urban central water pits,MWh,43485.55,32940.26,32895.26,0.0,109321.06,39.78,30.13,30.09
+stores,urban central water tanks,MWh,6.41,6.41,6.41,0.0,19.23,33.35,33.33,33.32
+stores,urban decentral water tanks,MWh,0.08,0.08,0.08,0.0,0.25,33.62,33.16,33.22
