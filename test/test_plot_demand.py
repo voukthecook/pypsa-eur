@@ -1,7 +1,7 @@
 import numpy as np
 
 from scripts.lv_profile_split import apply_lv_profile_split
-from scripts.lv_split.plot_demand import analyse, main
+from experiments.scripts.lv_split.plot_demand import analyse, main
 from test.test_compare_runs import _local_shapes
 from test.test_lv_profile_shapes import SHARES, _config, _network
 

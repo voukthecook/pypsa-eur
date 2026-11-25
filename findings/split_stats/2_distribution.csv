@@ -1,5 +1,0 @@
-,import_cap_MW(at LV),export_cap_MW,peak_import_MW,peak_export_MW,import_GWh,export_GWh,load_factor_import_%,peak/cap_%,hours_>95%_of_cap
-urban,3129.58,3226.37,3129.58,378.29,13118.1,7.53,48.11,100.0,84.0
-suburban,2363.08,2436.17,2363.08,233.15,9903.89,4.68,48.11,100.0,69.0
-rural,2343.31,2415.79,2343.31,202.75,9887.47,4.39,48.43,100.0,108.0
-sum of profiles,7835.97,8078.32,7835.97,706.33,32909.45,16.6,,,

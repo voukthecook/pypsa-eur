@@ -1,4 +1,0 @@
-status,check,detail
-PASS,no heat pump / resistive heater joins a and b buses,
-INFO,decentral heat links,"60 links (30 on a, 30 on b)"
-INFO,urban central heat pumps feed an UNSPLIT heat bus,3 shared bus(es)

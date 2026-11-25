@@ -20,6 +20,7 @@ gurobi.log
 /resources
 /resources*
 /results
+/experiments/results
 /networks
 /benchmarks
 /logs

@@ -1,7 +1,7 @@
 import pandas as pd
 
 from scripts.lv_profile_split import apply_lv_profile_split
-from scripts.lv_split.validate_shapes import main, validate
+from experiments.scripts.lv_split.validate_shapes import main, validate
 from test.test_compare_runs import TABLE, _local_shapes
 from test.test_lv_profile_shapes import _config, _network
 
