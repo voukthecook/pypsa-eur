@@ -2,8 +2,8 @@
   "port_check": {
     "orphan_split_buses": 0,
     "split_buses": 126,
-    "links_checked": 428,
-    "ev_links_checked": 18,
+    "links_checked": 419,
+    "ev_links_checked": 9,
     "errors": 0
   },
   "ev_realised_shares": {
@@ -17,11 +17,6 @@
       "suburban": 0.3,
       "rural": 0.3
     },
-    "V2G": {
-      "urban": 0.4,
-      "suburban": 0.3,
-      "rural": 0.3
-    },
     "EV battery": {
       "urban": 0.4,
       "suburban": 0.3,
@@ -29,8 +24,8 @@
     }
   },
   "suppressed_attr_warnings": {
-    "unit": 99,
-    "location": 171
+    "location": 171,
+    "unit": 99
   },
   "shares": {
     "general": {
@@ -67,7 +62,7 @@
     }
   },
   "strict_classification": false,
-  "n_conserved_totals": 286,
+  "n_conserved_totals": 283,
   "unconstrained_extendable_clones": {
     "Link|DAC": 18,
     "Link|H2 Electrolysis": 9,

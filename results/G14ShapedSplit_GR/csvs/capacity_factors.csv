@@ -2,26 +2,26 @@ cluster,,3
 opt,,lv1.2Co2L0-3H
 planning_horizon,,2050
 component,carrier,
-Generator,gas,0.1525730833152674
-Generator,offwind-ac,0.1674418604651162
-Generator,offwind-dc,0.3563218390804598
-Generator,offwind-float,0.2171945701357465
-Generator,onwind,0.1732839279915506
-Generator,ror,0.2741788395904437
-Generator,rural heat vent,0.0583583726937668
-Generator,rural solar thermal,0.040585495675316
-Generator,solar,0.1638712185359729
-Generator,solar rooftop,0.1691488977064225
-Generator,solar-hsat,0.2036299989909881
-Generator,urban central heat vent,0.0496810897408481
-Generator,urban central solar thermal,0.042259083728278
-Generator,urban decentral heat vent,0.0644623724832631
-Generator,urban decentral solar thermal,0.0385164051355206
-Line,AC,0.0760804114587362
+Generator,gas,0.1591728443362575
+Generator,offwind-ac,0.1782258064516129
+Generator,offwind-dc,0.3637381085618354
+Generator,offwind-float,0.2288065843621399
+Generator,onwind,0.1705007154348801
+Generator,ror,0.2733511945392491
+Generator,rural heat vent,0.0830788308655443
+Generator,rural solar thermal,0.0401321424201639
+Generator,solar,0.162078846095098
+Generator,solar rooftop,0.1690327270300362
+Generator,solar-hsat,0.1991590455504694
+Generator,urban central heat vent,0.0509429669002593
+Generator,urban central solar thermal,0.040255341323606
+Generator,urban decentral heat vent,0.0948651298538431
+Generator,urban decentral solar thermal,0.0377876569037656
+Line,AC,0.0809501105950847
 Load,electricity,
 Load,land transport EV,
 Load,rural heat,
 Load,urban central heat,
 Load,urban decentral heat,
-StorageUnit,PHS,0.2785897854077253
-StorageUnit,hydro,0.2486997676219984
+StorageUnit,PHS,0.2904068383404864
+StorageUnit,hydro,0.2486993841982958

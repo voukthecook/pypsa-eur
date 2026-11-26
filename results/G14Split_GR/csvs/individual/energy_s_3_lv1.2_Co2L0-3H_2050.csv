@@ -1,81 +1,79 @@
 component,carrier,0
-Generator,solar rooftop,23374023.25184
-Generator,gas,22513766.42402
-Generator,solar,16274627.17504
-Generator,onwind,9193381.54128
-StorageUnit,hydro,5594348.33792
-Link,urban decentral air heat pump,4011879.14883
-Generator,solar-hsat,3977945.3446
-Link,rural ground heat pump,2722505.7681
-Link,urban central air heat pump,2492408.51135
-Link,urban central gas CHP CC,982775.04303
-Link,urban central gas boiler,598801.40154
-Link,urban decentral gas boiler,358953.88463
-Link,urban central gas CHP,133497.56866
-Link,rural gas boiler,122348.87552
-Generator,ror,70048.03568
-Link,rural air heat pump,14793.98591
-Generator,offwind-dc,9.52536
-Generator,urban central solar thermal,8.2797
-Generator,rural solar thermal,4.83581
-Store,co2,4.35757
-Generator,urban decentral solar thermal,4.26242
-Generator,offwind-float,3.73661
-Generator,offwind-ac,2.84012
-Store,EV battery,0.00166
+Generator,gas,23514330.90767
+Generator,solar rooftop,23364134.54908
+Generator,solar,16168468.20614
+Generator,onwind,9035770.07803
+StorageUnit,hydro,5594347.70684
+Generator,solar-hsat,4063999.20185
+Link,urban decentral air heat pump,3982499.4805
+Link,rural ground heat pump,2697576.12452
+Link,urban central air heat pump,1895300.35129
+Link,urban central gas CHP CC,1056045.9814
+Link,urban central gas boiler,619281.528
+Link,urban decentral gas boiler,357539.97649
+Link,urban central gas CHP,121970.84216
+Link,rural gas boiler,120897.16862
+Generator,ror,69935.14205
+Link,rural air heat pump,38796.49899
+Generator,offwind-dc,14.53797
+Generator,urban central solar thermal,11.1007
+Generator,rural solar thermal,6.11554
+Generator,offwind-float,5.50535
+Generator,urban decentral solar thermal,5.38926
+Generator,offwind-ac,4.72229
 Store,home battery,0.00033
-Store,battery,0.00012
-Link,urban decentral water tanks charger,0.0
+Store,battery,9e-05
+Link,urban central water pits charger,0.0
 Link,urban central water pits discharger,0.0
 Link,urban central water tanks discharger,0.0
-Link,urban central water pits charger,0.0
-Link,urban central water tanks charger,0.0
-Link,CO2 pipeline,0.0
 Link,gas pipeline new,0.0
+Link,CO2 pipeline,0.0
 Link,co2 sequestered,0.0
 Link,rural water tanks discharger,0.0
+Link,urban central water tanks charger,0.0
 Link,rural water tanks charger,0.0
-Store,gas,0.0
-Store,methanol,0.0
+Store,H2 Store,0.0
 Store,ammonia store,0.0
-Store,co2 stored,-0.0
+Store,methanol,0.0
+Store,gas,0.0
+Link,urban decentral water tanks charger,0.0
 Link,urban decentral water tanks discharger,0.0
-Store,H2 Store,-0.0
-Link,OCGT methanol,-0.00164
-Link,SMR,-0.39887
-Link,H2 pipeline,-1.37946
-Link,H2 Fuel Cell,-1.39574
-Link,CCGT,-2.60047
-Link,Haber-Bosch,-2.64194
-Store,urban central water tanks,-3.16328
-Link,H2 turbine,-3.78453
-Link,OCGT,-4.39979
-Link,ammonia cracker,-5.07707
-Link,home battery discharger,-6.3129
-Link,home battery charger,-6.44307
-Store,urban decentral water tanks,-6.8788
-Link,SMR CC,-7.30287
-Store,rural water tanks,-7.50676
-Link,H2 Electrolysis,-7.85323
-Link,Sabatier,-9.94816
-Line,AC,-457.18191
-Generator,urban decentral heat vent,-2474.70421
-Generator,rural heat vent,-3691.97064
-Link,rural resistive heater,-16436.41017
-Link,gas pipeline,-25906.44207
-Link,urban central resistive heater,-33066.28396
-Link,urban decentral resistive heater,-34451.34513
-Store,urban central water pits,-84330.37607
-Link,V2G,-164003.8472
-Link,battery discharger,-166687.74106
-Link,battery charger,-170124.96332
-StorageUnit,PHS,-242088.92833
-Generator,urban central heat vent,-255788.6109
-Link,electricity distribution grid,-1225072.02522
-Link,BEV charger,-2009959.12054
-Link,DAC,-3140782.22761
-Store,co2 sequestered,-4457730.11472
+Store,co2 stored,-0.0
+Link,OCGT methanol,-0.00157
+Store,co2,-0.00443
+Link,SMR,-0.55116
+Link,H2 Fuel Cell,-1.98135
+Link,H2 pipeline,-2.17875
+Link,CCGT,-3.65581
+Link,Haber-Bosch,-3.73035
+Store,urban central water tanks,-4.9047
+Link,H2 turbine,-5.69039
+Link,OCGT,-6.49618
+Link,ammonia cracker,-7.1673
+Link,SMR CC,-10.63163
+Store,urban decentral water tanks,-11.47272
+Link,H2 Electrolysis,-11.52824
+Store,rural water tanks,-12.67615
+Link,Sabatier,-14.70096
+Line,AC,-981.65526
+Generator,urban decentral heat vent,-6671.69337
+Generator,rural heat vent,-10682.78469
+Link,rural resistive heater,-17634.56995
+Link,gas pipeline,-29124.12644
+Link,urban central resistive heater,-36468.66646
+Link,urban decentral resistive heater,-41317.28873
+Store,urban central water pits,-76252.3238
+Link,home battery discharger,-136957.01126
+Link,home battery charger,-139781.16427
+Link,battery discharger,-205014.30592
+Link,battery charger,-209241.84978
+StorageUnit,PHS,-253985.69333
+Generator,urban central heat vent,-308239.03158
+Link,electricity distribution grid,-1228736.41982
+Link,BEV charger,-1827732.62383
+Link,DAC,-3113172.25733
 Load,rural heat,-4491907.04003
+Store,co2 sequestered,-4655837.52029
 Load,urban decentral heat,-8454264.55872
 Load,urban central heat,-14583606.36379
 Load,land transport EV,-16449593.6145

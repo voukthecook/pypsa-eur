@@ -20,18 +20,18 @@ INFO:linopy.model:Solver options:
  - GURO_PAR_BARDENSETHRESH: 200
  - IISMethod: 1
 INFO:linopy.io:Writing objective.
-INFO:linopy.io: Writing time: 2.85s
+INFO:linopy.io: Writing time: 3.33s
 INFO:linopy.constants: Optimization successful: 
 Status: ok
 Termination condition: optimal
-Solution: 1667346 primals, 3456455 duals
-Objective: 3.67e+09
+Solution: 1588938 primals, 3325775 duals
+Objective: 4.18e+09
 Solver: gurobi
-Runtime: 258.89s
+Runtime: 303.19s
 Dual bound: -inf
 Solver model: available
 Solver message: 2
 
 INFO:pypsa.optimization.optimize:The shadow-prices of the constraints Generator-fix-p-lower, Generator-fix-p-upper, Generator-ext-p-lower, Generator-ext-p-upper, Line-ext-s-lower, Line-ext-s-upper, Link-fix-p-lower, Link-fix-p-upper, Link-ext-p-lower, Link-ext-p-upper, Store-fix-e-lower, Store-fix-e-upper, Store-ext-e-lower, Store-ext-e-upper, StorageUnit-fix-p_dispatch-lower, StorageUnit-fix-p_dispatch-upper, StorageUnit-fix-p_store-lower, StorageUnit-fix-p_store-upper, StorageUnit-fix-state_of_charge-lower, StorageUnit-fix-state_of_charge-upper, StorageUnit-energy_balance, Store-energy_balance, Line-loss_upper, Line-loss_tangents-1--1, Line-loss_tangents-1-1, Line-loss_tangents-2--1, Line-loss_tangents-2-1, solar_potential, TES_energy_to_power_ratio, TES_charger_ratio were not assigned to the network.
-INFO:__main__:Maximum memory usage: (2058.2421875, 1795616733.2474663)
-INFO:pypsa.network.io:Exported network 'Unnamed Network' saved to 'results/G14ShapedSplit_GR/networks/base_s_3_lv1.2_Co2L0-3H_2050.nc contains: global_constraints, links, carriers, generators, sub_networks, loads, lines, buses, storage_units, stores
+INFO:__main__:Maximum memory usage: (2830.01171875, 1795680433.3591464)
+INFO:pypsa.network.io:Exported network 'Unnamed Network' saved to 'results/G14ShapedSplit_GR/networks/base_s_3_lv1.2_Co2L0-3H_2050.nc contains: carriers, global_constraints, generators, lines, storage_units, buses, sub_networks, links, loads, stores

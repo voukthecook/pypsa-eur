@@ -1,12 +1,12 @@
 ,0
-co2_shadow,-179.0228686823086
+co2_shadow,-180.2500096533267
 co2_storage_shadow,0.0
-electricity_price_mean,62.77134032694955
-electricity_price_std,65.74186905573026
-electricity_price_zero_hours,0.08367768595041322
-line_volume,4344487.186411077
-line_volume_AC,4344487.186411077
+electricity_price_mean,63.10352489298841
+electricity_price_std,55.73425532558063
+electricity_price_zero_hours,0.09917355371900827
+line_volume,4344487.334163971
+line_volume_AC,4344487.334163971
 line_volume_DC,0.0
 line_volume_limit,5213384.5861990545
-line_volume_shadow,-1.0778590749770009e-05
-total costs,6153412988.06506
+line_volume_shadow,-2.680380797916146e-07
+total costs,6258535786.176129

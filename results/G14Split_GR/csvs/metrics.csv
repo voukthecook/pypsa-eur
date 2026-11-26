@@ -1,14 +1,14 @@
 cluster,3
 opt,lv1.2Co2L0-3H
 planning_horizon,2050
-co2_shadow,-179.02291882988862
+co2_shadow,-177.67471329828476
 co2_storage_shadow,0.0
-electricity_price_mean,62.7716540801151
-electricity_price_std,65.74924659077378
-electricity_price_zero_hours,0.0836776859504132
-line_volume,4344487.189165732
-line_volume_AC,4344487.189165732
+electricity_price_mean,63.44777003217148
+electricity_price_std,49.77164866066986
+electricity_price_zero_hours,0.131198347107438
+line_volume,4344487.364336607
+line_volume_AC,4344487.364336607
 line_volume_DC,0.0
 line_volume_limit,5213384.586199055
-line_volume_shadow,-6.993544003071555e-06
-total costs,6153420575.88763
+line_volume_shadow,-2.6884158407806343e-06
+total costs,6659683861.010661

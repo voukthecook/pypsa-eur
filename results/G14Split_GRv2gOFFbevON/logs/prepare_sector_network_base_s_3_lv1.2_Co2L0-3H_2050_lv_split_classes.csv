@@ -11,9 +11,6 @@ Link,GR0 2AC Sabatier,Sabatier,process_plant
 Link,GR0 0AC BEV charger,BEV charger,household_asset
 Link,GR0 1AC BEV charger,BEV charger,household_asset
 Link,GR0 2AC BEV charger,BEV charger,household_asset
-Link,GR0 0AC V2G,V2G,household_asset
-Link,GR0 1AC V2G,V2G,household_asset
-Link,GR0 2AC V2G,V2G,household_asset
 Link,GR0 0AC residential rural water tanks charger,residential rural water tanks charger,household_asset
 Link,GR0 1AC residential rural water tanks charger,residential rural water tanks charger,household_asset
 Link,GR0 2AC residential rural water tanks charger,residential rural water tanks charger,household_asset

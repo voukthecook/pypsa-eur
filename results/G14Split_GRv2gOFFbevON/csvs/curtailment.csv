@@ -13,7 +13,6 @@ Haber-Bosch,
 OCGT,
 OCGT methanol,
 PHS,
-V2G,
 battery charger,
 battery discharger,
 electricity distribution grid,
@@ -21,17 +20,17 @@ gas pipeline,
 home battery charger,
 home battery discharger,
 hydro,
-offwind-ac,9.05858996260215
-offwind-dc,12.037934200943608
-offwind-float,9.63515110928471
-onwind,0.8479293050889048
-ror,0.1228703768996198
+offwind-ac,8.861146950905294
+offwind-dc,11.23528161145716
+offwind-float,10.515941657590709
+onwind,0.8154798773756747
+ror,0.0562869973392002
 rural air heat pump,
 rural ground heat pump,
 rural resistive heater,
-solar,0.1173379320293466
-solar rooftop,0.0027723291201836
-solar-hsat,0.7852673731815951
+solar,0.1045700889517129
+solar rooftop,0.0019119840881333
+solar-hsat,0.7827277413687725
 urban central air heat pump,
 urban central gas CHP,
 urban central gas CHP CC,

@@ -638,14 +638,14 @@ sector:
   ICE_upper_degree_factor: 1.6
   EV_lower_degree_factor: 0.98
   EV_upper_degree_factor: 0.63
-  bev_dsm: true
+  bev_dsm: false
   bev_dsm_availability: 0.5
   bev_energy: 0.05
   bev_charge_efficiency: 0.9
   bev_charge_rate: 0.011
   bev_avail_max: 0.95
   bev_avail_mean: 0.8
-  v2g: true
+  v2g: false
   land_transport_fuel_cell_share:
     2020: 0
     2025: 0
@@ -948,8 +948,6 @@ sector:
       urban: 0.4
       suburban: 0.3
       rural: 0.3
-    bev_dsm: false
-    v2g: false
     pin_profile: null
     shapes:
       electricity: data/lv_profile_shapes/lpg_electricity_v2.csv
