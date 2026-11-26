@@ -1,0 +1,208 @@
+component,name,carrier,class
+Link,GR0 0AC H2 Electrolysis,H2 Electrolysis,process_plant
+Link,GR0 1AC H2 Electrolysis,H2 Electrolysis,process_plant
+Link,GR0 2AC H2 Electrolysis,H2 Electrolysis,process_plant
+Link,GR0 0AC H2 Fuel Cell,H2 Fuel Cell,process_plant
+Link,GR0 1AC H2 Fuel Cell,H2 Fuel Cell,process_plant
+Link,GR0 2AC H2 Fuel Cell,H2 Fuel Cell,process_plant
+Link,GR0 0AC Sabatier,Sabatier,process_plant
+Link,GR0 1AC Sabatier,Sabatier,process_plant
+Link,GR0 2AC Sabatier,Sabatier,process_plant
+Link,GR0 0AC BEV charger,BEV charger,household_asset
+Link,GR0 1AC BEV charger,BEV charger,household_asset
+Link,GR0 2AC BEV charger,BEV charger,household_asset
+Link,GR0 0AC V2G,V2G,household_asset
+Link,GR0 1AC V2G,V2G,household_asset
+Link,GR0 2AC V2G,V2G,household_asset
+Link,GR0 0AC residential rural water tanks charger,residential rural water tanks charger,household_asset
+Link,GR0 1AC residential rural water tanks charger,residential rural water tanks charger,household_asset
+Link,GR0 2AC residential rural water tanks charger,residential rural water tanks charger,household_asset
+Link,GR0 0AC residential rural water tanks discharger,residential rural water tanks discharger,household_asset
+Link,GR0 1AC residential rural water tanks discharger,residential rural water tanks discharger,household_asset
+Link,GR0 2AC residential rural water tanks discharger,residential rural water tanks discharger,household_asset
+Link,GR0 0AC residential rural air heat pump,residential rural air heat pump,household_asset
+Link,GR0 1AC residential rural air heat pump,residential rural air heat pump,household_asset
+Link,GR0 2AC residential rural air heat pump,residential rural air heat pump,household_asset
+Link,GR0 0AC residential rural ground heat pump,residential rural ground heat pump,household_asset
+Link,GR0 1AC residential rural ground heat pump,residential rural ground heat pump,household_asset
+Link,GR0 2AC residential rural ground heat pump,residential rural ground heat pump,household_asset
+Link,GR0 0AC residential rural resistive heater,residential rural resistive heater,household_asset
+Link,GR0 1AC residential rural resistive heater,residential rural resistive heater,household_asset
+Link,GR0 2AC residential rural resistive heater,residential rural resistive heater,household_asset
+Link,GR0 0AC residential rural gas boiler,residential rural gas boiler,household_asset
+Link,GR0 1AC residential rural gas boiler,residential rural gas boiler,household_asset
+Link,GR0 2AC residential rural gas boiler,residential rural gas boiler,household_asset
+Link,GR0 0AC services rural water tanks charger,services rural water tanks charger,household_asset
+Link,GR0 1AC services rural water tanks charger,services rural water tanks charger,household_asset
+Link,GR0 2AC services rural water tanks charger,services rural water tanks charger,household_asset
+Link,GR0 0AC services rural water tanks discharger,services rural water tanks discharger,household_asset
+Link,GR0 1AC services rural water tanks discharger,services rural water tanks discharger,household_asset
+Link,GR0 2AC services rural water tanks discharger,services rural water tanks discharger,household_asset
+Link,GR0 0AC services rural air heat pump,services rural air heat pump,household_asset
+Link,GR0 1AC services rural air heat pump,services rural air heat pump,household_asset
+Link,GR0 2AC services rural air heat pump,services rural air heat pump,household_asset
+Link,GR0 0AC services rural ground heat pump,services rural ground heat pump,household_asset
+Link,GR0 1AC services rural ground heat pump,services rural ground heat pump,household_asset
+Link,GR0 2AC services rural ground heat pump,services rural ground heat pump,household_asset
+Link,GR0 0AC services rural resistive heater,services rural resistive heater,household_asset
+Link,GR0 1AC services rural resistive heater,services rural resistive heater,household_asset
+Link,GR0 2AC services rural resistive heater,services rural resistive heater,household_asset
+Link,GR0 0AC services rural gas boiler,services rural gas boiler,household_asset
+Link,GR0 1AC services rural gas boiler,services rural gas boiler,household_asset
+Link,GR0 2AC services rural gas boiler,services rural gas boiler,household_asset
+Link,GR0 0AC residential urban decentral water tanks charger,residential urban decentral water tanks charger,household_asset
+Link,GR0 1AC residential urban decentral water tanks charger,residential urban decentral water tanks charger,household_asset
+Link,GR0 2AC residential urban decentral water tanks charger,residential urban decentral water tanks charger,household_asset
+Link,GR0 0AC residential urban decentral water tanks discharger,residential urban decentral water tanks discharger,household_asset
+Link,GR0 1AC residential urban decentral water tanks discharger,residential urban decentral water tanks discharger,household_asset
+Link,GR0 2AC residential urban decentral water tanks discharger,residential urban decentral water tanks discharger,household_asset
+Link,GR0 0AC residential urban decentral air heat pump,residential urban decentral air heat pump,household_asset
+Link,GR0 1AC residential urban decentral air heat pump,residential urban decentral air heat pump,household_asset
+Link,GR0 2AC residential urban decentral air heat pump,residential urban decentral air heat pump,household_asset
+Link,GR0 0AC residential urban decentral resistive heater,residential urban decentral resistive heater,household_asset
+Link,GR0 1AC residential urban decentral resistive heater,residential urban decentral resistive heater,household_asset
+Link,GR0 2AC residential urban decentral resistive heater,residential urban decentral resistive heater,household_asset
+Link,GR0 0AC residential urban decentral gas boiler,residential urban decentral gas boiler,household_asset
+Link,GR0 1AC residential urban decentral gas boiler,residential urban decentral gas boiler,household_asset
+Link,GR0 2AC residential urban decentral gas boiler,residential urban decentral gas boiler,household_asset
+Link,GR0 0AC services urban decentral water tanks charger,services urban decentral water tanks charger,household_asset
+Link,GR0 1AC services urban decentral water tanks charger,services urban decentral water tanks charger,household_asset
+Link,GR0 2AC services urban decentral water tanks charger,services urban decentral water tanks charger,household_asset
+Link,GR0 0AC services urban decentral water tanks discharger,services urban decentral water tanks discharger,household_asset
+Link,GR0 1AC services urban decentral water tanks discharger,services urban decentral water tanks discharger,household_asset
+Link,GR0 2AC services urban decentral water tanks discharger,services urban decentral water tanks discharger,household_asset
+Link,GR0 0AC services urban decentral air heat pump,services urban decentral air heat pump,household_asset
+Link,GR0 1AC services urban decentral air heat pump,services urban decentral air heat pump,household_asset
+Link,GR0 2AC services urban decentral air heat pump,services urban decentral air heat pump,household_asset
+Link,GR0 0AC services urban decentral resistive heater,services urban decentral resistive heater,household_asset
+Link,GR0 1AC services urban decentral resistive heater,services urban decentral resistive heater,household_asset
+Link,GR0 2AC services urban decentral resistive heater,services urban decentral resistive heater,household_asset
+Link,GR0 0AC services urban decentral gas boiler,services urban decentral gas boiler,household_asset
+Link,GR0 1AC services urban decentral gas boiler,services urban decentral gas boiler,household_asset
+Link,GR0 2AC services urban decentral gas boiler,services urban decentral gas boiler,household_asset
+Link,GR0 0AC urban central water tanks charger,urban central water tanks charger,household_asset
+Link,GR0 1AC urban central water tanks charger,urban central water tanks charger,household_asset
+Link,GR0 2AC urban central water tanks charger,urban central water tanks charger,household_asset
+Link,GR0 0AC urban central water tanks discharger,urban central water tanks discharger,household_asset
+Link,GR0 1AC urban central water tanks discharger,urban central water tanks discharger,household_asset
+Link,GR0 2AC urban central water tanks discharger,urban central water tanks discharger,household_asset
+Link,GR0 0AC urban central water pits charger,urban central water pits charger,household_asset
+Link,GR0 1AC urban central water pits charger,urban central water pits charger,household_asset
+Link,GR0 2AC urban central water pits charger,urban central water pits charger,household_asset
+Link,GR0 0AC urban central water pits discharger,urban central water pits discharger,household_asset
+Link,GR0 1AC urban central water pits discharger,urban central water pits discharger,household_asset
+Link,GR0 2AC urban central water pits discharger,urban central water pits discharger,household_asset
+Link,GR0 0AC urban central air heat pump,urban central air heat pump,household_asset
+Link,GR0 1AC urban central air heat pump,urban central air heat pump,household_asset
+Link,GR0 2AC urban central air heat pump,urban central air heat pump,household_asset
+Link,GR0 0AC urban central resistive heater,urban central resistive heater,household_asset
+Link,GR0 1AC urban central resistive heater,urban central resistive heater,household_asset
+Link,GR0 2AC urban central resistive heater,urban central resistive heater,household_asset
+Link,GR0 0AC urban central gas boiler,urban central gas boiler,household_asset
+Link,GR0 1AC urban central gas boiler,urban central gas boiler,household_asset
+Link,GR0 2AC urban central gas boiler,urban central gas boiler,household_asset
+Link,GR0 0AC urban central gas CHP,urban central gas CHP,process_plant
+Link,GR0 1AC urban central gas CHP,urban central gas CHP,process_plant
+Link,GR0 2AC urban central gas CHP,urban central gas CHP,process_plant
+Link,GR0 0AC urban central gas CHP CC,urban central gas CHP CC,process_plant
+Link,GR0 1AC urban central gas CHP CC,urban central gas CHP CC,process_plant
+Link,GR0 2AC urban central gas CHP CC,urban central gas CHP CC,process_plant
+Link,GR0 0AC Haber-Bosch,Haber-Bosch,process_plant
+Link,GR0 1AC Haber-Bosch,Haber-Bosch,process_plant
+Link,GR0 2AC Haber-Bosch,Haber-Bosch,process_plant
+Link,GR0 0AC services urban decentral DAC,DAC,process_plant
+Link,GR0 1AC services urban decentral DAC,DAC,process_plant
+Link,GR0 2AC services urban decentral DAC,DAC,process_plant
+Link,GR0 0AC urban central DAC,DAC,process_plant
+Link,GR0 1AC urban central DAC,DAC,process_plant
+Link,GR0 2AC urban central DAC,DAC,process_plant
+Link,GR0 0AC electricity distribution grid,electricity distribution grid,shared_infrastructure
+Link,GR0 1AC electricity distribution grid,electricity distribution grid,shared_infrastructure
+Link,GR0 2AC electricity distribution grid,electricity distribution grid,shared_infrastructure
+Link,GR0 0AC home battery charger,home battery charger,household_asset
+Link,GR0 1AC home battery charger,home battery charger,household_asset
+Link,GR0 2AC home battery charger,home battery charger,household_asset
+Link,GR0 0AC home battery discharger,home battery discharger,household_asset
+Link,GR0 1AC home battery discharger,home battery discharger,household_asset
+Link,GR0 2AC home battery discharger,home battery discharger,household_asset
+Link,GR0 0AC electricity distribution grid-reversed,electricity distribution grid,shared_infrastructure
+Link,GR0 1AC electricity distribution grid-reversed,electricity distribution grid,shared_infrastructure
+Link,GR0 2AC electricity distribution grid-reversed,electricity distribution grid,shared_infrastructure
+Load,GR0 0AC,electricity,demand
+Load,GR0 1AC,electricity,demand
+Load,GR0 2AC,electricity,demand
+Load,GR0 0AC land transport EV,land transport EV,demand
+Load,GR0 1AC land transport EV,land transport EV,demand
+Load,GR0 2AC land transport EV,land transport EV,demand
+Load,GR0 0AC residential rural heat,residential rural heat,demand
+Load,GR0 1AC residential rural heat,residential rural heat,demand
+Load,GR0 2AC residential rural heat,residential rural heat,demand
+Load,GR0 0AC services rural heat,services rural heat,demand
+Load,GR0 1AC services rural heat,services rural heat,demand
+Load,GR0 2AC services rural heat,services rural heat,demand
+Load,GR0 0AC residential urban decentral heat,residential urban decentral heat,demand
+Load,GR0 1AC residential urban decentral heat,residential urban decentral heat,demand
+Load,GR0 2AC residential urban decentral heat,residential urban decentral heat,demand
+Load,GR0 0AC services urban decentral heat,services urban decentral heat,demand
+Load,GR0 1AC services urban decentral heat,services urban decentral heat,demand
+Load,GR0 2AC services urban decentral heat,services urban decentral heat,demand
+Load,GR0 0AC urban central heat,urban central heat,demand
+Load,GR0 1AC urban central heat,urban central heat,demand
+Load,GR0 2AC urban central heat,urban central heat,demand
+Generator,GR0 0AC residential rural heat vent,residential rural heat vent,household_asset
+Generator,GR0 1AC residential rural heat vent,residential rural heat vent,household_asset
+Generator,GR0 2AC residential rural heat vent,residential rural heat vent,household_asset
+Generator,GR0 0AC residential rural solar thermal collector,residential rural solar thermal,household_asset
+Generator,GR0 1AC residential rural solar thermal collector,residential rural solar thermal,household_asset
+Generator,GR0 2AC residential rural solar thermal collector,residential rural solar thermal,household_asset
+Generator,GR0 0AC services rural heat vent,services rural heat vent,household_asset
+Generator,GR0 1AC services rural heat vent,services rural heat vent,household_asset
+Generator,GR0 2AC services rural heat vent,services rural heat vent,household_asset
+Generator,GR0 0AC services rural solar thermal collector,services rural solar thermal,household_asset
+Generator,GR0 1AC services rural solar thermal collector,services rural solar thermal,household_asset
+Generator,GR0 2AC services rural solar thermal collector,services rural solar thermal,household_asset
+Generator,GR0 0AC residential urban decentral heat vent,residential urban decentral heat vent,household_asset
+Generator,GR0 1AC residential urban decentral heat vent,residential urban decentral heat vent,household_asset
+Generator,GR0 2AC residential urban decentral heat vent,residential urban decentral heat vent,household_asset
+Generator,GR0 0AC residential urban decentral solar thermal collector,residential urban decentral solar thermal,household_asset
+Generator,GR0 1AC residential urban decentral solar thermal collector,residential urban decentral solar thermal,household_asset
+Generator,GR0 2AC residential urban decentral solar thermal collector,residential urban decentral solar thermal,household_asset
+Generator,GR0 0AC services urban decentral heat vent,services urban decentral heat vent,household_asset
+Generator,GR0 1AC services urban decentral heat vent,services urban decentral heat vent,household_asset
+Generator,GR0 2AC services urban decentral heat vent,services urban decentral heat vent,household_asset
+Generator,GR0 0AC services urban decentral solar thermal collector,services urban decentral solar thermal,household_asset
+Generator,GR0 1AC services urban decentral solar thermal collector,services urban decentral solar thermal,household_asset
+Generator,GR0 2AC services urban decentral solar thermal collector,services urban decentral solar thermal,household_asset
+Generator,GR0 0AC urban central heat vent,urban central heat vent,household_asset
+Generator,GR0 1AC urban central heat vent,urban central heat vent,household_asset
+Generator,GR0 2AC urban central heat vent,urban central heat vent,household_asset
+Generator,GR0 0AC urban central solar thermal collector,urban central solar thermal,household_asset
+Generator,GR0 1AC urban central solar thermal collector,urban central solar thermal,household_asset
+Generator,GR0 2AC urban central solar thermal collector,urban central solar thermal,household_asset
+Generator,GR0 0AC 0 solar rooftop,solar rooftop,fixed_equipment
+Generator,GR0 1AC 0 solar rooftop,solar rooftop,fixed_equipment
+Generator,GR0 2AC 0 solar rooftop,solar rooftop,fixed_equipment
+Store,GR0 0AC EV battery,EV battery,household_asset
+Store,GR0 1AC EV battery,EV battery,household_asset
+Store,GR0 2AC EV battery,EV battery,household_asset
+Store,GR0 0AC residential rural water tanks,residential rural water tanks,household_asset
+Store,GR0 1AC residential rural water tanks,residential rural water tanks,household_asset
+Store,GR0 2AC residential rural water tanks,residential rural water tanks,household_asset
+Store,GR0 0AC services rural water tanks,services rural water tanks,household_asset
+Store,GR0 1AC services rural water tanks,services rural water tanks,household_asset
+Store,GR0 2AC services rural water tanks,services rural water tanks,household_asset
+Store,GR0 0AC residential urban decentral water tanks,residential urban decentral water tanks,household_asset
+Store,GR0 1AC residential urban decentral water tanks,residential urban decentral water tanks,household_asset
+Store,GR0 2AC residential urban decentral water tanks,residential urban decentral water tanks,household_asset
+Store,GR0 0AC services urban decentral water tanks,services urban decentral water tanks,household_asset
+Store,GR0 1AC services urban decentral water tanks,services urban decentral water tanks,household_asset
+Store,GR0 2AC services urban decentral water tanks,services urban decentral water tanks,household_asset
+Store,GR0 0AC urban central water tanks,urban central water tanks,household_asset
+Store,GR0 1AC urban central water tanks,urban central water tanks,household_asset
+Store,GR0 2AC urban central water tanks,urban central water tanks,household_asset
+Store,GR0 0AC urban central water pits,urban central water pits,household_asset
+Store,GR0 1AC urban central water pits,urban central water pits,household_asset
+Store,GR0 2AC urban central water pits,urban central water pits,household_asset
+Store,GR0 0AC home battery,home battery,household_asset
+Store,GR0 1AC home battery,home battery,household_asset
+Store,GR0 2AC home battery,home battery,household_asset

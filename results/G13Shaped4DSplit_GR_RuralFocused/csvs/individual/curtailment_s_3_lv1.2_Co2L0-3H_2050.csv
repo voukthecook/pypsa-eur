@@ -1,0 +1,37 @@
+carrier,0
+BEV charger,
+CCGT,
+DAC,
+H2 Electrolysis,
+H2 Fuel Cell,
+H2 pipeline,
+H2 turbine,
+Haber-Bosch,
+OCGT,
+OCGT methanol,
+PHS,
+V2G,
+battery charger,
+battery discharger,
+electricity distribution grid,
+gas pipeline,
+home battery charger,
+home battery discharger,
+hydro,
+offwind-ac,7.926816685754377
+offwind-dc,11.338600304875966
+offwind-float,9.59846748616802
+onwind,0.8448958912393534
+ror,0.11121833836346712
+rural air heat pump,
+rural ground heat pump,
+rural resistive heater,
+solar,0.03168829767251434
+solar rooftop,0.002992817938214503
+solar-hsat,1.1939501812671078
+urban central air heat pump,
+urban central gas CHP,
+urban central gas CHP CC,
+urban central resistive heater,
+urban decentral air heat pump,
+urban decentral resistive heater,

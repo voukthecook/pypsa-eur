@@ -1,0 +1,131 @@
+{
+  "port_check": {
+    "orphan_split_buses": 0,
+    "split_buses": 126,
+    "links_checked": 428,
+    "ev_links_checked": 18,
+    "errors": 0
+  },
+  "ev_realised_shares": {
+    "demand": {
+      "urban": 0.10000000000000002,
+      "suburban": 0.20000000000000004,
+      "rural": 0.7
+    },
+    "BEV charger": {
+      "urban": 0.1,
+      "suburban": 0.2,
+      "rural": 0.7
+    },
+    "V2G": {
+      "urban": 0.1,
+      "suburban": 0.2,
+      "rural": 0.7
+    },
+    "EV battery": {
+      "urban": 0.1,
+      "suburban": 0.2,
+      "rural": 0.7000000000000001
+    }
+  },
+  "suppressed_attr_warnings": {
+    "unit": 99,
+    "location": 171
+  },
+  "shares": {
+    "general": {
+      "urban": 0.1,
+      "suburban": 0.2,
+      "rural": 0.7
+    },
+    "pv": {
+      "urban": 0.1,
+      "suburban": 0.2,
+      "rural": 0.7
+    },
+    "ev": {
+      "urban": 0.1,
+      "suburban": 0.2,
+      "rural": 0.7
+    },
+    "heat": {
+      "rural": {
+        "urban": 0.7,
+        "suburban": 0.2,
+        "rural": 0.1
+      },
+      "urban decentral": {
+        "urban": 0.7,
+        "suburban": 0.2,
+        "rural": 0.1
+      },
+      "urban central": {
+        "urban": 0.7,
+        "suburban": 0.2,
+        "rural": 0.1
+      }
+    }
+  },
+  "strict_classification": false,
+  "n_conserved_totals": 286,
+  "unconstrained_extendable_clones": {
+    "Link|DAC": 18,
+    "Link|H2 Electrolysis": 9,
+    "Link|H2 Fuel Cell": 9,
+    "Link|Haber-Bosch": 9,
+    "Link|Sabatier": 9,
+    "Link|electricity distribution grid": 18,
+    "Link|home battery charger": 9,
+    "Link|home battery discharger": 9,
+    "Link|residential rural air heat pump": 9,
+    "Link|residential rural gas boiler": 9,
+    "Link|residential rural ground heat pump": 9,
+    "Link|residential rural resistive heater": 9,
+    "Link|residential rural water tanks charger": 9,
+    "Link|residential rural water tanks discharger": 9,
+    "Link|residential urban decentral air heat pump": 9,
+    "Link|residential urban decentral gas boiler": 9,
+    "Link|residential urban decentral resistive heater": 9,
+    "Link|residential urban decentral water tanks charger": 9,
+    "Link|residential urban decentral water tanks discharger": 9,
+    "Link|services rural air heat pump": 9,
+    "Link|services rural gas boiler": 9,
+    "Link|services rural ground heat pump": 9,
+    "Link|services rural resistive heater": 9,
+    "Link|services rural water tanks charger": 9,
+    "Link|services rural water tanks discharger": 9,
+    "Link|services urban decentral air heat pump": 9,
+    "Link|services urban decentral gas boiler": 9,
+    "Link|services urban decentral resistive heater": 9,
+    "Link|services urban decentral water tanks charger": 9,
+    "Link|services urban decentral water tanks discharger": 9,
+    "Link|urban central air heat pump": 9,
+    "Link|urban central gas CHP": 9,
+    "Link|urban central gas CHP CC": 9,
+    "Link|urban central gas boiler": 9,
+    "Link|urban central resistive heater": 9,
+    "Link|urban central water pits charger": 9,
+    "Link|urban central water pits discharger": 9,
+    "Link|urban central water tanks charger": 9,
+    "Link|urban central water tanks discharger": 9,
+    "Generator|residential rural heat vent": 9,
+    "Generator|residential rural solar thermal": 9,
+    "Generator|residential urban decentral heat vent": 9,
+    "Generator|residential urban decentral solar thermal": 9,
+    "Generator|services rural heat vent": 9,
+    "Generator|services rural solar thermal": 9,
+    "Generator|services urban decentral heat vent": 9,
+    "Generator|services urban decentral solar thermal": 9,
+    "Generator|urban central heat vent": 9,
+    "Generator|urban central solar thermal": 9,
+    "Store|home battery": 9,
+    "Store|residential rural water tanks": 9,
+    "Store|residential urban decentral water tanks": 9,
+    "Store|services rural water tanks": 9,
+    "Store|services urban decentral water tanks": 9,
+    "Store|urban central water pits": 9,
+    "Store|urban central water tanks": 9
+  },
+  "removed_by_drop_zero_share_and_pin": {},
+  "removed_names": {}
+}

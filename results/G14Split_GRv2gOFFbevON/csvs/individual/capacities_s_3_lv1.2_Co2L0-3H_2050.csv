@@ -1,0 +1,77 @@
+component,carrier,0
+Generator,gas,16944.49233
+Generator,offwind-ac,0.00179
+Generator,offwind-dc,0.0029
+Generator,offwind-float,0.00181
+Generator,onwind,6093.40074
+Generator,ror,29.3
+Generator,rural heat vent,6.87368
+Generator,rural solar thermal,0.01255
+Generator,solar,11358.71453
+Generator,solar rooftop,15861.56152
+Generator,solar-hsat,2275.92593
+Generator,urban central heat vent,585.17235
+Generator,urban central solar thermal,0.02127
+Generator,urban decentral heat vent,4.67056
+Generator,urban decentral solar thermal,0.01169
+Line,AC,25024.67027
+Link,BEV charger,64655.349
+Link,CCGT,0.00471
+Link,CO2 pipeline,240.08623
+Link,DAC,111.64243
+Link,H2 Electrolysis,0.00761
+Link,H2 Fuel Cell,0.00782
+Link,H2 pipeline,0.05072
+Link,H2 turbine,0.00743
+Link,Haber-Bosch,0.00126
+Link,OCGT,0.00856
+Link,OCGT methanol,0.00514
+Link,SMR,0.00272
+Link,SMR CC,0.00869
+Link,Sabatier,0.006
+Link,V2G,32327.6745
+Link,ammonia cracker,0.00407
+Link,battery charger,3572.38412
+Link,battery discharger,3646.04928
+Link,co2 sequestered,inf
+Link,electricity distribution grid,14710.86211
+Link,gas pipeline,9000.0
+Link,gas pipeline new,0.08921
+Link,home battery charger,0.08676
+Link,home battery discharger,0.08855
+Link,rural air heat pump,10.27371
+Link,rural gas boiler,579.52167
+Link,rural ground heat pump,840.02022
+Link,rural resistive heater,1247.4424
+Link,rural water tanks charger,0.6371
+Link,rural water tanks discharger,0.6371
+Link,urban central air heat pump,652.65789
+Link,urban central gas CHP,1507.96017
+Link,urban central gas CHP CC,3646.51507
+Link,urban central gas boiler,1350.95526
+Link,urban central resistive heater,2125.98056
+Link,urban central water pits charger,13870.49353
+Link,urban central water pits discharger,13870.49353
+Link,urban central water tanks charger,0.14882
+Link,urban central water tanks discharger,0.14882
+Link,urban decentral air heat pump,1492.64987
+Link,urban decentral gas boiler,1612.24513
+Link,urban decentral resistive heater,3011.08068
+Link,urban decentral water tanks charger,0.54697
+Link,urban decentral water tanks discharger,0.54697
+StorageUnit,PHS,699.0
+StorageUnit,hydro,2582.0
+Store,EV battery,146943.975
+Store,H2 Store,1.04187
+Store,ammonia store,4.36392
+Store,battery,31501.81326
+Store,co2,inf
+Store,co2 sequestered,40062963.59836
+Store,co2 stored,1.08647
+Store,gas,3574342.9226
+Store,home battery,0.45708
+Store,methanol,0.00391
+Store,rural water tanks,0.09557
+Store,urban central water pits,312086.10438
+Store,urban central water tanks,8.98046
+Store,urban decentral water tanks,0.08205
